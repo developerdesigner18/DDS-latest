@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
                     name="viewport" 
                     content="width=device-width, initial-scale=1" 
                 />
-                <title>Mibix - React Next.js Digital Startup & Agency Template</title>
+                <title>DayDreamSoft - It Service Company</title>
             </Head>
 
             {children}

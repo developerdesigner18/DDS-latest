@@ -57,14 +57,24 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 :root {
-    --fontFamily: 'Nunito', sans-serif;
+    --fontFamily: 'Monda', sans-serif;
     --mainColor: #fe4c1c;
     --optionalColor: #4b5280;
-    --whiteColor: #ffffff;
+    // --whiteColor: #ffffff;
     --blackColor: #080e32;
     --fontSize: 16px;
     --transition: .5s;
     scroll-behavior: initial;
+
+    // Colors to use
+    --mainDarkColor: #003E6B;
+    --mainLightColor: #0069B4;
+    --whiteColor: #FFFFFF;
+    --grayTextColor: #D0D3D4;
+    --grayBgColor: #F0F4F8; 
+    --mainBgColor: #EBF2F6;
+    --bgColor: #D0EAF9;
+
 }
 body {
     padding: 0;
