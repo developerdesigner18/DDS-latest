@@ -1,8 +1,9 @@
-import React from 'react';
 import Link from 'next/link';
+import { LOGO_LIGHT, ADDRESS, MOBILE_NUMBER, EMAIL_ADDRESS,
+    FACEBOOK_LINK, INSTAGRAM_LINK, LINKEDIN_LINK, TWITTER_LINK } from '../../utils/AppConfig';
+import { currentYear } from '../../utils/utils';
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear();
     return (
         <footer className="footer-area">
             <div className="container">
@@ -11,28 +12,34 @@ const Footer = () => {
                         <div className="single-footer-widget">
                             <Link href="/">
                                 <a className="logo">
-                                    <img src="/images/white-logo.png" alt="logo" />
+                                    <img src={LOGO_LIGHT} alt="logo" width='100px' />
                                 </a>
                             </Link>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                            <p>
+                                Boost your digital presence with us, from developing, 
+                                publishingto marketing we’ll take care of all your
+                                needs. Our team is expert in making your websites 
+                                andapplications rank better and attract organic 
+                                audiences.
+                            </p>
                             <ul className="social-link">
                                 <li>
-                                    <a href="https://www.facebook.com/" className="d-block" target="_blank">
+                                    <a href={FACEBOOK_LINK} className="d-block" target="_blank">
                                         <i className='bx bxl-facebook'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://twitter.com/" className="d-block" target="_blank">
+                                    <a href={TWITTER_LINK} className="d-block" target="_blank">
                                         <i className='bx bxl-twitter'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/" className="d-block" target="_blank">
+                                    <a href={INSTAGRAM_LINK} className="d-block" target="_blank">
                                         <i className='bx bxl-instagram'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/" className="d-block" target="_blank">
+                                    <a href={LINKEDIN_LINK} className="d-block" target="_blank">
                                         <i className='bx bxl-linkedin'></i>
                                     </a>
                                 </li>
@@ -45,13 +52,8 @@ const Footer = () => {
                             <h3>Explore</h3>
                             <ul className="footer-links-list">
                                 <li>
-                                    <Link href="/">
-                                        <a>Home</a>
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link href="/about-us-1">
-                                        <a>About</a>
+                                        <a>About us</a>
                                     </Link>
                                 </li>
                                 <li>
@@ -66,7 +68,22 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link href="/contact">
-                                        <a>Contact</a>
+                                        <a>Client Testimonials</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/contact">
+                                        <a>Career</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/contact">
+                                        <a>FAQ</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/contact">
+                                        <a>Life at DDS</a>
                                     </Link>
                                 </li>
                             </ul>
@@ -79,22 +96,27 @@ const Footer = () => {
                             <ul className="footer-links-list">
                                 <li>
                                     <Link href="/team-1">
-                                        <a>Team</a>
+                                        <a>Working Progress</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/contact">
-                                        <a>Contact</a>
+                                        <a>Our Services</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/services-1">
-                                        <a>Services</a>
+                                        <a>Our Partners</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/faq">
-                                        <a>FAQ</a>
+                                        <a>Our Team</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/blog-1">
+                                        <a>Contact Us</a>
                                     </Link>
                                 </li>
                                 <li>
@@ -112,19 +134,15 @@ const Footer = () => {
                             <ul className="footer-contact-info">
                                 <li>
                                     <i className='bx bx-map'></i> 
-                                    175 5th Ave Premium Area, New York, NY 10010, United States
+                                    {ADDRESS}
                                 </li>
                                 <li>
                                     <i className='bx bx-phone-call'></i> 
-                                    <a href="tel:+11234567890">+1 (123) 456 7890</a>
+                                    <a href={`tel:+91${MOBILE_NUMBER}`}>+(91) {MOBILE_NUMBER}</a>
                                 </li>
                                 <li>
                                     <i className='bx bx-envelope'></i>
-                                    <a href="mailto:hello@mibix.com">hello@mibix.com</a>
-                                </li>
-                                <li>
-                                    <i className='bx bxs-inbox'></i>
-                                    <a href="tel:+557854578964">+55 785 4578964</a>
+                                    <a href="mailto:contact@daydreamsoft.com">{EMAIL_ADDRESS}</a>
                                 </li>
                             </ul>
                         </div>
@@ -134,7 +152,7 @@ const Footer = () => {
                 <div className="footer-bottom-area">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-6">
-                            <p><i className='bx bx-copyright'></i> {currentYear} <strong>Mibix</strong> is Proudly Powered by <a target="_blank" href="https://envytheme.com/">EnvyTheme</a></p>
+                            <p><i className='bx bx-copyright'></i> {currentYear} <strong>Daydreansoft LLP</strong> | All Rights Reserved</p>
                         </div>
 
                         <div className="col-lg-6 col-md-6">
@@ -153,10 +171,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="shape16">
-                <img src="/images/shape/shape16.png" alt="image" />
             </div>
         </footer>
     );

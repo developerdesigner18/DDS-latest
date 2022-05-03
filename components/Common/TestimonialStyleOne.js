@@ -2,6 +2,24 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
+const testimonials = [
+    {
+        name: 'John Smith',
+        role: 'Python Developer',
+        feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
+    },
+    {
+        name: 'Sarah Taylor',
+        role: 'Web Developer',
+        feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
+    },
+    {
+        name: 'James Anderson',
+        role: 'Web Designer',
+        feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
+    },
+]
+
 const options = {
     loop: true,
     nav: false,
@@ -36,47 +54,23 @@ const TestimonialStyleOne = () => {
                                 className="testimonials-slides owl-carousel owl-theme"
                                 {...options}
                             >
-                                <div className="single-testimonials-item">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                {
+                                    testimonials.map(({name, role, feedback}, index) => (
+                                        <div key={index} className="single-testimonials-item">
+                                            <p>{feedback}</p>
 
-                                    <div className="client-info">
-                                        <div className="d-flex align-items-center">
-                                            <img src="/images/user1.jpg" alt="image" />
-                                            <div className="title">
-                                                <h3>John Smith</h3>
-                                                <span>Python Developer</span>
+                                            <div className="client-info">
+                                                <div className="d-flex align-items-center">
+                                                    <img src="/images/user1.jpg" alt="image" />
+                                                    <div className="title">
+                                                        <h3>{name}</h3>
+                                                        <span>{role}</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div className="single-testimonials-item">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-
-                                    <div className="client-info">
-                                        <div className="d-flex align-items-center">
-                                            <img src="/images/user2.jpg" alt="image" />
-                                            <div className="title">
-                                                <h3>Sarah Taylor</h3>
-                                                <span>Web Developer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="single-testimonials-item">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-
-                                    <div className="client-info">
-                                        <div className="d-flex align-items-center">
-                                            <img src="/images/user3.jpg" alt="image" />
-                                            <div className="title">
-                                                <h3>James Anderson</h3>
-                                                <span>Web Designer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    ))
+                                }
                             </OwlCarousel> : ''}
                         </div>
                     </div>

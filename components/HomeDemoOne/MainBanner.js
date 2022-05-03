@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 const ModalVideo = dynamic(() => import('react-modal-video'), {
@@ -7,20 +7,26 @@ const ModalVideo = dynamic(() => import('react-modal-video'), {
 
 const MainBanner = () => {
     // Popup Video
-	const [isOpen, setIsOpen] = React.useState(true);
+	const [isOpen, setIsOpen] = useState(true);
     const openModal = () => {
         setIsOpen(!isOpen);
     }
     return (
         <>
             <div className="main-banner-area">
-                <div className="container-fluid">
-                    <div className="row">
+                <div className="container">
+                    <div className="row main-banner-container">
                         <div className="col-lg-6 col-md-12">
                             <div className="main-banner-content">
-                                <span className="sub-title">Growth Your Business</span>
-                                <h1>We Provide Best Digital Marketing Solutions</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                <span className="sub-title">Designers. Developers. Strategists.</span>
+                                <h1>People “DRESS” to impress, <br /> We “DESIGN” for businesses to succeed.</h1>
+                                <p>
+                                    Daydreamsoft, a Surat-based IT company, offers innovative solutions to
+                                    businesses ranging from startups to Fortune 500 corporations. Consider us a 
+                                    creative collaborator rather than a resource. This means we have a shared 
+                                    perspective on how we can work together to achieve your goals, reach new 
+                                    heights and follow the path to success.
+                                </p>
                                
                                 <div className="btn-box">
                                     <div className="d-flex align-items-center">
@@ -41,20 +47,12 @@ const MainBanner = () => {
 
                         <div className="col-lg-6 col-md-12">
                             <div className="main-banner-image">
-                                <img src="/images/banner-img1.jpg" alt="image" />
+                                <img src="/images/banner-img.png" alt="image" />
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="shape1"><img src="/images/shape/shape1.png" alt="image" /></div>
-                <div className="shape2"><img src="/images/shape/shape2.png" alt="image" /></div>
-                <div className="shape3"><img src="/images/shape/shape3.png" alt="image" /></div>
-                <div className="shape4"><img src="/images/shape/shape4.png" alt="image" /></div>
-                <div className="shape5"><img src="/images/shape/shape5.png" alt="image" /></div>
-                <div className="shape6"><img src="/images/shape/shape6.png" alt="image" /></div>
-                <div className="shape7"><img src="/images/shape/shape7.png" alt="image" /></div>
-                <div className="shape8"><img src="/images/shape/shape8.png" alt="image" /></div>
             </div>
 
             {/* If you want to change the video need to update videoID */}

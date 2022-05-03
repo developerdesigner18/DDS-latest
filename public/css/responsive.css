@@ -429,47 +429,47 @@
   .about-img {
     margin-bottom: 35px;
   }
-  .what-we-do-content {
+  .our-services-content {
     text-align: center;
   }
-  .what-we-do-content .sub-title {
+  .our-services-content .sub-title {
     margin-bottom: 10px;
     font-size: 13px;
   }
-  .what-we-do-content h2 {
+  .our-services-content h2 {
     font-size: 28px;
   }
-  .what-we-do-content .skills-item {
+  .our-services-content .skills-item {
     text-align: left;
   }
-  .what-we-do-content .skills-item .skills-header .skills-title {
+  .our-services-content .skills-item .skills-header .skills-title {
     font-size: 14.5px;
   }
-  .what-we-do-content .skills-item .skills-header .skills-percentage {
+  .our-services-content .skills-item .skills-header .skills-percentage {
     font-size: 15px;
   }
-  .what-we-do-content-accordion {
+  .our-services-content-accordion {
     padding-left: 0;
     margin-top: 30px;
   }
-  .what-we-do-content-accordion .accordion .accordion__item .accordion__button {
+  .our-services-content-accordion .accordion .accordion__item .accordion__button {
     font-size: 15px;
     padding-left: 38px;
     padding-top: 4px;
     padding-bottom: 4px;
   }
-  .what-we-do-content-accordion .accordion .accordion__item .accordion__button span::before {
+  .our-services-content-accordion .accordion .accordion__item .accordion__button span::before {
     width: 30px;
   }
-  .what-we-do-content-accordion .accordion .accordion__item .accordion__button:before {
+  .our-services-content-accordion .accordion .accordion__item .accordion__button:before {
     left: 9px;
     top: 12%;
   }
-  .what-we-do-content-accordion .accordion .accordion__item .accordion__button::after {
+  .our-services-content-accordion .accordion .accordion__item .accordion__button::after {
     left: 4px;
     top: 12%;
   }
-  .what-we-do-content-accordion .accordion .accordion__item .accordion__panel {
+  .our-services-content-accordion .accordion .accordion__item .accordion__panel {
     padding-top: 15px;
   }
   .single-services-box {
@@ -671,12 +671,12 @@
   .partner-area.ptb-70 {
     padding-bottom: 10px;
   }
-  .team-area .col-lg-6 {
+  .industries-we-serve .col-lg-6 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .team-area .section-title {
+  .industries-we-serve .section-title {
     text-align: center;
     max-width: 100%;
     padding-left: 0;
@@ -693,13 +693,13 @@
   .single-team-box .content h3 {
     font-size: 19px;
   }
-  .single-team-member .content {
+  .single-industry .content {
     padding: 25px 20px 20px;
   }
-  .single-team-member .content h3 {
+  .single-industry .content h3 {
     font-size: 19px;
   }
-  .single-team-member .image .social-link li a {
+  .single-industry .image .social-link li a {
     -webkit-transform: scale(1) !important;
             transform: scale(1) !important;
   }
@@ -2123,20 +2123,20 @@
   .about-content .features-list {
     text-align: left;
   }
-  .what-we-do-content {
+  .our-services-content {
     text-align: center;
   }
-  .what-we-do-content .sub-title {
+  .our-services-content .sub-title {
     margin-bottom: 12px;
     font-size: 14.5px;
   }
-  .what-we-do-content h2 {
+  .our-services-content h2 {
     font-size: 35px;
   }
-  .what-we-do-content .skills-item {
+  .our-services-content .skills-item {
     text-align: left;
   }
-  .what-we-do-content-accordion {
+  .our-services-content-accordion {
     padding-left: 0;
     margin-top: 30px;
   }
@@ -2337,12 +2337,12 @@
   .portfolio-details-info ul li span {
     font-size: 18px;
   }
-  .team-area .col-lg-6 {
+  .industries-we-serve .col-lg-6 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .team-area .section-title {
+  .industries-we-serve .section-title {
     text-align: center;
     padding-left: 0;
     max-width: 560px;
@@ -2357,10 +2357,10 @@
     -webkit-transform: scale(1) !important;
             transform: scale(1) !important;
   }
-  .single-team-member .content h3 {
+  .single-industry .content h3 {
     font-size: 22px;
   }
-  .single-team-member .image .social-link li a {
+  .single-industry .image .social-link li a {
     -webkit-transform: scale(1) !important;
             transform: scale(1) !important;
   }
@@ -2955,13 +2955,13 @@
     padding-right: 0;
     font-size: 17px;
   }
-  .what-we-do-content .sub-title {
+  .our-services-content .sub-title {
     font-size: 14.5px;
   }
-  .what-we-do-content h2 {
+  .our-services-content h2 {
     font-size: 38px;
   }
-  .what-we-do-content-accordion {
+  .our-services-content-accordion {
     padding-left: 20px;
   }
   .single-services-box {
@@ -3013,7 +3013,7 @@
   .single-portfolio-box .content h3 {
     font-size: 20px;
   }
-  .team-area .section-title {
+  .industries-we-serve .section-title {
     padding-left: 40px;
   }
   .single-team-box .content {
@@ -3022,10 +3022,10 @@
   .single-team-box .content h3 {
     font-size: 23px;
   }
-  .single-team-member .content {
+  .single-industry .content {
     padding: 25px 20px 15px;
   }
-  .single-team-member .content h3 {
+  .single-industry .content h3 {
     font-size: 20px;
   }
   .project-start-content .sub-title {

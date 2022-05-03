@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from '../../utils/ActiveLink';
+import { LOGO_DARK } from "../../utils/AppConfig";
 
 const Navbar = () => {
-    const [menu, setMenu] = React.useState(true)
+    const [menu, setMenu] = useState(true)
  
     const toggleNavbar = () => {
         setMenu(!menu)
     }
 
-    React.useEffect(() => {
+    useEffect(() => {
         let elementId = document.getElementById("navbar");
         document.addEventListener("scroll", () => {
             if (window.scrollY > 170) {
@@ -43,7 +44,7 @@ const Navbar = () => {
                         <nav className="navbar navbar-expand-lg navbar-light">
                             <Link href="/">
                                 <a onClick={toggleNavbar} className="navbar-brand">
-                                    <img src="/images/logo.png" alt="logo" />
+                                    <img src={LOGO_DARK} alt="logo" width='100px' />
                                 </a>
                             </Link>
 
@@ -186,7 +187,7 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <Link href="#">
                                             <a onClick={e => e.preventDefault()} className="nav-link">
-                                                Pages <i className='bx bx-chevron-down'></i>
+                                                Pricing <i className='bx bx-chevron-down'></i>
                                             </a>
                                         </Link>
 
