@@ -1,12 +1,12 @@
 import React from 'react';
-import NavbarStyleTwo from '../components/_App/NavbarStyleTwo';
+import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
 
 const ProfileAuthentication = () => {
     return (
         <>
-			<NavbarStyleTwo />
+			<Navbar />
             
 			<PageBanner 
                 pageTitle="Welcome to Mibix" 

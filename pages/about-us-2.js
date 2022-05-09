@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarStyleTwo from '../components/_App/NavbarStyleTwo';
+import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import AboutContentTwo from '../components/AboutUs/AboutContentTwo';
 import OurHistory from '../components/AboutUs/OurHistory';
@@ -11,7 +11,7 @@ import Footer from '../components/_App/Footer';
 const AboutUs = () => {
     return (
         <>
-			<NavbarStyleTwo />
+			<Navbar />
             
 			<PageBanner 
                 pageTitle="About Us" 

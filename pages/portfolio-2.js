@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarStyleTwo from '../components/_App/NavbarStyleTwo';
+import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
 import Link from 'next/link';
@@ -7,7 +7,7 @@ import Link from 'next/link';
 const PortfolioTwo = () => {
     return (
         <>
-			<NavbarStyleTwo />
+			<Navbar />
             
 			<PageBanner 
                 pageTitle="Portfolio 3 Columns" 

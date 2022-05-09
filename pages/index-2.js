@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarStyleTwo from '../components/_App/NavbarStyleTwo';
+import Navbar from '../components/_App/Navbar';
 import MainBanner from '../components/HomeDemoTwo/MainBanner';
 import FeaturedService from '../components/HomeDemoTwo/FeaturedService';
 import AboutSection from '../components/HomeDemoTwo/AboutSection';
@@ -17,7 +17,7 @@ import Footer from '../components/_App/Footer';
 const Index2 = () => {
     return (
         <>
-            <NavbarStyleTwo />
+            <Navbar />
 
             <MainBanner />
 

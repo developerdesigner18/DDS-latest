@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarStyleTwo from '../components/_App/NavbarStyleTwo';
+import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import ProductsCard from '../components/Products/ProductsCard';
 import Footer from '../components/_App/Footer';
@@ -7,7 +7,7 @@ import Footer from '../components/_App/Footer';
 const ProductsList = () => {
     return (
         <>
-			<NavbarStyleTwo />
+			<Navbar />
 
 			<PageBanner 
                 pageTitle="Products List" 

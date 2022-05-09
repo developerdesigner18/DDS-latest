@@ -11,7 +11,7 @@ import Footer from '../components/_App/Footer';
 const Index = () => {
     return (
         <>
-            <Navbar />
+            <Navbar home={true} />
 
             <MainBanner />
 

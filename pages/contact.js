@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarStyleTwo from '../components/_App/NavbarStyleTwo';
+import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
 import ContactForm from '../components/Contact/ContactForm';
@@ -7,7 +7,7 @@ import ContactForm from '../components/Contact/ContactForm';
 const Contact = () => {
     return (
         <>
-			<NavbarStyleTwo />
+			<Navbar />
             
 			<PageBanner 
                 pageTitle="Contact Us" 

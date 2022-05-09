@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarStyleTwo from '../components/_App/NavbarStyleTwo';
+import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
 import ProductsDetailsContent from '../components/ProductsDetails/ProductsDetailsContent';
@@ -7,7 +7,7 @@ import ProductsDetailsContent from '../components/ProductsDetails/ProductsDetail
 const ProductsDetails = () => {
     return (
         <>
-			<NavbarStyleTwo />
+			<Navbar />
 
 			<PageBanner 
                 pageTitle="Products Details" 

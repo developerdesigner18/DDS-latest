@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Link from '../../utils/ActiveLink';
-import { LOGO_DARK } from "../../utils/AppConfig";
+import { LOGO_DARK, LOGO_LIGHT } from "../../utils/AppConfig";
 
-const Navbar = () => {
+const Navbar = (props) => {
     const [menu, setMenu] = useState(true)
  
     const toggleNavbar = () => {
@@ -38,13 +38,13 @@ const Navbar = () => {
 
     return (
         <>
-            <div id="navbar" className="navbar-area">
+            <div id="navbar" className={`navbar-area ${props.home ? '' : 'navbar-color-white'}`}>
                 <div className="main-nav">
                     <div className="container-fluid">
                         <nav className="navbar navbar-expand-lg navbar-light">
                             <Link href="/">
                                 <a onClick={toggleNavbar} className="navbar-brand">
-                                    <img src={LOGO_DARK} alt="logo" width='100px' />
+                                    <img src={props.home ? LOGO_DARK : LOGO_LIGHT} alt="logo" width='100px' />
                                 </a>
                             </Link>
 
