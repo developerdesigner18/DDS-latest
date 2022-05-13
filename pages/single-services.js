@@ -6,6 +6,13 @@ import SEOAnalysisForm from '../components/Common/SEOAnalysisForm';
 import Pricing from '../components/Common/Pricing';
 import StartProjectWithUs from '../components/Common/StartProjectWithUs';
 
+const solutions = [
+    {
+        title: 'Ecommerce, Retail & B2B',
+        description: ''
+    }
+]
+
 const SingleServices = () => {
     return (
         <>

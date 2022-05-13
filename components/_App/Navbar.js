@@ -125,7 +125,7 @@ const Navbar = (props) => {
 
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <Link href="/about-us-1" activeClassName="active">
+                                                <Link href="/about-us" activeClassName="active">
                                                     <a onClick={toggleNavbar} className="nav-link">About Us One</a>
                                                 </Link>
                                             </li> 
