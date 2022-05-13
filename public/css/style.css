@@ -2028,7 +2028,7 @@ About Area CSS
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(/images/about-img1.jpg);
+  background-image: url(/images/about-img1.png);
 }
 
 .about-image img {
@@ -2050,15 +2050,16 @@ About Area CSS
 .about-content .sub-title {
   display: block;
   margin-bottom: 12px;
-  color: var(--mainColor);
-  text-transform: uppercase;
+  color: var(--mainLightColor);
   font-size: 15.5px;
   font-weight: 700;
 }
 
 .about-content h2 {
+  color: var(--mainDarkColor);
   margin-bottom: 0;
   font-size: 42px;
+  text-transform: uppercase;
 }
 
 .about-content p {
@@ -2097,7 +2098,7 @@ About Area CSS
   position: absolute;
   left: 0;
   top: 2px;
-  color: var(--mainColor);
+  color: var(--mainLightColor);
   font-size: 40px;
   line-height: 1;
 }
@@ -6258,26 +6259,11 @@ Checkout Area CSS
 Page Title Area CSS
 =================================================*/
 .page-title-area {
-  background-color: var(--blackColor);
+  background-color: var(--mainDarkColor);
   position: relative;
   z-index: 1;
   padding-bottom: 135px;
   padding-top: 200px;
-}
-
-.page-title-area .shape8 {
-  left: 90%;
-}
-
-.page-title-area .shape3 {
-  left: auto;
-  top: 10%;
-  right: 8%;
-}
-
-.page-title-area .shape6 {
-  left: 40%;
-  bottom: 55%;
 }
 
 .page-title-area.page-title-style-two {
@@ -6293,81 +6279,6 @@ Page Title Area CSS
   margin-bottom: 0;
   color: var(--whiteColor);
   font-size: 45px;
-}
-
-.lines {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  margin: auto;
-  width: 90vw;
-  z-index: -1;
-}
-
-.lines .line {
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-}
-
-.lines .line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 15vh;
-  width: 100%;
-  top: -50%;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, var(--whiteColor)), to(var(--whiteColor)));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--whiteColor) 75%, var(--whiteColor) 100%);
-  -webkit-animation: run 7s 0s infinite;
-          animation: run 7s 0s infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-}
-
-.lines .line:nth-child(1) {
-  margin-left: -25%;
-}
-
-.lines .line:nth-child(1)::after {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.lines .line:nth-child(3) {
-  margin-left: 25%;
-}
-
-.lines .line:nth-child(3)::after {
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
-}
-
-@-webkit-keyframes run {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 110%;
-  }
-}
-
-@keyframes run {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 110%;
-  }
 }
 
 /*================================================

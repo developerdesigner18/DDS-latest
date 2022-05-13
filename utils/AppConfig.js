@@ -13,3 +13,7 @@ export const ADDRESS = '408, Marvella Business hub, Pal Hazira Road, Pal - Umra 
 // Do not add +91
 export const MOBILE_NUMBER = '7573933439'
 export const EMAIL_ADDRESS = 'contact@daydreamsoft.com'
+
+export const COMPLETED_PROJECTS = '3275'
+export const SATISFIED_CLIENTS = '2500'
+export const TEAM_MEMBERS = '70'
