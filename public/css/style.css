@@ -2560,7 +2560,7 @@ Services Area CSS
 }
 
 /*================================================
-Services Details Area CSS
+Solutions CSS
 =================================================*/
 .overview-box {
   -webkit-box-align: center;
@@ -2596,13 +2596,13 @@ Services Details Area CSS
 .overview-box .overview-content .content .sub-title {
   display: block;
   margin-bottom: 12px;
-  color: var(--mainColor);
-  text-transform: uppercase;
+  color: var(--mainLightColor);
   font-size: 15.5px;
   font-weight: 700;
 }
 
 .overview-box .overview-content .content h2 {
+  color: var(--mainDarkColor);
   margin-bottom: 15px;
   font-size: 42px;
 }
@@ -2714,6 +2714,19 @@ Services Details Area CSS
 
 .overview-box .overview-image .image {
   text-align: center;
+}
+
+.overview-box:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.overview-area .default-btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /*================================================
