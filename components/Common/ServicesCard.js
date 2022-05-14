@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const ServicesCard = () => {
     return (
@@ -8,7 +8,11 @@ const ServicesCard = () => {
                 <div className="section-title">
                     <span className="sub-title">Services</span>
                     <h2>Let’s Check Our Services</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna.
+                    </p>
                 </div>
 
                 <div className="row">
@@ -26,12 +30,16 @@ const ServicesCard = () => {
                                     <a>Social Media Marketing</a>
                                 </Link>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna.
+                            </p>
 
                             <Link href="/single-services">
                                 <a className="learn-more-btn">
-                                    <i className="left-icon flaticon-next-button"></i> 
-                                    Learn More 
+                                    <i className="left-icon flaticon-next-button"></i>
+                                    Learn More
                                     <i className="right-icon flaticon-next-button"></i>
                                 </a>
                             </Link>
@@ -52,12 +60,16 @@ const ServicesCard = () => {
                                     <a>Keyward Research</a>
                                 </Link>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                            
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna.
+                            </p>
+
                             <Link href="/single-services">
                                 <a className="learn-more-btn">
-                                    <i className="left-icon flaticon-next-button"></i> 
-                                    Learn More 
+                                    <i className="left-icon flaticon-next-button"></i>
+                                    Learn More
                                     <i className="right-icon flaticon-next-button"></i>
                                 </a>
                             </Link>
@@ -78,12 +90,16 @@ const ServicesCard = () => {
                                     <a>Content Marketing</a>
                                 </Link>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                            
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna.
+                            </p>
+
                             <Link href="/single-services">
                                 <a className="learn-more-btn">
-                                    <i className="left-icon flaticon-next-button"></i> 
-                                    Learn More 
+                                    <i className="left-icon flaticon-next-button"></i>
+                                    Learn More
                                     <i className="right-icon flaticon-next-button"></i>
                                 </a>
                             </Link>
@@ -104,12 +120,16 @@ const ServicesCard = () => {
                                     <a>PPC Advertising</a>
                                 </Link>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                            
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna.
+                            </p>
+
                             <Link href="/single-services">
                                 <a className="learn-more-btn">
-                                    <i className="left-icon flaticon-next-button"></i> 
-                                    Learn More 
+                                    <i className="left-icon flaticon-next-button"></i>
+                                    Learn More
                                     <i className="right-icon flaticon-next-button"></i>
                                 </a>
                             </Link>
@@ -130,12 +150,16 @@ const ServicesCard = () => {
                                     <a>Competitor Research</a>
                                 </Link>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                            
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna.
+                            </p>
+
                             <Link href="/single-services">
                                 <a className="learn-more-btn">
-                                    <i className="left-icon flaticon-next-button"></i> 
-                                    Learn More 
+                                    <i className="left-icon flaticon-next-button"></i>
+                                    Learn More
                                     <i className="right-icon flaticon-next-button"></i>
                                 </a>
                             </Link>
@@ -156,12 +180,16 @@ const ServicesCard = () => {
                                     <a>Skyrocketing Growth</a>
                                 </Link>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                            
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna.
+                            </p>
+
                             <Link href="/single-services">
                                 <a className="learn-more-btn">
-                                    <i className="left-icon flaticon-next-button"></i> 
-                                    Learn More 
+                                    <i className="left-icon flaticon-next-button"></i>
+                                    Learn More
                                     <i className="right-icon flaticon-next-button"></i>
                                 </a>
                             </Link>
@@ -170,7 +198,7 @@ const ServicesCard = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default ServicesCard;

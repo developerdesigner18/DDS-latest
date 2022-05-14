@@ -57,24 +57,23 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 :root {
-    --fontFamily: 'Monda', sans-serif;
+    --fontFamily: "Monda", sans-serif;
     --mainColor: #fe4c1c;
     --optionalColor: #4b5280;
     // --whiteColor: #ffffff;
     --blackColor: #080e32;
     --fontSize: 16px;
-    --transition: .5s;
+    --transition: 0.5s;
     scroll-behavior: initial;
 
     // Colors to use
-    --mainDarkColor: #003E6B;
-    --mainLightColor: #0069B4;
-    --whiteColor: #FFFFFF;
-    --grayTextColor: #D0D3D4;
-    --grayBgColor: #F0F4F8; 
-    --mainBgColor: #EBF2F6;
-    --bgColor: #D0EAF9;
-
+    --mainDarkColor: #003e6b;
+    --mainLightColor: #0069b4;
+    --whiteColor: #ffffff;
+    --grayTextColor: #d0d3d4;
+    --grayBgColor: #f0f4f8;
+    --mainBgColor: #ebf2f6;
+    --bgColor: #d0eaf9;
 }
 body {
     padding: 0;
@@ -82,12 +81,23 @@ body {
     font: {
         size: var(--fontSize);
         family: var(--fontFamily);
-    };
+    }
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font: {
         weight: 800;
-    };
+    }
 }
 a {
     color: var(--blackColor);
@@ -129,7 +139,7 @@ p {
     padding: {
         top: 100px;
         bottom: 100px;
-    };
+    }
 }
 .pt-100 {
     padding-top: 100px;
@@ -141,7 +151,7 @@ p {
     padding: {
         top: 70px;
         bottom: 70px;
-    };
+    }
 }
 .pt-70 {
     padding-top: 70px;
@@ -166,7 +176,7 @@ p {
         left: auto;
         right: auto;
         bottom: 60px;
-    };
+    }
     .sub-title {
         display: block;
         margin-bottom: 12px;
@@ -174,24 +184,24 @@ p {
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h2 {
         margin-bottom: 0;
         font-size: 42px;
-        color: var(--mainDarkColor)
+        color: var(--mainDarkColor);
     }
     p {
         max-width: 600px;
         font: {
             size: 17px;
             weight: 600;
-        };
+        }
         margin: {
             left: auto;
             right: auto;
             top: 12px;
-        };
+        }
     }
     .learn-more-btn {
         margin-top: 20px;
@@ -212,9 +222,9 @@ p {
     font: {
         size: 17px;
         weight: 700;
-    };
+    }
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         right: 0;
@@ -238,7 +248,8 @@ p {
 .form-group {
     margin-bottom: 20px;
 }
-.form-control, .form-select {
+.form-control,
+.form-select {
     height: 50px;
     color: var(--blackColor);
     box-shadow: unset !important;
@@ -250,7 +261,7 @@ p {
     font: {
         size: 16px;
         weight: 600;
-    };
+    }
     &::placeholder {
         color: #7e7e7e;
         transition: var(--transition);
@@ -280,7 +291,7 @@ Top Header Area CSS
         padding: {
             left: 30px;
             right: 30px;
-        };
+        }
     }
 }
 .top-header-contact-info {
@@ -317,12 +328,13 @@ Top Header Area CSS
 }
 .top-header-btn {
     text-align: right;
-    
+
     .default-btn {
         border-radius: 0;
         background-color: var(--whiteColor);
 
-        &::before, &::after {
+        &::before,
+        &::after {
             border-radius: 0;
         }
         &:hover {
@@ -345,7 +357,7 @@ Navbar Area CSS
     padding: {
         top: 8px;
         bottom: 8px;
-    };
+    }
     &.is-sticky {
         position: fixed;
         top: 0;
@@ -358,7 +370,7 @@ Navbar Area CSS
         padding: {
             top: 5px;
             bottom: 5px;
-        };
+        }
     }
     &.navbar-color-white {
         &.is-sticky {
@@ -366,15 +378,12 @@ Navbar Area CSS
         }
     }
 }
-.dibiz-responsive-nav {
-    display: none;
-}
 .main-nav {
     .container-fluid {
         padding: {
             left: 30px;
             right: 30px;
-        };
+        }
     }
     .navbar {
         position: inherit;
@@ -383,7 +392,7 @@ Navbar Area CSS
             right: 0;
             top: 0;
             bottom: 0;
-        };      
+        }
         .navbar-brand {
             font-size: inherit;
             line-height: 1;
@@ -392,7 +401,7 @@ Navbar Area CSS
                 bottom: 0;
                 left: 0;
                 right: 0;
-            };
+            }
         }
         ul {
             padding-left: 0;
@@ -407,19 +416,19 @@ Navbar Area CSS
                 margin: {
                     left: 15px;
                     right: 15px;
-                };
+                }
                 a {
                     color: var(--mainDarkColor);
                     font: {
                         size: 17.5px;
                         weight: 700;
-                    };
+                    }
                     padding: {
                         left: 0;
                         right: 0;
                         top: 25px;
                         bottom: 25px;
-                    };
+                    }
                     i {
                         font-size: 20px;
                         position: relative;
@@ -428,9 +437,11 @@ Navbar Area CSS
                         margin: {
                             left: -5px;
                             right: -3px;
-                        };
+                        }
                     }
-                    &:hover, &:focus, &.active {
+                    &:hover,
+                    &:focus,
+                    &.active {
                         color: var(--mainColor);
                     }
                 }
@@ -440,7 +451,8 @@ Navbar Area CSS
                 &:first-child {
                     margin-left: 0;
                 }
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     a {
                         color: var(--mainColor);
                     }
@@ -465,7 +477,7 @@ Navbar Area CSS
 
                     li {
                         margin: 0;
-                        
+
                         a {
                             padding: 7px 20px;
                             position: relative;
@@ -474,7 +486,7 @@ Navbar Area CSS
                             font: {
                                 size: 16px;
                                 weight: 700;
-                            };
+                            }
                             i {
                                 margin: 0;
                                 position: absolute;
@@ -483,7 +495,9 @@ Navbar Area CSS
                                 transform: translateY(-50%);
                                 right: 15px;
                             }
-                            &:hover, &:focus, &.active {
+                            &:hover,
+                            &:focus,
+                            &.active {
                                 color: var(--mainColor);
                             }
                         }
@@ -493,12 +507,14 @@ Navbar Area CSS
                             left: -250px;
                             margin-top: 15px;
                             visibility: hidden;
-                            
+
                             li {
                                 a {
                                     color: var(--blackColor);
-                                    
-                                    &:hover, &:focus, &.active {
+
+                                    &:hover,
+                                    &:focus,
+                                    &.active {
                                         color: var(--mainColor);
                                     }
                                 }
@@ -507,12 +523,14 @@ Navbar Area CSS
                                     opacity: 0;
                                     left: 250px;
                                     visibility: hidden;
-        
+
                                     li {
                                         a {
                                             color: var(--blackColor);
-        
-                                            &:hover, &:focus, &.active {
+
+                                            &:hover,
+                                            &:focus,
+                                            &.active {
                                                 color: var(--mainColor);
                                             }
                                         }
@@ -521,12 +539,14 @@ Navbar Area CSS
                                             opacity: 0;
                                             left: -250px;
                                             visibility: hidden;
-                
+
                                             li {
                                                 a {
                                                     color: var(--blackColor);
-                
-                                                    &:hover, &:focus, &.active {
+
+                                                    &:hover,
+                                                    &:focus,
+                                                    &.active {
                                                         color: var(--mainColor);
                                                     }
                                                 }
@@ -535,13 +555,19 @@ Navbar Area CSS
                                                     opacity: 0;
                                                     left: 250px;
                                                     visibility: hidden;
-                        
+
                                                     li {
                                                         a {
-                                                            color: var(--blackColor);
-                
-                                                            &:hover, &:focus, &.active {
-                                                                color: var(--mainColor);
+                                                            color: var(
+                                                                --blackColor
+                                                            );
+
+                                                            &:hover,
+                                                            &:focus,
+                                                            &.active {
+                                                                color: var(
+                                                                    --mainColor
+                                                                );
                                                             }
                                                         }
                                                         .dropdown-menu {
@@ -549,13 +575,19 @@ Navbar Area CSS
                                                             opacity: 0;
                                                             left: -250px;
                                                             visibility: hidden;
-                                
+
                                                             li {
                                                                 a {
-                                                                    color: var(--blackColor);
-                
-                                                                    &:hover, &:focus, &.active {
-                                                                        color: var(--mainColor);
+                                                                    color: var(
+                                                                        --blackColor
+                                                                    );
+
+                                                                    &:hover,
+                                                                    &:focus,
+                                                                    &.active {
+                                                                        color: var(
+                                                                            --mainColor
+                                                                        );
                                                                     }
                                                                 }
                                                                 .dropdown-menu {
@@ -563,20 +595,28 @@ Navbar Area CSS
                                                                     opacity: 0;
                                                                     left: 250px;
                                                                     visibility: hidden;
-                                        
+
                                                                     li {
                                                                         a {
-                                                                            color: var(--blackColor);
-                
-                                                                            &:hover, &:focus, &.active {
-                                                                                color: var(--mainColor);
+                                                                            color: var(
+                                                                                --blackColor
+                                                                            );
+
+                                                                            &:hover,
+                                                                            &:focus,
+                                                                            &.active {
+                                                                                color: var(
+                                                                                    --mainColor
+                                                                                );
                                                                             }
                                                                         }
                                                                     }
                                                                 }
                                                                 &.active {
                                                                     a {
-                                                                        color: var(--mainColor);
+                                                                        color: var(
+                                                                            --mainColor
+                                                                        );
                                                                     }
                                                                 }
                                                                 &:hover {
@@ -589,7 +629,9 @@ Navbar Area CSS
                                                         }
                                                         &.active {
                                                             a {
-                                                                color: var(--mainColor);
+                                                                color: var(
+                                                                    --mainColor
+                                                                );
                                                             }
                                                         }
                                                         &:hover {
@@ -674,7 +716,7 @@ Navbar Area CSS
                 position: relative;
 
                 &::before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     left: -2px;
                     top: -4px;
@@ -743,7 +785,7 @@ Navbar Area CSS
                         font: {
                             size: 12px;
                             weight: 600;
-                        };
+                        }
                     }
                 }
             }
@@ -753,26 +795,31 @@ Navbar Area CSS
 .navbar-color-white {
     .main-nav {
         .navbar {
-            .navbar-nav {    
+            .navbar-nav {
                 .nav-item {
                     a {
                         color: var(--whiteColor);
-                        
-                        &:hover, &:focus, &.active {
+
+                        &:hover,
+                        &:focus,
+                        &.active {
                             color: var(--mainColor);
                         }
                     }
-                    &:hover, &.active {
+                    &:hover,
+                    &.active {
                         a {
                             color: var(--mainColor);
                         }
                     }
-                    .dropdown-menu {    
-                        li {                            
+                    .dropdown-menu {
+                        li {
                             a {
                                 color: var(--blackColor);
-                                
-                                &:hover, &:focus, &.active {
+
+                                &:hover,
+                                &:focus,
+                                &.active {
                                     color: var(--mainColor);
                                 }
                             }
@@ -780,8 +827,10 @@ Navbar Area CSS
                                 li {
                                     a {
                                         color: var(--blackColor);
-                                        
-                                        &:hover, &:focus, &.active {
+
+                                        &:hover,
+                                        &:focus,
+                                        &.active {
                                             color: var(--mainColor);
                                         }
                                     }
@@ -789,66 +838,98 @@ Navbar Area CSS
                                         li {
                                             a {
                                                 color: var(--blackColor);
-            
-                                                &:hover, &:focus, &.active {
+
+                                                &:hover,
+                                                &:focus,
+                                                &.active {
                                                     color: var(--mainColor);
                                                 }
                                             }
                                             .dropdown-menu {
                                                 li {
                                                     a {
-                                                        color: var(--blackColor);
-                    
-                                                        &:hover, &:focus, &.active {
-                                                            color: var(--mainColor);
+                                                        color: var(
+                                                            --blackColor
+                                                        );
+
+                                                        &:hover,
+                                                        &:focus,
+                                                        &.active {
+                                                            color: var(
+                                                                --mainColor
+                                                            );
                                                         }
                                                     }
                                                     .dropdown-menu {
                                                         li {
                                                             a {
-                                                                color: var(--blackColor);
-                    
-                                                                &:hover, &:focus, &.active {
-                                                                    color: var(--mainColor);
+                                                                color: var(
+                                                                    --blackColor
+                                                                );
+
+                                                                &:hover,
+                                                                &:focus,
+                                                                &.active {
+                                                                    color: var(
+                                                                        --mainColor
+                                                                    );
                                                                 }
                                                             }
                                                             .dropdown-menu {
                                                                 li {
                                                                     a {
-                                                                        color: var(--blackColor);
-                    
-                                                                        &:hover, &:focus, &.active {
-                                                                            color: var(--mainColor);
+                                                                        color: var(
+                                                                            --blackColor
+                                                                        );
+
+                                                                        &:hover,
+                                                                        &:focus,
+                                                                        &.active {
+                                                                            color: var(
+                                                                                --mainColor
+                                                                            );
                                                                         }
                                                                     }
                                                                     .dropdown-menu {
                                                                         li {
                                                                             a {
-                                                                                color: var(--blackColor);
-                    
-                                                                                &:hover, &:focus, &.active {
-                                                                                    color: var(--mainColor);
+                                                                                color: var(
+                                                                                    --blackColor
+                                                                                );
+
+                                                                                &:hover,
+                                                                                &:focus,
+                                                                                &.active {
+                                                                                    color: var(
+                                                                                        --mainColor
+                                                                                    );
                                                                                 }
                                                                             }
                                                                         }
                                                                     }
                                                                     &.active {
                                                                         a {
-                                                                            color: var(--mainColor);
+                                                                            color: var(
+                                                                                --mainColor
+                                                                            );
                                                                         }
                                                                     }
                                                                 }
                                                             }
                                                             &.active {
                                                                 a {
-                                                                    color: var(--mainColor);
+                                                                    color: var(
+                                                                        --mainColor
+                                                                    );
                                                                 }
                                                             }
                                                         }
                                                     }
                                                     &.active {
                                                         a {
-                                                            color: var(--mainColor);
+                                                            color: var(
+                                                                --mainColor
+                                                            );
                                                         }
                                                     }
                                                 }
@@ -879,172 +960,12 @@ Navbar Area CSS
         }
     }
 }
-.navbar-style-two {
-    position: relative;
-    background-color: var(--whiteColor);
-
-    &.is-sticky {
-        position: fixed;
-        background-color: var(--whiteColor) !important;
-    }
-}
-.others-option-for-responsive {
-    display: none;
-
-    .dot-menu {
-        padding: 0 10px;
-        height: 30px;
-        cursor: pointer;
-        z-index: 9991;
-        position: absolute;
-        right: 60px;
-        top: -34px;
-
-        .inner {
-            display: flex;
-            align-items: center;
-            height: 30px;
-
-            .circle {
-                height: 5px;
-                width: 5px;
-                border-radius: 100%;
-                margin: 0 2px;
-                transition: var(--transition);
-                background-color: var(--blackColor);
-            }
-        }
-        &:hover {
-            .inner {
-                .circle {
-                    background-color: var(--mainColor);
-                }
-            }
-        }
-    }
-    .container {
-        position: relative;
-
-        .container {
-            position: absolute;
-            right: 0;
-            top: 10px;
-            max-width: 260px;
-            margin-left: auto;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition);
-            transform: scaleX(0);
-            z-index: 2;
-            padding: {
-                left: 15px;
-                right: 15px;
-            };
-            &.active {
-                opacity: 1;
-                visibility: visible;
-                transform: scaleX(1);
-            }
-        }
-    }
-    .option-inner {
-        padding: 15px;
-        box-shadow: 0 15px 40px rgba(0,0,0,.09);
-        background-color: var(--whiteColor);
-
-        .others-option {
-            background-color: var(--mainColor);
-            border-radius: 30px;
-            padding: 10px 18px 3px;
-
-            .option-item {
-                margin-left: 15px;
-                padding-left: 15px;
-                position: relative;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    left: -2px;
-                    top: -4px;
-                    background-color: #fa6a45;
-                    height: 25px;
-                    width: 1.5px;
-                }
-                &:first-child {
-                    margin-left: 0;
-                    padding-left: 0;
-
-                    &::before {
-                        display: none;
-                    }
-                }
-            }
-            .side-menu-btn {
-                i {
-                    cursor: pointer;
-                    font-size: 35px;
-                    position: relative;
-                    top: 4px;
-                    line-height: 0;
-                    transition: var(--transition);
-                    color: var(--whiteColor);
-
-                    &:hover {
-                        color: var(--whiteColor);
-                    }
-                }
-            }
-            .search-box {
-                i {
-                    cursor: pointer;
-                    font-size: 22px;
-                    color: var(--whiteColor);
-                    position: relative;
-                    top: -2px;
-                    line-height: 1;
-                    transition: var(--transition);
-
-                    &:hover {
-                        color: var(--whiteColor);
-                    }
-                }
-            }
-            .cart-btn {
-                a {
-                    display: inline-block;
-                    position: relative;
-                    font-size: 25px;
-                    color: var(--whiteColor);
-                    line-height: 1;
-                    padding-right: 10px;
-
-                    span {
-                        position: absolute;
-                        right: 0;
-                        top: -3px;
-                        width: 18px;
-                        height: 18px;
-                        text-align: center;
-                        line-height: 20px;
-                        border-radius: 50%;
-                        background-color: var(--blackColor);
-                        font: {
-                            size: 14px;
-                            weight: 600;
-                        };
-                    }
-                }
-            }
-        }
-    }
-}
 
 /* Navbar toggler */
 .navbar-toggler {
     border: none;
-	border-radius: 0;
-	padding: 0;
+    border-radius: 0;
+    padding: 0;
 
     &:focus {
         outline: 0;
@@ -1056,8 +977,8 @@ Navbar Area CSS
         transition: all 0.3s;
         background: #221638;
         height: 4px;
-		display: block;
-		border-radius: 3px;
+        display: block;
+        border-radius: 3px;
     }
     .top-bar {
         transform: rotate(45deg);
@@ -1077,7 +998,7 @@ Navbar Area CSS
     }
     &.collapsed {
         .top-bar {
-            transform: rotate(0);      
+            transform: rotate(0);
             left: 0;
         }
         .middle-bar {
@@ -1093,184 +1014,18 @@ Navbar Area CSS
 
 // Mobile and iPad Navbar
 @media only screen and (max-width: 1199px) {
-
     .navbar-area {
         padding: {
             top: 15px;
             bottom: 15px;
-        };
+        }
         &.is-sticky {
             padding: {
                 top: 15px;
                 bottom: 15px;
-            };
-        }
-    }
-    .dibiz-responsive-nav {
-        display: block;
-        
-        .dibiz-responsive-menu {
-            position: relative;
-
-            &.mean-container {
-                .mean-nav {
-                    margin-top: 55px;
-
-                    ul {
-                        font-size: 15px;
-
-                        li {
-                            a {
-                                &.active {
-                                    color: var(--mainColor);
-                                }
-                            }
-                            li {
-                                a {
-                                    font-size: 14.5px;
-                                }
-                            }
-                        }
-                    }
-                }
-                .navbar-nav {
-                    overflow-y: scroll;
-                    height: 357px;
-                    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, .1);
-                }
-            }
-        }
-        .mean-container {
-            a {
-                &.meanmenu-reveal {
-                    color: var(--blackColor);
-
-                    span {
-                        background: var(--blackColor);
-                    }
-                }
-            }
-        }
-        .others-option {
-            display: none !important;
-            background-color: var(--mainColor);
-            border-radius: 30px;
-            padding: 10px 18px 3px;
-
-            .option-item {
-                margin-left: 15px;
-                padding-left: 15px;
-                position: relative;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    left: -2px;
-                    top: -4px;
-                    background-color: #fa6a45;
-                    height: 25px;
-                    width: 1.5px;
-                }
-                &:first-child {
-                    margin-left: 0;
-                    padding-left: 0;
-
-                    &::before {
-                        display: none;
-                    }
-                }
-            }
-            .side-menu-btn {
-                i {
-                    cursor: pointer;
-                    font-size: 35px;
-                    position: relative;
-                    top: 4px;
-                    line-height: 0;
-                    transition: var(--transition);
-                    color: var(--whiteColor);
-
-                    &:hover {
-                        color: var(--whiteColor);
-                    }
-                }
-            }
-            .search-box {
-                i {
-                    cursor: pointer;
-                    font-size: 22px;
-                    color: var(--whiteColor);
-                    position: relative;
-                    top: -2px;
-                    line-height: 1;
-                    transition: var(--transition);
-
-                    &:hover {
-                        color: var(--whiteColor);
-                    }
-                }
-            }
-            .cart-btn {
-                a {
-                    display: inline-block;
-                    position: relative;
-                    font-size: 25px;
-                    color: var(--whiteColor);
-                    line-height: 1;
-                    padding-right: 10px;
-
-                    span {
-                        position: absolute;
-                        right: 0;
-                        top: -3px;
-                        width: 18px;
-                        height: 18px;
-                        text-align: center;
-                        line-height: 20px;
-                        border-radius: 50%;
-                        background-color: var(--blackColor);
-                        font: {
-                            size: 14px;
-                            weight: 600;
-                        };
-                    }
-                }
-            }
-        }
-        .logo {
-            position: relative;
-            width: 60%;
-            z-index: 999;
-        }
-    }
-    .navbar-color-white {
-        .dibiz-responsive-nav {
-            .mean-container {
-                a {
-                    &.meanmenu-reveal {
-                        color: var(--whiteColor);
-
-                        span {
-                            background: var(--whiteColor);
-                        }
-                    }
-                }
-            }
-        }
-        .others-option-for-responsive {
-            .dot-menu {
-                .inner {
-                    .circle {
-                        background-color: var(--whiteColor);
-                    }
-                }
             }
         }
     }
-    .others-option-for-responsive {
-        display: block;
-    }
-
 }
 
 /*================================================
@@ -1371,10 +1126,10 @@ Search Overlay CSS
                 border-radius: 30px;
                 color: var(--blackColor);
                 padding: 3px 0 0 25px;
-                
+
                 &::placeholder {
                     transition: var(--transition);
-                    letter-spacing: .5px;
+                    letter-spacing: 0.5px;
                     color: var(--blackColor);
                 }
                 &:focus {
@@ -1408,7 +1163,7 @@ Search Overlay CSS
         &.search-overlay {
             opacity: 1;
             visibility: visible;
-    
+
             .search-overlay-layer {
                 transform: translateX(0);
             }
@@ -1436,7 +1191,7 @@ Main Banner Area CSS
 .main-banner-container {
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .main-banner-content {
@@ -1445,7 +1200,7 @@ Main Banner Area CSS
         // bottom: 200px;
         // left: 30px;
         // right: 30px;
-    };
+    }
     .sub-title {
         display: block;
         margin-bottom: 12px;
@@ -1453,7 +1208,7 @@ Main Banner Area CSS
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h1 {
         margin-bottom: 20px;
@@ -1474,7 +1229,7 @@ Main Banner Area CSS
             font: {
                 size: 18px;
                 weight: 700;
-            };
+            }
             i {
                 position: absolute;
                 top: 50%;
@@ -1516,7 +1271,6 @@ Main Banner Area CSS
     }
 }
 
-
 /*================================================
 Boxes Area CSS
 =================================================*/
@@ -1548,7 +1302,7 @@ Boxes Area CSS
             bottom: 30px;
             left: auto;
             right: auto;
-        };
+        }
         .circles-box {
             position: absolute;
             left: 0;
@@ -1561,7 +1315,7 @@ Boxes Area CSS
                 duration: 30s;
                 iteration-count: infinite;
                 timing-function: linear;
-            };
+            }
             .circle-one {
                 position: absolute;
                 left: 8px;
@@ -1584,7 +1338,7 @@ Boxes Area CSS
     &:hover {
         .icon {
             background-color: var(--whiteColor);
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 
             .circles-box {
                 .circle-two {
@@ -1596,16 +1350,18 @@ Boxes Area CSS
     }
 }
 .col-lg-4 {
-    &:nth-child(2), &:nth-child(8), &:nth-child(14) {
+    &:nth-child(2),
+    &:nth-child(8),
+    &:nth-child(14) {
         .single-boxes-box {
             .icon {
                 background-color: #d8d1e8;
                 color: #290390;
-                
+
                 .circles-box {
                     animation: {
                         name: rotatemetwo;
-                    };
+                    }
                     .circle-one {
                         background-color: #290390;
                     }
@@ -1621,12 +1377,14 @@ Boxes Area CSS
             }
         }
     }
-    &:nth-child(3), &:nth-child(9), &:nth-child(15) {
+    &:nth-child(3),
+    &:nth-child(9),
+    &:nth-child(15) {
         .single-boxes-box {
             .icon {
                 background-color: #d6ebea;
                 color: #1fa299;
-                
+
                 .circles-box {
                     .circle-one {
                         background-color: #1fa299;
@@ -1643,16 +1401,18 @@ Boxes Area CSS
             }
         }
     }
-    &:nth-child(4), &:nth-child(10), &:nth-child(16) {
+    &:nth-child(4),
+    &:nth-child(10),
+    &:nth-child(16) {
         .single-boxes-box {
             .icon {
                 background-color: #f3e3f6;
                 color: #9916b1;
-                
+
                 .circles-box {
                     animation: {
                         name: rotatemetwo;
-                    };
+                    }
                     .circle-one {
                         background-color: #9916b1;
                     }
@@ -1668,16 +1428,18 @@ Boxes Area CSS
             }
         }
     }
-    &:nth-child(5), &:nth-child(11), &:nth-child(17) {
+    &:nth-child(5),
+    &:nth-child(11),
+    &:nth-child(17) {
         .single-boxes-box {
             .icon {
                 background-color: #f9e1f0;
                 color: #cb0680;
-                
+
                 .circles-box {
                     animation: {
                         name: rotatemetwo;
-                    };
+                    }
                     .circle-one {
                         background-color: #cb0680;
                     }
@@ -1693,12 +1455,14 @@ Boxes Area CSS
             }
         }
     }
-    &:nth-child(6), &:nth-child(12), &:nth-child(18) {
+    &:nth-child(6),
+    &:nth-child(12),
+    &:nth-child(18) {
         .single-boxes-box {
             .icon {
                 background-color: #e6f5e3;
                 color: #2eb01c;
-                
+
                 .circles-box {
                     .circle-one {
                         background-color: #2eb01c;
@@ -1742,7 +1506,7 @@ Featured Services Area CSS
             bottom: 30px;
             left: auto;
             right: auto;
-        };
+        }
         .circles-box {
             position: absolute;
             left: 0;
@@ -1755,7 +1519,7 @@ Featured Services Area CSS
                 duration: 30s;
                 iteration-count: infinite;
                 timing-function: linear;
-            };
+            }
             .circle-one {
                 position: absolute;
                 left: 8px;
@@ -1796,7 +1560,7 @@ Featured Services Area CSS
 
         .icon {
             background-color: var(--whiteColor);
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 
             .circles-box {
                 .circle-two {
@@ -1818,7 +1582,7 @@ Featured Services Area CSS
     font: {
         size: 18px;
         weight: 700;
-    };
+    }
     .left-icon {
         display: inline-block;
         width: 45px;
@@ -1834,7 +1598,7 @@ Featured Services Area CSS
         font: {
             size: 30px;
             weight: normal;
-        };
+        }
     }
     .right-icon {
         position: absolute;
@@ -1846,7 +1610,7 @@ Featured Services Area CSS
         font: {
             size: 28px;
             weight: normal;
-        };
+        }
     }
     &:hover {
         background-color: var(--mainColor);
@@ -1854,7 +1618,7 @@ Featured Services Area CSS
         padding: {
             left: 25px;
             right: 55px;
-        };
+        }
         .left-icon {
             opacity: 0;
             visibility: hidden;
@@ -1867,16 +1631,18 @@ Featured Services Area CSS
     }
 }
 .col-lg-4 {
-    &:nth-child(2), &:nth-child(8), &:nth-child(14) {
+    &:nth-child(2),
+    &:nth-child(8),
+    &:nth-child(14) {
         .single-featured-services-box {
             .icon {
                 background-color: #d8d1e8;
                 color: #290390;
-                
+
                 .circles-box {
                     animation: {
                         name: rotatemetwo;
-                    };
+                    }
                     .circle-one {
                         background-color: #290390;
                     }
@@ -1892,12 +1658,14 @@ Featured Services Area CSS
             }
         }
     }
-    &:nth-child(3), &:nth-child(9), &:nth-child(15) {
+    &:nth-child(3),
+    &:nth-child(9),
+    &:nth-child(15) {
         .single-featured-services-box {
             .icon {
                 background-color: #d6ebea;
                 color: #1fa299;
-                
+
                 .circles-box {
                     .circle-one {
                         background-color: #1fa299;
@@ -1914,16 +1682,18 @@ Featured Services Area CSS
             }
         }
     }
-    &:nth-child(4), &:nth-child(10), &:nth-child(16) {
+    &:nth-child(4),
+    &:nth-child(10),
+    &:nth-child(16) {
         .single-featured-services-box {
             .icon {
                 background-color: #f3e3f6;
                 color: #9916b1;
-                
+
                 .circles-box {
                     animation: {
                         name: rotatemetwo;
-                    };
+                    }
                     .circle-one {
                         background-color: #9916b1;
                     }
@@ -1939,16 +1709,18 @@ Featured Services Area CSS
             }
         }
     }
-    &:nth-child(5), &:nth-child(11), &:nth-child(17) {
+    &:nth-child(5),
+    &:nth-child(11),
+    &:nth-child(17) {
         .single-featured-services-box {
             .icon {
                 background-color: #f9e1f0;
                 color: #cb0680;
-                
+
                 .circles-box {
                     animation: {
                         name: rotatemetwo;
-                    };
+                    }
                     .circle-one {
                         background-color: #cb0680;
                     }
@@ -1964,12 +1736,14 @@ Featured Services Area CSS
             }
         }
     }
-    &:nth-child(6), &:nth-child(12), &:nth-child(18) {
+    &:nth-child(6),
+    &:nth-child(12),
+    &:nth-child(18) {
         .single-featured-services-box {
             .icon {
                 background-color: #e6f5e3;
                 color: #2eb01c;
-                
+
                 .circles-box {
                     .circle-one {
                         background-color: #2eb01c;
@@ -2015,17 +1789,17 @@ About Area CSS
         padding: {
             left: 0;
             right: 0;
-        };
+        }
         .row {
             margin: {
                 left: 0;
                 right: 0;
-            };
+            }
             .col-lg-6 {
                 padding: {
                     left: 0;
                     right: 0;
-                };
+                }
             }
         }
     }
@@ -2038,7 +1812,7 @@ About Area CSS
         size: cover;
         repeat: no-repeat;
         image: url(/images/about-img1.png);
-    };
+    }
     img {
         display: none;
     }
@@ -2050,13 +1824,13 @@ About Area CSS
             top: 80px;
             bottom: 80px;
             left: 20px;
-        };
+        }
     }
     .text {
         max-width: 600px;
         padding: {
             left: 20px;
-        };
+        }
     }
     .sub-title {
         display: block;
@@ -2065,7 +1839,7 @@ About Area CSS
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h2 {
         color: var(--mainDarkColor);
@@ -2076,7 +1850,7 @@ About Area CSS
     p {
         margin: {
             top: 12px;
-        };
+        }
     }
     .funfacts-list {
         padding-left: 0;
@@ -2088,14 +1862,14 @@ About Area CSS
             right: -10px;
             bottom: 0;
             top: 30px;
-        };
+        }
         li {
             flex: 0 0 33.333333%;
             max-width: 33.333333%;
             padding: {
                 left: 10px;
                 right: 10px;
-            };
+            }
             .list {
                 position: relative;
                 margin-bottom: 20px;
@@ -2122,7 +1896,7 @@ About Area CSS
                     font: {
                         size: 20px;
                         weight: 600;
-                    };
+                    }
                 }
                 .odometer-formatting-mark {
                     display: none;
@@ -2139,7 +1913,7 @@ About Area CSS
         margin: {
             top: 30px;
             bottom: 0;
-        };
+        }
         li {
             margin-bottom: 20px;
             position: relative;
@@ -2194,7 +1968,7 @@ About Area CSS
 Our Services Area CSS
 =================================================*/
 .our-services-area {
-    background-color: var(--mainDarkColor)
+    background-color: var(--mainDarkColor);
 }
 .our-services-content {
     .sub-title {
@@ -2204,23 +1978,23 @@ Our Services Area CSS
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h2 {
         margin-bottom: 0;
         font-size: 42px;
-        color: var(--whiteColor)
+        color: var(--whiteColor);
     }
     p {
         color: var(--grayTextColor);
         margin: {
             top: 12px;
-        };
+        }
     }
 }
 .our-services-content-accordion {
     padding-left: 50px;
-    
+
     .accordion {
         border: none;
         .accordion__item {
@@ -2239,11 +2013,11 @@ Our Services Area CSS
                     left: 55px;
                     top: 8px;
                     bottom: 8px;
-                };
+                }
                 font: {
                     size: 18px;
                     weight: 700;
-                };
+                }
                 &:focus {
                     outline: 0;
                 }
@@ -2254,7 +2028,7 @@ Our Services Area CSS
                         position: absolute;
                         height: 100%;
                         width: 40px;
-                        content: '';
+                        content: "";
                         left: 0;
                         top: 0;
                         z-index: 0;
@@ -2274,7 +2048,7 @@ Our Services Area CSS
                     z-index: 1;
                 }
                 &::after {
-                    content: '';
+                    content: "";
                     margin-right: 0;
                     border-right: 3px solid #000;
                     transform: rotate(0deg);
@@ -2286,23 +2060,25 @@ Our Services Area CSS
                     top: 24%;
                     z-index: 1;
                 }
-                &[aria-expanded='true']::after, &[aria-selected='true']::after {
+                &[aria-expanded="true"]::after,
+                &[aria-selected="true"]::after {
                     display: none;
                 }
-                &[aria-expanded='true']::before, &[aria-selected='true']::before {
+                &[aria-expanded="true"]::before,
+                &[aria-selected="true"]::before {
                     transform: rotate(0deg);
                 }
             }
             .accordion__panel {
                 p {
-                    color: var(--grayTextColor)
+                    color: var(--grayTextColor);
                 }
                 padding: {
                     right: 0;
                     bottom: 0;
                     left: 0;
                     top: 18px;
-                };
+                }
             }
         }
     }
@@ -2312,7 +2088,7 @@ Our Services Area CSS
 Our Process Area CSS
 =================================================*/
 .our-process-area {
-    background-color: var(--whiteColor)
+    background-color: var(--whiteColor);
 }
 .our-process-content {
     .sub-title {
@@ -2322,18 +2098,18 @@ Our Process Area CSS
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h2 {
         margin-bottom: 0;
         font-size: 42px;
-        color: var(--mainDarkColor)
+        color: var(--mainDarkColor);
     }
     p {
         color: var(--mainLightColor);
         margin: {
             top: 12px;
-        };
+        }
     }
 }
 
@@ -2345,7 +2121,7 @@ Our Process Area CSS
         font: {
             size: 18px;
             weight: 700;
-        };
+        }
     }
     p {
         margin-top: 0;
@@ -2380,7 +2156,7 @@ Services Area CSS
         font-size: 40px;
         margin: {
             bottom: 30px;
-        };
+        }
         .circles-box {
             position: absolute;
             left: 0;
@@ -2393,7 +2169,7 @@ Services Area CSS
                 duration: 30s;
                 iteration-count: infinite;
                 timing-function: linear;
-            };
+            }
             .circle-one {
                 position: absolute;
                 left: 8px;
@@ -2429,21 +2205,23 @@ Services Area CSS
 
         .icon {
             background-color: var(--whiteColor);
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
         }
     }
 }
 .col-lg-4 {
-    &:nth-child(2), &:nth-child(8), &:nth-child(14) {
+    &:nth-child(2),
+    &:nth-child(8),
+    &:nth-child(14) {
         .single-services-box {
             .icon {
                 background-color: #e5e0f2;
                 color: #290390;
-                
+
                 .circles-box {
                     animation: {
                         name: rotatemetwo;
-                    };
+                    }
                     .circle-one {
                         background-color: #290390;
                     }
@@ -2459,12 +2237,14 @@ Services Area CSS
             }
         }
     }
-    &:nth-child(3), &:nth-child(9), &:nth-child(15) {
+    &:nth-child(3),
+    &:nth-child(9),
+    &:nth-child(15) {
         .single-services-box {
             .icon {
                 background-color: #e4f4f3;
                 color: #1fa299;
-                
+
                 .circles-box {
                     .circle-one {
                         background-color: #1fa299;
@@ -2481,12 +2261,14 @@ Services Area CSS
             }
         }
     }
-    &:nth-child(4), &:nth-child(10), &:nth-child(16) {
+    &:nth-child(4),
+    &:nth-child(10),
+    &:nth-child(16) {
         .single-services-box {
             .icon {
                 background-color: #f3e3f6;
                 color: #9916b1;
-                
+
                 .circles-box {
                     .circle-one {
                         background-color: #9916b1;
@@ -2503,16 +2285,18 @@ Services Area CSS
             }
         }
     }
-    &:nth-child(5), &:nth-child(11), &:nth-child(17) {
+    &:nth-child(5),
+    &:nth-child(11),
+    &:nth-child(17) {
         .single-services-box {
             .icon {
                 background-color: #f9e1f0;
                 color: #cb0680;
-                
+
                 .circles-box {
                     animation: {
                         name: rotatemetwo;
-                    };
+                    }
                     .circle-one {
                         background-color: #cb0680;
                     }
@@ -2528,12 +2312,14 @@ Services Area CSS
             }
         }
     }
-    &:nth-child(6), &:nth-child(12), &:nth-child(18) {
+    &:nth-child(6),
+    &:nth-child(12),
+    &:nth-child(18) {
         .single-services-box {
             .icon {
                 background-color: #e6f5e3;
                 color: #2eb01c;
-                
+
                 .circles-box {
                     .circle-one {
                         background-color: #2eb01c;
@@ -2579,7 +2365,7 @@ Solutions CSS
         right: -15px;
         left: -15px;
         bottom: 60px;
-    };
+    }
     &:last-child {
         margin-bottom: 0;
     }
@@ -2589,7 +2375,7 @@ Solutions CSS
         padding: {
             left: 15px;
             right: 15px;
-        };
+        }
         .content {
             padding-right: 30px;
 
@@ -2600,7 +2386,7 @@ Solutions CSS
                 font: {
                     size: 15.5px;
                     weight: 700;
-                };
+                }
             }
             h2 {
                 color: var(--mainDarkColor);
@@ -2609,19 +2395,19 @@ Solutions CSS
             }
             .features-text {
                 margin-top: 25px;
-        
+
                 h4 {
                     margin-bottom: 10px;
                     font: {
                         size: 20px;
-                    };
+                    }
                 }
             }
             &.right-content {
                 padding: {
                     left: 30px;
                     right: 0;
-                };
+                }
             }
             .features-list {
                 display: flex;
@@ -2633,7 +2419,7 @@ Solutions CSS
                     top: 10px;
                     left: -10px;
                     right: -10px;
-                };
+                }
                 li {
                     flex: 0 0 50%;
                     max-width: 50%;
@@ -2641,10 +2427,10 @@ Solutions CSS
                     padding: {
                         left: 10px;
                         right: 10px;
-                    };
+                    }
                     span {
                         display: block;
-                        background-color: #F8FAFF;
+                        background-color: #f8faff;
                         border-radius: 5px;
                         padding: 13px 12px 10px 40px;
                         z-index: 1;
@@ -2653,9 +2439,9 @@ Solutions CSS
                         font: {
                             weight: 800;
                             size: 15.5px;
-                        };
+                        }
                         &::before {
-                            content: '';
+                            content: "";
                             position: absolute;
                             left: 0;
                             top: 0;
@@ -2683,7 +2469,7 @@ Solutions CSS
                         }
                         &:hover {
                             color: var(--whiteColor);
-        
+
                             &::before {
                                 width: 100%;
                             }
@@ -2703,7 +2489,7 @@ Solutions CSS
         padding: {
             left: 15px;
             right: 15px;
-        };
+        }
         .image {
             text-align: center;
         }
@@ -2712,10 +2498,6 @@ Solutions CSS
 
 .overview-box:nth-child(2n) {
     flex-direction: row-reverse;
-}
-
-.overview-area .default-btn {
-   align-self: center;
 }
 
 /*================================================
@@ -2727,17 +2509,18 @@ Testimonials Area CSS
         padding: {
             left: 0;
             right: 0;
-        };
+        }
         .row {
             margin: {
                 left: 0;
                 right: 0;
-            };
-            .col-lg-7, .col-lg-5 {
+            }
+            .col-lg-7,
+            .col-lg-5 {
                 padding: {
                     left: 0;
                     right: 0;
-                };
+                }
             }
         }
     }
@@ -2749,7 +2532,7 @@ Testimonials Area CSS
         top: 100px;
         bottom: 100px;
         right: 150px;
-    };
+    }
     .sub-title {
         display: block;
         margin-bottom: 15px;
@@ -2757,7 +2540,7 @@ Testimonials Area CSS
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h2 {
         margin-bottom: 0;
@@ -2805,7 +2588,7 @@ Testimonials Area CSS
 .testimonials-slides {
     &.owl-theme {
         .owl-nav {
-            &.disabled+.owl-dots {
+            &.disabled + .owl-dots {
                 margin-top: 0;
                 text-align: left;
             }
@@ -2814,7 +2597,7 @@ Testimonials Area CSS
             margin: {
                 top: 30px !important;
                 left: 2px;
-            };
+            }
             .owl-dot {
                 span {
                     width: 15px;
@@ -2827,7 +2610,7 @@ Testimonials Area CSS
                     position: relative;
 
                     &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         left: 0;
                         top: 0;
@@ -2841,7 +2624,8 @@ Testimonials Area CSS
                         visibility: hidden;
                     }
                 }
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     span {
                         border-color: var(--whiteColor);
 
@@ -2862,7 +2646,7 @@ Testimonials Area CSS
         size: cover;
         repeat: no-repeat;
         image: url(/images/testimonials-img.jpg);
-    };
+    }
     img {
         display: none;
     }
@@ -2882,7 +2666,7 @@ Testimonials Area CSS
     margin: {
         left: auto;
         right: auto;
-    };
+    }
     img {
         border-radius: 50%;
         border: 1.5px dashed #072a50;
@@ -2897,7 +2681,7 @@ Testimonials Area CSS
             margin: {
                 left: auto;
                 right: auto;
-            };
+            }
         }
         &:nth-child(2) {
             position: absolute;
@@ -2917,7 +2701,7 @@ Testimonials Area CSS
         }
     }
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         right: 0;
@@ -2931,7 +2715,7 @@ Testimonials Area CSS
             duration: 100s;
             iteration-count: infinite;
             timing-function: linear;
-        };
+        }
     }
 }
 .feedback-content {
@@ -2943,7 +2727,7 @@ Testimonials Area CSS
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h2 {
         margin-bottom: 0;
@@ -3002,7 +2786,7 @@ Testimonials Area CSS
 .feedback-slides {
     &.owl-theme {
         .owl-nav {
-            &.disabled+.owl-dots {
+            &.disabled + .owl-dots {
                 margin-top: 0;
                 text-align: left;
             }
@@ -3011,7 +2795,7 @@ Testimonials Area CSS
             margin: {
                 top: 30px !important;
                 left: 2px;
-            };
+            }
             .owl-dot {
                 span {
                     width: 15px;
@@ -3024,7 +2808,7 @@ Testimonials Area CSS
                     position: relative;
 
                     &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         left: 0;
                         top: 0;
@@ -3038,7 +2822,8 @@ Testimonials Area CSS
                         visibility: hidden;
                     }
                 }
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     span {
                         border-color: var(--mainColor);
 
@@ -3087,9 +2872,9 @@ History Area CSS
         left: auto;
         right: auto;
         bottom: 0;
-    };
+    }
     &::before {
-        content: '';
+        content: "";
         width: 1px;
         height: 100%;
         background-color: #ebebeb;
@@ -3119,7 +2904,7 @@ History Area CSS
             font: {
                 family: "boxicons" !important;
                 size: 30px;
-            };
+            }
         }
         .timeline-date {
             text-align: right;
@@ -3130,7 +2915,7 @@ History Area CSS
             color: var(--optionalColor);
             font: {
                 size: 15px;
-            };
+            }
             span {
                 display: block;
                 margin-bottom: 3px;
@@ -3164,7 +2949,7 @@ History Area CSS
                 padding: {
                     left: 5px;
                     right: 15px;
-                };
+                }
                 h3 {
                     margin-bottom: 15px;
                     font-size: 25px;
@@ -3186,9 +2971,9 @@ Portfolio Area CSS
         margin: {
             left: 0;
             right: 0;
-        };
+        }
         h2 {
-            color: var(--mainDarkColor)
+            color: var(--mainDarkColor);
         }
     }
 }
@@ -3218,7 +3003,7 @@ Portfolio Area CSS
             line-height: 1.3;
             font: {
                 size: 24px;
-            };
+            }
         }
         .link-btn {
             width: 40px;
@@ -3254,7 +3039,7 @@ Portfolio Area CSS
             top: -105px;
             right: 21%;
 
-            [class*=owl-] {
+            [class*="owl-"] {
                 background-color: transparent;
                 border: 1px solid var(--mainDarkColor);
                 margin: 0 7px;
@@ -3266,7 +3051,7 @@ Portfolio Area CSS
                 color: var(--mainDarkColor);
                 text-align: center;
                 line-height: 39px;
-                
+
                 &.owl-next {
                     margin-right: 0;
                 }
@@ -3335,7 +3120,7 @@ Portfolio Details Area CSS
 // .portfolio-details-image-slides {
 //     &.owl-theme {
 //         margin-bottom: 30px;
-        
+
 //         .owl-nav {
 //             margin-top: 0;
 //             opacity: 0;
@@ -3490,7 +3275,7 @@ Portfolio Details Area CSS
 //                 display: block;
 //                 color: var(--optionalColor);
 //                 margin-bottom: 8px;
-                
+
 //                 &:last-child {
 //                     margin-bottom: 0;
 //                 }
@@ -3535,7 +3320,7 @@ SEO Analysis Area CSS
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h2 {
         margin-bottom: 0;
@@ -3568,7 +3353,7 @@ How It's Work Area CSS
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h2 {
         margin-bottom: 15px;
@@ -3587,7 +3372,7 @@ How It's Work Area CSS
             padding: {
                 left: 100px;
                 bottom: 30px;
-            };
+            }
             .count-box {
                 width: 65px;
                 height: 65px;
@@ -3604,17 +3389,17 @@ How It's Work Area CSS
                     size: 30px;
                     weight: 800;
                     style: italic;
-                };
+                }
             }
             h3 {
                 margin-bottom: 8px;
                 color: var(--whiteColor);
                 font: {
                     size: 25px;
-                };
+                }
             }
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 top: 3px;
                 width: 1px;
@@ -3631,9 +3416,9 @@ How It's Work Area CSS
                 bottom: 10px;
                 animation: fade-down 1.5s infinite linear;
                 font: {
-                    family: 'boxicons'!important;
+                    family: "boxicons" !important;
                     size: 30px;
-                };
+                }
             }
             &:last-child {
                 padding-bottom: 0;
@@ -3665,16 +3450,16 @@ Industries We Serve Area CSS
         margin: {
             left: 0;
             right: 0;
-        };
+        }
         h2 {
-            color: var(--whiteColor)
+            color: var(--whiteColor);
         }
         p {
             color: var(--grayTextColor);
             margin: {
                 left: 0;
                 right: 0;
-            };
+            }
         }
     }
 }
@@ -3684,7 +3469,7 @@ Industries We Serve Area CSS
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
-    
+
     // .image {
     //     object-fit: contain;
     //     img {
@@ -3710,14 +3495,14 @@ Industries We Serve Area CSS
 .industries-slides {
     &.owl-theme {
         .owl-nav {
-            &.disabled+.owl-dots {
+            &.disabled + .owl-dots {
                 margin-top: 0;
             }
         }
         .owl-dots {
             margin: {
                 top: 10px !important;
-            };
+            }
             line-height: 1;
             .owl-dot {
                 span {
@@ -3731,7 +3516,7 @@ Industries We Serve Area CSS
                     position: relative;
 
                     &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         left: 0;
                         top: 0;
@@ -3745,7 +3530,8 @@ Industries We Serve Area CSS
                         visibility: hidden;
                     }
                 }
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     span {
                         border-color: var(--whiteColor);
 
@@ -3786,7 +3572,7 @@ Pricing Area CSS
     padding: {
         top: 40px;
         bottom: 40px;
-    };
+    }
     .pricing-header {
         .icon {
             background-color: #ffe9e3;
@@ -3803,7 +3589,7 @@ Pricing Area CSS
                 bottom: 30px;
                 left: auto;
                 right: auto;
-            };
+            }
             .circles-box {
                 position: absolute;
                 left: 0;
@@ -3816,7 +3602,7 @@ Pricing Area CSS
                     duration: 30s;
                     iteration-count: infinite;
                     timing-function: linear;
-                };
+                }
                 .circle-one {
                     position: absolute;
                     left: 8px;
@@ -3844,13 +3630,13 @@ Pricing Area CSS
             background-color: #f9f9f9;
             font: {
                 size: 24px;
-            };
+            }
             padding: {
                 top: 15px;
                 bottom: 12px;
                 left: 10px;
                 right: 10px;
-            };
+            }
         }
     }
     .pricing-features {
@@ -3859,7 +3645,7 @@ Pricing Area CSS
             top: 30px;
             left: 10px;
             right: 10px;
-        };
+        }
         ul {
             padding-left: 0;
             margin-bottom: 0;
@@ -3871,7 +3657,7 @@ Pricing Area CSS
                 font: {
                     size: 16px;
                     weight: 600;
-                };
+                }
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -3882,7 +3668,7 @@ Pricing Area CSS
         font: {
             size: 40px;
             weight: 800;
-        };
+        }
         span {
             display: block;
             color: #4b5280;
@@ -3890,7 +3676,7 @@ Pricing Area CSS
             font: {
                 size: 18px;
                 weight: 600;
-            };
+            }
         }
     }
     .default-btn {
@@ -3968,7 +3754,7 @@ Gallery Area CSS
     .popup-btn {
         display: block;
         border-radius: 5px;
-        
+
         img {
             transition: var(--transition);
         }
@@ -3996,7 +3782,7 @@ Subscribe Area CSS
     margin: {
         left: auto;
         right: auto;
-    };
+    }
     .sub-title {
         display: block;
         margin-bottom: 15px;
@@ -4005,7 +3791,7 @@ Subscribe Area CSS
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h2 {
         margin-bottom: 0;
@@ -4016,12 +3802,12 @@ Subscribe Area CSS
         font: {
             size: 17px;
             weight: 600;
-        };
+        }
         margin: {
             left: auto;
             right: auto;
             top: 12px;
-        };
+        }
     }
     .newsletter-form {
         position: relative;
@@ -4030,7 +3816,7 @@ Subscribe Area CSS
             top: 30px;
             left: auto;
             right: auto;
-        };
+        }
         .input-newsletter {
             display: block;
             width: 100%;
@@ -4043,7 +3829,7 @@ Subscribe Area CSS
             font: {
                 size: 16px;
                 weight: 400;
-            };
+            }
             &::placeholder {
                 color: #999999;
                 transition: var(--transition);
@@ -4085,7 +3871,7 @@ Subscribe Area CSS
             duration: 40s;
             iteration-count: infinite;
             timing-function: linear;
-        };
+        }
     }
 }
 .shape10 {
@@ -4110,7 +3896,7 @@ Subscribe Area CSS
             duration: 40s;
             iteration-count: infinite;
             timing-function: linear;
-        };
+        }
     }
 }
 .shape12 {
@@ -4151,7 +3937,7 @@ Project Start Area CSS
         font: {
             size: 15.5px;
             weight: 700;
-        };
+        }
     }
     h2 {
         margin-bottom: 0;
@@ -4195,7 +3981,7 @@ Blog Area CSS
             top: 25px;
             left: 8px;
             right: 8px;
-        };
+        }
         h3 {
             margin-bottom: 0;
             font-size: 24px;
@@ -4211,7 +3997,7 @@ Blog Area CSS
             }
             .info {
                 margin-left: 15px;
-                
+
                 h5 {
                     margin-bottom: 0;
                     font-size: 18px;
@@ -4241,7 +4027,7 @@ Blog Area CSS
         .owl-nav {
             margin-top: 10px;
 
-            [class*=owl-] {
+            [class*="owl-"] {
                 box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
                 transition: var(--transition);
                 width: 34px;
@@ -4279,8 +4065,8 @@ Blog Details Area CSS
                 opacity: 0;
                 visibility: hidden;
                 transition: var(--transition);
-    
-                [class*=owl-] {
+
+                [class*="owl-"] {
                     color: #87a1c1;
                     font-size: 18px;
                     margin: 0;
@@ -4299,7 +4085,7 @@ Blog Details Area CSS
                         style: solid;
                         color: var(--whiteColor);
                         width: 1.5px;
-                    };
+                    }
                     &.owl-next {
                         left: auto;
                         right: 20px;
@@ -4334,7 +4120,7 @@ Blog Details Area CSS
                 padding-left: 0;
                 margin-bottom: 0;
                 list-style-type: none;
-    
+
                 li {
                     margin-right: 20px;
                     position: relative;
@@ -4342,11 +4128,11 @@ Blog Details Area CSS
                     border-right: 1px solid #eeeeee;
                     font: {
                         weight: 600;
-                    };
+                    }
                     padding: {
                         right: 20px;
                         left: 45px;
-                    };
+                    }
                     i {
                         font-size: 32px;
                         color: #cfcfcf;
@@ -4363,7 +4149,7 @@ Blog Details Area CSS
                         font: {
                             size: 14px;
                             weight: 600;
-                        };
+                        }
                     }
                     &:last-child {
                         padding-right: 0;
@@ -4377,10 +4163,10 @@ Blog Details Area CSS
             margin: {
                 bottom: 15px;
                 top: 25px;
-            };
+            }
             font: {
                 size: 25px;
-            };
+            }
         }
         .wp-block-gallery {
             &.columns-3 {
@@ -4413,7 +4199,7 @@ Blog Details Area CSS
             margin: {
                 top: 25px;
                 bottom: 30px;
-            };
+            }
             li {
                 margin-bottom: 15px;
                 position: relative;
@@ -4442,12 +4228,12 @@ Blog Details Area CSS
         padding-top: 30px;
         margin: {
             top: 30px;
-        };
+        }
         .article-tags {
             flex: 0 0 50%;
             max-width: 50%;
             color: var(--optionalColor);
-            
+
             span {
                 display: inline-block;
                 color: var(--blackColor);
@@ -4456,22 +4242,21 @@ Blog Details Area CSS
                 top: 3px;
                 font: {
                     size: 20px;
-                };
+                }
             }
             a {
                 display: inline-block;
                 position: relative;
                 font: {
                     weight: 700;
-                };
+                }
                 margin-right: 5px;
                 padding-right: 4px;
 
                 &::before {
-                    content: ',';
+                    content: ",";
                     position: absolute;
                     right: 0;
-
                 }
 
                 &:last-child::before {
@@ -4482,14 +4267,14 @@ Blog Details Area CSS
         .article-share {
             flex: 0 0 50%;
             max-width: 50%;
-            
+
             .social {
                 padding-left: 0;
                 list-style-type: none;
                 text-align: right;
                 margin: {
                     bottom: 0;
-                };
+                }
                 li {
                     display: inline-block;
 
@@ -4512,8 +4297,9 @@ Blog Details Area CSS
                         text-align: center;
                         font-size: 17px;
                         margin-left: 5px;
-        
-                        &:hover, &:focus {
+
+                        &:hover,
+                        &:focus {
                             color: var(--mainColor);
                             background-color: transparent;
                         }
@@ -4522,7 +4308,8 @@ Blog Details Area CSS
                             border-color: #3b5998;
                             color: var(--whiteColor);
 
-                            &:hover, &:focus {
+                            &:hover,
+                            &:focus {
                                 color: #3b5998;
                                 background-color: transparent;
                             }
@@ -4532,7 +4319,8 @@ Blog Details Area CSS
                             border-color: #1da1f2;
                             color: var(--whiteColor);
 
-                            &:hover, &:focus {
+                            &:hover,
+                            &:focus {
                                 color: #1da1f2;
                                 background-color: transparent;
                             }
@@ -4542,7 +4330,8 @@ Blog Details Area CSS
                             border-color: #007bb5;
                             color: var(--whiteColor);
 
-                            &:hover, &:focus {
+                            &:hover,
+                            &:focus {
                                 color: #007bb5;
                                 background-color: transparent;
                             }
@@ -4552,7 +4341,8 @@ Blog Details Area CSS
                             border-color: #c13584;
                             color: var(--whiteColor);
 
-                            &:hover, &:focus {
+                            &:hover,
+                            &:focus {
                                 color: #c13584;
                                 background-color: transparent;
                             }
@@ -4576,7 +4366,7 @@ Blog Details Area CSS
                 position: center center;
                 size: cover;
                 repeat: no-repeat;
-            };
+            }
         }
         .author-profile {
             padding: 0 25px 25px;
@@ -4586,7 +4376,7 @@ Blog Details Area CSS
                 z-index: 1;
                 margin: {
                     top: -45px;
-                };
+                }
                 img {
                     display: inline-block;
                     border: 3px solid var(--whiteColor);
@@ -4598,7 +4388,7 @@ Blog Details Area CSS
                     margin-bottom: 5px;
                     font: {
                         size: 22px;
-                    };
+                    }
                 }
                 span {
                     display: block;
@@ -4613,7 +4403,8 @@ Blog Details Area CSS
         }
     }
 }
-blockquote, .blockquote {
+blockquote,
+.blockquote {
     overflow: hidden;
     background-color: #fafafa;
     padding: 50px !important;
@@ -4623,7 +4414,7 @@ blockquote, .blockquote {
     margin: {
         bottom: 20px;
         top: 20px;
-    };
+    }
     p {
         color: var(--blackColor);
         line-height: 1.6;
@@ -4632,7 +4423,7 @@ blockquote, .blockquote {
             style: italic;
             weight: 700;
             size: 22px !important;
-        };
+        }
     }
     cite {
         display: none;
@@ -4648,10 +4439,10 @@ blockquote, .blockquote {
         font: {
             family: Flaticon;
             size: 135px;
-        };
+        }
     }
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
@@ -4661,32 +4452,32 @@ blockquote, .blockquote {
         margin: {
             top: 20px;
             bottom: 20px;
-        };
+        }
     }
 }
 .dibiz-post-navigation {
     display: -webkit-box;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end; 
+    -ms-flex-pack: end;
+    justify-content: end;
     margin-top: 30px;
     padding: {
         top: 30px;
         bottom: 30px;
-    };
+    }
     border: {
         top: 1px solid #eeeeee;
         bottom: 1px solid #eeeeee;
-    };
+    }
 }
 .prev-link-wrapper {
     flex: 0 0 50%;
     max-width: 50%;
     padding: {
         right: 15px;
-    };
+    }
     a {
         display: flex;
         align-items: center;
@@ -4723,7 +4514,7 @@ blockquote, .blockquote {
         }
         &::after {
             display: block;
-            content: '';
+            content: "";
             height: 100%;
             width: 100%;
             position: absolute;
@@ -4752,7 +4543,7 @@ blockquote, .blockquote {
             font: {
                 size: var(--fontSize);
                 weight: 700;
-            };
+            }
         }
     }
     .prev-link-info-wrapper {
@@ -4764,7 +4555,7 @@ blockquote, .blockquote {
         font: {
             weight: 800;
             size: 17px;
-        };
+        }
     }
     .meta-wrapper {
         display: block;
@@ -4774,7 +4565,7 @@ blockquote, .blockquote {
         font: {
             weight: 600;
             size: 16px;
-        };
+        }
     }
 }
 .next-link-wrapper {
@@ -4783,7 +4574,7 @@ blockquote, .blockquote {
     text-align: right;
     padding: {
         left: 15px;
-    };
+    }
     a {
         display: flex;
         align-items: center;
@@ -4820,7 +4611,7 @@ blockquote, .blockquote {
         }
         &::after {
             display: block;
-            content: '';
+            content: "";
             height: 100%;
             width: 100%;
             position: absolute;
@@ -4849,7 +4640,7 @@ blockquote, .blockquote {
             font: {
                 size: var(--fontSize);
                 weight: 700;
-            };
+            }
         }
     }
     .next-link-info-wrapper {
@@ -4861,7 +4652,7 @@ blockquote, .blockquote {
         font: {
             weight: 800;
             size: 17px;
-        };
+        }
     }
     .meta-wrapper {
         display: block;
@@ -4871,7 +4662,7 @@ blockquote, .blockquote {
         font: {
             weight: 600;
             size: 16px;
-        };
+        }
     }
 }
 .comments-area {
@@ -4881,12 +4672,13 @@ blockquote, .blockquote {
         line-height: initial;
         margin: {
             bottom: 30px;
-        };
+        }
         font: {
             size: 25px;
-        };
+        }
     }
-    ol, ul {
+    ol,
+    ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
@@ -4919,7 +4711,7 @@ blockquote, .blockquote {
                 font: {
                     size: 13px;
                     weight: 800;
-                };
+                }
                 &:hover {
                     color: var(--whiteColor);
                     background-color: var(--mainColor);
@@ -4943,21 +4735,21 @@ blockquote, .blockquote {
         .fn {
             font: {
                 weight: 800;
-            };
+            }
         }
         .says {
             display: none;
         }
     }
     .comment-metadata {
-        margin-bottom: .8em;
+        margin-bottom: 0.8em;
         color: var(--optionalColor);
         letter-spacing: 0.01em;
         text-transform: uppercase;
         font: {
             size: 13px;
             weight: 400;
-        };
+        }
         a {
             display: inline-block;
             color: var(--optionalColor);
@@ -4974,7 +4766,7 @@ blockquote, .blockquote {
             margin-bottom: 0;
             font: {
                 size: 25px;
-            };
+            }
             #cancel-comment-reply-link {
                 display: inline-block;
             }
@@ -4986,7 +4778,7 @@ blockquote, .blockquote {
             margin: {
                 bottom: 20px;
                 top: 10px;
-            };
+            }
             .required {
                 color: red;
             }
@@ -4998,7 +4790,19 @@ blockquote, .blockquote {
         label {
             display: none;
         }
-        input[type="date"], input[type="time"], input[type="datetime-local"], input[type="week"], input[type="month"], input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], textarea {
+        input[type="date"],
+        input[type="time"],
+        input[type="datetime-local"],
+        input[type="week"],
+        input[type="month"],
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea {
             display: block;
             width: 100%;
             background-color: #f4f4f4;
@@ -5010,7 +4814,7 @@ blockquote, .blockquote {
             color: var(--blackColor);
             font: {
                 size: 16px;
-            };
+            }
             &::placeholder {
                 transition: var(--transition);
                 color: var(--optionalColor);
@@ -5050,7 +4854,7 @@ blockquote, .blockquote {
             margin: {
                 bottom: 20px;
                 top: 15px;
-            };
+            }
             input {
                 position: absolute;
                 left: 0;
@@ -5063,7 +4867,7 @@ blockquote, .blockquote {
                 font: {
                     weight: normal;
                     size: var(--fontSize);
-                };
+                }
             }
         }
         .form-submit {
@@ -5083,8 +4887,9 @@ blockquote, .blockquote {
                 font: {
                     weight: 700;
                     size: 16px;
-                };
-                &:hover, &:focus {
+                }
+                &:hover,
+                &:focus {
                     color: var(--whiteColor);
                     background: var(--blackColor);
                 }
@@ -5110,7 +4915,7 @@ Products Area CSS
             display: block;
 
             img {
-                transition: all 1.5s cubic-bezier(0,0,.2,1);
+                transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
             }
         }
         .products-button {
@@ -5137,7 +4942,7 @@ Products Area CSS
                         line-height: 1;
                         color: var(--blackColor);
                         position: relative;
-                        box-shadow: 0 0 4px rgba(0,0,0,.07);
+                        box-shadow: 0 0 4px rgba(0, 0, 0, 0.07);
                         background-color: var(--whiteColor);
                         width: 40px;
                         height: 40px;
@@ -5156,20 +4961,20 @@ Products Area CSS
                             opacity: 0;
                             color: transparent;
                             background-color: transparent;
-                            transition: all .2s ease-in-out;
+                            transition: all 0.2s ease-in-out;
                             background-color: var(--mainColor);
                             color: var(--whiteColor);
                             line-height: 28px;
                             font: {
                                 size: 12px;
                                 weight: 800;
-                            };
+                            }
                             &::before {
-                                content: '';
+                                content: "";
                                 background-color: var(--mainColor);
                                 top: 50%;
                                 position: absolute;
-                                transition: all .2s ease-in-out;
+                                transition: all 0.2s ease-in-out;
                                 right: -1px;
                                 width: 10px;
                                 height: 10px;
@@ -5218,7 +5023,7 @@ Products Area CSS
             font: {
                 weight: 700;
                 size: 14px;
-            };
+            }
         }
         .new-tag {
             position: absolute;
@@ -5233,7 +5038,7 @@ Products Area CSS
             font: {
                 weight: 700;
                 size: 11px;
-            };
+            }
         }
     }
     .products-content {
@@ -5244,7 +5049,7 @@ Products Area CSS
             margin-bottom: 0;
             font: {
                 size: 23px;
-            };
+            }
             a {
                 display: inline-block;
             }
@@ -5254,7 +5059,7 @@ Products Area CSS
             font: {
                 size: 16px;
                 weight: 800;
-            };
+            }
             .old-price {
                 text-decoration: line-through;
                 color: #999999;
@@ -5273,7 +5078,7 @@ Products Area CSS
             font: {
                 size: 14px;
                 weight: 800;
-            };
+            }
             &:hover {
                 color: var(--mainColor);
             }
@@ -5283,7 +5088,7 @@ Products Area CSS
         .products-image {
             a {
                 img {
-                    transform: scale3d(1.1,1.1,1.1) translateZ(0);
+                    transform: scale3d(1.1, 1.1, 1.1) translateZ(0);
                 }
             }
             .products-button {
@@ -5305,7 +5110,7 @@ Products Area CSS
         p {
             font: {
                 weight: 500;
-            };
+            }
             .count {
                 font-weight: 700;
                 color: var(--blackColor);
@@ -5322,7 +5127,7 @@ Products Area CSS
             margin-right: 5px;
             font: {
                 weight: 700;
-            };
+            }
         }
     }
 }
@@ -5403,7 +5208,7 @@ Products Details Area CSS
             margin-bottom: 10px;
             font: {
                 weight: 700;
-            };
+            }
             span {
                 display: inline-block;
                 margin-bottom: 0;
@@ -5421,7 +5226,8 @@ Products Details Area CSS
                 color: var(--optionalColor);
                 font-weight: 600;
 
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     color: var(--mainColor);
                 }
             }
@@ -5439,7 +5245,7 @@ Products Details Area CSS
             margin-right: 10px;
             text-align: center;
             display: inline-block;
-            position: relative;    
+            position: relative;
 
             span {
                 position: absolute;
@@ -5486,7 +5292,7 @@ Products Details Area CSS
             padding: {
                 top: 12.5px;
                 bottom: 12.5px;
-            };
+            }
         }
     }
     .products-share {
@@ -5519,8 +5325,9 @@ Products Details Area CSS
                     text-align: center;
                     font-size: 17px;
                     margin-left: 5px;
-    
-                    &:hover, &:focus {
+
+                    &:hover,
+                    &:focus {
                         color: var(--mainColor);
                         background-color: transparent;
                     }
@@ -5529,7 +5336,8 @@ Products Details Area CSS
                         border-color: #3b5998;
                         color: var(--whiteColor);
 
-                        &:hover, &:focus {
+                        &:hover,
+                        &:focus {
                             color: #3b5998;
                             background-color: transparent;
                         }
@@ -5539,7 +5347,8 @@ Products Details Area CSS
                         border-color: #1da1f2;
                         color: var(--whiteColor);
 
-                        &:hover, &:focus {
+                        &:hover,
+                        &:focus {
                             color: #1da1f2;
                             background-color: transparent;
                         }
@@ -5549,7 +5358,8 @@ Products Details Area CSS
                         border-color: #007bb5;
                         color: var(--whiteColor);
 
-                        &:hover, &:focus {
+                        &:hover,
+                        &:focus {
                             color: #007bb5;
                             background-color: transparent;
                         }
@@ -5559,7 +5369,8 @@ Products Details Area CSS
                         border-color: #c13584;
                         color: var(--whiteColor);
 
-                        &:hover, &:focus {
+                        &:hover,
+                        &:focus {
                             color: #c13584;
                             background-color: transparent;
                         }
@@ -5585,7 +5396,7 @@ Products Details Area CSS
             margin: {
                 left: 15px;
                 right: 15px;
-            };
+            }
             color: #8c8989;
             border: none;
             border-bottom: 1px solid #eeeeee;
@@ -5596,9 +5407,9 @@ Products Details Area CSS
             font: {
                 size: 20px;
                 weight: 800;
-            };
+            }
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 left: 0;
                 width: 0;
@@ -5607,7 +5418,8 @@ Products Details Area CSS
                 transition: var(--transition);
                 bottom: -2px;
             }
-            &:hover, &.react-tabs__tab--selected {
+            &:hover,
+            &.react-tabs__tab--selected {
                 color: var(--blackColor);
 
                 &::before {
@@ -5621,7 +5433,7 @@ Products Details Area CSS
         margin: {
             left: auto;
             right: auto;
-        };
+        }
         p {
             line-height: 1.8;
         }
@@ -5631,7 +5443,7 @@ Products Details Area CSS
             margin: {
                 top: 20px;
                 bottom: 0;
-            };
+            }
             li {
                 margin-bottom: 12px;
                 position: relative;
@@ -5640,7 +5452,7 @@ Products Details Area CSS
                 font-weight: 600;
 
                 &::before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     left: 0;
                     top: 8px;
@@ -5661,16 +5473,16 @@ Products Details Area CSS
                 margin-right: 15px;
                 font: {
                     size: 25px;
-                };
+                }
             }
             .rating {
                 display: inline-block;
-                
+
                 span {
                     font-size: 17px;
                     color: #cecfd2;
                     margin-right: -2px;
-    
+
                     &.checked {
                         color: orange;
                     }
@@ -5680,7 +5492,7 @@ Products Details Area CSS
                 margin: {
                     top: 10px;
                     bottom: 20px;
-                };
+                }
                 span {
                     display: block;
                     color: var(--optionalColor);
@@ -5691,17 +5503,17 @@ Products Details Area CSS
                 margin: {
                     left: 0;
                     right: 0;
-                };
+                }
             }
             .side {
                 float: left;
                 width: 9%;
                 margin-top: 10px;
-    
+
                 div {
                     font: {
                         weight: 700;
-                    };
+                    }
                 }
             }
             .middle {
@@ -5722,13 +5534,13 @@ Products Details Area CSS
             .bar-5 {
                 width: 100%;
                 height: 18px;
-                background-color: #4CAF50;
+                background-color: #4caf50;
                 border-radius: 5px;
             }
             .bar-4 {
                 width: 75%;
                 height: 18px;
-                background-color: #2196F3;
+                background-color: #2196f3;
                 border-radius: 5px;
                 border-radius: 5px;
             }
@@ -5753,24 +5565,24 @@ Products Details Area CSS
         }
         .products-review-comments {
             margin-top: 40px;
-        
+
             h3 {
                 border-bottom: 1px solid #f3f3f3;
                 padding-bottom: 10px;
                 margin: {
                     top: 0;
                     bottom: 10px;
-                };
+                }
                 font: {
                     size: 24px;
                     weight: 800;
-                };
+                }
             }
             .user-review {
                 border-bottom: 1px solid #f3f3f3;
                 padding: 20px 0 20px 110px;
                 position: relative;
-        
+
                 img {
                     position: absolute;
                     left: 0;
@@ -5783,21 +5595,21 @@ Products Details Area CSS
                     margin-bottom: 8px;
                     font: {
                         weight: 700;
-                    };
+                    }
                 }
                 .review-rating {
                     display: block;
                     margin-bottom: 8px;
-        
+
                     .review-stars {
                         display: inline-block;
-        
+
                         i {
                             color: #cecfd2;
                             font-size: 18px;
                             display: inline-block;
                             margin-right: -1px;
-            
+
                             &.checked {
                                 color: orange;
                             }
@@ -5821,7 +5633,7 @@ Products Details Area CSS
                 font: {
                     size: 24px;
                     weight: 800;
-                };
+                }
             }
             .comment-notes {
                 span {
@@ -5842,7 +5654,7 @@ Products Details Area CSS
                     margin: {
                         top: -5px;
                         bottom: 20px;
-                    };
+                    }
                     label {
                         float: right;
                         position: relative;
@@ -5857,25 +5669,29 @@ Products Details Area CSS
                             content: "\2605";
                             transition: var(--transition);
                             font-size: 27px;
-                            color: #CCCCCC;
+                            color: #cccccc;
                             line-height: 1;
                         }
                     }
                     input {
                         display: none;
                     }
-                    input:checked ~ label:before, &:not(:checked) > label:hover:before, &:not(:checked) > label:hover ~ label:before {
+                    input:checked ~ label:before,
+                    &:not(:checked) > label:hover:before,
+                    &:not(:checked) > label:hover ~ label:before {
                         color: #f6b500;
                     }
                 }
                 .comment-form-cookies-consent {
                     text-align: left;
                     margin-bottom: 0;
-        
-                    [type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
+
+                    [type="checkbox"]:checked,
+                    [type="checkbox"]:not(:checked) {
                         display: none;
                     }
-                    [type="checkbox"]:checked + label, [type="checkbox"]:not(:checked) + label {
+                    [type="checkbox"]:checked + label,
+                    [type="checkbox"]:not(:checked) + label {
                         position: relative;
                         padding-left: 28px;
                         cursor: pointer;
@@ -5885,10 +5701,11 @@ Products Details Area CSS
                         color: var(--optionalColor);
                         font: {
                             weight: 600;
-                        };
+                        }
                     }
-                    [type="checkbox"]:checked + label:before, [type="checkbox"]:not(:checked) + label:before {
-                        content: '';
+                    [type="checkbox"]:checked + label:before,
+                    [type="checkbox"]:not(:checked) + label:before {
+                        content: "";
                         position: absolute;
                         left: 0;
                         top: 0;
@@ -5899,8 +5716,9 @@ Products Details Area CSS
                         border-radius: 3px;
                         background: #f5f5f5;
                     }
-                    [type="checkbox"]:checked + label:after, [type="checkbox"]:not(:checked) + label:after {
-                        content: '';
+                    [type="checkbox"]:checked + label:after,
+                    [type="checkbox"]:not(:checked) + label:after {
+                        content: "";
                         width: 8px;
                         height: 8px;
                         background: var(--mainColor);
@@ -5941,7 +5759,7 @@ Products Details Area CSS
                     font: {
                         weight: 700;
                         size: 17px;
-                    };
+                    }
                     &:hover {
                         background-color: var(--blackColor);
                         color: var(--whiteColor);
@@ -5971,7 +5789,7 @@ Cart Area CSS
                     font: {
                         size: 16px;
                         weight: 800;
-                    };
+                    }
                 }
             }
         }
@@ -5984,16 +5802,16 @@ Cart Area CSS
                     font: {
                         weight: 700;
                         size: 16px;
-                    };
+                    }
                     padding: {
                         left: 0;
                         right: 0;
-                    };
+                    }
                     border: {
                         color: #eaedff;
                         left: none;
                         right: none;
-                    };
+                    }
                     &.product-thumbnail {
                         a {
                             display: block;
@@ -6023,8 +5841,8 @@ Cart Area CSS
                             min-width: 130px;
                             text-align: center;
                             display: inline-block;
-                            position: relative;    
-                
+                            position: relative;
+
                             span {
                                 position: absolute;
                                 top: 0;
@@ -6036,7 +5854,7 @@ Cart Area CSS
                                 line-height: 50px;
                                 transition: var(--transition);
                                 font-size: 22px;
-                
+
                                 &.minus-btn {
                                     left: 0;
                                 }
@@ -6096,7 +5914,7 @@ Cart Area CSS
             font: {
                 size: 16px;
                 weight: 700;
-            };
+            }
             &:hover {
                 background-color: var(--mainColor);
             }
@@ -6113,18 +5931,18 @@ Cart Area CSS
         top: 60px;
         left: auto;
         right: auto;
-    };
+    }
     h3 {
         margin-bottom: 25px;
         font: {
             size: 25px;
-        };
+        }
     }
     ul {
         padding-left: 0;
         margin: 0 0 25px;
         list-style-type: none;
-        
+
         li {
             border: 1px solid #eaedff;
             padding: 10px 15px;
@@ -6133,7 +5951,7 @@ Cart Area CSS
             font: {
                 weight: 700;
                 size: 16px;
-            };
+            }
             &:first-child {
                 border: {
                     bottom: none;
@@ -6143,7 +5961,7 @@ Cart Area CSS
                 font-size: 19px;
                 border: {
                     top: none;
-                };
+                }
                 span {
                     color: var(--blackColor);
                     font-weight: 600;
@@ -6154,7 +5972,7 @@ Cart Area CSS
                 color: var(--optionalColor);
                 font: {
                     weight: normal;
-                };
+                }
             }
         }
     }
@@ -6184,7 +6002,7 @@ Checkout Area CSS
         font: {
             weight: 700;
             size: 16px;
-        };
+        }
         a {
             display: inline-block;
         }
@@ -6198,9 +6016,9 @@ Checkout Area CSS
         border-bottom: 1px solid #eeeeee;
         font: {
             size: 25px;
-        };
+        }
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             background: var(--mainColor);
             bottom: -1px;
@@ -6218,7 +6036,7 @@ Checkout Area CSS
             font: {
                 weight: 700;
                 size: 15px;
-            };
+            }
             .required {
                 color: red;
             }
@@ -6256,9 +6074,9 @@ Checkout Area CSS
         border-bottom: 1px solid #eeeeee;
         font: {
             size: 25px;
-        };
+        }
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             background: var(--mainColor);
             bottom: -1px;
@@ -6270,7 +6088,7 @@ Checkout Area CSS
     .order-table {
         table {
             margin-bottom: 0;
-    
+
             thead {
                 tr {
                     th {
@@ -6283,7 +6101,7 @@ Checkout Area CSS
                         font: {
                             weight: 800;
                             size: 16px;
-                        };
+                        }
                     }
                 }
             }
@@ -6297,31 +6115,35 @@ Checkout Area CSS
                         font: {
                             size: 15px;
                             weight: 700;
-                        };
+                        }
                         padding: {
                             left: 20px;
                             right: 20px;
                             top: 15px;
                             bottom: 13px;
-                        };
+                        }
                         &.product-name {
                             a {
                                 display: inline-block;
                             }
                         }
-                        &.order-subtotal, &.order-shipping , &.total-price {
+                        &.order-subtotal,
+                        &.order-shipping,
+                        &.total-price {
                             span {
                                 color: var(--blackColor);
                                 font: {
                                     weight: 800;
-                                };
+                                }
                             }
                         }
-                        &.shipping-price, &.order-subtotal-price, &.product-subtotal {
+                        &.shipping-price,
+                        &.order-subtotal-price,
+                        &.product-subtotal {
                             color: var(--blackColor);
                             font: {
                                 weight: 800;
-                            };
+                            }
                         }
                     }
                 }
@@ -6333,16 +6155,18 @@ Checkout Area CSS
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
         margin-top: 30px;
         padding: 30px;
-        
+
         .payment-method {
             p {
                 [type="radio"] {
-                    &:checked, &:not(:checked) {
+                    &:checked,
+                    &:not(:checked) {
                         display: none;
                     }
                 }
                 [type="radio"] {
-                    &:checked, &:not(:checked) {
+                    &:checked,
+                    &:not(:checked) {
                         + label {
                             padding-left: 27px;
                             cursor: pointer;
@@ -6354,7 +6178,7 @@ Checkout Area CSS
                                 weight: 800;
                             }
                             &::before {
-                                content: '';
+                                content: "";
                                 position: absolute;
                                 left: 0;
                                 top: 4px;
@@ -6365,7 +6189,7 @@ Checkout Area CSS
                                 background: var(--whiteColor);
                             }
                             &::after {
-                                content: '';
+                                content: "";
                                 width: 12px;
                                 height: 12px;
                                 background: var(--mainColor);
@@ -6404,7 +6228,7 @@ Checkout Area CSS
         }
         .default-btn {
             margin-top: 15px;
-            box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, .2);
+            box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2);
         }
     }
 }
@@ -6419,12 +6243,12 @@ Page Title Area CSS
     padding: {
         bottom: 135px;
         top: 200px;
-    };
+    }
     &.page-title-style-two {
         padding: {
             top: 140px;
             bottom: 120px;
-        };
+        }
     }
 }
 .page-title-content {
@@ -6457,12 +6281,13 @@ Pagination CSS
         margin: {
             left: 3px;
             right: 3px;
-        };
+        }
         font: {
             weight: 800;
             size: 18px;
-        };
-        &:hover, &.current {
+        }
+        &:hover,
+        &.current {
             color: var(--whiteColor);
             background-color: var(--mainColor);
         }
@@ -6483,7 +6308,7 @@ Widget Sidebar CSS
         padding: {
             right: 10px;
             left: 0;
-        };
+        }
     }
     .widget {
         margin-bottom: 30px;
@@ -6500,9 +6325,9 @@ Widget Sidebar CSS
             border-bottom: 1px solid #eeeeee;
             font: {
                 size: 22px;
-            };
+            }
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 left: 0;
                 bottom: 0;
@@ -6516,7 +6341,7 @@ Widget Sidebar CSS
     .widget_search {
         form {
             position: relative;
-            
+
             .screen-reader-text {
                 display: none;
             }
@@ -6536,7 +6361,7 @@ Widget Sidebar CSS
                 transition: var(--transition);
                 font: {
                     weight: 600;
-                };
+                }
                 &::placeholder {
                     color: var(--optionalColor);
                     transition: var(--transition);
@@ -6567,7 +6392,8 @@ Widget Sidebar CSS
                     top: 50%;
                     transform: translateY(-50%);
                 }
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     border-radius: 5px;
                     background-color: var(--mainColor);
                     color: var(--whiteColor);
@@ -6578,7 +6404,7 @@ Widget Sidebar CSS
     .widget_dibiz_posts_thumb {
         position: relative;
         overflow: hidden;
-        
+
         .item {
             overflow: hidden;
             margin-bottom: 15px;
@@ -6605,7 +6431,7 @@ Widget Sidebar CSS
                         size: cover !important;
                         repeat: no-repeat;
                         position: center center !important;
-                    };
+                    }
                     &.bg1 {
                         background-image: url(/images/blog/blog-img8.jpg);
                     }
@@ -6616,9 +6442,10 @@ Widget Sidebar CSS
                         background-image: url(/images/blog/blog-img6.jpg);
                     }
                 }
-                &::before, &::after {
-                    transition: all .8s cubic-bezier(.2, 1, .22, 1);
-                    content: '';
+                &::before,
+                &::after {
+                    transition: all 0.8s cubic-bezier(0.2, 1, 0.22, 1);
+                    content: "";
                     background-color: var(--whiteColor);
                     position: absolute;
                     z-index: 1;
@@ -6649,10 +6476,10 @@ Widget Sidebar CSS
                     margin: {
                         top: -2px;
                         bottom: 5px;
-                    };
+                    }
                     font: {
                         size: 13px;
-                    };
+                    }
                 }
                 .title {
                     margin-bottom: 0;
@@ -6660,7 +6487,7 @@ Widget Sidebar CSS
                     font: {
                         size: 17px;
                         weight: 800;
-                    };
+                    }
                     a {
                         display: inline-block;
                     }
@@ -6668,7 +6495,8 @@ Widget Sidebar CSS
             }
             &:hover {
                 .thumb {
-                    &::before, &::after {
+                    &::before,
+                    &::after {
                         opacity: 1;
                         top: 50%;
                         left: 50%;
@@ -6692,7 +6520,7 @@ Widget Sidebar CSS
                 font: {
                     weight: 700;
                     size: 15.5px;
-                };
+                }
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -6700,7 +6528,7 @@ Widget Sidebar CSS
                     background: var(--mainColor);
                     height: 8px;
                     width: 8px;
-                    content: '';
+                    content: "";
                     border-radius: 50%;
                     left: 0;
                     top: 7px;
@@ -6739,12 +6567,13 @@ Widget Sidebar CSS
             font: {
                 weight: 700;
                 size: 14.5px !important;
-            };
+            }
             margin: {
                 top: 8px;
                 right: 4px;
-            };
-            &:hover, &:focus {
+            }
+            &:hover,
+            &:focus {
                 color: var(--whiteColor);
                 background-color: var(--mainColor);
             }
@@ -6761,7 +6590,7 @@ Widget Sidebar CSS
                 left: -5px;
                 right: -5px;
                 top: -10px;
-            };
+            }
             li {
                 flex: 0 0 33.333333%;
                 max-width: 33.333333%;
@@ -6770,12 +6599,12 @@ Widget Sidebar CSS
                     left: 5px;
                     right: 5px;
                     top: 10px;
-                };
+                }
                 .box {
                     position: relative;
                     z-index: 1;
                     overflow: hidden;
-    
+
                     .link-btn {
                         display: block;
                         position: absolute;
@@ -6802,7 +6631,7 @@ Widget Sidebar CSS
                         transition: var(--transition);
                     }
                     &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         left: 0;
                         right: 0;
@@ -6849,20 +6678,21 @@ Widget Sidebar CSS
                     font: {
                         weight: 700;
                         size: 18px;
-                    };
+                    }
                     &::before {
                         width: 5px;
                         height: 5px;
                         transition: var(--transition);
                         background-color: var(--optionalColor);
-                        content: '';
+                        content: "";
                         position: absolute;
                         left: 25px;
                         top: 50%;
                         transform: translateY(-50%);
                         border-radius: 50%;
                     }
-                    &:hover, &.active {
+                    &:hover,
+                    &.active {
                         border-color: var(--mainColor);
                         background-color: var(--mainColor);
                         color: var(--whiteColor);
@@ -6895,14 +6725,14 @@ Profile Authentication Area CSS
     padding: 40px 50px;
     border-radius: 5px;
     background-color: var(--whiteColor);
-    box-shadow: 0 0 10px rgba(51,51,51,.1);
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
     margin-right: 30px;
 
     h2 {
         margin-bottom: 25px;
         font: {
             size: 35px;
-        };
+        }
     }
     form {
         .form-group {
@@ -6918,10 +6748,12 @@ Profile Authentication Area CSS
         .remember-me-wrap {
             margin-bottom: 0;
 
-            [type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
+            [type="checkbox"]:checked,
+            [type="checkbox"]:not(:checked) {
                 display: none;
             }
-            [type="checkbox"]:checked + label, [type="checkbox"]:not(:checked) + label {
+            [type="checkbox"]:checked + label,
+            [type="checkbox"]:not(:checked) + label {
                 position: relative;
                 padding-left: 28px;
                 cursor: pointer;
@@ -6931,10 +6763,11 @@ Profile Authentication Area CSS
                 color: var(--optionalColor);
                 font: {
                     weight: 600;
-                };
+                }
             }
-            [type="checkbox"]:checked + label:before, [type="checkbox"]:not(:checked) + label:before {
-                content: '';
+            [type="checkbox"]:checked + label:before,
+            [type="checkbox"]:not(:checked) + label:before {
+                content: "";
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -6945,8 +6778,9 @@ Profile Authentication Area CSS
                 border-radius: 3px;
                 background: #f5f5f5;
             }
-            [type="checkbox"]:checked + label:after, [type="checkbox"]:not(:checked) + label:after {
-                content: '';
+            [type="checkbox"]:checked + label:after,
+            [type="checkbox"]:not(:checked) + label:after {
+                content: "";
                 width: 8px;
                 height: 8px;
                 background: var(--mainColor);
@@ -6988,7 +6822,7 @@ Profile Authentication Area CSS
                     position: absolute;
                     left: 0;
                     bottom: 0;
-                    content: '';
+                    content: "";
                     transition: var(--transition);
                     background-color: #eeeeee;
                 }
@@ -6999,7 +6833,7 @@ Profile Authentication Area CSS
                     left: 0;
                     transition: var(--transition);
                     bottom: 0;
-                    content: '';
+                    content: "";
                     background-color: var(--mainColor);
                 }
                 &:hover {
@@ -7026,7 +6860,7 @@ Profile Authentication Area CSS
             padding: 14.5px 30px;
             font: {
                 weight: 700;
-            };
+            }
             &:hover {
                 background-color: var(--blackColor);
                 color: var(--whiteColor);
@@ -7038,12 +6872,12 @@ Profile Authentication Area CSS
     padding: {
         top: 30px;
         left: 30px;
-    };
+    }
     h2 {
         margin-bottom: 25px;
         font: {
             size: 35px;
-        };
+        }
     }
     form {
         .form-group {
@@ -7062,7 +6896,7 @@ Profile Authentication Area CSS
             margin: {
                 top: -10px;
                 bottom: 0;
-            };
+            }
         }
         button {
             margin-top: 22px;
@@ -7078,7 +6912,7 @@ Profile Authentication Area CSS
             padding: 14.5px 30px;
             font: {
                 weight: 700;
-            };
+            }
             &:hover {
                 background-color: var(--blackColor);
                 color: var(--whiteColor);
@@ -7097,10 +6931,10 @@ Profile Authentication Area CSS
         margin: {
             bottom: 20px;
             top: 45px;
-        };
+        }
         font: {
             size: 40px;
-        };
+        }
     }
     p {
         max-width: 550px;
@@ -7108,7 +6942,7 @@ Profile Authentication Area CSS
             left: auto;
             right: auto;
             bottom: 0;
-        };
+        }
     }
     .default-btn {
         margin-top: 30px;
@@ -7126,12 +6960,13 @@ Terms of Service Area CSS
         margin: {
             bottom: 15px;
             top: 25px;
-        };
+        }
         font: {
             size: 25px;
-        };
+        }
     }
-    .blockquote, blockquote {
+    .blockquote,
+    blockquote {
         margin-bottom: 30px;
         background-color: #e6f2f5;
         text-align: left !important;
@@ -7143,7 +6978,7 @@ Terms of Service Area CSS
             font: {
                 size: 17px !important;
                 weight: 600;
-            };
+            }
         }
         &::after {
             display: none;
@@ -7152,7 +6987,8 @@ Terms of Service Area CSS
             display: none;
         }
     }
-    ol, ul {
+    ol,
+    ul {
         margin-top: 20px;
 
         li {
@@ -7161,7 +6997,7 @@ Terms of Service Area CSS
             line-height: 1.8;
             font: {
                 weight: 600;
-            };
+            }
         }
     }
 }
@@ -7169,7 +7005,7 @@ Terms of Service Area CSS
 /*================================================
 Privacy Policy Area CSS
 =================================================*/
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width: 1200px) {
     .privacy-policy-area {
         .container {
             max-width: 1230px;
@@ -7184,12 +7020,13 @@ Privacy Policy Area CSS
         margin: {
             bottom: 15px;
             top: 25px;
-        };
+        }
         font: {
             size: 25px;
-        };
+        }
     }
-    .blockquote, blockquote {
+    .blockquote,
+    blockquote {
         margin-bottom: 30px;
         background-color: #e6f2f5;
         text-align: left !important;
@@ -7201,7 +7038,7 @@ Privacy Policy Area CSS
             font: {
                 size: 17px !important;
                 weight: 600;
-            };
+            }
         }
         &::after {
             display: none;
@@ -7210,7 +7047,8 @@ Privacy Policy Area CSS
             display: none;
         }
     }
-    ol, ul {
+    ol,
+    ul {
         margin-top: 20px;
 
         li {
@@ -7219,7 +7057,7 @@ Privacy Policy Area CSS
             line-height: 1.8;
             font: {
                 weight: 600;
-            };
+            }
         }
     }
 }
@@ -7237,7 +7075,7 @@ Coming Soon Area CSS
         position: top center;
         size: cover;
         repeat: no-repeat;
-    };
+    }
 }
 .coming-soon-content {
     max-width: 700px;
@@ -7246,22 +7084,22 @@ Coming Soon Area CSS
     overflow: hidden;
     text-align: center;
     padding: 40px 60px;
-    box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, .05);
+    box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
     margin: {
         left: auto;
         right: auto;
-    };
+    }
     .logo {
         display: inline-block;
     }
     h2 {
         font: {
             size: 48px;
-        };
+        }
         margin: {
             top: 30px;
             bottom: 0;
-        };
+        }
     }
     #timer {
         margin-top: 40px;
@@ -7275,18 +7113,18 @@ Coming Soon Area CSS
             font: {
                 size: 40px;
                 weight: 800;
-            };
+            }
             margin: {
                 left: 10px;
                 right: 10px;
-            };
+            }
             span {
                 display: block;
                 margin-top: -2px;
                 font: {
                     size: 17px;
                     weight: 600;
-                };
+                }
             }
         }
     }
@@ -7297,7 +7135,7 @@ Coming Soon Area CSS
             left: auto;
             right: auto;
             top: 50px;
-        };
+        }
         .form-group {
             margin-bottom: 25px;
             width: 100%;
@@ -7321,7 +7159,7 @@ Coming Soon Area CSS
                     top: 9px;
                     font: {
                         size: 22px;
-                    };
+                    }
                 }
                 &::before {
                     content: "";
@@ -7348,12 +7186,12 @@ Coming Soon Area CSS
                 font: {
                     size: 16px;
                     weight: 400;
-                };
+                }
                 &::placeholder {
-                    color: #A1A1A1;
+                    color: #a1a1a1;
                     transition: var(--transition);
                 }
-                &:focus {                    
+                &:focus {
                     &::placeholder {
                         color: transparent;
                     }
@@ -7378,7 +7216,7 @@ Coming Soon Area CSS
             margin: {
                 bottom: 0;
                 top: 20px;
-            };
+            }
         }
     }
 }
@@ -7431,7 +7269,7 @@ Contact Area CSS
         margin-bottom: 10px;
         font: {
             size: 25px;
-        };
+        }
     }
     p {
         margin-bottom: 3px;
@@ -7448,7 +7286,7 @@ Contact Area CSS
         z-index: -1;
         color: var(--blackColor);
         line-height: 1;
-        opacity: .04;
+        opacity: 0.04;
         font-size: 100px;
         transform: rotate(-5deg);
     }
@@ -7466,7 +7304,7 @@ Contact Area CSS
 .contact-form {
     padding: 40px;
     margin-left: 15px;
-    box-shadow: 0 0 20px rgba(158,158,158,.16);
+    box-shadow: 0 0 20px rgba(158, 158, 158, 0.16);
     background-color: var(--whiteColor);
 
     form {
@@ -7480,7 +7318,7 @@ Contact Area CSS
                 margin: {
                     bottom: 0;
                     top: 12px;
-                };
+                }
                 li {
                     color: red;
                 }
@@ -7492,7 +7330,8 @@ Contact Area CSS
         #msgSubmit {
             margin: 0 !important;
 
-            &.text-danger, &.text-success {
+            &.text-danger,
+            &.text-success {
                 margin-top: 15px !important;
             }
         }
@@ -7530,7 +7369,7 @@ Footer Area CSS
         margin: {
             bottom: 0;
             top: 20px;
-        };
+        }
         li {
             display: inline-block;
             margin-right: 10px;
@@ -7583,7 +7422,7 @@ Footer Area CSS
             a {
                 color: #ededed;
                 display: inline-block;
-                
+
                 &:hover {
                     color: var(--mainLightColor);
                 }
@@ -7608,7 +7447,7 @@ Footer Area CSS
             a {
                 color: #ededed;
                 display: inline-block;
-                
+
                 &:hover {
                     color: var(--mainLightColor);
                 }
@@ -7635,7 +7474,7 @@ Footer Area CSS
     padding: {
         top: 25px;
         bottom: 25px;
-    };
+    }
     p {
         color: #ededed;
 
@@ -7675,7 +7514,7 @@ Footer Area CSS
                 }
             }
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 right: -10px;
                 top: 5.2px;
@@ -7725,7 +7564,7 @@ Go Top CSS
         margin: {
             left: auto;
             right: auto;
-        };
+        }
     }
     &.active {
         opacity: 1;
@@ -7796,7 +7635,7 @@ Sidebar Modal CSS
 }
 .sidebarModal {
     &.modal {
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, 0.3);
         display: block;
         opacity: 1;
         .modal-body {
@@ -7805,17 +7644,17 @@ Sidebar Modal CSS
 
             .instagram-list {
                 margin-top: 70px;
-    
+
                 .row {
                     margin: {
                         left: -5px;
                         right: -5px;
-                    };
+                    }
                     .col-lg-4 {
                         padding: {
                             left: 5px;
                             right: 5px;
-                        };
+                        }
                     }
                 }
                 .box {
@@ -7823,7 +7662,7 @@ Sidebar Modal CSS
                     z-index: 1;
                     overflow: hidden;
                     margin-top: 10px;
-    
+
                     .link-btn {
                         display: block;
                         position: absolute;
@@ -7850,7 +7689,7 @@ Sidebar Modal CSS
                         transition: var(--transition);
                     }
                     &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         left: 0;
                         right: 0;
@@ -7884,16 +7723,16 @@ Sidebar Modal CSS
                     margin-bottom: 0;
                     font: {
                         size: 30px;
-                    };
+                    }
                     span {
                         display: block;
                         font: {
                             size: var(--fontSize);
-                        };
+                        }
                         margin: {
                             top: 8px;
                             bottom: 8px;
-                        };
+                        }
                     }
                 }
             }
@@ -7901,11 +7740,11 @@ Sidebar Modal CSS
                 list-style-type: none;
                 padding: {
                     left: 0;
-                };
+                }
                 margin: {
                     bottom: 0;
                     top: 15px;
-                };
+                }
                 li {
                     display: inline-block;
                     margin-right: 8px;
@@ -7915,7 +7754,7 @@ Sidebar Modal CSS
                         color: var(--mainColor);
                         font: {
                             weight: 600;
-                        };
+                        }
                     }
                     a {
                         position: relative;

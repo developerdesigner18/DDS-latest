@@ -1,18 +1,15 @@
-import React from 'react';
-import Navbar from '../components/_App/Navbar';
-import PageBanner from '../components/Common/PageBanner';
-import Footer from '../components/_App/Footer';
-import StartProjectWithUs from '../components/Common/StartProjectWithUs';
-import Link from 'next/link';
+import Navbar from "../components/_App/Navbar";
+import PageBanner from "../components/Common/PageBanner";
+import Footer from "../components/_App/Footer";
+import StartProjectWithUs from "../components/Common/StartProjectWithUs";
+import Link from "next/link";
 
 const Pricing = () => {
     return (
         <>
-			<Navbar />
-            
-			<PageBanner 
-                pageTitle="Pricing" 
-            />  
+            <Navbar />
+
+            <PageBanner pageTitle="Pricing" />
 
             <div className="pricing-area bg-f9f9f9 pt-100 pb-70">
                 <div className="container">
@@ -121,9 +118,9 @@ const Pricing = () => {
 
             <StartProjectWithUs />
 
-			<Footer />
-		</>
-    )
-}
+            <Footer />
+        </>
+    );
+};
 
 export default Pricing;

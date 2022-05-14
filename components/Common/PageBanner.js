@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const PageBanner = ({pageTitle}) => {
+const PageBanner = ({ pageTitle }) => {
     return (
         <div className="page-title-area">
             <div className="container">
@@ -10,6 +10,6 @@ const PageBanner = ({pageTitle}) => {
             </div>
         </div>
     );
-}
+};
 
 export default PageBanner;
