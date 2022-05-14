@@ -3,7 +3,7 @@ import PageBanner from "../components/Common/PageBanner";
 import Footer from "../components/_App/Footer";
 import ContactForm from "../components/Contact/ContactForm";
 
-const ContactUs = () => {
+const Contact = () => {
     return (
         <>
             <Navbar />
@@ -81,4 +81,4 @@ const ContactUs = () => {
     );
 };
 
-export default ContactUs;
+export default Contact;
