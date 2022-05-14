@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const LatestBlogPost = () => {
     return (
@@ -8,7 +8,11 @@ const LatestBlogPost = () => {
                 <div className="section-title">
                     <span className="sub-title">Our Blog</span>
                     <h2>Our Latest Media</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna.
+                    </p>
                 </div>
 
                 <div className="row">
@@ -17,14 +21,20 @@ const LatestBlogPost = () => {
                             <div className="image">
                                 <Link href="/single-blog-1">
                                     <a className="d-block">
-                                        <img src="/images/blog/blog-img1.jpg" alt="image" />
+                                        <img
+                                            src="/images/blog/blog-img1.jpg"
+                                            alt="image"
+                                        />
                                     </a>
                                 </Link>
                             </div>
                             <div className="content">
                                 <h3>
                                     <Link href="/single-blog-1">
-                                        <a>Digital Marketing Agency Blogs You Should Read</a>
+                                        <a>
+                                            Digital Marketing Agency Blogs You
+                                            Should Read
+                                        </a>
                                     </Link>
                                 </h3>
                                 <div className="d-flex align-items-center">
@@ -43,7 +53,10 @@ const LatestBlogPost = () => {
                             <div className="image">
                                 <Link href="/single-blog-1">
                                     <a className="d-block">
-                                        <img src="/images/blog/blog-img2.jpg" alt="image" />
+                                        <img
+                                            src="/images/blog/blog-img2.jpg"
+                                            alt="image"
+                                        />
                                     </a>
                                 </Link>
                             </div>
@@ -51,7 +64,10 @@ const LatestBlogPost = () => {
                             <div className="content">
                                 <h3>
                                     <Link href="/single-blog-1">
-                                        <a>Digital Marketing Strategies for Lead Generation</a>
+                                        <a>
+                                            Digital Marketing Strategies for
+                                            Lead Generation
+                                        </a>
                                     </Link>
                                 </h3>
                                 <div className="d-flex align-items-center">
@@ -70,7 +86,10 @@ const LatestBlogPost = () => {
                             <div className="image">
                                 <Link href="/single-blog-1">
                                     <a className="d-block">
-                                        <img src="/images/blog/blog-img3.jpg" alt="image" />
+                                        <img
+                                            src="/images/blog/blog-img3.jpg"
+                                            alt="image"
+                                        />
                                     </a>
                                 </Link>
                             </div>
@@ -78,7 +97,10 @@ const LatestBlogPost = () => {
                             <div className="content">
                                 <h3>
                                     <Link href="/single-blog-1">
-                                        <a>Agencies Can Successfully Recover From COVID?</a>
+                                        <a>
+                                            Agencies Can Successfully Recover
+                                            From COVID?
+                                        </a>
                                     </Link>
                                 </h3>
                                 <div className="d-flex align-items-center">
@@ -94,7 +116,7 @@ const LatestBlogPost = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default LatestBlogPost;

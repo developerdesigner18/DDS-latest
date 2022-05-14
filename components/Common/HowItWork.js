@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const HowItWork = () => {
     return (
@@ -9,31 +9,41 @@ const HowItWork = () => {
                         <div className="how-its-work-content">
                             <span className="sub-title">How It's Work</span>
                             <h2>Our Working Process</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna.
+                            </p>
 
                             <div className="inner-box">
                                 <div className="single-item">
-                                    <div className="count-box">
-                                        01
-                                    </div>
+                                    <div className="count-box">01</div>
                                     <h3>Planning</h3>
-                                    <p>Dolor sit amet consectetur elit eiusmod tempor incidi dunt labore dolore magna aliqua enim.</p>
+                                    <p>
+                                        Dolor sit amet consectetur elit eiusmod
+                                        tempor incidi dunt labore dolore magna
+                                        aliqua enim.
+                                    </p>
                                 </div>
 
                                 <div className="single-item">
-                                    <div className="count-box">
-                                        02
-                                    </div>
+                                    <div className="count-box">02</div>
                                     <h3>Research</h3>
-                                    <p>Dolor sit amet consectetur elit eiusmod tempor incidi dunt labore dolore magna aliqua enim.</p>
+                                    <p>
+                                        Dolor sit amet consectetur elit eiusmod
+                                        tempor incidi dunt labore dolore magna
+                                        aliqua enim.
+                                    </p>
                                 </div>
 
                                 <div className="single-item">
-                                    <div className="count-box">
-                                        03
-                                    </div>
+                                    <div className="count-box">03</div>
                                     <h3>Results</h3>
-                                    <p>Dolor sit amet consectetur elit eiusmod tempor incidi dunt labore dolore magna aliqua enim.</p>
+                                    <p>
+                                        Dolor sit amet consectetur elit eiusmod
+                                        tempor incidi dunt labore dolore magna
+                                        aliqua enim.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -47,7 +57,7 @@ const HowItWork = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default HowItWork;

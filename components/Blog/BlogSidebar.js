@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const BlogSidebar = () => {
     return (
@@ -9,10 +9,10 @@ const BlogSidebar = () => {
 
                 <form className="search-form">
                     <label>
-                        <input 
-                            type="search" 
-                            className="search-field" 
-                            placeholder="Search..." 
+                        <input
+                            type="search"
+                            className="search-field"
+                            placeholder="Search..."
                         />
                     </label>
                     <button type="submit">
@@ -27,7 +27,10 @@ const BlogSidebar = () => {
                 <div className="item">
                     <Link href="/single-blog-1">
                         <a className="thumb">
-                            <span className="fullimage cover bg1" role="img"></span>
+                            <span
+                                className="fullimage cover bg1"
+                                role="img"
+                            ></span>
                         </a>
                     </Link>
                     <div className="info">
@@ -45,14 +48,20 @@ const BlogSidebar = () => {
                 <div className="item">
                     <Link href="/single-blog-1">
                         <a className="thumb">
-                            <span className="fullimage cover bg2" role="img"></span>
+                            <span
+                                className="fullimage cover bg2"
+                                role="img"
+                            ></span>
                         </a>
                     </Link>
                     <div className="info">
                         <span>June 21, 2020</span>
                         <h4 className="title usmall">
                             <Link href="/single-blog-1">
-                                <a>Conversion Rate the Sales Funnel Optimization</a>
+                                <a>
+                                    Conversion Rate the Sales Funnel
+                                    Optimization
+                                </a>
                             </Link>
                         </h4>
                     </div>
@@ -63,14 +72,19 @@ const BlogSidebar = () => {
                 <div className="item">
                     <Link href="/single-blog-1">
                         <a className="thumb">
-                            <span className="fullimage cover bg3" role="img"></span>
+                            <span
+                                className="fullimage cover bg3"
+                                role="img"
+                            ></span>
                         </a>
                     </Link>
                     <div className="info">
                         <span>June 30, 2020</span>
                         <h4 className="title usmall">
                             <Link href="/single-blog-1">
-                                <a>Business Data is changing the world’s Energy</a>
+                                <a>
+                                    Business Data is changing the world’s Energy
+                                </a>
                             </Link>
                         </h4>
                     </div>
@@ -83,11 +97,31 @@ const BlogSidebar = () => {
                 <h3 className="widget-title">Categories</h3>
 
                 <ul>
-                    <li><a href="/blog1">Design <span className="post-count">(03)</span></a></li>
-                    <li><a href="/blog1">Lifestyle <span className="post-count">(05)</span></a></li>
-                    <li><a href="/blog1">Script <span className="post-count">(10)</span></a></li>
-                    <li><a href="/blog1">Device <span className="post-count">(08)</span></a></li>
-                    <li><a href="/blog1">Tips <span className="post-count">(01)</span></a></li>
+                    <li>
+                        <a href="/blog1">
+                            Design <span className="post-count">(03)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog1">
+                            Lifestyle <span className="post-count">(05)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog1">
+                            Script <span className="post-count">(10)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog1">
+                            Device <span className="post-count">(08)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog1">
+                            Tips <span className="post-count">(01)</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -95,14 +129,30 @@ const BlogSidebar = () => {
                 <h3 className="widget-title">Popular Tags</h3>
 
                 <div className="tagcloud">
-                    <a href="/blog1">Business <span className="tag-link-count">(3)</span></a>
-                    <a href="/blog1">Design <span className="tag-link-count">(3)</span></a>
-                    <a href="/blog1">Aike <span className="tag-link-count">(2)</span></a>
-                    <a href="/blog1">Fashion <span className="tag-link-count">(2)</span></a>
-                    <a href="/blog1">Travel <span className="tag-link-count">(1)</span></a>
-                    <a href="/blog1">Smart <span className="tag-link-count">(1)</span></a>
-                    <a href="/blog1">Marketing <span className="tag-link-count">(1)</span></a>
-                    <a href="/blog1">Tips <span className="tag-link-count">(2)</span></a>
+                    <a href="/blog1">
+                        Business <span className="tag-link-count">(3)</span>
+                    </a>
+                    <a href="/blog1">
+                        Design <span className="tag-link-count">(3)</span>
+                    </a>
+                    <a href="/blog1">
+                        Aike <span className="tag-link-count">(2)</span>
+                    </a>
+                    <a href="/blog1">
+                        Fashion <span className="tag-link-count">(2)</span>
+                    </a>
+                    <a href="/blog1">
+                        Travel <span className="tag-link-count">(1)</span>
+                    </a>
+                    <a href="/blog1">
+                        Smart <span className="tag-link-count">(1)</span>
+                    </a>
+                    <a href="/blog1">
+                        Marketing <span className="tag-link-count">(1)</span>
+                    </a>
+                    <a href="/blog1">
+                        Tips <span className="tag-link-count">(2)</span>
+                    </a>
                 </div>
             </div>
 
@@ -112,69 +162,105 @@ const BlogSidebar = () => {
                         <div className="box">
                             <img src="/images/team/team-img1.jpg" alt="image" />
                             <i className="bx bxl-instagram"></i>
-                            <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                className="link-btn"
+                            ></a>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <img src="/images/team/team-img2.jpg" alt="image" />
                             <i className="bx bxl-instagram"></i>
-                            <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                className="link-btn"
+                            ></a>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <img src="/images/team/team-img3.jpg" alt="image" />
                             <i className="bx bxl-instagram"></i>
-                            <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                className="link-btn"
+                            ></a>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <img src="/images/team/team-img4.jpg" alt="image" />
                             <i className="bx bxl-instagram"></i>
-                            <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                className="link-btn"
+                            ></a>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <img src="/images/team/team-img5.jpg" alt="image" />
                             <i className="bx bxl-instagram"></i>
-                            <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                className="link-btn"
+                            ></a>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <img src="/images/team/team-img6.jpg" alt="image" />
                             <i className="bx bxl-instagram"></i>
-                            <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                className="link-btn"
+                            ></a>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <img src="/images/team/team-img7.jpg" alt="image" />
                             <i className="bx bxl-instagram"></i>
-                            <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                className="link-btn"
+                            ></a>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <img src="/images/team/team-img8.jpg" alt="image" />
                             <i className="bx bxl-instagram"></i>
-                            <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                className="link-btn"
+                            ></a>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <img src="/images/team/team-img9.jpg" alt="image" />
                             <i className="bx bxl-instagram"></i>
-                            <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                className="link-btn"
+                            ></a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default BlogSidebar;

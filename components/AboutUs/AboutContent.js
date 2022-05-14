@@ -1,4 +1,8 @@
-import { COMPLETED_PROJECTS, SATISFIED_CLIENTS, TEAM_MEMBERS } from "../../utils/AppConfig";
+import {
+    COMPLETED_PROJECTS,
+    SATISFIED_CLIENTS,
+    TEAM_MEMBERS,
+} from "../../utils/AppConfig";
 
 const AboutContent = () => {
     return (
@@ -17,10 +21,13 @@ const AboutContent = () => {
                                 <span className="sub-title">About Us</span>
                                 <h2>WE LOVE WHAT WE DO AND WE DO IT WELL</h2>
                                 <p>
-                                    We are a group of developers with a passion for creativity. 
-                                    We believe in the transformative power of technology and its ability to 
-                                    simplify communications, elevate experiences, engage and inspire people
-                                    everywhere. Let's make something internet-breaking together!
+                                    We are a group of developers with a passion
+                                    for creativity. We believe in the
+                                    transformative power of technology and its
+                                    ability to simplify communications, elevate
+                                    experiences, engage and inspire people
+                                    everywhere. Let's make something
+                                    internet-breaking together!
                                 </p>
 
                                 <ul className="funfacts-list">
@@ -52,7 +59,7 @@ const AboutContent = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default AboutContent;

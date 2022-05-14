@@ -1,12 +1,12 @@
-import Navbar from '../components/_App/Navbar';
-import MainBanner from '../components/HomeDemoOne/MainBanner';
-import OurServices from '../components/Common/OurServices'
-import OurProcess from '../components/Common/OurProcess'
-import IndustriesWeServe from '../components/Common/IndustriesWeServe';
-import Portfolio from '../components/Common/Portfolio';
-import TestimonialStyleOne from '../components/Common/TestimonialStyleOne';
-import Partner from '../components/Common/Partner';
-import Footer from '../components/_App/Footer';
+import Navbar from "../components/_App/Navbar";
+import MainBanner from "../components/Home/MainBanner";
+import OurServices from "../components/Home/OurServices";
+import OurProcess from "../components/Home/OurProcess";
+import IndustriesWeServe from "../components/Home/IndustriesWeServe";
+import Portfolio from "../components/Home/Portfolio";
+import Testimonial from "../components/Home/Testimonial";
+import Partner from "../components/Home/Partner";
+import Footer from "../components/_App/Footer";
 
 const Index = () => {
     return (
@@ -23,13 +23,13 @@ const Index = () => {
 
             <Portfolio />
 
-            <TestimonialStyleOne />
+            <Testimonial />
 
             <Partner />
-            
+
             <Footer />
         </>
-    )
-}
+    );
+};
 
 export default Index;
