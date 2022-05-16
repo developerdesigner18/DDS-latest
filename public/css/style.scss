@@ -282,68 +282,6 @@ textarea.form-control {
 }
 
 /*================================================
-Top Header Area CSS
-=================================================*/
-.top-header-area {
-    background-color: var(--blackColor);
-
-    .container-fluid {
-        padding: {
-            left: 30px;
-            right: 30px;
-        }
-    }
-}
-.top-header-contact-info {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style-type: none;
-
-    li {
-        display: inline-block;
-        margin-right: 15px;
-        position: relative;
-        color: var(--whiteColor);
-        padding-left: 24px;
-
-        i {
-            color: var(--mainColor);
-            position: absolute;
-            left: 0;
-            font-size: 19px;
-            top: 2px;
-        }
-        a {
-            color: var(--whiteColor);
-            font-weight: 600;
-
-            &:hover {
-                color: var(--mainColor);
-            }
-        }
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-}
-.top-header-btn {
-    text-align: right;
-
-    .default-btn {
-        border-radius: 0;
-        background-color: var(--whiteColor);
-
-        &::before,
-        &::after {
-            border-radius: 0;
-        }
-        &:hover {
-            color: var(--blackColor);
-        }
-    }
-}
-
-/*================================================
 Navbar Area CSS
 =================================================*/
 .navbar-area {
@@ -1951,18 +1889,6 @@ About Area CSS
 .about-img {
     text-align: center;
 }
-.shape15 {
-    position: absolute;
-    right: 0;
-    top: 10%;
-    text-align: right;
-    z-index: -1;
-
-    img {
-        animation: movebounce 5s linear infinite;
-        max-width: 50%;
-    }
-}
 
 /*================================================
 Our Services Area CSS
@@ -2343,14 +2269,6 @@ Services Area CSS
 
     .single-featured-services-box {
         background-color: var(--whiteColor);
-    }
-    .shape3 {
-        left: 85%;
-        top: 20%;
-    }
-    .shape6 {
-        left: 85%;
-        bottom: 17%;
     }
 }
 
@@ -2836,12 +2754,6 @@ Testimonials Area CSS
             }
         }
     }
-}
-.shape16 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
 }
 
 /*================================================
@@ -3552,15 +3464,6 @@ Pricing Area CSS
 .pricing-area {
     position: relative;
     z-index: 1;
-
-    .shape3 {
-        left: 85%;
-        top: 20%;
-    }
-    .shape6 {
-        left: 85%;
-        bottom: 17%;
-    }
 }
 .single-pricing-box {
     margin-bottom: 30px;
@@ -3859,56 +3762,6 @@ Subscribe Area CSS
         }
     }
 }
-.shape9 {
-    position: absolute;
-    left: 17%;
-    bottom: 30%;
-    z-index: -1;
-
-    img {
-        animation: {
-            name: rotateme;
-            duration: 40s;
-            iteration-count: infinite;
-            timing-function: linear;
-        }
-    }
-}
-.shape10 {
-    position: absolute;
-    left: 20%;
-    bottom: 45%;
-    z-index: -1;
-
-    img {
-        animation: movescale 5s linear infinite;
-    }
-}
-.shape11 {
-    position: absolute;
-    right: 14%;
-    bottom: 15%;
-    z-index: -1;
-
-    img {
-        animation: {
-            name: rotateme;
-            duration: 40s;
-            iteration-count: infinite;
-            timing-function: linear;
-        }
-    }
-}
-.shape12 {
-    position: absolute;
-    right: 11%;
-    bottom: 33%;
-    z-index: -1;
-
-    img {
-        animation: moveleftbounce 5s linear infinite;
-    }
-}
 
 /*================================================
 Project Start Area CSS
@@ -3916,15 +3769,6 @@ Project Start Area CSS
 .project-start-area {
     position: relative;
     z-index: 1;
-
-    .shape3 {
-        left: 85%;
-        top: 20%;
-    }
-    .shape6 {
-        left: 85%;
-        bottom: 17%;
-    }
 }
 .project-start-content {
     padding-left: 30px;

@@ -5,7 +5,7 @@ import OurProcess from "../components/Home/OurProcess";
 import IndustriesWeServe from "../components/Home/IndustriesWeServe";
 import Portfolio from "../components/Home/Portfolio";
 import Testimonial from "../components/Home/Testimonial";
-import Partner from "../components/Home/Partner";
+import Partners from "../components/Home/Partners";
 import Footer from "../components/_App/Footer";
 
 const Index = () => {
@@ -25,7 +25,7 @@ const Index = () => {
 
             <Testimonial />
 
-            <Partner />
+            <Partners />
 
             <Footer />
         </>

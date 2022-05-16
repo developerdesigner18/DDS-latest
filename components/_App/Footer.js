@@ -9,7 +9,7 @@ import {
     LINKEDIN_LINK,
     TWITTER_LINK,
 } from "../../utils/AppConfig";
-import { currentYear } from "../../utils/utils";
+import { getCurrentYear } from "../../utils/utils";
 
 const Footer = () => {
     return (
@@ -80,7 +80,7 @@ const Footer = () => {
                             <h3>Explore</h3>
                             <ul className="footer-links-list">
                                 <li>
-                                    <Link href="/about-us-1">
+                                    <Link href="/about">
                                         <a>About us</a>
                                     </Link>
                                 </li>
@@ -90,27 +90,27 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/portfolio-1">
+                                    <Link href="/portfolio">
                                         <a>Portfolio</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact">
+                                    <Link href="/testimonials">
                                         <a>Client Testimonials</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact">
+                                    <Link href="/career">
                                         <a>Career</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact">
+                                    <Link href="/faq">
                                         <a>FAQ</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact">
+                                    <Link href="/life-at-dds">
                                         <a>Life at DDS</a>
                                     </Link>
                                 </li>
@@ -128,27 +128,27 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact">
+                                    <Link href="/services">
                                         <a>Our Services</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services-1">
+                                    <Link href="/">
                                         <a>Our Partners</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/faq">
+                                    <Link href="/main-team">
                                         <a>Our Team</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/blog-1">
+                                    <Link href="/contact">
                                         <a>Contact Us</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/blog-1">
+                                    <Link href="/blog">
                                         <a>Blog</a>
                                     </Link>
                                 </li>
@@ -186,8 +186,9 @@ const Footer = () => {
                         <div className="col-lg-6 col-md-6">
                             <p>
                                 <i className="bx bx-copyright"></i>{" "}
-                                {currentYear} <strong>Daydreansoft LLP</strong>{" "}
-                                | All Rights Reserved
+                                {getCurrentYear}{" "}
+                                <strong>Daydreansoft LLP</strong> | All Rights
+                                Reserved
                             </p>
                         </div>
 

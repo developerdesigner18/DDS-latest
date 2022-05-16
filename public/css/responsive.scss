@@ -358,25 +358,6 @@ $value_seven: 1550px;
             }
         }
     }
-    .shape1,
-    .shape2,
-    .shape3,
-    .shape4,
-    .shape5,
-    .shape6,
-    .shape7,
-    .shape8,
-    .shape9,
-    .shape10,
-    .shape11,
-    .shape12,
-    .shape13,
-    .shape14,
-    .shape15,
-    .shape16,
-    .shape17 {
-        display: none;
-    }
 
     .boxes-area {
         margin-top: -60px;
@@ -1985,24 +1966,6 @@ $value_seven: 1550px;
         font-size: 22px;
     }
 
-    .top-header-area {
-        text-align: center;
-        padding: {
-            top: 15px;
-            bottom: 15px;
-        }
-        .container-fluid {
-            padding: {
-                left: 15px;
-                right: 15px;
-            }
-        }
-    }
-    .top-header-btn {
-        text-align: center;
-        margin-top: 15px;
-    }
-
     .banner-wrapper-area {
         padding-top: 100px;
     }
@@ -2339,12 +2302,6 @@ $value_seven: 1550px;
         }
     }
 
-    .top-header-area {
-        .container-fluid {
-            max-width: 100%;
-        }
-    }
-
     .banner-wrapper-content {
         .content {
             max-width: 510px;
@@ -2606,24 +2563,6 @@ $value_seven: 1550px;
             bottom: 130px;
             top: 170px;
         }
-    }
-    .shape1,
-    .shape2,
-    .shape3,
-    .shape4,
-    .shape5,
-    .shape6,
-    .shape7,
-    .shape8,
-    .shape9,
-    .shape10,
-    .shape11,
-    .shape12,
-    .shape13,
-    .shape14,
-    .shape15,
-    .shape17 {
-        display: none;
     }
 
     .boxes-area {
@@ -3475,16 +3414,6 @@ $value_seven: 1550px;
         margin-top: 60px;
     }
 
-    .top-header-area {
-        .container-fluid {
-            max-width: 720px;
-            padding: {
-                left: 15px;
-                right: 15px;
-            }
-        }
-    }
-
     .banner-wrapper-area {
         padding-top: 130px;
 
@@ -3815,24 +3744,6 @@ $value_seven: 1550px;
             bottom: 130px;
             top: 200px;
         }
-    }
-    .shape1,
-    .shape2,
-    .shape3,
-    .shape4,
-    .shape5,
-    .shape6,
-    .shape7,
-    .shape8,
-    .shape9,
-    .shape10,
-    .shape11,
-    .shape12,
-    .shape13,
-    .shape14,
-    .shape15,
-    .shape17 {
-        display: none;
     }
 
     .single-boxes-box {
@@ -4251,15 +4162,6 @@ $value_seven: 1550px;
         }
     }
 
-    .top-header-area {
-        .container-fluid {
-            padding: {
-                left: 25px;
-                right: 25px;
-            }
-        }
-    }
-
     .banner-wrapper-content {
         padding: {
             top: 150px;
@@ -4373,15 +4275,6 @@ $value_seven: 1550px;
 
 /* Min width 1550px */
 @media only #{$media} and ($feature_min : $value_seven) {
-    .top-header-area {
-        .container-fluid {
-            padding: {
-                left: 135px;
-                right: 135px;
-            }
-        }
-    }
-
     .main-nav {
         .container-fluid {
             padding: {
@@ -4406,18 +4299,6 @@ $value_seven: 1550px;
                 right: 140px;
             }
         }
-    }
-
-    .shape15 {
-        top: auto;
-        bottom: 20px;
-
-        img {
-            max-width: 100%;
-        }
-    }
-    .shape1 {
-        left: 47%;
     }
 
     .portfolio-slides {

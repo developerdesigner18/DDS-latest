@@ -1,5 +1,3 @@
-import React from "react";
-
 const partners = [
     {
         image: "/images/partner/partner-img6.png",
@@ -21,9 +19,9 @@ const partners = [
     },
 ];
 
-const Partner = () => {
+const Partners = () => {
     return (
-        <div className="partner-area bg-f9f9f9 ptb-70">
+        <div id="#parteners" className="partner-area bg-f9f9f9 ptb-70">
             <div className="container">
                 <div className="row align-items-center justify-content-md-center">
                     {partners.map(({ image }, index) => (
@@ -42,4 +40,4 @@ const Partner = () => {
     );
 };
 
-export default Partner;
+export default Partners;
