@@ -43,7 +43,7 @@ const Navbar = (props) => {
                 }`}
             >
                 <div className="main-nav">
-                    <div className="container-fluid">
+                    <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light">
                             <Link href="/">
                                 <a
@@ -55,7 +55,7 @@ const Navbar = (props) => {
                                             props.home ? LOGO_DARK : LOGO_LIGHT
                                         }
                                         alt="logo"
-                                        width="100px"
+                                        width="130px"
                                     />
                                 </a>
                             </Link>
@@ -180,12 +180,16 @@ const Navbar = (props) => {
                             <div className="others-option d-flex align-items-center">
                                 <div className="option-item">
                                     <div className="cart-btn">
-                                        <Link href="/cart">
-                                            <a>
-                                                <i className="flaticon-shopping-cart"></i>
-                                                <span>1</span>
-                                            </a>
-                                        </Link>
+                                        <a>
+                                            <img
+                                                src={
+                                                    props.home
+                                                        ? "/images/night-mode-dark.svg"
+                                                        : "/images/night-mode-light.svg"
+                                                }
+                                                alt="image"
+                                            />
+                                        </a>
                                     </div>
                                 </div>
 

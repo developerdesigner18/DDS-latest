@@ -187,7 +187,7 @@ const Footer = () => {
                             <p>
                                 <i className="bx bx-copyright"></i>{" "}
                                 {getCurrentYear}{" "}
-                                <strong>Daydreansoft LLP</strong> | All Rights
+                                <strong>Daydreamsoft LLP</strong> | All Rights
                                 Reserved
                             </p>
                         </div>

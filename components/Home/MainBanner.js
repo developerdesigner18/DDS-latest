@@ -13,9 +13,9 @@ const MainBanner = () => {
     };
     return (
         <>
-            <div className="main-banner-area">
+            <div className="main-banner-area ptb-100">
                 <div className="container">
-                    <div className="row main-banner-container">
+                    <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12">
                             <div className="main-banner-content">
                                 <span className="sub-title">
