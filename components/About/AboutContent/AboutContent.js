@@ -2,7 +2,7 @@ import {
     COMPLETED_PROJECTS,
     SATISFIED_CLIENTS,
     TEAM_MEMBERS,
-} from "../../utils/AppConfig";
+} from "../../../utils/AppConfig";
 
 const AboutContent = () => {
     return (

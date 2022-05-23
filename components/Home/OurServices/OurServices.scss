@@ -1,0 +1,119 @@
+/*================================================
+Our Services Area CSS
+=================================================*/
+.our-services-area {
+    background-color: var(--mainDarkColor);
+}
+.our-services-content {
+    .sub-title {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--mainBgColor);
+        font: {
+            size: 15.5px;
+            weight: 700;
+        }
+    }
+    h2 {
+        margin-bottom: 0;
+        font-size: 42px;
+        color: var(--whiteColor);
+    }
+    p {
+        color: var(--grayTextColor);
+        margin: {
+            top: 12px;
+        }
+    }
+}
+.our-services-content-accordion {
+    padding-left: 50px;
+
+    .accordion {
+        border: none;
+        .accordion__item {
+            margin-bottom: 25px;
+            border: none;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .accordion__button {
+                padding: 0;
+                background-color: transparent;
+                border: none;
+                position: relative;
+                color: var(--blackColor);
+                padding: {
+                    left: 55px;
+                    top: 8px;
+                    bottom: 8px;
+                }
+                font: {
+                    size: 18px;
+                    weight: 700;
+                }
+                &:focus {
+                    outline: 0;
+                }
+                span {
+                    color: var(--whiteColor);
+                    &::before {
+                        background-color: var(--whiteColor);
+                        position: absolute;
+                        height: 100%;
+                        width: 40px;
+                        content: "";
+                        left: 0;
+                        top: 0;
+                        z-index: 0;
+                        border-radius: 6px;
+                    }
+                }
+                &:before {
+                    margin-right: 0;
+                    border-bottom: 3px solid #000;
+                    border-right: none;
+                    transform: rotate(0deg);
+                    height: 13px;
+                    width: 13px;
+                    position: absolute;
+                    left: 14px;
+                    top: 24%;
+                    z-index: 1;
+                }
+                &::after {
+                    content: "";
+                    margin-right: 0;
+                    border-right: 3px solid #000;
+                    transform: rotate(0deg);
+                    margin-top: 5px;
+                    height: 13px;
+                    width: 13px;
+                    position: absolute;
+                    left: 9px;
+                    top: 24%;
+                    z-index: 1;
+                }
+                &[aria-expanded="true"]::after,
+                &[aria-selected="true"]::after {
+                    display: none;
+                }
+                &[aria-expanded="true"]::before,
+                &[aria-selected="true"]::before {
+                    transform: rotate(0deg);
+                }
+            }
+            .accordion__panel {
+                p {
+                    color: var(--grayTextColor);
+                }
+                padding: {
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    top: 18px;
+                }
+            }
+        }
+    }
+}

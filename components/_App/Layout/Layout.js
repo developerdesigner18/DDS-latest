@@ -1,6 +1,5 @@
-import React from "react";
 import Head from "next/head";
-import GoTop from "./GoTop";
+import GoTop from "../GoTop/GoTop";
 
 const Layout = ({ children }) => {
     return (

@@ -1,14 +1,14 @@
-import Navbar from "../components/_App/Navbar";
-import PageBanner from "../components/Common/PageBanner";
-import AboutContent from "../components/AboutUs/AboutContent";
-import OurHistory from "../components/AboutUs/OurHistory";
-import WhyDDS from "../components/AboutUs/WhyDDS";
-import OurMission from "../components/AboutUs/OurMission";
-import OurVision from "../components/AboutUs/OurVision";
-import GrowWithUs from "../components/AboutUs/GrowWithUs";
-import Footer from "../components/_App/Footer";
+import Navbar from "../components/_App/Navbar/Navbar";
+import PageBanner from "../components/Common/PageBanner/PageBanner";
+import AboutContent from "../components/About/AboutContent/AboutContent";
+import OurHistory from "../components/About/OurHistory/OurHistory";
+import WhyDDS from "../components/About/WhyDDS/WhyDDS";
+import OurMission from "../components/About/OurMission/OurMission";
+import OurVision from "../components/About/OurVision/OurVision";
+import GrowWithUs from "../components/About/GrowWithUs/GrowWithUs";
+import Footer from "../components/_App/Footer/Footer";
 
-const AboutUs = () => {
+const About = () => {
     return (
         <>
             <Navbar />
@@ -32,4 +32,4 @@ const AboutUs = () => {
     );
 };
 
-export default AboutUs;
+export default About;

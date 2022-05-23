@@ -1,5 +1,3 @@
-import React from "react";
-
 const PageBanner = ({ pageTitle }) => {
     return (
         <div className="page-title-area">

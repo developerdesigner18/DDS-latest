@@ -1,0 +1,108 @@
+/*================================================
+Industries We Serve Area CSS
+=================================================*/
+.industries-we-serve {
+    background: var(--mainDarkColor);
+    position: relative;
+    z-index: 1;
+
+    .section-title {
+        text-align: left;
+        margin: {
+            left: 0;
+            right: 0;
+        }
+        h2 {
+            color: var(--whiteColor);
+        }
+        p {
+            color: var(--grayTextColor);
+            margin: {
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+.single-industry {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+    .image {
+        height: 280px;
+        img {
+            height: 100%;
+        }
+    }
+
+    .content {
+        background-color: #f9f8f8;
+        text-align: left;
+        padding: 25px 25px 15px;
+        position: relative;
+
+        span {
+            display: block;
+            font-weight: 600;
+            color: var(--mainDarkColor);
+            text-align: center;
+        }
+    }
+}
+
+.industries-slides {
+    &.owl-theme {
+        .owl-nav {
+            &.disabled + .owl-dots {
+                margin-top: 0;
+            }
+        }
+        .owl-dots {
+            margin: {
+                top: 10px !important;
+            }
+            line-height: 1;
+            .owl-dot {
+                span {
+                    width: 15px;
+                    height: 15px;
+                    margin: 0 8px 0 0;
+                    background: transparent !important;
+                    border: 1px solid var(--whiteColor);
+                    transition: var(--transition);
+                    border-radius: 50%;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: var(--whiteColor);
+                        border-radius: 50%;
+                        margin: 2px;
+                        opacity: 0;
+                        transition: var(--transition);
+                        visibility: hidden;
+                    }
+                }
+                &:hover,
+                &.active {
+                    span {
+                        border-color: var(--whiteColor);
+
+                        &::before {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

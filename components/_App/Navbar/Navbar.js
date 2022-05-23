@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import Link from "../../utils/ActiveLink";
-import { LOGO_DARK, LOGO_LIGHT } from "../../utils/AppConfig";
+import Link from "../../../utils/ActiveLink";
+import { LOGO_DARK, LOGO_LIGHT } from "../../../utils/AppConfig";
 
 const Navbar = (props) => {
     const [menu, setMenu] = useState(true);

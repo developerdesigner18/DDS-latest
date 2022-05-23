@@ -1,0 +1,173 @@
+/*================================================
+About Area CSS
+=================================================*/
+.about-area {
+    position: relative;
+    z-index: 1;
+
+    .container-fluid {
+        padding: {
+            left: 0;
+            right: 0;
+        }
+        .row {
+            margin: {
+                left: 0;
+                right: 0;
+            }
+            .col-lg-6 {
+                padding: {
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+.about-image {
+    height: 100%;
+    margin-right: 20px;
+    background: {
+        position: center center;
+        size: cover;
+        repeat: no-repeat;
+        image: url(/images/about-img1.png);
+    }
+    img {
+        display: none;
+    }
+}
+.about-content {
+    .content {
+        max-width: 600px;
+        padding: {
+            top: 80px;
+            bottom: 80px;
+            left: 20px;
+        }
+    }
+    .text {
+        max-width: 600px;
+        padding: {
+            left: 20px;
+        }
+    }
+    .sub-title {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--mainLightColor);
+        font: {
+            size: 15.5px;
+            weight: 700;
+        }
+    }
+    h2 {
+        color: var(--mainDarkColor);
+        margin-bottom: 0;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+    p {
+        margin: {
+            top: 12px;
+        }
+    }
+    .funfacts-list {
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: {
+            left: -10px;
+            right: -10px;
+            bottom: 0;
+            top: 30px;
+        }
+        li {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            padding: {
+                left: 10px;
+                right: 10px;
+            }
+            .list {
+                position: relative;
+                margin-bottom: 20px;
+
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    color: var(--mainLightColor);
+                    font-size: 40px;
+                    line-height: 1;
+                }
+                h3 {
+                    font-size: 46px;
+                    line-height: 1;
+                    margin-bottom: 10px;
+                    padding-left: 50px;
+                }
+                p {
+                    display: block;
+                    line-height: initial;
+                    padding-right: 5px;
+                    margin: 0;
+                    font: {
+                        size: 20px;
+                        weight: 600;
+                    }
+                }
+                .odometer-formatting-mark {
+                    display: none;
+                }
+            }
+        }
+    }
+    .default-btn {
+        margin-top: 10px;
+    }
+    .features-list {
+        padding-left: 0;
+        list-style-type: none;
+        margin: {
+            top: 30px;
+            bottom: 0;
+        }
+        li {
+            margin-bottom: 20px;
+            position: relative;
+            color: var(--optionalColor);
+            padding-left: 60px;
+            font-weight: 600;
+
+            i {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: inline-block;
+                width: 45px;
+                height: 45px;
+                text-align: center;
+                background-color: var(--mainColor);
+                color: var(--whiteColor);
+                border-radius: 50%;
+                line-height: 45px;
+                transition: var(--transition);
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:hover {
+                i {
+                    background-color: var(--whiteColor);
+                    color: var(--mainColor);
+                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}
+.about-img {
+    text-align: center;
+}

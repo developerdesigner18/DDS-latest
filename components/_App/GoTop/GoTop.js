@@ -1,10 +1,10 @@
-import React from "react";
+import { useState, useRef, useEffect } from "react";
 
 const GoTop = ({ scrollStepInPx, delayInMs }) => {
-    const [thePosition, setThePosition] = React.useState(false);
-    const timeoutRef = React.useRef(null);
+    const [thePosition, setThePosition] = useState(false);
+    const timeoutRef = useRef(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         document.addEventListener("scroll", () => {
             if (window.scrollY > 170) {
                 setThePosition(true);

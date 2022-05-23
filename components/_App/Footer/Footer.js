@@ -8,8 +8,8 @@ import {
     INSTAGRAM_LINK,
     LINKEDIN_LINK,
     TWITTER_LINK,
-} from "../../utils/AppConfig";
-import { getCurrentYear } from "../../utils/utils";
+} from "../../../utils/AppConfig";
+import { getCurrentYear } from "../../../utils/utils";
 
 const Footer = () => {
     return (

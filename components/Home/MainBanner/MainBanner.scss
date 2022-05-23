@@ -1,0 +1,89 @@
+/*================================================
+Main Banner Area CSS
+=================================================*/
+.main-banner-area {
+    position: relative;
+    z-index: 1;
+}
+
+.main-banner-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-banner-content {
+    padding: {
+        // top: 200px;
+        // bottom: 200px;
+        // left: 30px;
+        // right: 30px;
+    }
+    .sub-title {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--mainLightColor);
+        font: {
+            size: 15.5px;
+            weight: 700;
+        }
+    }
+    h1 {
+        margin-bottom: 20px;
+        font-size: 29px;
+        color: var(--mainDarkColor);
+    }
+    p {
+        max-width: 630px;
+    }
+    .btn-box {
+        margin-top: 30px;
+
+        .video-btn {
+            margin-left: 25px;
+            position: relative;
+            padding-left: 55px;
+            cursor: pointer;
+            font: {
+                size: 18px;
+                weight: 700;
+            }
+            i {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                font-weight: normal;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                background-color: var(--mainLightColor);
+                color: var(--whiteColor);
+                font-size: 20px;
+                transition: var(--transition);
+                border-radius: 50%;
+                padding-left: 3px;
+            }
+            &:hover {
+                color: var(--mainDarkColor);
+
+                i {
+                    color: var(--whiteColor);
+                    background-color: var(--mainDarkColor);
+                }
+            }
+        }
+    }
+}
+.main-banner-image {
+    // height: 100%;
+    // background: {
+    //     position: center center;
+    //     size: cover;
+    //     repeat: no-repeat;
+    //     image: url(/images/banner-img.png);
+    // };
+    img {
+        // display: none;
+    }
+}
