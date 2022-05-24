@@ -7,19 +7,21 @@ const OurProcess = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12">
                         <div className="our-process-content">
-                            <span className="sub-title">
-                                Detailed, Reliable, Quality
-                            </span>
-                            <h2>Our Process</h2>
-                            <p>
-                                We believe in listening and providing the best
-                                creative solutions exceeding your requirements
-                                and focusing on yielding maximum efficiency,
-                                growth and traffic on all your digital platforms
-                                On-Time and In-Budget. In simple terms, “You
-                                share, we listen, implement and deliver”.
-                            </p>
-
+                            <div className="our-process-heading">
+                                <span className="sub-title">
+                                    Detailed, Reliable, Quality
+                                </span>
+                                <h2>Our Process</h2>
+                                <p>
+                                    We believe in listening and providing the
+                                    best creative solutions exceeding your
+                                    requirements and focusing on yielding
+                                    maximum efficiency, growth and traffic on
+                                    all your digital platforms On-Time and
+                                    In-Budget. In simple terms, “You share, we
+                                    listen, implement and deliver”.
+                                </p>
+                            </div>
                             <ul className="our-process-list">
                                 <li>
                                     <span>Planning</span>

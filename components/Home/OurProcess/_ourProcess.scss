@@ -28,6 +28,7 @@ Our Process Area CSS
 }
 
 .our-process-list {
+    margin-top: 15px;
     list-style-type: none;
     span {
         color: var(--mainDarkColor);
@@ -38,7 +39,6 @@ Our Process Area CSS
         }
     }
     p {
-        margin-top: 0;
         margin-bottom: 15px;
     }
 }
