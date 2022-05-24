@@ -1,3 +1,37 @@
+// Partials
+@use "../../components/_App/Navbar/navbar";
+@use "../../components/_App/Footer/footer";
+@use "../../components/_App/GoTop/goTop";
+// Home
+@use "../../components/Home/MainBanner/mainBanner";
+@use "../../components/Home/OurServices/ourServices";
+@use "../../components/Home/OurProcess/ourProcess";
+@use "../../components/Home/IndsustriesWeServe/industriesWeServe";
+@use "../../components/Home/Portfolio/_portfolio.scss";
+@use "../../components/Home/Testimonial/testimonial";
+@use "../../components/Home/Partners/partners";
+// About
+@use "../../components/About/AboutContent/aboutContent";
+@use "../../components/About/OurHistory/ourHistory";
+@use "../../components/About/WhyDDS/whyDDS";
+@use "../../components/About/OurMission/ourMission";
+@use "../../components/About/OurVision/ourVision";
+@use "../../components/About/GrowWithUs/growWithUs";
+// Services
+// Pricing
+// Portfolio
+// Blog
+// Contact
+// Web Development
+// Development Process
+// Laravel
+// Life At DDS
+// Main Team
+// Career
+// FAQ
+// Privacy Policy
+// Terms of Service
+
 /*
 @File: Mibix Template Styles
 
@@ -1137,8 +1171,6 @@ Solutions CSS
 .overview-box:nth-child(2n) {
     flex-direction: row-reverse;
 }
-
-
 
 /*================================================
 Portfolio Area CSS

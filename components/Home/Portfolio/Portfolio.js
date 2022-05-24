@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
@@ -57,9 +57,9 @@ const options = {
 };
 
 const Portfolio = () => {
-    const [display, setDisplay] = React.useState(false);
+    const [display, setDisplay] = useState(false);
 
-    React.useEffect(() => {
+    useEffect(() => {
         setDisplay(true);
     }, []);
 
@@ -75,7 +75,7 @@ const Portfolio = () => {
                 </div>
             </div>
 
-            <div className="container">
+            <div className="container-fluid">
                 {display ? (
                     <OwlCarousel
                         className="portfolio-slides owl-carousel owl-theme"

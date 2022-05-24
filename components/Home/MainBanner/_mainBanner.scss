@@ -1,23 +1,11 @@
 /*================================================
 Main Banner Area CSS
 =================================================*/
-.main-banner-area {
-    position: relative;
-    z-index: 1;
-}
-
-.main-banner-container {
-    display: flex;
-    justify-content: center;
-}
+// .main-banner-area {
+//     padding: 100px;
+// }
 
 .main-banner-content {
-    padding: {
-        // top: 200px;
-        // bottom: 200px;
-        // left: 30px;
-        // right: 30px;
-    }
     .sub-title {
         display: block;
         margin-bottom: 12px;
@@ -73,17 +61,5 @@ Main Banner Area CSS
                 }
             }
         }
-    }
-}
-.main-banner-image {
-    // height: 100%;
-    // background: {
-    //     position: center center;
-    //     size: cover;
-    //     repeat: no-repeat;
-    //     image: url(/images/banner-img.png);
-    // };
-    img {
-        // display: none;
     }
 }
