@@ -2,14 +2,65 @@
 Partner Area CSS
 =================================================*/
 .partner-area {
-    position: relative;
     z-index: 1;
+    padding: 100px 0;
+}
 
-    &.ptb-70 {
-        padding-bottom: 40px;
+.partners-slides {
+    left: calc((100% - 1200px) / 2);
+
+    &.owl-theme {
+        margin-top: 0;
+        .owl-nav {
+            position: absolute;
+            top: 30%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            [class*="owl-"] {
+                background-color: transparent;
+                border: 1px solid var(--mainDarkColor);
+                margin: 0 7px;
+                transition: var(--transition);
+                border-radius: 50%;
+                width: 40px;
+                padding: 0;
+                height: 40px;
+                color: var(--mainDarkColor);
+                text-align: center;
+                line-height: 39px;
+
+                &.owl-prev {
+                    // margin-right: 0;
+                    margin-left: -40px;
+                }
+                &.owl-next {
+                    margin-right: -40px;
+                }
+
+                &:hover {
+                    background-color: var(--mainLightColor);
+                    border-color: var(--mainDarkColor);
+                    color: var(--whiteColor);
+                }
+            }
+        }
     }
 }
+
 .single-partner-item {
     text-align: center;
-    margin-bottom: 30px;
+    border-radius: 5px;
+
+    .image {
+        height: 150px;
+        display: grid;
+        place-items: center;
+        margin: 0 30px;
+
+        img {
+            width: 100%;
+        }
+    }
 }
