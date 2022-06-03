@@ -24,33 +24,51 @@ const OurProcess = () => {
                             </div>
                             <ul className="our-process-list">
                                 <li>
-                                    <span>Planning</span>
-                                    <p>
-                                        A road map and getting to know you are
-                                        the first steps in every endeavour. We
-                                        investigate every aspect of the project
-                                        and provide the strategies, budget and
-                                        wireframes understanding all your
-                                        requirements.
-                                    </p>
+                                    <div className="our-process-point">
+                                        <div>01</div>
+                                    </div>
+                                    <div>
+                                        <span>Planning</span>
+                                        <p>
+                                            A road map and getting to know you
+                                            are the first steps in every
+                                            endeavour. We investigate every
+                                            aspect of the project and provide
+                                            the strategies, budget and
+                                            wireframes understanding all your
+                                            requirements.
+                                        </p>
+                                    </div>
                                 </li>
                                 <li>
-                                    <span>Development</span>
-                                    <p>
-                                        Here is where the idea becomes a
-                                        reality, we focus on all aspects of
-                                        designing, coding, testing and every
-                                        little tweak before making it all live.
-                                    </p>
+                                    <div className="our-process-point">
+                                        <div>02</div>
+                                    </div>
+                                    <div>
+                                        <span>Development</span>
+                                        <p>
+                                            Here is where the idea becomes a
+                                            reality, we focus on all aspects of
+                                            designing, coding, testing and every
+                                            little tweak before making it all
+                                            live.
+                                        </p>
+                                    </div>
                                 </li>
                                 <li>
-                                    <span>Publish</span>
-                                    <p>
-                                        Experience the reality, here we not only
-                                        make your idea live on all digital
-                                        platforms but also take care of your
-                                        reach, marketing and success.
-                                    </p>
+                                    <div className="our-process-point">
+                                        <div>03</div>
+                                    </div>
+                                    <div>
+                                        <span>Publish</span>
+                                        <p>
+                                            Experience the reality, here we not
+                                            only make your idea live on all
+                                            digital platforms but also take care
+                                            of your reach, marketing and
+                                            success.
+                                        </p>
+                                    </div>
                                 </li>
                             </ul>
 

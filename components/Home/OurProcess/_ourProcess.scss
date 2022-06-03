@@ -30,6 +30,17 @@ Our Process Area CSS
 .our-process-list {
     margin-top: 15px;
     list-style-type: none;
+    li {
+        display: flex;
+    }
+    li::before {
+        content: "";
+        border-left: 2px solid var(--mainDarkColor);
+        margin-right: -15px;
+    }
+    li:last-child::before {
+        border: none;
+    }
     span {
         color: var(--mainDarkColor);
         margin-bottom: 0;
@@ -40,6 +51,22 @@ Our Process Area CSS
     }
     p {
         margin-bottom: 15px;
+    }
+    .our-process-point {
+        margin-right: 20px;
+        div {
+            display: grid;
+            place-items: center;
+            width: 30px;
+            height: 30px;
+            border: 2px solid var(--mainDarkColor);
+            border-radius: 50%;
+            color: var(--mainDarkColor);
+            font-size: 12px;
+            font-style: italic;
+            font-weight: bold;
+            background-color: var(--whiteColor);
+        }
     }
 }
 
