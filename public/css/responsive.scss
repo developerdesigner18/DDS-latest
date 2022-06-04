@@ -699,6 +699,7 @@ $value_seven: 1550px;
         text-align: center;
         max-width: 100%;
         margin-left: 0;
+        margin-top: 30px;
         padding: {
             top: 0;
             bottom: 30px;
@@ -745,6 +746,15 @@ $value_seven: 1550px;
 
         img {
             display: inline-block !important;
+        }
+
+        .video-btn {
+            i {
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 20px;
+            }
         }
     }
     .testimonials-slides {
@@ -2856,6 +2866,7 @@ $value_seven: 1550px;
     .testimonials-content {
         max-width: 100%;
         margin-left: 0;
+        margin-top: 30px;
         padding: {
             top: 0;
             bottom: 30px;

@@ -9,11 +9,13 @@ Testimonials Area CSS
             right: 0;
         }
         .row {
+            display: flex;
+            align-items: center;
             margin: {
                 left: 0;
                 right: 0;
             }
-            .col-lg-7,
+            .col-lg-6,
             .col-lg-5 {
                 padding: {
                     left: 0;
@@ -25,10 +27,10 @@ Testimonials Area CSS
 }
 .testimonials-content {
     max-width: 758px;
-    margin-left: auto;
+    margin-left: 30px;
     padding: {
-        top: 100px;
-        bottom: 100px;
+        // top: 100px;
+        // bottom: 100px;
         right: 150px;
     }
     .sub-title {
@@ -138,199 +140,56 @@ Testimonials Area CSS
     }
 }
 .testimonials-image {
+    position: relative;
     height: 100%;
     background: {
         position: center center;
         size: cover;
         repeat: no-repeat;
-        image: url(/images/testimonials-img.jpg);
+        // image: url(/images/thumbnail.png);
     }
     img {
-        display: none;
+        // display: none;
     }
-}
-.feedback-area {
-    position: relative;
-    z-index: 1;
-    background-color: var(--blackColor);
-}
-.feedback-image {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    text-align: center;
-    z-index: 1;
-    border-radius: 50%;
-    margin: {
-        left: auto;
-        right: auto;
-    }
-    img {
-        border-radius: 50%;
-        border: 1.5px dashed #072a50;
-        padding: 5px;
 
-        &:nth-child(1) {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 0;
-            margin: {
-                left: auto;
-                right: auto;
-            }
-        }
-        &:nth-child(2) {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        &:nth-child(3) {
-            position: absolute;
-            right: -50px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        &:nth-child(4) {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-        }
-    }
-    &::before {
-        content: "";
+    .overlay {
         position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
         left: 0;
         right: 0;
-        top: 0;
         bottom: 0;
-        z-index: -1;
-        border-radius: 50%;
-        border: 6px dashed #141a3c;
-        animation: {
-            name: rotateme;
-            duration: 100s;
-            iteration-count: infinite;
-            timing-function: linear;
-        }
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
     }
-}
-.feedback-content {
-    .sub-title {
-        display: block;
-        margin-bottom: 12px;
-        color: var(--mainColor);
-        text-transform: uppercase;
-        font: {
-            size: 15.5px;
-            weight: 700;
-        }
-    }
-    h2 {
-        margin-bottom: 0;
-        font-size: 42px;
-        color: var(--whiteColor);
-    }
-    .feedback-slides {
-        margin-top: 20px;
-    }
-}
-.single-feedback-item {
-    position: relative;
-    color: var(--whiteColor);
-    z-index: 1;
 
-    p {
-        color: var(--whiteColor);
-        font-weight: 600;
-    }
-    .client-info {
-        margin-top: 25px;
-
-        img {
-            width: 60px !important;
-            height: 60px;
+    .video-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        cursor: pointer;
+        z-index: 3;
+        i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 75px;
+            height: 75px;
+            line-height: 75px;
+            text-align: center;
+            background-color: var(--whiteColor);
+            color: var(--mainLightColor);
+            font-size: 28px;
+            transition: var(--transition);
             border-radius: 50%;
         }
-        .title {
-            margin-left: 15px;
+        &:hover {
+            color: var(--mainLightColor);
 
-            h3 {
-                font-size: 20px;
+            i {
                 color: var(--whiteColor);
-                margin-bottom: 0;
-            }
-            span {
-                display: block;
-                font-weight: 600;
-                margin-top: 3px;
-                color: #e3e3e3;
-            }
-        }
-    }
-    &::before {
-        content: "\f118";
-        font-family: Flaticon;
-        position: absolute;
-        right: 220px;
-        bottom: -12px;
-        color: #2a172f;
-        line-height: 1;
-        z-index: -1;
-        font-size: 90px;
-    }
-}
-.feedback-slides {
-    &.owl-theme {
-        .owl-nav {
-            &.disabled + .owl-dots {
-                margin-top: 0;
-                text-align: left;
-            }
-        }
-        .owl-dots {
-            margin: {
-                top: 30px !important;
-                left: 2px;
-            }
-            .owl-dot {
-                span {
-                    width: 15px;
-                    height: 15px;
-                    margin: 0 8px 0 0;
-                    background: transparent !important;
-                    border: 1px solid #fe9b81;
-                    transition: var(--transition);
-                    border-radius: 50%;
-                    position: relative;
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        background-color: var(--mainColor);
-                        border-radius: 50%;
-                        margin: 2px;
-                        opacity: 0;
-                        transition: var(--transition);
-                        visibility: hidden;
-                    }
-                }
-                &:hover,
-                &.active {
-                    span {
-                        border-color: var(--mainColor);
-
-                        &::before {
-                            opacity: 1;
-                            visibility: visible;
-                        }
-                    }
-                }
+                background-color: var(--mainLightColor);
             }
         }
     }

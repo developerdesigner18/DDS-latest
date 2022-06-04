@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
 
@@ -39,16 +39,38 @@ const options = {
 };
 
 const Testimonial = () => {
-    const [display, setDisplay] = React.useState(false);
+    const [display, setDisplay] = useState(false);
 
-    React.useEffect(() => {
+    useEffect(() => {
         setDisplay(true);
     }, []);
+
+    // Popup Video
+    const [isOpen, setIsOpen] = useState(true);
+    const openModal = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <div className="testimonials-area">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-lg-7 col-md-12">
+                    <div className="col-lg-6 col-md-12">
+                        <div className="testimonials-image">
+                            <img src="/images/thumbnail.png" alt="image" />
+                            <div className="overlay"></div>
+                            <div
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    openModal();
+                                }}
+                                className="video-btn popup-youtube"
+                            >
+                                <i className="flaticon-play-button"></i>{" "}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-12">
                         <div className="testimonials-content">
                             <span className="sub-title">Testimonials</span>
                             <h2>What Our Clients Are Saying?</h2>
@@ -85,15 +107,6 @@ const Testimonial = () => {
                             ) : (
                                 ""
                             )}
-                        </div>
-                    </div>
-
-                    <div className="col-lg-5 col-md-12">
-                        <div className="testimonials-image">
-                            <img
-                                src="/images/testimonials-img.jpg"
-                                alt="image"
-                            />
                         </div>
                     </div>
                 </div>
