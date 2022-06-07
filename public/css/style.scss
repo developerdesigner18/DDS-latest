@@ -17,6 +17,13 @@
 @use "../../components/About/OurMission/ourMission";
 @use "../../components/About/OurVision/ourVision";
 @use "../../components/About/GrowWithUs/growWithUs";
+
+// Solution
+@use "../../components/Solutions/Features/feature";
+@use "../../components/Common/ServiceCard/serviceCard";
+@use "../../components/Common/InfoCard/infoCard";
+@use "../../components/Solutions/GetAQuote/getAQuote";
+
 // Services
 // Pricing
 // Portfolio
