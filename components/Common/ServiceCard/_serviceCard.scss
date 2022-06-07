@@ -5,3 +5,12 @@ h1 {
     font-weight: 400;
     font-size: 14px;
 }
+.container.servicecard {
+    margin: 40px auto;
+}
+.about-content.service h2 {
+    color: var(--mainDarkColor);
+    margin-bottom: 0;
+    font-size: 42px;
+    text-transform: capitalize;
+}
