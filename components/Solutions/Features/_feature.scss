@@ -1,0 +1,21 @@
+.row.solutions-row
+{
+    width: 100% !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin: 0px;
+}
+.icon.solution {
+    background: transparent !important;
+}
+h2.title {
+    text-align: center;
+    color: #003E6B;
+    margin: 20px;
+}
+.single-featured-services-box h3 {
+    color: #003E6B;
+}
+.single-featured-services-box.feature{
+    box-shadow: 0px 15px 35px rgb(0 0 0 / 10%) !important;
+}
