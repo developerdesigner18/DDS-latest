@@ -16,7 +16,12 @@ const Solution = () => {
 
             <PageBanner pageTitle="Solution" />
 
-            <ServiceCard />
+            <ServiceCard
+                mainimage="/images/solutions/eccomerce.png"
+                heading="Ecommerce, Retail And B2B"
+                content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+                btntext="Request A Quote"
+            />
 
             <InfoCard
                 heading="Ecommerce, Retail & B2B Solutions"

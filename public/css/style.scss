@@ -25,10 +25,15 @@
 @use "../../components/Solutions/GetAQuote/getAQuote";
 
 // Services
-@use "../../components/Common/ServiceCard/serviceCard";
+
 @use "../../components/Services/WhatWeOffer/whatWeOffer";
 // Pricing
+
 // Portfolio
+@use "../../components/Portfolio/UserPortfolio.scss";
+@use "../../components/ProtfolioView/ProfileView.scss";
+
+
 // Blog
 // Contact
 // Web Development

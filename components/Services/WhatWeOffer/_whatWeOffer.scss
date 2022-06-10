@@ -5,7 +5,7 @@
 .img-icons {
     height: 50px;
     width: 50px;
-    margin: auto;
+    margin: 12px auto;
 }
 .img-icons img {
     height: 100%;
@@ -27,4 +27,20 @@ p.heading {
 }
 .blockContainer {
     margin-top: 25px;
+}
+.service-block.mobile-block .heading {
+    color: white;
+}
+
+.service-block.mobile-block .subheading {
+    color: white;
+}
+.service-block.mobile-block {
+    background: #003e6b;
+}
+
+@media only screen and (max-width: 767px){
+    .service-block {
+        margin: 10px 0px;
+    }
 }

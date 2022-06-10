@@ -1,20 +1,23 @@
 import Navbar from "../components/_App/Navbar/Navbar";
 import PageBanner from "../components/Common/PageBanner/PageBanner";
 import Footer from "../components/_App/Footer/Footer";
-import UserPortfolio from "../components/Portfolio/UserPortfolio";
+import PortfolioDetails from "../components/ProtfolioView/PortfolioDetails";
+import Moreprofile from "../components/ProtfolioView/Moreprofile";
 
-const Portfolio = () => {
+const portfolioview = () => {
     return (
         <>
             <Navbar />
 
             <PageBanner pageTitle="Portfolio" />
 
-            <UserPortfolio />
+            <PortfolioDetails />
+
+            <Moreprofile />
 
             <Footer />
         </>
     );
 };
 
-export default Portfolio;
+export default portfolioview;
