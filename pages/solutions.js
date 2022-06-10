@@ -1,6 +1,7 @@
 import Navbar from "../components/_App/Navbar/Navbar";
 import PageBanner from "../components/Common/PageBanner/PageBanner";
 import Footer from "../components/_App/Footer/Footer";
+import Link from "next/link";
 
 const solutions = [
     {
@@ -23,7 +24,7 @@ const solutions = [
                 45 BC, making it over 2000 years old. Richard McClintock.
             </p>,
         ],
-        image: "/images/services/services-img1.png",
+        image: "/images/solutions/solution/eccomerce.png",
     },
     {
         title: "On-Demand Solutions",
@@ -45,7 +46,7 @@ const solutions = [
                 45 BC, making it over 2000 years old. Richard McClintock.
             </p>,
         ],
-        image: "/images/services/services-img2.png",
+        image: "/images/solutions/solution/demand.png",
     },
     {
         title: "Social Networking",
@@ -67,7 +68,7 @@ const solutions = [
                 45 BC, making it over 2000 years old. Richard McClintock.
             </p>,
         ],
-        image: "/images/services/services-img1.png",
+        image: "/images/solutions/solution/social.png",
     },
     {
         title: "Food And Restaurant",
@@ -89,7 +90,7 @@ const solutions = [
                 45 BC, making it over 2000 years old. Richard McClintock.
             </p>,
         ],
-        image: "/images/services/services-img2.png",
+        image: "/images/solutions/solution/food.png",
     },
 ];
 
@@ -106,7 +107,14 @@ const Solutions = () => {
                         <div key={index} className="overview-box">
                             <div className="overview-content">
                                 <div className="content">
-                                    <span className="sub-title">Solutions</span>
+                                    <Link href="/solution">
+                                        <span
+                                            className="sub-title"
+                                            style={{ cursor: "pointer" }}
+                                        >
+                                            Solutions
+                                        </span>
+                                    </Link>
                                     <h2>{title}</h2>
                                     {description}
                                 </div>
@@ -119,7 +127,14 @@ const Solutions = () => {
                             </div>
                         </div>
                     ))}
-                    <a className="default-btn">View All</a>
+                    <Link href="/solution">
+                        <span
+                            className="default-btn"
+                            style={{ cursor: "pointer" }}
+                        >
+                            View All
+                        </span>
+                    </Link>
                 </div>
             </div>
 

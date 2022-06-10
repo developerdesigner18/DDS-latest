@@ -1,3 +1,29 @@
 .row.quote{
     align-items: center;
 }
+.form-group label {
+    color: var(--mainDarkColor);
+    margin: 6px 0px;
+}
+.form-control:focus, .form-select:focus {
+    border-color: #003e6b !important;
+}
+.subheading{
+    color: var(--mainLightColor);
+}
+.row.quote .contact-form{
+    margin-left: 0 !important;
+}
+.row.quote{
+    gap: 8%;
+}
+
+@media only screen and (max-width: 767px){
+.form-group.quote label{
+    justify-content: flex-start;
+    display: flex;
+}
+.about-content.service h2 {
+    font-size: 34px;
+}
+}

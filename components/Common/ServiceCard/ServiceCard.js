@@ -24,6 +24,9 @@ const ServiceCard = () => {
                                     printer took a galley of type and scrambled
                                     it to make a type specimen book
                                 </p>
+                                <button type="submit" className="default-btn">
+                                    Request A Quote
+                                </button>
                             </div>
                         </div>
                     </div>
