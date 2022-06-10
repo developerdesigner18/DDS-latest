@@ -149,6 +149,20 @@ const Navbar = (props) => {
 
                                     <li className="nav-item">
                                         <Link
+                                            href="/solutions"
+                                            activeClassName="active"
+                                        >
+                                            <a
+                                                onClick={toggleNavbar}
+                                                className="nav-link"
+                                            >
+                                                Solutions
+                                            </a>
+                                        </Link>
+                                    </li>
+
+                                    <li className="nav-item">
+                                        <Link
                                             href="/blog"
                                             activeClassName="active"
                                         >
