@@ -2,6 +2,9 @@
 @use "../../components/_App/Navbar/navbar";
 @use "../../components/_App/Footer/footer";
 @use "../../components/_App/GoTop/goTop";
+// Common
+@use "../../components/Common/InfoCard/infoCard";
+@use "../../components/Common/ServiceCard/serviceCard";
 // Home
 @use "../../components/Home/MainBanner/mainBanner";
 @use "../../components/Home/OurServices/ourServices";
@@ -17,13 +20,9 @@
 @use "../../components/About/OurMission/ourMission";
 @use "../../components/About/OurVision/ourVision";
 @use "../../components/About/GrowWithUs/growWithUs";
-
 // Solution
 @use "../../components/Solutions/Features/feature";
-@use "../../components/Common/ServiceCard/serviceCard";
-@use "../../components/Common/InfoCard/infoCard";
 @use "../../components/Solutions/GetAQuote/getAQuote";
-
 // Services
 
 @use "../../components/Services/WhatWeOffer/whatWeOffer";

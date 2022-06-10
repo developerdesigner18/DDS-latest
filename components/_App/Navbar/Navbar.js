@@ -1,8 +1,12 @@
+import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import Link from "../../../utils/ActiveLink";
 import { LOGO_DARK, LOGO_LIGHT } from "../../../utils/AppConfig";
 
-const Navbar = (props) => {
+const Navbar = () => {
+    const router = useRouter();
+    const location = router.pathname;
+
     const [menu, setMenu] = useState(true);
 
     const toggleNavbar = () => {
@@ -39,7 +43,7 @@ const Navbar = (props) => {
             <div
                 id="navbar"
                 className={`navbar-area ${
-                    props.home ? "" : "navbar-color-white"
+                    location === "/" ? "" : "navbar-color-white"
                 }`}
             >
                 <div className="main-nav">
@@ -52,7 +56,9 @@ const Navbar = (props) => {
                                 >
                                     <img
                                         src={
-                                            props.home ? LOGO_DARK : LOGO_LIGHT
+                                            location === "/"
+                                                ? LOGO_DARK
+                                                : LOGO_LIGHT
                                         }
                                         alt="logo"
                                         width="130px"
@@ -197,7 +203,7 @@ const Navbar = (props) => {
                                         <a>
                                             <img
                                                 src={
-                                                    props.home
+                                                    location === "/"
                                                         ? "/images/night-mode-dark.svg"
                                                         : "/images/night-mode-light.svg"
                                                 }

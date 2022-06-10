@@ -1,13 +1,9 @@
-import Navbar from "../components/_App/Navbar/Navbar";
 import PageBanner from "../components/Common/PageBanner/PageBanner";
-import Footer from "../components/_App/Footer/Footer";
 import StartProjectWithUs from "../components/Common/StartProjectWithUs";
 
 const Faq = () => {
     return (
         <>
-            <Navbar />
-
             <PageBanner pageTitle="Frequently Asked Questions" />
 
             <div className="faq-area pt-100 pb-70">
@@ -155,8 +151,6 @@ const Faq = () => {
             <div className="bg-f9f9f9">
                 <StartProjectWithUs />
             </div>
-
-            <Footer />
         </>
     );
 };
