@@ -1,14 +1,10 @@
-import Navbar from "../components/_App/Navbar/Navbar";
 import PageBanner from "../components/Common/PageBanner/PageBanner";
-import Footer from "../components/_App/Footer/Footer";
 import StartProjectWithUs from "../components/Common/StartProjectWithUs";
 import Link from "next/link";
 
 const Pricing = () => {
     return (
         <>
-            <Navbar />
-
             <PageBanner pageTitle="Pricing" />
 
             <div className="pricing-area bg-f9f9f9 pt-100 pb-70">
@@ -117,8 +113,6 @@ const Pricing = () => {
             </div>
 
             <StartProjectWithUs />
-
-            <Footer />
         </>
     );
 };

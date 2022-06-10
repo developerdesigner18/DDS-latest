@@ -1,13 +1,9 @@
-import Navbar from "../components/_App/Navbar/Navbar";
 import PageBanner from "../components/Common/PageBanner/PageBanner";
-import Footer from "../components/_App/Footer/Footer";
 import Link from "next/link";
 
 const PrivacyPolicy = () => {
     return (
         <>
-            <Navbar />
-
             <PageBanner pageTitle="Privacy Policy" />
 
             <div className="privacy-policy-area bg-f9f9f9 ptb-100">
@@ -179,8 +175,6 @@ const PrivacyPolicy = () => {
                     </div>
                 </div>
             </div>
-
-            <Footer />
         </>
     );
 };

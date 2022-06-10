@@ -1,13 +1,9 @@
-import Navbar from "../components/_App/Navbar/Navbar";
 import PageBanner from "../components/Common/PageBanner/PageBanner";
-import Footer from "../components/_App/Footer/Footer";
 import Link from "next/link";
 
 const Custom404 = () => {
     return (
         <>
-            <Navbar />
-
             <PageBanner pageTitle="404 Error" />
 
             <div className="error-area ptb-100">
@@ -25,8 +21,6 @@ const Custom404 = () => {
                     </div>
                 </div>
             </div>
-
-            <Footer />
         </>
     );
 };

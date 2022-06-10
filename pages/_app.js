@@ -11,11 +11,15 @@ import "../public/css/style.scss";
 import "../public/css/responsive.scss";
 
 import Layout from "../components/_App/Layout/Layout";
+import Navbar from "../components/_App/Navbar/Navbar";
+import Footer from "../components/_App/Footer/Footer";
 
 const MyApp = ({ Component, pageProps }) => {
     return (
         <Layout>
+            <Navbar />
             <Component {...pageProps} />
+            <Footer />
         </Layout>
     );
 };

@@ -1,13 +1,9 @@
-import Navbar from "../components/_App/Navbar/Navbar";
 import PageBanner from "../components/Common/PageBanner/PageBanner";
-import Footer from "../components/_App/Footer/Footer";
 import Link from "next/link";
 
 const TermsOfService = () => {
     return (
         <>
-            <Navbar />
-
             <PageBanner pageTitle="Terms Of Service" />
 
             <div className="terms-of-service-area bg-f9f9f9 ptb-100">
@@ -182,8 +178,6 @@ const TermsOfService = () => {
                     </div>
                 </div>
             </div>
-
-            <Footer />
         </>
     );
 };

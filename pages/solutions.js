@@ -1,6 +1,4 @@
-import Navbar from "../components/_App/Navbar/Navbar";
 import PageBanner from "../components/Common/PageBanner/PageBanner";
-import Footer from "../components/_App/Footer/Footer";
 
 const solutions = [
     {
@@ -96,8 +94,6 @@ const solutions = [
 const Solutions = () => {
     return (
         <>
-            <Navbar />
-
             <PageBanner pageTitle="Solutions" />
 
             <div className="overview-area ptb-100">
@@ -122,8 +118,6 @@ const Solutions = () => {
                     <a className="default-btn">View All</a>
                 </div>
             </div>
-
-            <Footer />
         </>
     );
 };
