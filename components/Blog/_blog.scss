@@ -1,0 +1,37 @@
+.single-blog-post .content .d-flex .info {
+    margin-left: 0px !important;
+}
+.single-blog-post {
+    background-color: #EBF2F6 !important;
+}
+
+.blog-right-sidebar .widget-area .widget {
+    background-color: #EBF2F6;
+}
+
+.blog-right-sidebar .widget-area .widget_search form .search-field {
+    background-color: #D0EAF9;
+}
+
+.blog-right-sidebar .widget-area .widget .widget-title::before {
+    background-color: #003E6B !important;
+}
+.widget-area .widget_categories ul li::before {
+    background: #003E6B !important;
+}
+.widget-area .widget_search form button:hover, .widget-area .widget_search form button:focus {
+    background-color: #003E6B !important;
+}
+
+.widget-area .widget_search form button {
+    color: #003E6B !important;
+}
+
+.widget-area .tagcloud a:hover, .widget-area .tagcloud a:focus {
+    background-color: #003E6B !important;
+}
+
+.widget-area .widget_search form button:hover, .widget-area .widget_search form button:focus {
+    color: var(--whiteColor) !important;
+}
+
