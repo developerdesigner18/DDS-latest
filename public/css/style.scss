@@ -24,9 +24,15 @@
 @use "../../components/Solutions/Features/feature";
 @use "../../components/Solutions/GetAQuote/getAQuote";
 // Services
+
 @use "../../components/Services/WhatWeOffer/whatWeOffer";
 // Pricing
+
 // Portfolio
+@use "../../components/Portfolio/UserPortfolio.scss";
+@use "../../components/ProtfolioView/ProfileView.scss";
+
+
 // Blog
 // Contact
 // Web Development

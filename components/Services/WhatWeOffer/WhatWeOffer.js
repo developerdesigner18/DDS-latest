@@ -43,7 +43,7 @@ const WhatWeOffer = () => {
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-2">
-                        <div className="service-block">
+                        <div className="service-block mobile-block">
                             <div className="img-icons">
                                 <img src="/images/services/mobile-ap.png" />
                             </div>
