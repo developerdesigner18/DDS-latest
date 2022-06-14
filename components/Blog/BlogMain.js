@@ -17,7 +17,7 @@ const BlogMain = () => {
                                             <>
                                                 <div className="single-blog-post p-30">
                                                     <div className="image">
-                                                        <Link href="/single-blog-1">
+                                                        <Link href="/singleblog">
                                                             <a className="d-block">
                                                                 <img
                                                                     src={
@@ -30,7 +30,7 @@ const BlogMain = () => {
                                                     </div>
                                                     <div className="content">
                                                         <h3>
-                                                            <Link href="/single-blog-1">
+                                                            <Link href="/singleblog">
                                                                 <a>
                                                                     {elm.title}
                                                                 </a>

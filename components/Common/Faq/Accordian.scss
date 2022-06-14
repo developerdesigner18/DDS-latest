@@ -1,0 +1,35 @@
+button.accordian-btn{
+    display: flex;
+    color: white;
+    background: #003e6b;
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0px;
+    border: none;
+    text-align: left;
+}
+.icons {
+    margin-left: auto;
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.accordian-content {
+    width: 100%;
+    padding: 12px;
+    background: #EBF2F6;
+    color: var(--mainLightColor);
+}
+.accordian-main {
+    margin: 14px 0px;
+}
+.icons svg {
+    fill: white;
+}
+.accordion-main {
+    margin: 40px 0px;
+}
+

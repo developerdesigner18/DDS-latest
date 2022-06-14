@@ -1,3 +1,4 @@
+import Link from "next/link";
 const ServiceCard = (props) => {
     return (
         <>
@@ -15,9 +16,11 @@ const ServiceCard = (props) => {
                                 <h6>{props.subheading}</h6>
                                 <h2>{props.heading}</h2>
                                 <p>{props.content}</p>
-                                <button type="submit" className="default-btn">
-                                    {props.btntext}
-                                </button>
+                                <Link href="#quote">
+                                    <a type="submit" className="default-btn">
+                                        {props.btntext}
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

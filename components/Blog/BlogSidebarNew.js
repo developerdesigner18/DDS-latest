@@ -25,7 +25,7 @@ const BlogSidebarNew = () => {
                 <h3 className="widget-title">Popular Posts</h3>
 
                 <div className="item">
-                    <Link href="/single-blog-1">
+                    <Link href="/singleblog">
                         <a className="thumb">
                             <span
                                 className="fullimage cover bg1"
@@ -36,7 +36,7 @@ const BlogSidebarNew = () => {
                     <div className="info">
                         <span>Feb 20,2022</span>
                         <h4 className="title usmall">
-                            <Link href="/single-blog-1">
+                            <Link href="/singleblog">
                                 <a>
                                     Marketing branding planning vision goals
                                     concept
@@ -49,7 +49,7 @@ const BlogSidebarNew = () => {
                 </div>
 
                 <div className="item">
-                    <Link href="/single-blog-1">
+                    <Link href="/singleblog">
                         <a className="thumb">
                             <span
                                 className="fullimage cover bg2"
@@ -60,7 +60,7 @@ const BlogSidebarNew = () => {
                     <div className="info">
                         <span>Feb 20,2022</span>
                         <h4 className="title usmall">
-                            <Link href="/single-blog-1">
+                            <Link href="/singleblog">
                                 <a>
                                     Marketing branding planning vision goals
                                     concept
@@ -73,7 +73,7 @@ const BlogSidebarNew = () => {
                 </div>
 
                 <div className="item">
-                    <Link href="/single-blog-1">
+                    <Link href="/singleblog">
                         <a className="thumb">
                             <span
                                 className="fullimage cover bg3"
@@ -84,7 +84,7 @@ const BlogSidebarNew = () => {
                     <div className="info">
                         <span>Feb 20,2022</span>
                         <h4 className="title usmall">
-                            <Link href="/single-blog-1">
+                            <Link href="/singleblog">
                                 <a>
                                     Marketing branding planning vision goals
                                     concept
