@@ -1,7 +1,33 @@
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
+
+const partners = [
+    {
+        id: 1,
+        image: "/images/partner/partner-img6.png",
+    },
+    {
+        id: 2,
+        image: "/images/partner/partner-img4.png",
+    },
+    {
+        id: 3,
+        image: "/images/partner/partner-img3.png",
+    },
+    {
+        id: 4,
+        image: "/images/partner/partner-img1.png",
+    },
+    {
+        id: 5,
+        image: "/images/partner/partner-img2.png",
+    },
+    {
+        id: 6,
+        image: "/images/partner/partner-img5.png",
+    },
+];
 
 const options = {
     loop: true,
@@ -10,6 +36,7 @@ const options = {
     autoplayHoverPause: true,
     autoplay: true,
     margin: 30,
+    center: true,
     navText: [
         "<i class='flaticon-back'></i>",
         "<i class='flaticon-chevron'></i>",
@@ -33,27 +60,6 @@ const options = {
     },
 };
 
-const partners = [
-    {
-        image: "/images/partner/partner-img6.png",
-    },
-    {
-        image: "/images/partner/partner-img4.png",
-    },
-    {
-        image: "/images/partner/partner-img3.png",
-    },
-    {
-        image: "/images/partner/partner-img1.png",
-    },
-    {
-        image: "/images/partner/partner-img2.png",
-    },
-    {
-        image: "/images/partner/partner-img5.png",
-    },
-];
-
 const Partners = () => {
     const [display, setDisplay] = useState(false);
 
@@ -69,9 +75,9 @@ const Partners = () => {
                         className="partners-slides owl-carousel owl-theme"
                         {...options}
                     >
-                        {partners.map(({ image }, index) => (
+                        {partners.map(({ image, id }) => (
                             <div
-                                key={index}
+                                key={id}
                                 className="row align-items-center justify-content-md-center"
                             >
                                 <div className="single-partner-item">

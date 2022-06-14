@@ -845,6 +845,10 @@ $value_seven: 1550px;
         }
     }
 
+    .owl-item.active.center {
+        transform: scale(1);
+    }
+
     .industries-we-serve {
         .col-lg-6 {
             order: 1;
