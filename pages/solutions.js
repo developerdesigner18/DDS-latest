@@ -111,7 +111,11 @@ const Solutions = () => {
                                             Solutions
                                         </span>
                                     </Link>
-                                    <h2>{title}</h2>
+                                    <Link href="/solution">
+                                        <h2 style={{ cursor: "pointer" }}>
+                                            {title}
+                                        </h2>
+                                    </Link>
                                     {description}
                                 </div>
                             </div>
