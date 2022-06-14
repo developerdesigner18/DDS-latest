@@ -1764,6 +1764,20 @@ $value_seven: 1550px;
         }
     }
 
+    .search-404 {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        button {
+            position: unset;
+        }
+    }
+
     .coming-soon-area {
         height: 100%;
         padding: {

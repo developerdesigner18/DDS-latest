@@ -45,6 +45,11 @@ const Navbar = () => {
                 className={`navbar-area ${
                     location === "/" ? "" : "navbar-color-white"
                 }`}
+                style={{
+                    backgroundColor: `${
+                        location === "/404" ? "#003e6b" : "transparent"
+                    }`,
+                }}
             >
                 <div className="main-nav">
                     <div className="container">

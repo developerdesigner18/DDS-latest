@@ -1,6 +1,22 @@
-import React from "react";
 import Link from "next/link";
-import UserData from "./UserData";
+
+const users = [
+    {
+        userImg: "/images/portfolio/design.png",
+        content:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text.",
+    },
+    {
+        userImg: "/images/portfolio/interface.png",
+        content:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text.",
+    },
+    {
+        userImg: "/images/portfolio/website.png",
+        content:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text.",
+    },
+];
 
 const Moreprofile = () => {
     return (
@@ -11,7 +27,7 @@ const Moreprofile = () => {
                         More Projects You Might Like{" "}
                     </h3>
                     <div className="row">
-                        {UserData.map((elm) => {
+                        {users.map((elm) => {
                             return (
                                 <>
                                     <div className="col-lg-4 col-md-6 col-sm-6">

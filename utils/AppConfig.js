@@ -3,8 +3,8 @@ export const LOGO_LIGHT = "/images/logo-light.png";
 export const LOGO_DARK = "/images/logo-dark.png";
 
 // Social Media Links
-export const FACEBOOK_LINK = "https://www.facebook.com/daydreamsoft/";
-export const TWITTER_LINK = "https://www.instagram.com/daydreamsoft/";
+export const FACEBOOK_LINK = "https://www.facebook.com/daydreamsoft";
+export const TWITTER_LINK = "https://www.instagram.com/daydreamsoft";
 export const INSTAGRAM_LINK = "https://twitter.com/daydreamsoftcom";
 export const LINKEDIN_LINK = "https://www.linkedin.com/company/daydreamsoft";
 
