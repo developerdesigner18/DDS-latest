@@ -36,7 +36,7 @@ History Area CSS
             content: "\ea17";
             position: absolute;
             left: 116px;
-            color: var(--mainColor);
+            color: var(--mainDarkColor);
             bottom: -25px;
             animation: fade-down 1.5s infinite linear;
             font: {
@@ -50,19 +50,26 @@ History Area CSS
             left: 0;
             top: 50%;
             transform: translateY(-50%);
-            color: var(--optionalColor);
+            color: var(--mainLightColor);
             font: {
                 size: 15px;
             }
             span {
                 display: block;
                 margin-bottom: 3px;
-                color: var(--blackColor);
+                color: var(--mainLightColor);
                 font-weight: 700;
             }
             sup {
-                color: var(--blackColor);
+                color: var(--mainLightColor);
                 font-weight: 600;
+            }
+        }
+        .timeline-content {
+            .content {
+                h3 {
+                    color: var(--mainDarkColor);
+                }
             }
         }
         .timeline-icon {
@@ -72,7 +79,7 @@ History Area CSS
             left: 126px;
 
             .dot-badge {
-                background-color: var(--mainColor);
+                background-color: var(--mainDarkColor);
                 display: block;
                 width: 10px;
                 height: 10px;
