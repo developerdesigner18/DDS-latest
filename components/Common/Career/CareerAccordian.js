@@ -16,7 +16,7 @@ const CareerAccordian = (props) => {
                         </div>
                     ) : (
                         <div className="icons">
-                            <img src="/images/career/rightarrow.svg" />
+                            <img src="/images/career/right.svg" />
                         </div>
                     )}
                 </button>
