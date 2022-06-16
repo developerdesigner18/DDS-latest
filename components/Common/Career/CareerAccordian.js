@@ -8,14 +8,14 @@ const CareerAccordian = (props) => {
     return (
         <>
             <div className="accordian-main">
-                <button onClick={hadleShow} className="accordian-btn">
+                <button onClick={hadleShow} className="accordian-btn career">
                     {props.title}{" "}
                     {isshow ? (
-                        <div className="icons">
+                        <div className="icons career">
                             <img src="/images/career/downarrow.svg" />
                         </div>
                     ) : (
-                        <div className="icons">
+                        <div className="icons career">
                             <img src="/images/career/right.svg" />
                         </div>
                     )}
