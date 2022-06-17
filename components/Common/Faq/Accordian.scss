@@ -33,3 +33,35 @@ button.accordian-btn{
     margin: 40px 0px;
 }
 
+button.accordian-btn.career {
+    background: #EBF2F6;
+    color: var(--mainLightColor);
+    font-weight: 700;
+    font-size: 18px;
+}
+.icons.career{
+    border: none;
+}
+.career-info.container p {
+    text-align: center;
+}
+.career-info.container p span {
+    color: var(--mainDarkColor);
+}
+.career-option button {
+    width: 30%;
+    background: #003E6B;
+    color: white;
+    border: none;
+}
+.career-option select {
+    width: 60%;
+}
+.career-option {
+    display: flex;
+    gap: 10px;
+}
+.career-position.container {
+    background: #D0EAF9;
+    padding: 26px;
+}
