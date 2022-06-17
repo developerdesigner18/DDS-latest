@@ -30,6 +30,24 @@ const testimonials = [
         feedback:
             "Ajay always understood our requirements and made adjustments to our systems very quickly and accurately.The most important thing is he’s very good at interpreting our needs even though some of our team members are non-technical. The Daydreamsoft team has been absolutely wonderful, it's been a huge project but itwas completed on time and it has been a huge success for us.",
     },
+    {
+        name: "Brad Montgomery",
+        profesion: "Funny Motivatioanl Speaker",
+        title: "We managwe to many people to constantly be searching for stuff",
+        subtitle: "Lorem Ipsum is simply dummy text",
+        userimg: "/images/testimonial/thumbnail4.png",
+        feedback:
+            "He’s a great guy, he is a quality provider, I would hire them in a snap, and you ought to hire him too. The best thing about him is he is ready to provide expertise and custom suggestions for best results and he definitely knows how to maintain a good relationship.",
+    },
+    {
+        name: "Talib Qayyum",
+        profesion: "Founder, Parking Eagle",
+        title: "We managwe to many people to constantly be searching for stuff",
+        subtitle: "Lorem Ipsum is simply dummy text",
+        userimg: "/images/testimonial/thumbnail5.png",
+        feedback:
+            "They were very responsive in terms of getting back to us on changes, they were absolutely brilliant on taking what we said and delivering it. What I most appreciated about his work was he didn’t require a lot of guidance and everything came naturally with the delivery.",
+    },
 ];
 
 const Testimonials = () => {
@@ -37,38 +55,36 @@ const Testimonials = () => {
         <>
             <PageBanner pageTitle="Our Testimonials" />
 
-            <div className="container">
+            <div className="container testimonial-page">
                 {testimonials.map(
                     (
-                        {
-                            title,
-                            description,
-                            userimg,
-                            subtitle,
-                            profesion,
-                            feedback,
-                        },
+                        { title, userimg, subtitle, profesion, feedback, name },
                         index
                     ) => (
                         <div key={index} className="overview-box">
                             <div className="overview-content">
-                                <div className="content">
-                                    <Link href="/solution">
-                                        <span
-                                            className="sub-title"
-                                            style={{ cursor: "pointer" }}
-                                        >
-                                            {subtitle}
-                                        </span>
-                                    </Link>
-                                    <Link href="/solution">
-                                        <h4 style={{ cursor: "pointer" }}>
-                                            {title}
-                                        </h4>
-                                    </Link>
-                                    <blockquote className="wp-block-quote">
+                                <div className="content testimonial">
+                                    <span
+                                        className="sub-title"
+                                        style={{ cursor: "pointer" }}
+                                    >
+                                        {subtitle}
+                                    </span>
+
+                                    <h2
+                                        className="flaticon-quote"
+                                        style={{ cursor: "pointer" }}
+                                    >
+                                        {title}
+                                    </h2>
+
+                                    <blockquote className="wp-block-quote testimonial">
                                         {feedback}
                                     </blockquote>
+                                    <div className="testimonial-name">
+                                        <h6>{name}</h6>{" "}
+                                        <span> {profesion} </span>
+                                    </div>
                                 </div>
                             </div>
 
