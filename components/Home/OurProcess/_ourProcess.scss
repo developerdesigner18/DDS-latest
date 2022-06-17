@@ -1,10 +1,10 @@
 /*================================================
-Our Process Area CSS
+How It's Work Area CSS
 =================================================*/
-.our-process-area {
+.how-its-work-area {
     background-color: var(--whiteColor);
 }
-.our-process-content {
+.how-its-work-content {
     .sub-title {
         display: block;
         margin-bottom: 12px;
@@ -15,61 +15,80 @@ Our Process Area CSS
         }
     }
     h2 {
-        margin-bottom: 0;
+        margin-bottom: 15px;
         font-size: 42px;
         color: var(--mainDarkColor);
     }
-    p {
-        color: var(--mainLightColor);
-        margin: {
-            top: 12px;
+    .inner-box {
+        margin-top: 35px;
+
+        .single-item {
+            position: relative;
+            z-index: 1;
+            padding: {
+                left: 100px;
+                bottom: 30px;
+            }
+            .count-box {
+                width: 65px;
+                height: 65px;
+                position: absolute;
+                left: 5px;
+                top: 5px;
+                line-height: 65px;
+                text-align: center;
+                color: var(--mainDarkColor);
+                border-radius: 50%;
+                background-color: var(--whiteColor);
+                box-shadow: var(--mainDarkColor) 0 0 0 5px;
+                font: {
+                    size: 30px;
+                    weight: 800;
+                    style: italic;
+                }
+            }
+            h3 {
+                margin-bottom: 8px;
+                color: var(--mainDarkColor);
+                font: {
+                    size: 25px;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 3px;
+                width: 1px;
+                height: 100%;
+                background-color: var(--mainDarkColor);
+                z-index: -1;
+                left: 40px;
+            }
+            &::after {
+                content: "\ea17";
+                position: absolute;
+                left: 26px;
+                color: var(--mainDarkColor);
+                bottom: 10px;
+                animation: fade-down 1.5s infinite linear;
+                font: {
+                    family: "boxicons" !important;
+                    size: 30px;
+                }
+            }
+            &:last-child {
+                padding-bottom: 0;
+
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
+            }
         }
     }
 }
-
-.our-process-list {
-    margin-top: 15px;
-    list-style-type: none;
-    li {
-        display: flex;
-    }
-    li::before {
-        content: "";
-        border-left: 2px solid var(--mainDarkColor);
-        margin-right: -15px;
-    }
-    li:last-child::before {
-        border: none;
-    }
-    span {
-        color: var(--mainDarkColor);
-        margin-bottom: 0;
-        font: {
-            size: 18px;
-            weight: 700;
-        }
-    }
-    p {
-        margin-bottom: 15px;
-    }
-    .our-process-point {
-        margin-right: 20px;
-        div {
-            display: grid;
-            place-items: center;
-            width: 30px;
-            height: 30px;
-            border: 2px solid var(--mainDarkColor);
-            border-radius: 50%;
-            color: var(--mainDarkColor);
-            font-size: 12px;
-            font-style: italic;
-            font-weight: bold;
-            background-color: var(--whiteColor);
-        }
-    }
-}
-
-.our-process-content-image {
-    padding-left: 50px;
+.how-its-work-image {
+    text-align: center;
 }
