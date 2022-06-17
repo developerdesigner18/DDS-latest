@@ -22,7 +22,7 @@ const solutions = [
                 45 BC, making it over 2000 years old. Richard McClintock.
             </p>,
         ],
-        image: "/images/solutions/solution/eccomerce.png",
+        image: "/images/solutions/solution/solution1.png",
     },
     {
         title: "On-Demand Solutions",
@@ -44,7 +44,7 @@ const solutions = [
                 45 BC, making it over 2000 years old. Richard McClintock.
             </p>,
         ],
-        image: "/images/solutions/solution/demand.png",
+        image: "/images/solutions/solution/solution4.png",
     },
     {
         title: "Social Networking",
@@ -66,7 +66,7 @@ const solutions = [
                 45 BC, making it over 2000 years old. Richard McClintock.
             </p>,
         ],
-        image: "/images/solutions/solution/social.png",
+        image: "/images/solutions/solution/solution2.png",
     },
     {
         title: "Food And Restaurant",
@@ -88,7 +88,7 @@ const solutions = [
                 45 BC, making it over 2000 years old. Richard McClintock.
             </p>,
         ],
-        image: "/images/solutions/solution/food.png",
+        image: "/images/solutions/solution/solution3.png",
     },
 ];
 

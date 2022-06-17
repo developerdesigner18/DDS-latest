@@ -68,7 +68,7 @@ const UserPortfolio = () => {
                                                     <div className="content">
                                                         <p>{elm.content}</p>
 
-                                                        <Link href="/single-portfolio">
+                                                        <Link href="/portfolioview">
                                                             <a className="link-btn">
                                                                 <i className="flaticon-next-button"></i>
                                                             </a>

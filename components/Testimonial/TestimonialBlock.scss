@@ -1,0 +1,34 @@
+.testimonial-name {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.testimonial-name h6{
+    margin: 0px;
+    color: var(--mainDarkColor);
+}
+
+.testimonial-name span{
+    color: var(--mainLightColor);
+}
+
+.container.testimonial-page {
+    margin: 30px auto;
+}
+blockquote.wp-block-quote.testimonial{
+    font-size: 18px;
+    text-align: left;
+    padding: 28px !important;
+}
+.overview-box .overview-content .content.testimonial h2 {
+    font-size: 36px;
+}
+.flaticon-quote:before { 
+    content: "\f119";
+    
+    font-size: 38px;
+    // position: absolute;
+    // left: 28px; 
+}
