@@ -1,18 +1,17 @@
-.timeline.testimonial {
+.devBlock.testimonial {
     margin: 50px auto;
 }
 
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
+/* The actual devBlock (the vertical ruler) */
+.devBlock {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
+}
+
+/* The actual devBlock (the vertical ruler) */
+.devBlock::after {
+    content: "";
     position: absolute;
     width: 6px;
     background-color: #87a8c136;
@@ -20,43 +19,42 @@
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .devlopment {
+}
+
+/* Container around content */
+.devlopment {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .devlopment::after {
-    content: '';
+}
+
+/* The circles on the devBlock */
+.devlopment::after {
+    content: "";
     position: absolute;
     width: 12px;
     height: 12px;
     right: -6px;
-    background-color: #003E6B;
-    border: 4px solid #003E6B;
+    background-color: #003e6b;
+    border: 4px solid #003e6b;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left.devlopment {
-    left: 0;
-  }
-  
-  .left.devlopment:nth-child(2n){
-    left: 50%;
-  }
+}
 
-  /* Place the container to the right */
- 
-  
-  /* Add arrows to the left container (pointing right) */
+/* Place the container to the left */
+.left.devlopment {
+    left: 0;
+}
+
+.left.devlopment:nth-child(2n) {
+    left: 50%;
+}
+
+/* Place the container to the right */
+
+/* Add arrows to the left container (pointing right) */
 //   .left.devlopment::before {
 //     content: " ";
 //     height: 0;
@@ -69,8 +67,8 @@
 //     border-width: 10px 0 10px 10px;
 //     border-color: transparent transparent transparent white;
 //   }
-  
-  /* Add arrows to the right container (pointing left) */
+
+/* Add arrows to the right container (pointing left) */
 //   .left.devlopment:nth-child(2n)::before {
 //     content: " ";
 //     height: 0;
@@ -83,14 +81,14 @@
 //     border-width: 10px 10px 10px 0;
 //     border-color: transparent white transparent transparent;
 //   }
-  
-  /* Fix the circle for containers on the right side */
-  .left.devlopment:nth-child(2n)::after {
+
+/* Fix the circle for containers on the right side */
+.left.devlopment:nth-child(2n)::after {
     left: -6px;
-  }
-  
-  /* The actual content */
-  .content {
+}
+
+/* The actual content */
+.devBlock-content {
     padding: 20px 30px;
     background-color: white;
     position: relative;
@@ -101,8 +99,8 @@
     flex-direction: row;
     gap: 14px;
     align-items: center;
-  }
-  .devimg {
+}
+.devimg {
     height: 200px;
     width: 43%;
 }
@@ -115,7 +113,7 @@
     width: 52%;
 }
 
-.info p{
+.info p {
     font-size: 12px;
 }
 
@@ -129,51 +127,49 @@
     object-fit: contain;
 }
 
-
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
-
-    .content{
+/* Media queries - Responsive devBlock on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    .content {
         display: block;
     }
 
-    .info{
+    .info {
         width: 100%;
     }
-    .devimg{
+    .devimg {
         width: 100%;
     }
     .left.devlopment:nth-child(2n)::after {
         left: 21px;
     }
     /* Place the timelime to the left */
-    .timeline::after {
-    left: 31px;
+    .devBlock::after {
+        left: 31px;
     }
-    
+
     /* Full-width containers */
     .devlopment {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
     }
-    
+
     /* Make sure that all arrows are pointing leftwards */
     .devlopment::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
     }
-  
+
     /* Make sure all circles are at the same spot */
-    .left.devlopment::after, .left:nth-child(2n)::after {
-    left: 15px;
+    .left.devlopment::after,
+    .left:nth-child(2n)::after {
+        left: 15px;
     }
-    
+
     /* Make all right containers behave like the left ones */
     .left.devlopment:nth-child(2n) {
-    left: 0%;
+        left: 0%;
     }
-  }
+}

@@ -36,12 +36,12 @@ const DevelopmentBlock = () => {
 
     return (
         <>
-            <div class="timeline testimonial">
+            <div class="devBlock testimonial">
                 {developmentData.map((elm) => {
                     return (
                         <>
                             <div class="left devlopment">
-                                <div class="content">
+                                <div class="devBlock-content">
                                     <div className="devimg">
                                         <img src={elm.devimg} />
                                     </div>
