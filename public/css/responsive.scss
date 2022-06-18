@@ -452,7 +452,8 @@ $value_seven: 1550px;
         }
     }
 
-    .about-area {
+    .about-area,
+    .our-vision-area {
         .container-fluid {
             padding: {
                 left: 15px;
@@ -470,7 +471,8 @@ $value_seven: 1550px;
             display: inline-block;
         }
     }
-    .about-content {
+    .about-content,
+    .our-vision-content {
         text-align: center;
 
         .content {
@@ -900,8 +902,7 @@ $value_seven: 1550px;
         }
     }
 
-    .portfolio-area,
-    .partner-area {
+    .portfolio-area {
         .section-title {
             text-align: center;
             max-width: 100%;
@@ -1749,7 +1750,8 @@ $value_seven: 1550px;
         }
     }
 
-    .error-content {
+    .error-content,
+    .our-vision-area {
         h3 {
             font-size: 28px;
             margin: {
@@ -2275,12 +2277,14 @@ $value_seven: 1550px;
         }
     }
 
-    .about-area {
+    .about-area,
+    .our-vision-area {
         .container-fluid {
             max-width: 540px;
         }
     }
-    .about-content {
+    .about-content,
+    .our-vision-content {
         .funfacts-list {
             li {
                 flex: 0 0 33.333333%;
@@ -2706,7 +2710,8 @@ $value_seven: 1550px;
         }
     }
 
-    .about-area {
+    .about-area,
+    .our-vision-area {
         .container-fluid {
             max-width: 720px;
             padding: {
@@ -2727,7 +2732,8 @@ $value_seven: 1550px;
     .about-img {
         margin-bottom: 35px;
     }
-    .about-content {
+    .about-content,
+    .our-vision-content {
         text-align: center;
 
         .content {
@@ -2960,8 +2966,7 @@ $value_seven: 1550px;
         }
     }
 
-    .portfolio-area,
-    .partner-area {
+    .portfolio-area {
         .section-title {
             text-align: center;
             max-width: 600px;
@@ -3452,7 +3457,8 @@ $value_seven: 1550px;
         }
     }
 
-    .error-content {
+    .error-content,
+    .our-vision-area {
         h3 {
             font-size: 35px;
         }
@@ -3829,7 +3835,8 @@ $value_seven: 1550px;
         }
     }
 
-    .about-content {
+    .about-content,
+    .our-vision-content {
         .content {
             max-width: 100%;
             padding: {
@@ -3924,8 +3931,7 @@ $value_seven: 1550px;
         }
     }
 
-    .portfolio-area,
-    .partner-area {
+    .portfolio-area {
         .container-fluid {
             max-width: 960px;
             padding: {
@@ -4362,8 +4368,7 @@ $value_seven: 1550px;
     .testimonials-content {
         max-width: 775px;
     }
-    .portfolio-slides,
-    .partners-slides {
+    .portfolio-slides {
         left: calc((100% - 1285px) / 2);
     }
 }
