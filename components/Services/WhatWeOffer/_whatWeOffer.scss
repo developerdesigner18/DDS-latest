@@ -28,16 +28,25 @@ p.heading {
 .blockContainer {
     margin-top: 25px;
 }
-.service-block.mobile-block .heading {
+.service-block:hover {
+    background: var(--mainDarkColor);
+}
+.service-block:hover .img-icons img {
+    filter: brightness(0) invert(1);
+}
+.service-block:hover p {
     color: white;
 }
+// .service-block.mobile-block .heading {
+//     color: white;
+// }
 
-.service-block.mobile-block .subheading {
-    color: white;
-}
-.service-block.mobile-block {
-    background: #003e6b;
-}
+// .service-block.mobile-block .subheading {
+//     color: white;
+// }
+// .service-block.mobile-block {
+//     background: #003e6b;
+// }
 
 @media only screen and (max-width: 767px){
     .service-block {

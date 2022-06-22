@@ -33,7 +33,7 @@ const SingleBlogMain = () => {
                                             </li>
                                             <li>
                                                 <i className="bx bx-calendar"></i>
-                                                <span>Last Updated</span>
+                                                <span>Posted On</span>
                                                 Jun 15, 2022
                                             </li>
                                         </ul>

@@ -22,7 +22,7 @@ const BlogSidebar = () => {
             </div>
 
             <div className="widget widget_dibiz_posts_thumb">
-                <h3 className="widget-title">Popular Posts</h3>
+                <h3 className="widget-title">Recent Posts</h3>
 
                 <div className="item">
                     <Link href="/single-blog-1">
