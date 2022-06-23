@@ -23,9 +23,9 @@ const WhatWeOffer = () => {
                             </div>
                             <p className="heading">UI/UX Design</p>
                             <p className="subheading">
-                                Contrary to popular belief, Lorem Ipsum is not
-                                simply random text. It has classical Latin
-                                literature
+                                We have experienced designers of the creative
+                                industry, who create futuristic modern designs
+                                with a smooth workflow and responsive layouts.
                             </p>
                         </div>
                     </div>
@@ -36,9 +36,10 @@ const WhatWeOffer = () => {
                             </div>
                             <p className="heading">Web Development</p>
                             <p className="subheading">
-                                Contrary to popular belief, Lorem Ipsum is not
-                                simply random text. It has classical Latin
-                                literature
+                                From simple landing pages to complex e-commerce
+                                websites, we ‘Add’ value to the ‘Web’ world with
+                                our Experience and Expertise in Web Development
+                                Services.
                             </p>
                         </div>
                     </div>
@@ -49,9 +50,11 @@ const WhatWeOffer = () => {
                             </div>
                             <p className="heading">Mobile App Development</p>
                             <p className="subheading">
-                                Contrary to popular belief, Lorem Ipsum is not
-                                simply random text. It has classical Latin
-                                literature
+                                With smartphone apps, the phrase "the world is
+                                in your hands" becomes rather literal.
+                                Regardless of the complexity of the application,
+                                we are experts at making it user-friendly,
+                                engaging, and seamless.
                             </p>
                         </div>
                     </div>
@@ -62,9 +65,11 @@ const WhatWeOffer = () => {
                             </div>
                             <p className="heading">Game Development</p>
                             <p className="subheading">
-                                Contrary to popular belief, Lorem Ipsum is not
-                                simply random text. It has classical Latin
-                                literature
+                                Our game developers create the “trend” with
+                                their games as they’re always up-to-date with
+                                the latest games and have their logic and mind
+                                set up for making even the trickiest application
+                                rock on all marketplaces.
                             </p>
                         </div>
                     </div>
@@ -88,9 +93,9 @@ const WhatWeOffer = () => {
                             </div>
                             <p className="heading">SEO & Digital Marketing</p>
                             <p className="subheading">
-                                Contrary to popular belief, Lorem Ipsum is not
-                                simply random text. It has classical Latin
-                                literature
+                                Our digital marketers are experts in making your
+                                websites and applications rank better and
+                                attract organic audiences.
                             </p>
                         </div>
                     </div>
@@ -101,9 +106,11 @@ const WhatWeOffer = () => {
                             </div>
                             <p className="heading">Quality Assurance</p>
                             <p className="subheading">
-                                Contrary to popular belief, Lorem Ipsum is not
-                                simply random text. It has classical Latin
-                                literature
+                                What good is a product if it doesn't satisfy the
+                                standards of today's market? As a result, for
+                                your product to succeed, we use a very specific
+                                and rigorous testing technique to verify that
+                                they are of the highest quality possible.
                             </p>
                         </div>
                     </div>

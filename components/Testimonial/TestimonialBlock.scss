@@ -18,17 +18,26 @@
     margin: 30px auto;
 }
 blockquote.wp-block-quote.testimonial{
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     padding: 28px !important;
 }
 .overview-box .overview-content .content.testimonial h2 {
-    font-size: 36px;
+    font-size: 30px;
+    margin-left: 10%;
 }
-.flaticon-quote:before { 
-    content: "\f119";
-    
+.content.testimonial:before { 
+    content: url("/images/testimonial/quote.png");
+    // background-image: url("/images/testimonial/quote.png");
     font-size: 38px;
-    // position: absolute;
-    // left: 28px; 
+    position: absolute;
+    left: 0;
+    top: 2%;
+}
+.content.testimonial .sub-title{
+    margin-left: 10%;
+}
+
+.content.testimonial{
+    position: relative;
 }
