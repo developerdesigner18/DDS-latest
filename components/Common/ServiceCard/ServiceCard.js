@@ -21,6 +21,13 @@ const ServiceCard = (props) => {
                                         {props.btntext}
                                     </a>
                                 </Link>
+                                {props.btntext2 && (
+                                    <Link href="#quote">
+                                        <a type="submit" className="extra-btn">
+                                            {props.btntext2}
+                                        </a>
+                                    </Link>
+                                )}
                             </div>
                         </div>
                     </div>
