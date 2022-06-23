@@ -12,96 +12,133 @@ const WebDevelopmentServices = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="serviceCard">
                                 <div className="content">
-                                    <div className="d-flex align-items-center">
+                                    <div className="d-flex align-items-center ">
                                         <img
-                                            src="/images/user1.jpg"
+                                            src="/images/web-development/service1.png"
                                             alt="image"
+                                            className="serviceCardImg"
                                         />
-                                        <div className="info">
-                                            <h5>David Smith</h5>
-                                            <span>Jun 15, 2020</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-blog-post">
-                                <div className="content">
-                                    <div className="d-flex align-items-center">
-                                        <img
-                                            src="/images/user2.jpg"
-                                            alt="image"
-                                        />
-                                        <div className="info">
-                                            <h5>Sarah Taylor</h5>
-                                            <span>Jun 16, 2020</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-blog-post">
-                                <div className="content">
-                                    <div className="d-flex align-items-center">
-                                        <img
-                                            src="/images/user3.jpg"
-                                            alt="image"
-                                        />
-                                        <div className="info">
-                                            <h5>Steven Gibson</h5>
-                                            <span>Jun 17, 2020</span>
+                                        <div className="serviceCardContent">
+                                            <h5>
+                                                E-Commerce Website Development
+                                            </h5>
+                                            <span>
+                                                Lorem Ipsum is simply dummy text
+                                                of the printing and typesetting
+                                                industry.{" "}
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
-                            <div className="single-blog-post">
+                            <div className="serviceCard">
                                 <div className="content">
-                                    <div className="d-flex align-items-center">
+                                    <div className="d-flex align-items-center ">
                                         <img
-                                            src="/images/user3.jpg"
+                                            src="/images/web-development/service2.png"
                                             alt="image"
+                                            className="serviceCardImg"
                                         />
-                                        <div className="info">
-                                            <h5>Steven Gibson</h5>
-                                            <span>Jun 17, 2020</span>
+                                        <div className="serviceCardContent">
+                                            <h5>
+                                                Open Source(CMS) development
+                                            </h5>
+                                            <span>
+                                                Lorem Ipsum is simply dummy text
+                                                of the printing and typesetting
+                                                industry.
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
-                            <div className="single-blog-post">
+                            <div className="serviceCard">
                                 <div className="content">
-                                    <div className="d-flex align-items-center">
+                                    <div className="d-flex align-items-center ">
                                         <img
-                                            src="/images/user3.jpg"
+                                            src="/images/web-development/service3.png"
                                             alt="image"
+                                            className="serviceCardImg"
                                         />
-                                        <div className="info">
-                                            <h5>Steven Gibson</h5>
-                                            <span>Jun 17, 2020</span>
+                                        <div className="serviceCardContent">
+                                            <h5>Online Portal Development</h5>
+                                            <span>
+                                                Lorem Ipsum is simply dummy text
+                                                of the printing and typesetting
+                                                industry.
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
-                            <div className="single-blog-post">
+                            <div className="serviceCard">
                                 <div className="content">
-                                    <div className="d-flex align-items-center">
+                                    <div className="d-flex align-items-center ">
                                         <img
-                                            src="/images/user3.jpg"
+                                            src="/images/web-development/service4.png"
                                             alt="image"
+                                            className="serviceCardImg"
                                         />
-                                        <div className="info">
-                                            <h5>Steven Gibson</h5>
-                                            <span>Jun 17, 2020</span>
+                                        <div className="serviceCardContent">
+                                            <h5>Website Maintenance</h5>
+                                            <span>
+                                                Lorem Ipsum is simply dummy text
+                                                of the printing and typesetting
+                                                industry.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6">
+                            <div className="serviceCard">
+                                <div className="content">
+                                    <div className="d-flex align-items-center ">
+                                        <img
+                                            src="/images/web-development/service5.png"
+                                            alt="image"
+                                            className="serviceCardImg"
+                                        />
+                                        <div className="serviceCardContent">
+                                            <h5>
+                                                CRM Applications Development
+                                            </h5>
+                                            <span>
+                                                Lorem Ipsum is simply dummy text
+                                                of the printing and typesetting
+                                                industry.{" "}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6">
+                            <div className="serviceCard">
+                                <div className="content">
+                                    <div className="d-flex align-items-center ">
+                                        <img
+                                            src="/images/web-development/service6.png"
+                                            alt="image"
+                                            className="serviceCardImg"
+                                        />
+                                        <div className="serviceCardContent">
+                                            <h5>
+                                                Social Networking Portal
+                                                Development
+                                            </h5>
+                                            <span>
+                                                Lorem Ipsum is simply dummy text
+                                                of the printing and typesetting
+                                                industry.{" "}
+                                            </span>
                                         </div>
                                     </div>
                                 </div>

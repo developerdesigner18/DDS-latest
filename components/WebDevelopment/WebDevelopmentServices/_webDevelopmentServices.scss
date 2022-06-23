@@ -2,3 +2,28 @@
     text-align: center;
     margin-bottom: 40px;
 }
+.serviceCardImg {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.serviceCard {
+    margin-bottom: 30px;
+    padding: 12px 12px 25px;
+}
+.serviceCard .content {
+    padding-top: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.serviceCardContent h5 {
+    font-size: 13px;
+    color: #003e6b;
+}
+.serviceCardContent span {
+    font-size: 13px;
+    color: #0069b4;
+}
+.serviceCardContent {
+    margin-left: 35px;
+}
