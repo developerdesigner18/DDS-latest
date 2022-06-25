@@ -1,0 +1,174 @@
+// .owl-dots {
+//     position: absolute;
+//     left: 50%;
+//     margin-left: -19px;
+// }
+// .owl-prev {
+//     left: 44%;
+//     position: absolute;
+// }
+// .owl-next {
+//     right: 44%;
+//     position: absolute;
+// }
+// .owl-nav {
+//     position: relative;
+// }
+// .owl-carousel.team-slides.owl-carousel.owl-theme.carousel-holder.owl-loaded.owl-drag
+//     .owl-dots {
+//     margin-top: 12px !important;
+// }
+.owl-theme .owl-nav [class*="owl-"] {
+    color: black !important;
+    background-color: white !important;
+}
+.team-slides.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+}
+.team-slides.owl-theme .owl-dots {
+    margin-top: -28px !important;
+}
+.team-slides.owl-theme .owl-dots .owl-dot span {
+    margin: 0 8px !important;
+}
+.team-slides.owl-theme .owl-nav .owl-prev {
+    margin-right: 30px !important;
+}
+.team-slides.owl-theme .owl-nav .owl-next {
+    margin-left: 30px !important;
+}
+
+@media (max-width: 768px) {
+    .team-slides.owl-theme .owl-nav .owl-prev {
+        margin-right: 70px !important;
+    }
+    .team-slides.owl-theme .owl-nav .owl-next {
+        margin-left: 70px !important;
+    }
+}
+@media (max-width: 767px) {
+    .team-area-two .team-slides.owl-theme .owl-dots {
+        margin-top: -30px !important;
+    }
+    .team-slides.owl-theme .owl-nav .owl-prev {
+        margin-right: 140px !important;
+    }
+    .team-slides.owl-theme .owl-nav .owl-next {
+        margin-left: 140px !important;
+    }
+}
+@media (max-width: 576px) {
+    .team-slides.owl-theme .owl-nav .owl-prev {
+        margin-right: 140px !important;
+    }
+    .team-slides.owl-theme .owl-nav .owl-next {
+        margin-left: 140px !important;
+    }
+}
+@media (max-width: 320px) {
+    .team-slides.owl-theme .owl-nav .owl-prev {
+        margin-right: 100px !important;
+    }
+    .team-slides.owl-theme .owl-nav .owl-next {
+        margin-left: 100px !important;
+    }
+}
+.industry-image {
+    background-color: #ebf2f6;
+    text-align: center;
+    padding: 28px 0px;
+}
+.single-team-member {
+    width: 80%;
+    margin: 0 auto 30px;
+    text-align: -webkit-center;
+}
+.carousel-holder {
+    width: 90%;
+    margin: 0 auto;
+}
+.industry-image img {
+    width: 53px !important;
+    height: 53px;
+    margin: 0px auto;
+}
+.industry-content h3 {
+    color: var(--mainLightColor);
+    margin-bottom: 0;
+    font-size: 16px !important;
+    margin-top: 15px;
+}
+
+.team-slides.owl-theme .owl-dots .owl-dot span {
+    border-color: #003e6b !important;
+}
+.team-slides.owl-theme .owl-dots .owl-dot span::before {
+    height: 100%;
+    width: 100%;
+    background-color: #003e6b;
+    margin: 0px !important;
+}
+.owl-theme .owl-controls .owl-page span {
+    border: 2px solid red;
+}
+.sub-title {
+    color: var(--mainDarkColor);
+}
+.section-title-holder p {
+    margin: 30px 0px !important;
+}
+// .owl-carousel {
+//     .owl-nav {
+//         .owl-prev {
+//             width: 40px;
+//             position: absolute;
+//             top: 100%;
+//             transform: translateY(-50%);
+//             cursor: pointer;
+//             left: 45%;
+//             // background: transparent url(../../../assets/arrow-left-dark.svg)
+//             //     no-repeat 50%;
+//             transform: translateY(0%);
+//             span {
+//                 visibility: hidden;
+//             }
+//         }
+//         .owl-next {
+//             width: 40px;
+//             position: absolute;
+//             top: 100%;
+//             transform: translateY(20%);
+//             cursor: pointer;
+//             right: 45%;
+//             // background: transparent url(../../../assets/arrow-left-dark.svg)
+//             // no-repeat 50%;
+
+//             transform: translateY(0%) rotate(0deg);
+//             span {
+//                 visibility: hidden;
+//             }
+//         }
+//     }
+//     .owl-dots {
+//         position: absolute;
+//         top: 100%;
+//         left: 48%;
+//         .active {
+//             background-color: white !important;
+
+//             transition: all 0.3s linear !important;
+//         }
+//         .owl-dot {
+//             background: hsla(0, 0%, 100%, 0.3);
+//             display: inline-block;
+
+//             margin-right: 10px;
+//             vertical-align: middle;
+//             border: none;
+//             transition: all 0.3s linear;
+//             span {
+//                 visibility: block;
+//             }
+//         }
+//     }
+// }

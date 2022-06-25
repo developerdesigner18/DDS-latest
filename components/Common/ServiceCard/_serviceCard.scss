@@ -18,5 +18,41 @@ h1 {
 .about-content.service .content h6 {
     color: var(--mainDarkColor);
 }
+.extra-btn {
+    text-align: center;
+    display: inline-block;
+    transition: var(--transition);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 1;
+    color: var(--whiteColor);
+    background-color: var(--mainLightColor);
+    font: {
+        size: 17px;
+        weight: 700;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 5px;
+        background-color: var(--mainDarkColor);
+        z-index: -1;
+        transition: var(--transition);
+    }
+    &:hover {
+        color: var(--whiteColor);
 
-
+        &::before {
+            transform: scaleX(0);
+        }
+    }
+}
+a.extra-btn {
+    margin-left: 30px;
+}

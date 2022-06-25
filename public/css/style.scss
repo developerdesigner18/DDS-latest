@@ -41,9 +41,16 @@
 
 // Contact
 // Web Development
+@use "../../components/WebDevelopment/WebDevelopmentServices/webDevelopmentServices";
+@use "../../components/WebDevelopment/TechnologyStack/technologyStack";
+@use "../../components/WebDevelopment/WebDevelopmentProcess/webDevelopmentProcess";
+@use "../../components/WebDevelopment/WebDevelopmentAreas/webDevelopmentAreas";
+
 // Development Process
 @use "../../components/OurDevlopment/DevelopmentBlock.scss";
 // Laravel
+@use "../../components/Laravel/LaravelIndustries/laravelIndustries";
+@use "../../components/Laravel/LaravelServices/laravelServices";
 // Life At DDS
 // Main Team
 // Career
