@@ -50,6 +50,17 @@ const LifeAtDds = () => {
                             );
                         })}
                     </div>
+                    <a
+                        className="default-btn"
+                        style={{
+                            display: "flex",
+                            width: "16%",
+                            margin: "auto",
+                            justifyContent: "center",
+                        }}
+                    >
+                        View More
+                    </a>
                 </div>
             </div>
         </>

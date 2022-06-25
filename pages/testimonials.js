@@ -62,7 +62,7 @@ const Testimonials = () => {
                         index
                     ) => (
                         <div key={index} className="overview-box">
-                            <div className="overview-content">
+                            <div className="overview-content main-testimonial">
                                 <div className="content testimonial">
                                     <span
                                         className="sub-title"
@@ -72,7 +72,7 @@ const Testimonials = () => {
                                     </span>
 
                                     <h2
-                                        className="flaticon-quote"
+                                        className=""
                                         style={{ cursor: "pointer" }}
                                     >
                                         {title}

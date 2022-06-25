@@ -1,3 +1,8 @@
+.container.servicecard .row {
+    align-items: center;
+}
+
+
 /*================================================
 About Area CSS
 =================================================*/
@@ -40,11 +45,11 @@ About Area CSS
 .about-content {
     .content {
         max-width: 600px;
-        padding: {
-            top: 80px;
-            bottom: 80px;
-            left: 20px;
-        }
+        // padding: {
+        //     top: 80px;
+        //     bottom: 80px;
+        //     left: 20px;
+        // }
     }
     .text {
         max-width: 600px;

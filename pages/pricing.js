@@ -1,13 +1,16 @@
 import PageBanner from "../components/Common/PageBanner/PageBanner";
 import StartProjectWithUs from "../components/Common/StartProjectWithUs";
 import Link from "next/link";
+import PricingBlock from "../components/Common/Pricing/PricingBlock";
 
 const Pricing = () => {
     return (
         <>
             <PageBanner pageTitle="Pricing" />
 
-            <div className="pricing-area bg-f9f9f9 pt-100 pb-70">
+            <PricingBlock />
+
+            {/* <div className="pricing-area bg-f9f9f9 pt-100 pb-70">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-sm-6">
@@ -110,9 +113,9 @@ const Pricing = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <StartProjectWithUs />
+            {/* <StartProjectWithUs /> */}
         </>
     );
 };
