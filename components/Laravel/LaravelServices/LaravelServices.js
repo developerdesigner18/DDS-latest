@@ -20,7 +20,7 @@ const LaravelServices = () => {
         },
     ];
     return (
-        <div className="offerContainer">
+        <div className="laravel-service-Container">
             <div className="container blockContainer">
                 <div className="laravel-service-holder">
                     <h2>Our Services</h2>
@@ -28,13 +28,13 @@ const LaravelServices = () => {
                 <div className="row">
                     {laravelServicesData.map((data) => {
                         return (
-                            <div className="col-lg-4 col-md-4 col-sm-2">
+                            <div className="col-lg-4 col-md-12 col-sm-12">
                                 <div className="service-image-block bottomBlock">
                                     <div className="img-icons-holder">
                                         <img src={data.laravelimg} />
                                     </div>
                                 </div>
-                                <div className="service-block">
+                                <div className="laravel-service-block">
                                     <p className="heading">{data.title}</p>
                                     <p className="subheading text-center ">
                                         {data.description}
@@ -43,6 +43,9 @@ const LaravelServices = () => {
                             </div>
                         );
                     })}
+                </div>
+                <div className="viewAll-btn-holder">
+                    <button>View All</button>
                 </div>
             </div>
         </div>

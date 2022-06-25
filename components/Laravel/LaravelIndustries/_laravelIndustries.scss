@@ -19,7 +19,7 @@
 //     margin-top: 12px !important;
 // }
 .owl-theme .owl-nav [class*="owl-"] {
-    color: black !important;
+    color: var(--mainDarkColor) !important;
     background-color: white !important;
 }
 .team-slides.owl-theme .owl-dots .owl-dot {
@@ -101,6 +101,8 @@
 
 .team-slides.owl-theme .owl-dots .owl-dot span {
     border-color: #003e6b !important;
+    width: 13px !important;
+    height: 13px !important;
 }
 .team-slides.owl-theme .owl-dots .owl-dot span::before {
     height: 100%;

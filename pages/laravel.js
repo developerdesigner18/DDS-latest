@@ -5,6 +5,7 @@ import LaravelIndustries from "../components/Laravel/LaravelIndustries/LaravelIn
 import LaravelServices from "../components/Laravel/LaravelServices/LaravelServices";
 import ProjectInMind from "../components/Laravel/ProjectInMind/ProjectInMind";
 import OurExpertise from "../components/Laravel/OurExpertise/OurExpertise";
+import ReasonToChoose from "../components/Laravel/ReasonToChoose/ReasonToChoose";
 const content = (
     <>
         <p>
@@ -56,7 +57,7 @@ const Laravel = () => {
 
             <LaravelServices />
 
-            <ServiceCard />
+            <ReasonToChoose />
 
             <ProjectInMind />
 
