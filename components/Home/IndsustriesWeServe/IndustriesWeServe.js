@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
+import Link from "next/link";
 
 const industries = [
     {
@@ -127,7 +128,11 @@ const IndustriesWeServe = () => {
                                 </div>
 
                                 <div className="content">
-                                    <span>{title}</span>
+                                    <Link href="/services">
+                                        <span style={{ cursor: "pointer" }}>
+                                            {title}
+                                        </span>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
