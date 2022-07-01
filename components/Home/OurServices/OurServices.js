@@ -53,7 +53,7 @@ const accordionItems = [
 
 const OurServices = () => {
     return (
-        <div className="our-services-area ptb-100">
+        <div className="our-services-area ptb-100 dark-bg-color">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12">

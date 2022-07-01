@@ -91,7 +91,7 @@ const Testimonial = () => {
     };
 
     return (
-        <div className="testimonials-area">
+        <div className="testimonials-area dark-bg-color">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-6 col-md-12">
