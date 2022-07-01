@@ -105,7 +105,7 @@ const IndustriesWeServe = () => {
     }, []);
 
     return (
-        <div className="industries-we-serve ptb-100">
+        <div className="industries-we-serve ptb-100 dark-bg-color">
             <div className="container">
                 <div className="section-title">
                     <h2>Industries We Serve</h2>

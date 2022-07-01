@@ -6,16 +6,21 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
     const router = useRouter();
     const [thePosition, setThePosition] = useState(false);
     const [changeColor, setChangeColor] = useState({
+        background: "",
         color: "",
     });
-    console.log("router", router.pathname);
+    // console.log("router", router.pathname);
 
     useEffect(() => {
         document.addEventListener("scroll", () => {
             if (window.scrollY > 170) {
                 setThePosition(true);
 
-                console.log("router.pathname === ", router.pathname === "/");
+                // console.log(
+                //     "router.pathname === ",
+                //     router.pathname === "/",
+                //     thePosition
+                // );
                 if (router.pathname === "/about") {
                     console.log("aboutttt");
                     if (
@@ -27,23 +32,31 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                             .getElementsByClassName("footer-area")[0]
                             .getBoundingClientRect().top
                     ) {
-                        setChangeColor({ color: "white" });
+                        setChangeColor({
+                            background: "white",
+                            color: "#003e6b",
+                        });
                     } else {
                         console.log("3");
-                        setChangeColor({ color: "blue" });
+                        setChangeColor({ background: "#003e6b" });
                     }
-                    setChangeColor({ color: "red" });
-                } else {
+                }
+                if (router.pathname === "/") {
                     if (
+                        document.getElementsByClassName("our-services-area")
+                            .length > 0 &&
                         document
                             .getElementsByClassName("go-top")[0]
                             .getBoundingClientRect().top +
                             10 >
-                        document
-                            .getElementsByClassName("our-services-area")[0]
-                            .getBoundingClientRect().top
+                            document
+                                .getElementsByClassName("our-services-area")[0]
+                                .getBoundingClientRect().top
                     ) {
-                        setChangeColor({ color: "white" });
+                        setChangeColor({
+                            background: "white",
+                            color: "#003e6b",
+                        });
                         if (
                             document
                                 .getElementsByClassName("go-top")[0]
@@ -53,7 +66,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                 .getElementsByClassName("how-its-work-area")[0]
                                 .getBoundingClientRect().top
                         ) {
-                            setChangeColor({ color: "blue" });
+                            setChangeColor({ background: "#003e6b" });
                             if (
                                 document
                                     .getElementsByClassName("go-top")[0]
@@ -65,19 +78,98 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                     )[0]
                                     .getBoundingClientRect().top
                             ) {
-                                setChangeColor({ color: "white" });
+                                setChangeColor({
+                                    background: "white",
+                                    color: "#003e6b",
+                                });
+                                if (
+                                    document
+                                        .getElementsByClassName("go-top")[0]
+                                        .getBoundingClientRect().top +
+                                        10 >
+                                    document
+                                        .getElementsByClassName(
+                                            "portfolio-area"
+                                        )[0]
+                                        .getBoundingClientRect().top
+                                ) {
+                                    setChangeColor({ background: "#003e6b" });
+                                    if (
+                                        document
+                                            .getElementsByClassName("go-top")[0]
+                                            .getBoundingClientRect().top +
+                                            10 >
+                                        document
+                                            .getElementsByClassName(
+                                                "testimonials-area"
+                                            )[0]
+                                            .getBoundingClientRect().top
+                                    ) {
+                                        setChangeColor({
+                                            background: "white",
+                                            color: "#003e6b",
+                                        });
+                                        if (
+                                            document
+                                                .getElementsByClassName(
+                                                    "go-top"
+                                                )[0]
+                                                .getBoundingClientRect().top +
+                                                10 >
+                                            document
+                                                .getElementsByClassName(
+                                                    "partner-area"
+                                                )[0]
+                                                .getBoundingClientRect().top
+                                        ) {
+                                            setChangeColor({
+                                                background: "#003e6b",
+                                            });
+                                            if (
+                                                document
+                                                    .getElementsByClassName(
+                                                        "go-top"
+                                                    )[0]
+                                                    .getBoundingClientRect()
+                                                    .top +
+                                                    10 >
+                                                document
+                                                    .getElementsByClassName(
+                                                        "footer-area"
+                                                    )[0]
+                                                    .getBoundingClientRect().top
+                                            ) {
+                                                setChangeColor({
+                                                    background: "white",
+                                                    color: "#003e6b",
+                                                });
+                                            } else {
+                                                console.log("3");
+                                                setChangeColor({
+                                                    background: "#003e6b",
+                                                });
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     } else {
                         console.log("3");
-                        setChangeColor({ color: "blue" });
+                        setChangeColor({ background: "#003e6b" });
                     }
                 }
             } else {
                 setThePosition(false);
-                setChangeColor({ color: "red" });
+                setChangeColor({ background: "#003e6b" });
             }
         });
+
+        return () => {
+            window.removeEventListener("scroll", () => {
+                setThePosition(false);
+            });
+        };
     }, [router.pathname]);
 
     const onScrollStep = () => {
@@ -96,7 +188,10 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
             <div
                 className={`go-top ${thePosition ? "active" : ""}`}
                 onClick={scrollToTop}
-                style={{ background: changeColor.color }}
+                style={{
+                    background: changeColor.background,
+                    color: changeColor.color,
+                }}
             >
                 <i className="bx bx-up-arrow-alt"></i>
             </div>

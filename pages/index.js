@@ -13,80 +13,15 @@ const Index = () => {
     const [changeColor, setChangeColor] = useState({
         color: "",
     });
-    useEffect(() => {
-        document.addEventListener("scroll", () => {
-            if (window.scrollY > 170) {
-                // setThePosition(true);
-                // const tagname = document.getElementsByTagName("div");
-                // console.log(tagname, "classs");
-                // var service =
-                //     document.getElementsByClassName("our-services-area");
-                // var servicePos = service.pageYOffset;
-                // console.log("servicePos", servicePos);
-                // if (window.scrollY > servicePos) {
-                //     console.log("1");
-                //     setChangeColor({ color: "white" });
-                // } else {
-                //     console.log("3");
-                //     setChangeColor({ color: "blue" });
-                // }
-                // setChangeColor({ color: "white" });
-                console.log(
-                    "===---",
-                    document
-                        .getElementsByClassName("go-top")[0]
-                        .getBoundingClientRect().top + 10
-                );
-                console.log(
-                    "===--our-services-area-",
-                    document
-                        .getElementsByClassName("our-services-area")[0]
-                        .getBoundingClientRect()
-                );
-                if (
-                    document
-                        .getElementsByClassName("go-top")[0]
-                        .getBoundingClientRect().top +
-                        10 >
-                    document
-                        .getElementsByClassName("our-services-area")[0]
-                        .getBoundingClientRect().top
-                ) {
-                    setChangeColor({ color: "white" });
-                    if (
-                        document
-                            .getElementsByClassName("go-top")[0]
-                            .getBoundingClientRect().top +
-                            10 >
-                        document
-                            .getElementsByClassName("how-its-work-area")[0]
-                            .getBoundingClientRect().top
-                    ) {
-                        setChangeColor({ color: "blue" });
-                        if (
-                            document
-                                .getElementsByClassName("go-top")[0]
-                                .getBoundingClientRect().top +
-                                10 >
-                            document
-                                .getElementsByClassName(
-                                    "industries-we-serve"
-                                )[0]
-                                .getBoundingClientRect().top
-                        ) {
-                            setChangeColor({ color: "white" });
-                        }
-                    }
-                } else {
-                    console.log("3");
-                    setChangeColor({ color: "blue" });
-                }
-            } else {
-                // setThePosition(false);
-                setChangeColor({ color: "red" });
-            }
-        });
-    }, []);
+    // useEffect(() => {
+    //     document.addEventListener("scroll", () => {
+    //         if (window.scrollY > 170) {
+    //             setThePosition(true);
+    //         } else {
+    //             setThePosition(false);
+    //         }
+    //     });
+    // }, []);
 
     return (
         <>
