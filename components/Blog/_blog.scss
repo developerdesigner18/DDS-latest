@@ -2,36 +2,39 @@
     margin-left: 0px !important;
 }
 .single-blog-post {
-    background-color: #EBF2F6 !important;
+    background-color: #ebf2f6 !important;
 }
 
 .blog-right-sidebar .widget-area .widget {
-    background-color: #EBF2F6;
+    background-color: #ebf2f6;
 }
 
 .blog-right-sidebar .widget-area .widget_search form .search-field {
-    background-color: #D0EAF9;
+    background-color: #d0eaf9;
 }
 
 .blog-right-sidebar .widget-area .widget .widget-title::before {
-    background-color: #003E6B !important;
+    background-color: #003e6b !important;
 }
 .widget-area .widget_categories ul li::before {
-    background: #003E6B !important;
+    background: #003e6b !important;
 }
-.widget-area .widget_search form button:hover, .widget-area .widget_search form button:focus {
-    background-color: #003E6B !important;
+.widget-area .widget_search form button:hover,
+.widget-area .widget_search form button:focus {
+    background-color: #003e6b !important;
 }
 
 .widget-area .widget_search form button {
-    color: #003E6B !important;
+    color: #003e6b !important;
 }
 
-.widget-area .tagcloud a:hover, .widget-area .tagcloud a:focus {
-    background-color: #003E6B !important;
+.widget-area .tagcloud a:hover,
+.widget-area .tagcloud a:focus {
+    background-color: #003e6b !important;
 }
 
-.widget-area .widget_search form button:hover, .widget-area .widget_search form button:focus {
+.widget-area .widget_search form button:hover,
+.widget-area .widget_search form button:focus {
     color: var(--whiteColor) !important;
 }
 .blog-details-desc .article-content h3 {
@@ -40,34 +43,38 @@
 .blog-details-desc .article-content .entry-meta ul li i {
     color: var(--mainLightColor) !important;
 }
-.entry-meta li a, .entry-meta li {
+.entry-meta li a,
+.entry-meta li {
     color: var(--mainLightColor) !important;
 }
 .blog-details-desc .article-content .entry-meta ul li span {
     color: var(--mainDarkColor) !important;
 }
-blockquote::after, .blockquote::after {
+blockquote::after,
+.blockquote::after {
     background-color: var(--mainDarkColor) !important;
 }
 .blog-details-desc .article-footer .article-share .social li a {
     border-radius: 14% !important;
 }
-.blog-details-desc .article-footer .article-share .social li a.facebook, .blog-details-desc .article-footer .article-share .social li a.twitter, .blog-details-desc .article-footer .article-share .social li a.linkedin, .blog-details-desc .article-footer .article-share .social li a.instagram {
-    background-color:  var(--mainDarkColor) !important;
+.blog-details-desc .article-footer .article-share .social li a.facebook,
+.blog-details-desc .article-footer .article-share .social li a.twitter,
+.blog-details-desc .article-footer .article-share .social li a.linkedin,
+.blog-details-desc .article-footer .article-share .social li a.instagram {
+    background-color: var(--mainDarkColor) !important;
     border-color: var(--mainDarkColor) !important;
 }
 .widget-area .widget_categories ul li a:hover {
     color: var(--mainDarkColor) !important;
 }
-.prev-link-wrapper .image-prev::after,  .next-link-wrapper .image-next::after {
+.prev-link-wrapper .image-prev::after,
+.next-link-wrapper .image-next::after {
     background-color: var(--mainDarkColor) !important;
 }
-.prev-link-wrapper a:hover .prev-link-info-wrapper, .next-link-wrapper a:hover .next-link-info-wrapper {
+.prev-link-wrapper a:hover .prev-link-info-wrapper,
+.next-link-wrapper a:hover .next-link-info-wrapper {
     color: var(--mainDarkColor) !important;
 }
-
-
-
 
 .widget-area {
     padding-left: 10px;
@@ -87,10 +94,12 @@ blockquote::after, .blockquote::after {
             margin-bottom: 0;
         }
         .widget-title {
-            margin-bottom: 25px;
-            position: relative;
-            padding-bottom: 7px;
-            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 5px;
+            border-bottom-style: solid;
+            border-bottom-width: 1.1px;
+            width: fit-content;
+            margin-bottom: 20px;
+            // line-height: 30px;
             font: {
                 size: 22px;
             }
