@@ -9,18 +9,12 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
         background: "",
         color: "",
     });
-    // console.log("router", router.pathname);
 
     useEffect(() => {
         document.addEventListener("scroll", () => {
             if (window.scrollY > 170) {
                 setThePosition(true);
 
-                // console.log(
-                //     "router.pathname === ",
-                //     router.pathname === "/",
-                //     thePosition
-                // );
                 if (router.pathname === "/about") {
                     console.log("aboutttt");
                     if (
