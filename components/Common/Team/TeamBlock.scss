@@ -1,5 +1,4 @@
-
-.single-team-member .image{
+.single-team-member .image {
     background-image: url("/images/team/bg.png");
 }
 .single-team-member .image {
@@ -23,18 +22,19 @@ Team Area CSS
             left: 0;
             right: 0;
             bottom: 0;
-        };
+        }
     }
     .row {
         margin: {
             left: 0;
             right: 0;
-        };
-        .col-lg-3, .col-lg-6 {
+        }
+        .col-lg-3,
+        .col-lg-6 {
             padding: {
                 left: 0;
                 right: 0;
-            };
+            }
         }
     }
     .shape3 {
@@ -63,7 +63,7 @@ Team Area CSS
             margin-bottom: 0;
             font: {
                 size: 24px;
-            };
+            }
         }
         span {
             margin-top: 6px;
@@ -97,7 +97,7 @@ Team Area CSS
                 position: relative;
                 border-radius: 2px;
                 transform: scaleY(0);
-                transition: .4s;
+                transition: 0.4s;
 
                 i {
                     position: absolute;
@@ -111,7 +111,10 @@ Team Area CSS
                     color: var(--whiteColor);
                 }
             }
-            &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8) {
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(6),
+            &:nth-child(8) {
                 a {
                     transform: scaleX(0);
                 }
@@ -150,7 +153,7 @@ Team Area CSS
             margin-bottom: 0;
             font: {
                 size: 20px;
-            };
+            }
         }
         span {
             margin-top: 6px;
@@ -183,11 +186,11 @@ Team Area CSS
             padding-left: 0;
             margin-bottom: 0;
             list-style-type: none;
-    
+
             li {
                 display: block;
                 margin-bottom: 8px;
-    
+
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -201,8 +204,8 @@ Team Area CSS
                     position: relative;
                     border-radius: 2px;
                     transform: scaleY(0);
-                    transition: .4s;
-    
+                    transition: 0.4s;
+
                     i {
                         position: absolute;
                         left: 0;
@@ -215,7 +218,10 @@ Team Area CSS
                         color: var(--whiteColor);
                     }
                 }
-                &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8) {
+                &:nth-child(2),
+                &:nth-child(4),
+                &:nth-child(6),
+                &:nth-child(8) {
                     a {
                         transform: scaleX(0);
                     }
@@ -244,14 +250,14 @@ Team Area CSS
 .team-slides {
     &.owl-theme {
         .owl-nav {
-            &.disabled+.owl-dots {
+            &.disabled + .owl-dots {
                 margin-top: 0;
             }
         }
         .owl-dots {
             margin: {
                 top: 10px !important;
-            };
+            }
             line-height: 1;
             .owl-dot {
                 span {
@@ -265,7 +271,7 @@ Team Area CSS
                     position: relative;
 
                     &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         left: 0;
                         top: 0;
@@ -279,7 +285,8 @@ Team Area CSS
                         visibility: hidden;
                     }
                 }
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     span {
                         border-color: var(--mainColor);
 
@@ -314,4 +321,8 @@ Team Area CSS
     left: 0;
     bottom: 0;
     z-index: -1;
+}
+.team-member-image {
+    width: 300px;
+    height: 300px;
 }

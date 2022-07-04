@@ -11,6 +11,7 @@ const MainBanner = () => {
     const openModal = () => {
         setIsOpen(!isOpen);
     };
+
     return (
         <>
             <div className="main-banner-area">
