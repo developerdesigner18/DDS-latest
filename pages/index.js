@@ -13,15 +13,6 @@ const Index = () => {
     const [changeColor, setChangeColor] = useState({
         color: "",
     });
-    // useEffect(() => {
-    //     document.addEventListener("scroll", () => {
-    //         if (window.scrollY > 170) {
-    //             setThePosition(true);
-    //         } else {
-    //             setThePosition(false);
-    //         }
-    //     });
-    // }, []);
 
     return (
         <>

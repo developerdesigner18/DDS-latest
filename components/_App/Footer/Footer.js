@@ -123,7 +123,7 @@ const Footer = () => {
                             <h3>Resources</h3>
                             <ul className="footer-links-list">
                                 <li>
-                                    <Link href="/team-1">
+                                    <Link href="/our-development-process">
                                         <a>Working Progress</a>
                                     </Link>
                                 </li>

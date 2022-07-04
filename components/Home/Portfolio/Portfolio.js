@@ -83,7 +83,7 @@ const Portfolio = () => {
                     >
                         {portfolios.map(({ image, info }, index) => (
                             <div key={index} className="single-portfolio-item">
-                                <Link href="/single-portfolio">
+                                <Link href="/portfolio">
                                     <a className="image d-block">
                                         <img src={image} alt="image" />
                                     </a>
@@ -91,11 +91,11 @@ const Portfolio = () => {
 
                                 <div className="content">
                                     <h3>
-                                        <Link href="/single-portfolio">
+                                        <Link href="/portfolio">
                                             <a>{info}</a>
                                         </Link>
                                     </h3>
-                                    <Link href="/single-portfolio">
+                                    <Link href="/portfolio">
                                         <a className="link-btn">
                                             <i className="flaticon-next-button"></i>
                                         </a>
