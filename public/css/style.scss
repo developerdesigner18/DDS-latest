@@ -132,15 +132,21 @@ Default CSS
     --grayBgColor: #f0f4f8;
     --mainBgColor: #ebf2f6;
     --bgColor: #d0eaf9;
+    --buttonDark: #003e6b;
+    --mainbgDarkColor: #003e6b;
+    --mainbgLightColor: #0069b4;
 }
 [data-theme="dark"] {
-    --mainDarkColor: #003e6b;
-    --mainLightColor: white;
-    --whiteColor: #0b1419;
+    --mainDarkColor: #ffffff;
+    --mainLightColor: #bfc5c9;
+    --whiteColor: #091830;
     --grayTextColor: #7a7a7a;
     --grayBgColor: #f0f4f8;
     --mainBgColor: #ebf2f6;
     --bgColor: #d0eaf9;
+    --buttonDark: #037fc0;
+    --mainbgDarkColor: #003e6b;
+    --mainbgLightColor: #0069b4;
 }
 body {
     padding: 0;
