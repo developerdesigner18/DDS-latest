@@ -44,9 +44,6 @@ const LaravelServices = () => {
                         );
                     })}
                 </div>
-                <div className="viewAll-btn-holder">
-                    <button>View All</button>
-                </div>
             </div>
         </div>
     );
