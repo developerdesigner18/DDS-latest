@@ -14,10 +14,12 @@
     "dependencies": {
         "axios": "^0.21.4",
         "next": "^12.0.7",
+        "next-themes": "^0.2.0",
         "nodemailer": "^6.7.2",
         "nodemailer-sendgrid-transport": "^0.2.0",
         "react": "^17.0.2",
         "react-accessible-accordion": "^3.3.5",
+        "react-dark-theme": "^1.1.1",
         "react-dom": "^17.0.2",
         "react-hook-form": "^6.15.8",
         "react-image-lightbox": "^5.1.4",

@@ -179,6 +179,7 @@ const ProjectInMind = () => {
                                                 style={{
                                                     backgroundColor: "none",
                                                 }}
+                                                className="checkboxInput-Holder"
                                             />
                                             <label htmlFor="agree">
                                                 I have to read and agreeed to

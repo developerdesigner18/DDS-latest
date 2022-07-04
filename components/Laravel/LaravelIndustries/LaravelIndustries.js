@@ -72,7 +72,7 @@ const LaravelIndustries = () => {
                     <div className="section-title-holder">
                         <h2 className="sub-title">Industries / solutions </h2>
 
-                        <p>
+                        <p className="inductry-para">
                             Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s,

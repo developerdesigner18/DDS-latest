@@ -1,3 +1,4 @@
+import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import Link from "../../../utils/ActiveLink";
@@ -6,6 +7,12 @@ import { LOGO_DARK, LOGO_LIGHT } from "../../../utils/AppConfig";
 const Navbar = () => {
     const router = useRouter();
     const location = router.pathname;
+    const [isDarkMode, setIsDarkMode] = useState(
+        typeof window !== "undefined" && localStorage.getItem("isDarkMode")
+            ? localStorage.getItem("isDarkMode")
+            : false
+    );
+    const { theme, setTheme } = useTheme();
 
     const [menu, setMenu] = useState(true);
 
@@ -204,7 +211,20 @@ const Navbar = () => {
 
                             <div className="others-option d-flex align-items-center">
                                 <div className="option-item">
-                                    <div className="cart-btn">
+                                    <div
+                                        className="cart-btn"
+                                        onClick={() => {
+                                            console.log(isDarkMode);
+                                            setIsDarkMode((prev) => !prev);
+                                            localStorage.setItem(
+                                                "DarkMode",
+                                                isDarkMode
+                                            );
+                                            setTheme(
+                                                isDarkMode ? "dark" : "light"
+                                            );
+                                        }}
+                                    >
                                         <a>
                                             <img
                                                 src={

@@ -132,6 +132,15 @@ Default CSS
     --mainBgColor: #ebf2f6;
     --bgColor: #d0eaf9;
 }
+[data-theme="dark"] {
+    --mainDarkColor: #003e6b;
+    --mainLightColor: white;
+    --whiteColor: #0b1419;
+    --grayTextColor: #7a7a7a;
+    --grayBgColor: #f0f4f8;
+    --mainBgColor: #ebf2f6;
+    --bgColor: #d0eaf9;
+}
 body {
     padding: 0;
     margin: 0;
@@ -140,6 +149,7 @@ body {
         family: var(--fontFamily);
     }
 }
+
 .h1,
 .h2,
 .h3,
@@ -4210,8 +4220,8 @@ Page Title Area CSS
     position: relative;
     z-index: 1;
     padding: {
-        bottom: 115px;
-        top: 180px;
+        bottom: 90px;
+        top: 90px;
     }
     &.page-title-style-two {
         padding: {
