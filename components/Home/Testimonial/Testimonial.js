@@ -115,7 +115,7 @@ const Testimonial = () => {
         );
     };
     return (
-        <div className="testimonials-area">
+        <div className="testimonials-area dark-bg-color">
             <div className="container-fluid">
                 {display ? (
                     <OwlCarousel

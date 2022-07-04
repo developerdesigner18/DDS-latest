@@ -130,7 +130,13 @@ const Solutions = () => {
                     <Link href="/solution">
                         <span
                             className="default-btn"
-                            style={{ cursor: "pointer" }}
+                            style={{
+                                cursor: "pointer",
+                                margin: "auto",
+                                display: "flex",
+                                justifyContent: "center",
+                                width: "16%",
+                            }}
                         >
                             View All
                         </span>

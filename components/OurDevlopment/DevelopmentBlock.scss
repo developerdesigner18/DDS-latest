@@ -1,5 +1,7 @@
 .devBlock.testimonial {
     margin: 50px auto;
+    background: #F0F4F8;
+    padding: 40px;
 }
 
 /* The actual devBlock (the vertical ruler) */
@@ -13,10 +15,10 @@
 .devBlock::after {
     content: "";
     position: absolute;
-    width: 6px;
+    width: 4px;
     background-color: #87a8c136;
-    top: 0;
-    bottom: 0;
+    top: 30px;
+    bottom: 30px;
     left: 50%;
     margin-left: -3px;
 }
