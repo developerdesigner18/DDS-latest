@@ -1,6 +1,7 @@
 // import { Router } from "express";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import React from "react";
 
 const GoTop = ({ scrollStepInPx, delayInMs }) => {
     const router = useRouter();
@@ -9,6 +10,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
         background: "",
         color: "",
     });
+    const timeoutRef = React.useRef(null);
 
     useEffect(() => {
         document.addEventListener("scroll", () => {
@@ -16,7 +18,6 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                 setThePosition(true);
 
                 if (router.pathname === "/about") {
-                    console.log("aboutttt");
                     if (
                         document
                             .getElementsByClassName("go-top")[0]
@@ -31,7 +32,6 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                             color: "#003e6b",
                         });
                     } else {
-                        console.log("3");
                         setChangeColor({ background: "#003e6b" });
                     }
                 }

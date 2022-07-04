@@ -18,7 +18,7 @@
         justify-content: space-between;
         align-items: flex-start;
         position: inherit;
-        z-index: 9999999999;
+        z-index: 1;
     }
 
     h3 {
@@ -35,7 +35,7 @@
     p {
         color: var(--grayTextColor);
         position: inherit;
-        z-index: 9999999999;
+        z-index: 1;
     }
     &:hover {
         background-color: var(--mainLightColor);

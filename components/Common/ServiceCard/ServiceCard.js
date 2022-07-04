@@ -16,13 +16,18 @@ const ServiceCard = (props) => {
                                 <h6>{props.subheading}</h6>
                                 <h2>{props.heading}</h2>
                                 <p>{props.content}</p>
-                                <Link href="#quote">
-                                    <a type="submit" className="default-btn">
-                                        {props.btntext}
-                                    </a>
-                                </Link>
+                                {props.btntext && (
+                                    <Link href={props.btnlink}>
+                                        <a
+                                            type="submit"
+                                            className="default-btn"
+                                        >
+                                            {props.btntext}
+                                        </a>
+                                    </Link>
+                                )}
                                 {props.btntext2 && (
-                                    <Link href="#quote">
+                                    <Link href={props.btnlink}>
                                         <a type="submit" className="extra-btn">
                                             {props.btntext2}
                                         </a>

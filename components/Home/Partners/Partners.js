@@ -10,27 +10,27 @@ import "slick-carousel/slick/slick-theme.css";
 const partners = [
     {
         id: 1,
-        image: "/images/partner/partner-img6.png",
+        image: "/images/partner/3.png",
     },
     {
         id: 2,
-        image: "/images/partner/partner-img6.png",
+        image: "/images/partner/3.png",
     },
     {
         id: 3,
-        image: "/images/partner/partner-img6.png",
+        image: "/images/partner/3.png",
     },
     {
         id: 4,
-        image: "/images/partner/partner-img6.png",
+        image: "/images/partner/3.png",
     },
     {
         id: 5,
-        image: "/images/partner/partner-img6.png",
+        image: "/images/partner/3.png",
     },
     {
         id: 6,
-        image: "/images/partner/partner-img6.png",
+        image: "/images/partner/3.png",
     },
 ];
 
@@ -131,7 +131,7 @@ const Partners = () => {
         //         className="partner-area bg-f9f9f9 slider_starter"
         //     >
         //         <div className="item_slider">
-        //             <img src="/images/partner/partner-img6.png" />
+        //             <img src="/images/partner/3.png" />
         //         </div>
         //         <div className="item_slider">
         //             <img src="/images/partner/partner-img4.png" />

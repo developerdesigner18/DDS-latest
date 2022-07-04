@@ -33,6 +33,7 @@ const Services = () => {
                 mainimage="/images/services/main.png"
                 heading="Sky Rocket your Business in the Digital World with Us."
                 content={content}
+                btnlink="/web-development"
                 btntext="Read more"
             />
 
