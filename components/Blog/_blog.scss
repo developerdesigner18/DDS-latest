@@ -1,6 +1,13 @@
 .single-blog-post .content .d-flex .info {
     margin-left: 0px !important;
 }
+.article-tags a,
+span {
+    color: var(--mainLightColor);
+}
+.blog-details-desc .article-footer .article-tags span {
+    color: var(--mainLightColor) !important;
+}
 .single-blog-post {
     background-color: #ebf2f6 !important;
 }
@@ -61,8 +68,8 @@ blockquote::after,
 .blog-details-desc .article-footer .article-share .social li a.twitter,
 .blog-details-desc .article-footer .article-share .social li a.linkedin,
 .blog-details-desc .article-footer .article-share .social li a.instagram {
-    background-color: var(--mainDarkColor) !important;
-    border-color: var(--mainDarkColor) !important;
+    background-color: var(--mainLightColor) !important;
+    border-color: var(--mainLightColor) !important;
 }
 .widget-area .widget_categories ul li a:hover {
     color: var(--mainDarkColor) !important;
