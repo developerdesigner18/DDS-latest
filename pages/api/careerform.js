@@ -18,32 +18,29 @@ export default async (req, res) => {
             rejectUnauthorized: false,
         },
     });
-    const { name, email, number, subject } = req.body;
+    const {
+        name,
+        email,
+        number,
+        subject,
+        last_name,
+        cover_letter,
+        upload_img,
+    } = req.body;
 
     transporter
         .sendMail({
             from: "testdds@daydreamsoft.com", // sender address
             to: "kajalk.dds@gmail.com", // list of receivers
-            subject: "Contact form", // Subject line
+            subject: "Career form", // Subject line
             text: "Hello world?", // plain text body
             html: `<b>From:</b> ${name} <br />
                     <b>Number:</b> ${number} <br />
                     <b>Subject:</b> ${subject} <br />
-                    <b>Email:</b> ${email} <br />`, // html body
-        })
-        .then(() => {
-            console.log("success");
-            res.status(200).send("Email send successfully");
-        })
-        .catch((err) => console.log("err ", err));
-
-    transporter
-        .sendMail({
-            from: "testdds@daydreamsoft.com", // sender address
-            to: email, // list of receivers
-            subject: "Greeting mail", // Subject line
-            text: "Hello world?", // plain text body
-            html: `<h3>Thank you for contact us.... </h3>`, // html body
+                    <b>Email:</b> ${email} <br />
+                    <b>Last name:</b> ${last_name} <br />
+                    <b>cover letter:</b> ${cover_letter} <br />
+                    <b>Document link:</b> ${upload_img} <br />`, // html body
         })
         .then(() => {
             console.log("success");

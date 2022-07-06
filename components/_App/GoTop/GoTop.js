@@ -17,7 +17,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
             if (window.scrollY > 170) {
                 setThePosition(true);
 
-                if (router.pathname === "/about") {
+                if (router.pathname !== "/") {
                     if (
                         document
                             .getElementsByClassName("go-top")[0]
