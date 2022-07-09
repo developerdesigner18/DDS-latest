@@ -17,6 +17,7 @@ const alertContent = () => {
         showConfirmButton: false,
     });
 };
+
 const INITIAL_STATE = {
     name: "",
     email: "",
@@ -25,6 +26,7 @@ const INITIAL_STATE = {
     last_name: "",
     cover_letter: "",
     agrement: "",
+    address: "",
     upload_resume: "",
 };
 
@@ -52,7 +54,7 @@ const careerform = () => {
         // e.preventDefault();
         try {
             const body = new FormData();
-            const upload_img = body.append("file", image);
+
             const url = `http://localhost:3000/api/careerform`;
             const {
                 name,
@@ -66,24 +68,22 @@ const careerform = () => {
 
                 // upload_resume,
             } = contact;
-            const payload = {
-                name,
-                email,
-                number,
-                subject,
-                text,
-                last_name,
-                cover_letter,
-                agrement,
-                upload_img,
-                // upload_resume,
-            };
-            await axios.post(url, payload);
-            console.log(url);
+            body.append("image", image);
+            body.append("name", name);
+            body.append("email", email);
+            body.append("number", number);
+            body.append("subject", subject);
+            body.append("text", text);
+            body.append("last_name", last_name);
+            body.append("cover_letter", cover_letter);
+            body.append("agrement", agrement);
+            await axios.post(url, body);
+
             setContact(INITIAL_STATE);
             alertContent();
         } catch (error) {
             console.log(error);
+            // alertContentError();
         }
     };
     return (
@@ -153,6 +153,7 @@ const careerform = () => {
                                     onChange={handleChange}
                                     ref={register({
                                         required: true,
+                                        pattern: "[1-9]{1}[0-9]{9}",
                                     })}
                                 />
                                 <div
@@ -291,7 +292,7 @@ const careerform = () => {
                                     <input
                                         type="checkbox"
                                         name="agrement"
-                                        className="form-control"
+                                        className=""
                                         value={contact.agrement}
                                         onChange={handleChange}
                                         ref={register({

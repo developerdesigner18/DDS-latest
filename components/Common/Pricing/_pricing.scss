@@ -10,12 +10,12 @@ p.design-type label{
     font-weight:500;
 
 }
-input[type="checkbox"]:checked {
+.select-design-type input[type="checkbox"]:checked {
     appearance: auto;
     clip-path: circle(50% at 50% 50%);
     background-color: transparent;
 }
-input[type="checkbox"] {
+.select-design-type input[type="checkbox"] {
     width: 20px;
     height: 20px;
     border-radius: 50%;

@@ -1,0 +1,20 @@
+.page-title-area.web-development-view-block {
+    padding-top: 0;
+}
+.development-result-main {
+    background: #ebf2f6;
+    padding: 60px;
+    margin-bottom: 20px;
+}
+.development-result-main p {
+    text-align: center;
+    color: var(--mainDarkColor);
+    font-size: 26px;
+    font-weight: 500;
+}
+.development-view {
+    display: flex !important;
+    width: 20%;
+    justify-content: center;
+    margin-left: auto;
+}

@@ -2,6 +2,8 @@ import nodemailer from "nodemailer";
 import sgTransport from "nodemailer-sendgrid-transport";
 
 export default async (req, res) => {
+    // let testAccount = await nodemailer.createTestAccount();
+
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         host: "smtp.zoho.com",
@@ -16,33 +18,19 @@ export default async (req, res) => {
             rejectUnauthorized: false,
         },
     });
-    const {
-        name,
-        companyname,
-        website,
-        email,
-        number,
-        subject,
-        text,
-        country,
-        service,
-    } = req.body;
+    const { name, email, number, subject, text } = req.body;
+    // console.log(req.body, "-====quote");
 
     transporter
         .sendMail({
             from: "testdds@daydreamsoft.com", // sender address
             to: "kajalk.dds@gmail.com", // list of receivers
-            subject: "Contact form", // Subject line
+            subject: "Project form", // Subject line
             text: "Hello world?", // plain text body
-            html: `<b>From:</b> ${name} <br />
+            html: `<b>Full Name:</b> ${name} <br />
                     <b>Number:</b> ${number} <br />
-                    <b>Subject:</b> ${subject} <br />
                     <b>Email:</b> ${email} <br />
-                    <b>Companyname: </b> ${companyname} <br/>
-                    <b>Website: </b> ${website} <br/>
-                    <b>Text: </b> ${text} <br />
-                    <b> Country: </b> ${country} <br />
-                    <b> Service: </b> ${service} <br />`, // html body
+                    <b>Requirement:</b> ${text}`, // html body
         })
         .then(() => {
             console.log("success");
@@ -52,18 +40,4 @@ export default async (req, res) => {
             console.log("err ", err);
             res.status(404).json({ message: err.message });
         });
-
-    transporter
-        .sendMail({
-            from: "testdds@daydreamsoft.com", // sender address
-            to: email, // list of receivers
-            subject: "Greeting mail", // Subject line
-            text: "Hello world?", // plain text body
-            html: `<h3>Thank you for contact us.... </h3>`, // html body
-        })
-        .then(() => {
-            console.log("success");
-            res.status(200).send("Email send successfully");
-        })
-        .catch((err) => console.log("err ", err));
 };

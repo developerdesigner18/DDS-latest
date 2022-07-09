@@ -18,19 +18,20 @@ export default async (req, res) => {
             rejectUnauthorized: false,
         },
     });
-    const { name, email, number, subject, text } = req.body;
+    const { values, getDesign, getPage, addOns, email } = req.body;
+    console.log("API :", email);
     // console.log(req.body, "-====quote");
 
     transporter
         .sendMail({
             from: "testdds@daydreamsoft.com", // sender address
-            to: "kajalk.dds@gmail.com", // list of receivers
-            subject: "Quote form", // Subject line
+            to: email, // list of receivers
+            subject: "Price Calculation form", // Subject line
             text: "Hello world?", // plain text body
-            html: `<b>Name:</b> ${name} <br />
-                    <b>Number:</b> ${number} <br />
-                    <b>Subject:</b> ${subject} <br />
-                    <b>Email:</b> ${email} <br />`, // html body
+            html: `<b>Values:</b> ${values} <br />
+                    <b>GetDesign:</b> ${getDesign} <br />
+                    <b>GetPage:</b> ${getPage} <br />
+                    <b>AddOns:</b> ${addOns} <br />`, // html body
         })
         .then(() => {
             console.log("success");
