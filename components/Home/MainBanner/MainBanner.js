@@ -40,7 +40,7 @@ const MainBanner = () => {
 
                                 <div className="btn-box">
                                     <div className="d-flex align-items-center">
-                                        <Link href="/contact">
+                                        <Link href="/about">
                                             <a className="default-btn">
                                                 Get Started
                                             </a>
@@ -74,7 +74,7 @@ const MainBanner = () => {
             <ModalVideo
                 channel="youtube"
                 isOpen={!isOpen}
-                videoId="bk7McNUjWgw"
+                videoId="2uhOOu_P7So"
                 onClose={() => setIsOpen(!isOpen)}
             />
         </>

@@ -64,28 +64,22 @@ const OurServices = () => {
                                 with Us.
                             </h2>
                             <p>
-                                Our developers and digital experts join hands to
-                                provide you with the most efficient, standard
-                                and convenient websites, applications and
-                                strategies.
-                            </p>
-                            <p>
                                 We believe in listening and providing the best
-                                creative solutions meeting your requirements and
-                                focusing on yielding maximum efficiency, growth
+                                creative solutions to meet your requirements and
+                                focusing on yielding maximum efficiency, growth,
                                 and traffic on all your digital platforms across
                                 the globe. In simple terms, “You share, we
                                 listen, implement and deliver”. Our developers
                                 and digital experts join hands to provide you
-                                with the most efficient, standard and convenient
-                                websites, mobile applications, modern UI/UX
-                                designs and marketingstrategies.
+                                with the most efficient, standard, and
+                                convenient websites, mobile applications, modern
+                                UI/UX designs, and marketing strategies.
                             </p>
                             <p>
-                                Utilize our professionals' knowledge to achieve
-                                higher uptime, improved performance, faster case
-                                resolution, and proactive issue avoidance and
-                                prevention.
+                                Tap into the knowledge of our experts and
+                                achieve more uptime, better performance, faster
+                                case resolution, and proactive issue avoidance
+                                and prevention.
                             </p>
                         </div>
                     </div>

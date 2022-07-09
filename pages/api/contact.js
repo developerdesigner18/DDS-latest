@@ -6,7 +6,6 @@ export default async (req, res) => {
     let transporter = nodemailer.createTransport({
         host: "smtp.zoho.com",
         port: 465,
-        // service: "   mail",
         secure: true, // true for 465, false for other ports
         auth: {
             user: "testdds@daydreamsoft.com", // generated ethereal user
@@ -16,6 +15,7 @@ export default async (req, res) => {
             rejectUnauthorized: false,
         },
     });
+
     const {
         name,
         companyname,
@@ -30,11 +30,12 @@ export default async (req, res) => {
 
     transporter
         .sendMail({
-            from: "testdds@daydreamsoft.com", // sender address
+            from: `${name}<testdds@daydreamsoft.com>`, // sender address
             to: "kajalk.dds@gmail.com", // list of receivers
+            replyTo: email,
             subject: "Contact form", // Subject line
             text: "Hello world?", // plain text body
-            html: `<b>From:</b> ${name} <br />
+            html: `<b>Name:</b> ${name} <br />
                     <b>Number:</b> ${number} <br />
                     <b>Subject:</b> ${subject} <br />
                     <b>Email:</b> ${email} <br />
@@ -65,5 +66,8 @@ export default async (req, res) => {
             console.log("success");
             res.status(200).send("Email send successfully");
         })
-        .catch((err) => console.log("err ", err));
+        .catch((err) => {
+            console.log("err ", err);
+            res.status(404).json({ message: err.message });
+        });
 };

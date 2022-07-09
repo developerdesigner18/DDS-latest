@@ -74,8 +74,5 @@ export default async (req, res) => {
                 console.log("=====err ", err);
                 res.status(404).json({ message: err.message });
             });
-
-        // res.send(req.file.path); // do something with the file
-        // res.end();
     });
 };
