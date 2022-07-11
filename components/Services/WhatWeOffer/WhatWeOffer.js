@@ -94,14 +94,7 @@ const WhatWeOffer = () => {
                             <div className="img-icons">
                                 <img src="/images/services/world-wide-web.png" />
                             </div>
-                            <p className="heading">Web Development</p>
-                            <p className="subheading">
-                                From simple landing pages to complex e-commerce
-                                websites, we ‘Add’ value to the ‘Web’ world with
-                                our Experience and Expertise in Web Development
-                                Services.
-                            </p>
-                        </div>
+                        </Link>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-2">
                         <div className="service-block mobile-block">

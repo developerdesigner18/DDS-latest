@@ -17,7 +17,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
             if (window.scrollY > 170) {
                 setThePosition(true);
 
-                if (router.pathname !== "/") {
+                if (router.pathname === "/about") {
                     if (
                         // typeof window !== "undefined" &&
                         localStorage.getItem("theme") === "dark"
@@ -27,6 +27,25 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                             color: "#003e6b",
                         });
                     } else {
+                        setChangeColor({ background: "#003e6b" });
+                    }
+                }
+                if (router.pathname === "/") {
+                    if (
+                        document.getElementsByClassName("our-services-area")
+                            .length > 0 &&
+                        document
+                            .getElementsByClassName("go-top")[0]
+                            .getBoundingClientRect().top +
+                            10 >
+                            document
+                                .getElementsByClassName("our-services-area")[0]
+                                .getBoundingClientRect().top
+                    ) {
+                        setChangeColor({
+                            background: "white",
+                            color: "#003e6b",
+                        });
                         if (
                             document
                                 .getElementsByClassName("go-top")[0]
