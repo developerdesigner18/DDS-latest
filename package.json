@@ -3,6 +3,9 @@
     "version": "1.4.0",
     "description": "Mibix - React Next.js Digital Startup & Agency Template",
     "main": "index.js",
+    "engines": {
+        "node": "14.x"
+    },
     "scripts": {
         "dev": "next dev",
         "build": "next build",
