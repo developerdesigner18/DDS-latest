@@ -23,77 +23,78 @@ const BlogSidebarNew = () => {
 
             <div className="widget widget_dibiz_posts_thumb">
                 <h3 className="widget-title">Recent Posts</h3>
+                <div className="post-holder">
+                    <div className="item">
+                        <Link href="/singleblog">
+                            <a className="thumb">
+                                <span
+                                    className="fullimage cover bg1"
+                                    role="img"
+                                ></span>
+                            </a>
+                        </Link>
+                        <div className="info">
+                            <span>Feb 20,2022</span>
+                            <h4 className="title usmall">
+                                <Link href="/singleblog">
+                                    <a>
+                                        Marketing branding planning vision goals
+                                        concept
+                                    </a>
+                                </Link>
+                            </h4>
+                        </div>
 
-                <div className="item">
-                    <Link href="/singleblog">
-                        <a className="thumb">
-                            <span
-                                className="fullimage cover bg1"
-                                role="img"
-                            ></span>
-                        </a>
-                    </Link>
-                    <div className="info">
-                        <span>Feb 20,2022</span>
-                        <h4 className="title usmall">
-                            <Link href="/singleblog">
-                                <a>
-                                    Marketing branding planning vision goals
-                                    concept
-                                </a>
-                            </Link>
-                        </h4>
+                        <div className="clear"></div>
                     </div>
 
-                    <div className="clear"></div>
-                </div>
+                    <div className="item">
+                        <Link href="/singleblog">
+                            <a className="thumb">
+                                <span
+                                    className="fullimage cover bg2"
+                                    role="img"
+                                ></span>
+                            </a>
+                        </Link>
+                        <div className="info">
+                            <span>Feb 20,2022</span>
+                            <h4 className="title usmall">
+                                <Link href="/singleblog">
+                                    <a>
+                                        Marketing branding planning vision goals
+                                        concept
+                                    </a>
+                                </Link>
+                            </h4>
+                        </div>
 
-                <div className="item">
-                    <Link href="/singleblog">
-                        <a className="thumb">
-                            <span
-                                className="fullimage cover bg2"
-                                role="img"
-                            ></span>
-                        </a>
-                    </Link>
-                    <div className="info">
-                        <span>Feb 20,2022</span>
-                        <h4 className="title usmall">
-                            <Link href="/singleblog">
-                                <a>
-                                    Marketing branding planning vision goals
-                                    concept
-                                </a>
-                            </Link>
-                        </h4>
+                        <div className="clear"></div>
                     </div>
 
-                    <div className="clear"></div>
-                </div>
+                    <div className="item">
+                        <Link href="/singleblog">
+                            <a className="thumb">
+                                <span
+                                    className="fullimage cover bg3"
+                                    role="img"
+                                ></span>
+                            </a>
+                        </Link>
+                        <div className="info">
+                            <span>Feb 20,2022</span>
+                            <h4 className="title usmall">
+                                <Link href="/singleblog">
+                                    <a>
+                                        Marketing branding planning vision goals
+                                        concept
+                                    </a>
+                                </Link>
+                            </h4>
+                        </div>
 
-                <div className="item">
-                    <Link href="/singleblog">
-                        <a className="thumb">
-                            <span
-                                className="fullimage cover bg3"
-                                role="img"
-                            ></span>
-                        </a>
-                    </Link>
-                    <div className="info">
-                        <span>Feb 20,2022</span>
-                        <h4 className="title usmall">
-                            <Link href="/singleblog">
-                                <a>
-                                    Marketing branding planning vision goals
-                                    concept
-                                </a>
-                            </Link>
-                        </h4>
+                        <div className="clear"></div>
                     </div>
-
-                    <div className="clear"></div>
                 </div>
             </div>
 

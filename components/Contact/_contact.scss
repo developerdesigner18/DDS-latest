@@ -1,0 +1,25 @@
+.contact-area {
+    background-color: var(--whiteColor);
+}
+.contact-info-box h3 {
+    color: var(--mainDarkColor);
+}
+.contact-info-box i {
+    color: var(--mainDarkColor);
+}
+.contact-info-box p,
+.contact-info-box a {
+    color: var(--mainLightColor);
+}
+.contact-info-box a :hover a {
+    color: var(--whiteColor) !important;
+}
+.contact-select-holder {
+    display: flex;
+    flex-direction: column;
+}
+.contact-select-holder select {
+    height: 50px;
+    border: none;
+    background-color: var(--formInputColor);
+}

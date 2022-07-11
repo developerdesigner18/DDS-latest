@@ -18,9 +18,12 @@
 //     .owl-dots {
 //     margin-top: 12px !important;
 // }
+.team-area-two {
+    background-color: var(--whiteColor);
+}
 .owl-theme .owl-nav [class*="owl-"] {
     color: var(--mainDarkColor) !important;
-    background-color: white !important;
+    background-color: transparent !important;
 }
 .team-slides.owl-theme .owl-dots .owl-dot {
     display: inline-block;
@@ -74,9 +77,12 @@
     }
 }
 .industry-image {
-    background-color: #ebf2f6;
+    background-color: var(--formInputColor);
     text-align: center;
     padding: 28px 0px;
+}
+.industry-image-dark img {
+    filter: brightness(0) invert(1);
 }
 .single-team-member {
     width: 80%;
@@ -100,14 +106,14 @@
 }
 
 .team-slides.owl-theme .owl-dots .owl-dot span {
-    border-color: #003e6b !important;
+    border-color: var(--mainDarkColor) !important;
     width: 13px !important;
     height: 13px !important;
 }
 .team-slides.owl-theme .owl-dots .owl-dot span::before {
     height: 100%;
     width: 100%;
-    background-color: #003e6b;
+    background-color: var(--mainDarkColor);
     margin: 0px !important;
 }
 .owl-theme .owl-controls .owl-page span {

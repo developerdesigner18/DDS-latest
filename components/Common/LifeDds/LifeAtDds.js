@@ -41,8 +41,15 @@ const LifeAtDds = () => {
                                                 />
                                             </div>
 
-                                            <div className="content">
-                                                <h3>{elm.name}</h3>
+                                            <div
+                                                className="content-holder"
+                                                style={{
+                                                    color: "var(--mainDarkColor)",
+                                                    textAlign: "left",
+                                                    paddingTop: 15,
+                                                }}
+                                            >
+                                                <h6>{elm.name}</h6>
                                             </div>
                                         </div>
                                     </div>

@@ -1,17 +1,21 @@
 .form-label-holder {
     width: 100%;
-    color: var(--whiteColor) !important;
+    color: var(--whiteBoth) !important;
+}
+.checkbox-holder label {
+    color: var(--whiteBoth) !important;
 }
 .form-label-holder input {
     background-color: var(--whiteColor);
     margin-top: 5px;
 }
+
 .form-label-holder textarea {
     background-color: var(--whiteColor);
     margin-top: 5px;
 }
 .project-inMind {
-    background-color: var(--mainDarkColor);
+    background-color: var(--mainbgDarkColor);
     padding: 40px;
 }
 .project-inMind-form {
@@ -19,7 +23,7 @@
     color: var(--whiteColor);
 }
 .project-section-title {
-    color: var(--whiteColor);
+    color: var(--whiteBoth);
 }
 .checkbox-holder input {
     width: 16px;
@@ -46,8 +50,8 @@
     padding: 10px 30px;
     position: relative;
     z-index: 1;
-    color: var(--mainDarkColor);
-    background-color: var(--mainLightColor);
+    color: var(--whiteBoth);
+    background-color: var(--buttonbgColor);
     font: {
         size: 17px;
         weight: 700;
@@ -60,12 +64,13 @@
         top: 0;
         bottom: 0;
         border-radius: 5px;
-        background-color: var(--whiteColor);
+        background-color: var(--buttonbgColor);
         z-index: -1;
         transition: var(--transition);
     }
     &:hover {
-        color: var(--mainDarkColor);
+        color: var(--whiteColor);
+        background-color: var(--mainLightColor);
 
         &::before {
             transform: scaleX(0);

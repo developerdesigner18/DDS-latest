@@ -1,11 +1,14 @@
 .why-dds-cards {
     display: flex;
 }
+.why-dds-area {
+    background-color: var(--whiteColor);
+}
 
 .why-dds-card {
     margin-bottom: 30px;
     text-align: center;
-    background-color: var(--mainDarkColor);
+    background-color: var(--darkCardColor);
     padding: 25px;
     border-radius: 10px;
     transition: var(--transition);
@@ -18,12 +21,12 @@
         justify-content: space-between;
         align-items: flex-start;
         position: inherit;
-        z-index: 9999999999;
+        z-index: 1;
     }
 
     h3 {
         width: 60%;
-        color: var(--whiteColor);
+        color: var(--whiteBoth);
         font-size: 25px 30px;
         margin-bottom: 12px;
     }
@@ -33,12 +36,12 @@
     }
 
     p {
-        color: var(--grayTextColor);
+        color: var(--whiteBoth);
         position: inherit;
-        z-index: 9999999999;
+        z-index: 1;
     }
     &:hover {
-        background-color: var(--mainLightColor);
+        background-color: var(--mainbgLightColor);
         box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
         transform: translateY(-10px);
     }
@@ -52,6 +55,6 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 62, 107, 0.5);
     }
 }

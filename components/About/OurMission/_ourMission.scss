@@ -5,6 +5,15 @@
         color: var(--mainDarkColor);
     }
 }
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-content p {
+    margin-bottom: 60px;
+}
 .our-mission {
     display: flex;
     justify-content: center;

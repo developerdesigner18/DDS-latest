@@ -2,7 +2,7 @@
 Industries We Serve Area CSS
 =================================================*/
 .industries-we-serve {
-    background: var(--mainDarkColor);
+    background: var(--mainbgDarkColor);
     position: relative;
     z-index: 1;
 
@@ -13,7 +13,7 @@ Industries We Serve Area CSS
             right: 0;
         }
         h2 {
-            color: var(--whiteColor);
+            color: var(--whiteBoth);
         }
         p {
             color: var(--grayTextColor);
@@ -48,7 +48,7 @@ Industries We Serve Area CSS
         span {
             display: block;
             font-weight: 600;
-            color: var(--mainDarkColor);
+            color: #003e6b;
             text-align: center;
         }
     }
@@ -72,7 +72,7 @@ Industries We Serve Area CSS
                     height: 15px;
                     margin: 0 8px 0 0;
                     background: transparent !important;
-                    border: 1px solid var(--whiteColor);
+                    border: 1px solid var(--whiteBoth);
                     transition: var(--transition);
                     border-radius: 50%;
                     position: relative;
@@ -84,7 +84,7 @@ Industries We Serve Area CSS
                         top: 0;
                         right: 0;
                         bottom: 0;
-                        background-color: var(--whiteColor);
+                        background-color: var(--whiteBoth);
                         border-radius: 50%;
                         margin: 2px;
                         opacity: 0;
@@ -95,7 +95,7 @@ Industries We Serve Area CSS
                 &:hover,
                 &.active {
                     span {
-                        border-color: var(--whiteColor);
+                        border-color: var(--whiteBoth);
 
                         &::before {
                             opacity: 1;

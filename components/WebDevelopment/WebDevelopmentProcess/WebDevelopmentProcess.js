@@ -1,4 +1,8 @@
+import { useTheme } from "next-themes";
+
 const WebDevelopmentProcess = () => {
+    const { theme, setTheme } = useTheme();
+
     return (
         <>
             <div className="process-container">
@@ -13,10 +17,18 @@ const WebDevelopmentProcess = () => {
                     </p>
                 </div>
                 <div className="process-image-holder">
-                    <img
-                        src="/images/web-development/webProcess.png"
-                        alt="image"
-                    />
+                    {theme == "light" && (
+                        <img
+                            src="/images/web-development/webProcess.png"
+                            alt="image"
+                        />
+                    )}
+                    {theme == "dark" && (
+                        <img
+                            src="/images/web-development/webProcess-dark.png"
+                            alt="image"
+                        />
+                    )}
                 </div>
             </div>
         </>

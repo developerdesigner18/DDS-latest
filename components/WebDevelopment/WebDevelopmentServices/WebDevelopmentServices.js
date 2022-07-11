@@ -40,7 +40,7 @@ const WebDevelopmentServices = () => {
     ];
     return (
         <div>
-            <div className="blog-area bg-f9f9f9 ptb-100">
+            <div className="blog-area ptb-100">
                 <div className="container">
                     <h2 className="webservice-heading">
                         Our Web Development Services Include

@@ -11,6 +11,9 @@
 .reasontochoose-content .content p {
     color: var(--mainLightColor);
 }
+.reasontochoose {
+    background: var(--whiteColor);
+}
 .reasontochoose-title {
     text-align: left !important;
     margin-top: 0px !important;
@@ -30,8 +33,8 @@
     padding: 10px 30px;
     position: relative;
     z-index: 1;
-    color: var(--whiteColor);
-    background-color: var(--mainLightColor);
+    color: var(--whiteBoth);
+    background-color: var(--buttonbgColor);
     font: {
         size: 17px;
         weight: 700;
@@ -44,12 +47,13 @@
         top: 0;
         bottom: 0;
         border-radius: 5px;
-        background-color: var(--mainDarkColor);
+        background-color: var(--buttonbgColor);
         z-index: -1;
         transition: var(--transition);
     }
     &:hover {
         color: var(--whiteColor);
+        background-color: var(--mainLightColor);
 
         &::before {
             transform: scaleX(0);

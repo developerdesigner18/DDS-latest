@@ -76,7 +76,7 @@ const ProjectInMind = () => {
                                                 <input
                                                     type="text"
                                                     name="name"
-                                                    className="form-control-project"
+                                                    className="form-control"
                                                     value={contact.name}
                                                     onChange={handleChange}
                                                     ref={register({
@@ -102,7 +102,7 @@ const ProjectInMind = () => {
                                                 <input
                                                     type="text"
                                                     name="email"
-                                                    className="form-control-project"
+                                                    className="form-control"
                                                     value={contact.email}
                                                     onChange={handleChange}
                                                     ref={register({
@@ -127,7 +127,7 @@ const ProjectInMind = () => {
                                                 <input
                                                     type="text"
                                                     name="number"
-                                                    className="form-control-project"
+                                                    className="form-control"
                                                     value={contact.number}
                                                     onChange={handleChange}
                                                     ref={register({
@@ -153,7 +153,7 @@ const ProjectInMind = () => {
                                                     name="text"
                                                     cols="30"
                                                     rows="5"
-                                                    className="form-control-project"
+                                                    className="form-control"
                                                     value={contact.text}
                                                     onChange={handleChange}
                                                     ref={register({
