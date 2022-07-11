@@ -1,7 +1,10 @@
 import PageBanner from "../components/Common/PageBanner/PageBanner";
 import ContactForm from "../components/Contact/ContactForm";
+import { useTheme } from "next-themes";
 
 const Contact = () => {
+    const { theme, setTheme } = useTheme();
+
     return (
         <>
             <PageBanner pageTitle="Contact Us" />
@@ -15,7 +18,13 @@ const Contact = () => {
                                     <i className="bx bx-map"></i>
                                 </div>
                                 <div className="icon">
-                                    <i className="bx bx-map"></i>
+                                    <i
+                                        className={`bx bx-map ${
+                                            theme == "dark"
+                                                ? "icon-holder-dark"
+                                                : "icon-holder-light"
+                                        }`}
+                                    ></i>
                                 </div>
                                 <h3>Our Address</h3>
                                 <p>
@@ -28,10 +37,16 @@ const Contact = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="contact-info-box">
                                 <div className="back-icon">
-                                    <i className="bx bx-phone-call"></i>
+                                    <i className="bx bx-phone-call "></i>
                                 </div>
                                 <div className="icon">
-                                    <i className="bx bx-phone-call"></i>
+                                    <i
+                                        className={`bx bx-phone-call ${
+                                            theme == "dark"
+                                                ? "icon-holder-dark"
+                                                : "icon-holder-light"
+                                        }`}
+                                    ></i>
                                 </div>
                                 <h3>Contact</h3>
                                 <p>
@@ -55,7 +70,13 @@ const Contact = () => {
                                     <i className="bx bx-time-five"></i>
                                 </div>
                                 <div className="icon">
-                                    <i className="bx bx-time-five"></i>
+                                    <i
+                                        className={`bx bx-time-five ${
+                                            theme == "dark"
+                                                ? "icon-holder-dark"
+                                                : "icon-holder-light"
+                                        }`}
+                                    ></i>
                                 </div>
                                 <h3>Hours of Operation</h3>
                                 <p>Monday - Friday: 09:00 - 20:00</p>

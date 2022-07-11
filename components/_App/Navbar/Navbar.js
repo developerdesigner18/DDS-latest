@@ -7,18 +7,24 @@ import { LOGO_DARK, LOGO_LIGHT } from "../../../utils/AppConfig";
 const Navbar = () => {
     const router = useRouter();
     const location = router.pathname;
-    const [isDarkMode, setIsDarkMode] = useState(
-        typeof window !== "undefined" && localStorage.getItem("isDarkMode")
-            ? localStorage.getItem("isDarkMode")
-            : false
-    );
+
     const { theme, setTheme } = useTheme();
+    console.log(theme, "theme");
 
     const [menu, setMenu] = useState(true);
 
     const toggleNavbar = () => {
         setMenu(!menu);
     };
+
+    const darkMode =
+        typeof window !== "undefined" && localStorage.getItem("theme");
+
+    if (darkMode) {
+        console.log("Name exists", location);
+    } else {
+        typeof window !== "undefined" && localStorage.setItem("theme", "light");
+    }
 
     useEffect(() => {
         let elementId = document.getElementById("navbar");
@@ -31,12 +37,19 @@ const Navbar = () => {
         });
         window.scrollTo(0, 0);
     });
+    useEffect(() => {
+        setTheme(
+            // typeof window !== "undefined" &&
+            localStorage.getItem("theme")
+        );
+    }, []);
 
     // Search Modal
     const [isActiveSearchModal, setActiveSearchModal] = useState("false");
     const handleToggleSearchModal = () => {
         setActiveSearchModal(!isActiveSearchModal);
     };
+    console.log(isActiveSearchModal, "searcyModdmlmc");
 
     const classOne = menu
         ? "collapse navbar-collapse"
@@ -66,15 +79,15 @@ const Navbar = () => {
                                     onClick={toggleNavbar}
                                     className="navbar-brand"
                                 >
-                                    <img
-                                        src={
-                                            location === "/"
-                                                ? LOGO_DARK
-                                                : LOGO_LIGHT
-                                        }
-                                        alt="logo"
-                                        width="130px"
-                                    />
+                                    {theme === "dark" && (
+                                        <img src={LOGO_LIGHT} alt="image" />
+                                    )}
+                                    {location === "/" && theme === "light" && (
+                                        <img src={LOGO_DARK} alt="image" />
+                                    )}
+                                    {location !== "/" && theme === "light" && (
+                                        <img src={LOGO_LIGHT} alt="image" />
+                                    )}
                                 </a>
                             </Link>
 
@@ -214,31 +227,53 @@ const Navbar = () => {
                                     <div
                                         className="cart-btn"
                                         onClick={() => {
-                                            console.log(isDarkMode);
-                                            setIsDarkMode((prev) => !prev);
-                                            localStorage.setItem(
-                                                "DarkMode",
-                                                isDarkMode
-                                            );
                                             setTheme(
-                                                isDarkMode ? "dark" : "light"
+                                                // typeof window != "undefined" &&
+                                                localStorage.getItem("theme") ==
+                                                    "light"
+                                                    ? "dark"
+                                                    : "light"
                                             );
                                         }}
                                     >
                                         <a>
-                                            <img
-                                                src={
-                                                    location === "/"
-                                                        ? "/images/night-mode-dark.svg"
-                                                        : "/images/night-mode-light.svg"
-                                                }
-                                                alt="image"
-                                            />
+                                            {location === "/" &&
+                                                theme == "light" &&
+                                                (console.log(theme, "🔥🔥"),
+                                                (
+                                                    <img
+                                                        src="/images/moon.svg"
+                                                        alt="image"
+                                                    />
+                                                ))}
+                                            {location !== "/" &&
+                                                theme == "light" &&
+                                                (console.log(theme, "🔥🔥"),
+                                                (
+                                                    <img
+                                                        src="/images/night-mode-light.svg"
+                                                        alt="image"
+                                                    />
+                                                ))}
+                                            {theme == "dark" &&
+                                                (console.log(theme, "🔥🔥"),
+                                                (
+                                                    <img
+                                                        src="/images/sun.svg"
+                                                        alt="image"
+                                                    />
+                                                ))}
                                         </a>
                                     </div>
                                 </div>
 
-                                <div className="option-item">
+                                <div
+                                    className={`option-item ${
+                                        location === "/"
+                                            ? "home-search"
+                                            : "other-search"
+                                    }`}
+                                >
                                     <div
                                         className="search-box"
                                         onClick={handleToggleSearchModal}
@@ -253,6 +288,7 @@ const Navbar = () => {
             </div>
 
             {/* Search Form */}
+            {console.log(isActiveSearchModal, "yessssss")}
             <div
                 className={`search-overlay ${
                     isActiveSearchModal ? "" : "search-overlay-active"

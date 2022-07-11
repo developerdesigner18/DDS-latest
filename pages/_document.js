@@ -14,6 +14,11 @@ class MyDocument extends Document {
                         type="image/png"
                         href="/images/favicon.png"
                     ></link>
+                    <script
+                        type="text/javascript"
+                        src="/static/script.js"
+                    ></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 </Head>
                 <body>
                     <Main />

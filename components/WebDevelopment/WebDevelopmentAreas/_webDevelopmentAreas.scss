@@ -7,13 +7,13 @@
     padding: 50px 40px !important;
 }
 .area-holder a {
-    color: #003e6b;
+    color: var(--mainDarkColor);
 }
 .area-holder h4 {
     text-align: left;
 }
 .area-holder p {
-    color: #0069b4;
+    color: var(--mainLightColor);
     text-align: left;
     font-size: 15px;
     margin-bottom: 35px;
@@ -28,5 +28,11 @@
 .technology-area-heading {
     padding-bottom: 50px;
     text-align: center;
-    color: #003e6b;
+    color: var(--mainDarkColor);
+}
+.featured-services-area {
+    background: var(--whiteColor);
+}
+.area-image-holder-dark {
+    filter: brightness(0) invert(1);
 }

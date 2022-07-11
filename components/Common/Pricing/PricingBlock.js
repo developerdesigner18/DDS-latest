@@ -57,7 +57,7 @@ const PricingBlock = () => {
             }
         }
 
-        setChangeBg("var(--mainDarkColor)");
+        setChangeBg("var(--darkCardColor)");
         setChangeColor("white");
     };
 
@@ -87,14 +87,14 @@ const PricingBlock = () => {
 
     return (
         <>
-            <div className="ptb-100">
+            <div className="ptb-100 product-price-holder ">
                 <div className="container main-pricing">
                     <div className="product-price-block">
                         <h3 className="price-title">Select Product</h3>
 
                         <div className="select-design-type">
-                            <p
-                                className="design-type"
+                            <div
+                                className="design-type form-group"
                                 style={{
                                     background:
                                         getCheckVal.webClick == true
@@ -102,6 +102,13 @@ const PricingBlock = () => {
                                             : "",
                                 }}
                             >
+                                <input
+                                    type="checkbox"
+                                    name="Website"
+                                    onClick={(e) => handleCheck("Website", e)}
+                                    className="checkevent"
+                                    id="website"
+                                />
                                 <label
                                     style={{
                                         color:
@@ -109,18 +116,13 @@ const PricingBlock = () => {
                                                 ? changeColor
                                                 : "",
                                     }}
+                                    for="website"
                                 >
                                     Website
                                 </label>
-                                <input
-                                    type="checkbox"
-                                    name="Website"
-                                    onClick={(e) => handleCheck("Website", e)}
-                                    className="checkevent"
-                                />
-                            </p>
-                            <p
-                                className="design-type"
+                            </div>
+                            <div
+                                className="design-type form-group"
                                 style={{
                                     background:
                                         getCheckVal.mobClick == true
@@ -128,16 +130,6 @@ const PricingBlock = () => {
                                             : "",
                                 }}
                             >
-                                <label
-                                    style={{
-                                        color:
-                                            getCheckVal.mobClick == true
-                                                ? changeColor
-                                                : "",
-                                    }}
-                                >
-                                    Mobile Application
-                                </label>
                                 <input
                                     type="checkbox"
                                     name="Mobile Application"
@@ -145,10 +137,22 @@ const PricingBlock = () => {
                                         handleCheck("Mobile Application", e)
                                     }
                                     className="checkevent"
+                                    id="mobile"
                                 />
-                            </p>
-                            <p
-                                className="design-type"
+                                <label
+                                    style={{
+                                        color:
+                                            getCheckVal.mobClick == true
+                                                ? changeColor
+                                                : "",
+                                    }}
+                                    for="mobile"
+                                >
+                                    Mobile Application
+                                </label>
+                            </div>
+                            <div
+                                className="design-type form-group"
                                 style={{
                                     background:
                                         getCheckVal.mobGClick == true
@@ -156,16 +160,6 @@ const PricingBlock = () => {
                                             : "",
                                 }}
                             >
-                                <label
-                                    style={{
-                                        color:
-                                            getCheckVal.mobGClick == true
-                                                ? changeColor
-                                                : "",
-                                    }}
-                                >
-                                    Mobile Game Application
-                                </label>
                                 <input
                                     type="checkbox"
                                     name="Mobile Game Application"
@@ -176,8 +170,20 @@ const PricingBlock = () => {
                                         )
                                     }
                                     className="checkevent"
+                                    id="Game"
                                 />
-                            </p>
+                                <label
+                                    style={{
+                                        color:
+                                            getCheckVal.mobGClick == true
+                                                ? changeColor
+                                                : "",
+                                    }}
+                                    for="Game"
+                                >
+                                    Mobile Game Application
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div className="design-block">

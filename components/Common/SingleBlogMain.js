@@ -6,7 +6,7 @@ import BlogSidebar from "./BlogSidebar";
 const SingleBlogMain = () => {
     return (
         <>
-            <div className="blog-details-area bg-f9f9f9 ptb-100">
+            <div className="blog-details-area ptb-100">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 col-md-12">

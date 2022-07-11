@@ -1,7 +1,7 @@
 .webservice-heading {
     text-align: center;
     margin-bottom: 40px;
-    color: #003e6b;
+    color: var(--mainDarkColor);
 }
 .serviceCardImg {
     width: 55px;
@@ -19,11 +19,11 @@
 }
 .serviceCardContent h5 {
     font-size: 13px;
-    color: #003e6b;
+    color: var(--mainDarkColor);
 }
 .serviceCardContent span {
     font-size: 13px;
-    color: #0069b4;
+    color: var(--mainLightColor);
 }
 .serviceCardContent {
     margin-left: 35px;

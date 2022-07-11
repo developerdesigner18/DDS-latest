@@ -1,6 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
+import { useTheme } from "next-themes";
 
 const options = {
     loop: true,
@@ -29,6 +30,8 @@ const options = {
     },
 };
 const LaravelIndustries = () => {
+    const { theme, setTheme } = useTheme();
+
     const laravelIndustriesData = [
         {
             industriesimg: "/images/laravel/industry1.png",
@@ -67,7 +70,7 @@ const LaravelIndustries = () => {
     return (
         <div>
             {" "}
-            <div className="team-area-two pb-100">
+            <div className="team-area-two pb-100 pt-100">
                 <div className="container">
                     <div className="section-title-holder">
                         <h2 className="sub-title">Industries / solutions </h2>
@@ -91,7 +94,12 @@ const LaravelIndustries = () => {
                                     return (
                                         <div className="single-team-member">
                                             <>
-                                                <div className="industry-image">
+                                                <div
+                                                    className={`industry-image ${
+                                                        theme == "dark" &&
+                                                        "industry-image-dark"
+                                                    }`}
+                                                >
                                                     <img
                                                         src={data.industriesimg}
                                                         alt="team-image"

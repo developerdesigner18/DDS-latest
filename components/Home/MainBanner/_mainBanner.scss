@@ -45,12 +45,15 @@ Main Banner Area CSS
                 height: 45px;
                 line-height: 45px;
                 text-align: center;
-                background-color: var(--mainLightColor);
+                background-color: var(--playButton);
                 color: var(--whiteColor);
                 font-size: 20px;
                 transition: var(--transition);
                 border-radius: 50%;
                 padding-left: 3px;
+            }
+            p {
+                color: var(--mainDarkColor);
             }
             &:hover {
                 color: var(--mainDarkColor);
@@ -63,3 +66,10 @@ Main Banner Area CSS
         }
     }
 }
+.video-btn.popup-youtube {
+    color: var(--mainDarkColor);
+}
+// iframe.fslightbox-source.fslightbox-youtube-iframe.fslightbox-opacity-1 {
+//     width: 60vw !important;
+//     height: 70vh !important;
+// }

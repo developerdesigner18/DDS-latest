@@ -1,7 +1,7 @@
-button.accordian-btn{
+button.accordian-btn {
     display: flex;
     color: white;
-    background: #003e6b;
+    background: var(--mainbgDarkColor);
     width: 100%;
     padding: 10px;
     margin: 4px 0px;
@@ -20,7 +20,7 @@ button.accordian-btn{
 .accordian-content {
     width: 100%;
     padding: 12px;
-    background: #EBF2F6;
+    background: var(--faqComponent);
     color: var(--mainLightColor);
 }
 .accordian-main {
@@ -30,16 +30,20 @@ button.accordian-btn{
     fill: white;
 }
 .accordion-main {
-    margin: 40px 0px;
+    padding: 40px 0px;
+    background-color: var(--whiteColor);
 }
 
 button.accordian-btn.career {
-    background: #EBF2F6;
-    color: var(--mainLightColor);
+    background: var(--faqComponent);
+    color: var(--mainDarkColor);
     font-weight: 700;
     font-size: 18px;
 }
-.icons.career{
+.career-dark-icon img {
+    filter: brightness(0) invert(1);
+}
+.icons.career {
     border: none;
 }
 .career-info.container p {
@@ -50,7 +54,7 @@ button.accordian-btn.career {
 }
 .career-option button {
     width: 30%;
-    background: #003E6B;
+    background: #003e6b;
     color: white;
     border: none;
 }
@@ -62,6 +66,13 @@ button.accordian-btn.career {
     gap: 10px;
 }
 .career-position.container {
-    background: #D0EAF9;
+    background: var(--tagsbgColor);
     padding: 26px;
+}
+.career-position h3 {
+    color: var(--mainDarkColor);
+}
+.career-option select {
+    background-color: var(--formInputColor);
+    border: none;
 }

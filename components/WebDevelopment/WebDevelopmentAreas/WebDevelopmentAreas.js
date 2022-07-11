@@ -1,6 +1,10 @@
 import React from "react";
 import Link from "next/link";
+import { useTheme } from "next-themes";
+
 const WebDevelopmentAreas = () => {
+    const { theme } = useTheme();
+
     const webDevelopmentAreaData = [
         {
             webareaimg: "/images/web-development/area1.png",
@@ -35,10 +39,19 @@ const WebDevelopmentAreas = () => {
                                     <div className="single-featured-services-box area-holder">
                                         <div className="area-image-holder">
                                             {/* <i className="flaticon-megaphone"></i> */}
-                                            <img
-                                                src={data.webareaimg}
-                                                alt="image"
-                                            />
+                                            {theme == "dark" && (
+                                                <img
+                                                    src={data.webareaimg}
+                                                    alt="image"
+                                                    className="area-image-holder-dark"
+                                                />
+                                            )}
+                                            {theme == "light" && (
+                                                <img
+                                                    src={data.webareaimg}
+                                                    alt="image"
+                                                />
+                                            )}
                                         </div>
                                         <h4>
                                             <Link href="/#">

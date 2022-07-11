@@ -42,7 +42,11 @@ const WhyDDS = () => {
                             <div className="why-dds-card">
                                 <div className="title">
                                     <h3>{title}</h3>
-                                    <h2>{id}</h2>
+                                    {id === "02" ? (
+                                        <h2 style={{ color: "black" }}>{id}</h2>
+                                    ) : (
+                                        <h2>{id}</h2>
+                                    )}
                                 </div>
 
                                 <p>{description}</p>

@@ -9,7 +9,7 @@ const OurMission = () => {
                     <div className="left-img">
                         <img src="/images/our-mission/left.png" alt="" />
                     </div>
-                    <div className="error-content">
+                    <div className="about-content">
                         <p>
                             We are a client-centric company who believes in
                             going above and beyond to meet your demands and

@@ -1,5 +1,4 @@
-.row.solutions-row
-{
+.row.solutions-row {
     width: 100% !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
@@ -8,16 +7,21 @@
 .icon.solution {
     background: transparent !important;
 }
+.features-holder {
+    background-color: var(--whiteColor);
+}
 h2.title {
     text-align: center;
-    color: #003E6B;
-    margin: 20px;
+    color: var(--mainDarkColor);
+    padding: 20px;
 }
 .single-featured-services-box h3 {
-    color: #003E6B;
+    color: var(--mainDarkColor);
 }
-.single-featured-services-box.feature{
+.single-featured-services-box.feature {
     box-shadow: 0px 15px 35px rgb(0 0 0 / 10%) !important;
     height: 236px;
 }
-
+.flaticon-megaphone-dark {
+    filter: brightness(0) invert(1);
+}
