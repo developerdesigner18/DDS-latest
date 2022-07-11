@@ -32,7 +32,7 @@ const features = [
 const Features = () => {
     return (
         <>
-            <div className="container">
+            <div className="container feature-card">
                 <h2 className="title">
                     Features of Ecommerce, Retail & B2B Solutions
                 </h2>

@@ -153,6 +153,109 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                         setChangeColor({ background: "#003e6b" });
                     }
                 }
+                if (
+                    router.pathname === "/solution-startup" ||
+                    router.pathname === "/solution-ecommerce" ||
+                    router.pathname === "/solution-non-profit" ||
+                    router.pathname === "/solution-real-estate" ||
+                    router.pathname === "/solution-business"
+                ) {
+                    if (
+                        document.getElementsByClassName("first-card").length >
+                            0 &&
+                        document
+                            .getElementsByClassName("go-top")[0]
+                            .getBoundingClientRect().top +
+                            10 >
+                            document
+                                .getElementsByClassName("first-card")[0]
+                                .getBoundingClientRect().top
+                    ) {
+                        setChangeColor({ background: "#003e6b" });
+                        if (
+                            document
+                                .getElementsByClassName("go-top")[0]
+                                .getBoundingClientRect().top +
+                                10 >
+                            document
+                                .getElementsByClassName("info")[0]
+                                .getBoundingClientRect().top
+                        ) {
+                            setChangeColor({
+                                background: "white",
+                                color: "#003e6b",
+                            });
+                            if (
+                                document
+                                    .getElementsByClassName("go-top")[0]
+                                    .getBoundingClientRect().top +
+                                    10 >
+                                document
+                                    .getElementsByClassName("feature-card")[0]
+                                    .getBoundingClientRect().top
+                            ) {
+                                setChangeColor({ background: "#003e6b" });
+                                // console.log("feature-card");
+                                if (
+                                    document
+                                        .getElementsByClassName("go-top")[0]
+                                        .getBoundingClientRect().top +
+                                        10 >
+                                    document
+                                        .getElementsByClassName("info")[1]
+                                        .getBoundingClientRect().top
+                                ) {
+                                    console.log(
+                                        document.getElementsByClassName("info")
+                                    );
+                                    setChangeColor({
+                                        background: "white",
+                                        color: "#003e6b",
+                                    });
+                                    if (
+                                        document
+                                            .getElementsByClassName("go-top")[0]
+                                            .getBoundingClientRect().top +
+                                            10 >
+                                        document
+                                            .getElementsByClassName(
+                                                "quote-card"
+                                            )[0]
+                                            .getBoundingClientRect().top
+                                    ) {
+                                        setChangeColor({
+                                            background: "#003e6b",
+                                        });
+                                        if (
+                                            document
+                                                .getElementsByClassName(
+                                                    "go-top"
+                                                )[0]
+                                                .getBoundingClientRect().top +
+                                                10 >
+                                            document
+                                                .getElementsByClassName(
+                                                    "footer-area"
+                                                )[0]
+                                                .getBoundingClientRect().top
+                                        ) {
+                                            setChangeColor({
+                                                background: "white",
+                                                color: "#003e6b",
+                                            });
+                                        }
+                                    } else {
+                                        setChangeColor({
+                                            background: "#003e6b",
+                                        });
+                                    }
+                                }
+                            }
+                        }
+                    } else {
+                        setChangeColor({ background: "#003e6b" });
+                    }
+                }
             } else {
                 setThePosition(false);
                 setChangeColor({ background: "#003e6b" });

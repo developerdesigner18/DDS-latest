@@ -25,6 +25,7 @@ export default async (req, res) => {
         .sendMail({
             from: "testdds@daydreamsoft.com", // sender address
             to: "kajalk.dds@gmail.com", // list of receivers
+            replyTo: email,
             subject: "Project form", // Subject line
             text: "Hello world?", // plain text body
             html: `<b>Full Name:</b> ${name} <br />

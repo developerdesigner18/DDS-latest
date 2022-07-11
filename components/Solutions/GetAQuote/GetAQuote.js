@@ -50,7 +50,7 @@ const GetAQuote = () => {
 
     return (
         <>
-            <div className="container servicecard" id="quote">
+            <div className="container servicecard quote-card" id="quote">
                 <div className="row quote">
                     <div className="col-lg-5 col-md-12">
                         <div className="solution-image">

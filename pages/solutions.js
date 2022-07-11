@@ -1,146 +1,72 @@
 import PageBanner from "../components/Common/PageBanner/PageBanner";
 import Link from "next/link";
-
-const solutions = [
-    {
-        title: "Ecommerce, Retail & B2B",
-        description: [
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source. Lorem
-                Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-                Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-            </p>,
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock.
-            </p>,
-        ],
-        image: "/images/solutions/solution/solution1.png",
-    },
-    {
-        title: "On-Demand Solutions",
-        description: [
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source. Lorem
-                Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-                Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-            </p>,
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock.
-            </p>,
-        ],
-        image: "/images/solutions/solution/solution4.png",
-    },
-    {
-        title: "Social Networking",
-        description: [
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source. Lorem
-                Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-                Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-            </p>,
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock.
-            </p>,
-        ],
-        image: "/images/solutions/solution/solution2.png",
-    },
-    {
-        title: "Food And Restaurant",
-        description: [
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source. Lorem
-                Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-                Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-            </p>,
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock.
-            </p>,
-        ],
-        image: "/images/solutions/solution/solution3.png",
-    },
-];
+import { useState } from "react";
+import { solutions } from "../components/Solutions/solutionData";
 
 const Solutions = () => {
+    const [showMore, setShowMore] = useState(true);
+    const LIMIT = 4;
+    const [list, setList] = useState(solutions.slice(0, LIMIT));
+    const [index, setIndex] = useState(LIMIT);
+    const loadMore = () => {
+        const newIndex = index + LIMIT;
+        const newShowMore = newIndex < solutions.length - 1;
+        const newList = list.concat(solutions.slice(index, newIndex));
+        setIndex(newIndex);
+        setList(newList);
+        setShowMore(newShowMore);
+    };
+
     return (
         <>
             <PageBanner pageTitle="Solutions" />
 
             <div className="overview-area ptb-100">
                 <div className="container">
-                    {solutions.map(({ title, description, image }, index) => (
-                        <div key={index} className="overview-box">
-                            <div className="overview-content">
-                                <div className="content">
-                                    <Link href="/solution">
+                    {list.map(
+                        ({ title, description, image, redirection }, index) => (
+                            <div key={index} className="overview-box">
+                                <div className="overview-content">
+                                    <div className="content">
                                         <span
                                             className="sub-title"
                                             style={{ cursor: "pointer" }}
                                         >
                                             Solutions
                                         </span>
-                                    </Link>
-                                    <Link href="/solution">
-                                        <h2 style={{ cursor: "pointer" }}>
-                                            {title}
-                                        </h2>
-                                    </Link>
-                                    {description}
-                                </div>
-                            </div>
 
-                            <div className="overview-image">
-                                <div className="image">
-                                    <img src={image} alt="image" />
+                                        <Link href={redirection}>
+                                            <h2 style={{ cursor: "pointer" }}>
+                                                {title}
+                                            </h2>
+                                        </Link>
+                                        {description}
+                                    </div>
+                                </div>
+
+                                <div
+                                    className="overview-image"
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    <Link href={redirection}>
+                                        <div className="image">
+                                            <img src={image} alt="image" />
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
-                        </div>
-                    ))}
-                    <Link href="/solution">
-                        <span
-                            className="default-btn"
-                            style={{
-                                cursor: "pointer",
-                                margin: "auto",
-                                display: "flex",
-                                justifyContent: "center",
-                                width: "16%",
-                            }}
-                        >
-                            View All
-                        </span>
-                    </Link>
+                        )
+                    )}
+                    <div
+                        className="text-center p-5"
+                        style={{ cursor: "pointer" }}
+                    >
+                        {showMore && (
+                            <a className="default-btn" onClick={loadMore}>
+                                View All
+                            </a>
+                        )}
+                    </div>
                 </div>
             </div>
         </>
