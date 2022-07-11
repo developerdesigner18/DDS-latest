@@ -54,7 +54,6 @@ const careerform = () => {
         // e.preventDefault();
         try {
             const body = new FormData();
-            const upload_img = body.append("file", image);
             const url = `http://localhost:3000/api/careerform`;
             const {
                 name,
@@ -68,20 +67,17 @@ const careerform = () => {
 
                 // upload_resume,
             } = contact;
-            const payload = {
-                name,
-                email,
-                number,
-                subject,
-                text,
-                last_name,
-                cover_letter,
-                agrement,
-                upload_img,
-                // upload_resume,
-            };
-            await axios.post(url, payload);
-            console.log(url);
+            body.append("image", image);
+            body.append("name", name);
+            body.append("email", email);
+            body.append("number", number);
+            body.append("subject", subject);
+            body.append("text", text);
+            body.append("last_name", last_name);
+            body.append("cover_letter", cover_letter);
+            body.append("agrement", agrement);
+            await axios.post(url, body);
+
             setContact(INITIAL_STATE);
             alertContent();
         } catch (error) {
@@ -92,242 +88,238 @@ const careerform = () => {
     return (
         <>
             <PageBanner pageTitle="Career" />
-            <div className="career-form-main">
-                <div className="container">
-                    <h3 className="career-title">Submit Your Application</h3>
-                    <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
-                        <div className="row">
-                            <div className="col-lg-6 col-md-6">
-                                <div className="form-group quote">
-                                    <label>Full Name</label>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        className="form-control"
-                                        value={contact.name}
-                                        onChange={handleChange}
-                                        ref={register({
-                                            required: true,
-                                        })}
-                                    />
-                                    <div
-                                        className="invalid-feedback"
-                                        style={{
-                                            display: "block",
-                                        }}
-                                    >
-                                        {errors.name && "Name is required."}
-                                    </div>
+            <div className="career-form-main container">
+                <h3 className="career-title">Submit Your Application</h3>
+                <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
+                    <div className="row">
+                        <div className="col-lg-6 col-md-6">
+                            <div className="form-group quote">
+                                <label>Full Name</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    className="form-control"
+                                    value={contact.name}
+                                    onChange={handleChange}
+                                    ref={register({
+                                        required: true,
+                                    })}
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    style={{
+                                        display: "block",
+                                    }}
+                                >
+                                    {errors.name && "Name is required."}
                                 </div>
-                            </div>
-
-                            <div className="col-lg-6 col-md-6">
-                                <div className="form-group quote">
-                                    <label>Last name</label>
-                                    <input
-                                        type="text"
-                                        name="last_name"
-                                        className="form-control"
-                                        value={contact.last_name}
-                                        onChange={handleChange}
-                                        ref={register({
-                                            required: true,
-                                        })}
-                                    />
-                                    <div
-                                        className="invalid-feedback"
-                                        style={{
-                                            display: "block",
-                                        }}
-                                    >
-                                        {errors.last_name &&
-                                            "Last name is required."}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-6 col-md-6">
-                                <div className="form-group quote">
-                                    <label>Phone</label>
-                                    <input
-                                        type="text"
-                                        name="number"
-                                        className="form-control"
-                                        value={contact.number}
-                                        onChange={handleChange}
-                                        ref={register({
-                                            required: true,
-                                            pattern: "[1-9]{1}[0-9]{9}",
-                                        })}
-                                    />
-                                    <div
-                                        className="invalid-feedback"
-                                        style={{
-                                            display: "block",
-                                        }}
-                                    >
-                                        {errors.number && "Number is required."}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-6 col-md-6">
-                                <div className="form-group quote">
-                                    <label>Email</label>
-                                    <input
-                                        type="text"
-                                        name="email"
-                                        className="form-control"
-                                        value={contact.email}
-                                        onChange={handleChange}
-                                        ref={register({
-                                            required: true,
-                                            pattern: /^\S+@\S+$/i,
-                                        })}
-                                    />
-                                    <div
-                                        className="invalid-feedback"
-                                        style={{
-                                            display: "block",
-                                        }}
-                                    >
-                                        {errors.email && "Email is required."}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-6 col-md-6">
-                                <div className="form-group quote">
-                                    <label>Address</label>
-                                    <input
-                                        type="text"
-                                        name="address"
-                                        className="form-control"
-                                        value={contact.address}
-                                        onChange={handleChange}
-                                        ref={register({
-                                            required: true,
-                                        })}
-                                    />
-                                    <div
-                                        className="invalid-feedback"
-                                        style={{
-                                            display: "block",
-                                        }}
-                                    >
-                                        {errors.number &&
-                                            "Address is required."}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-6 col-md-6">
-                                <div className="form-group quote">
-                                    <label>Subject</label>
-                                    <input
-                                        type="text"
-                                        name="subject"
-                                        className="form-control"
-                                        value={contact.subject}
-                                        onChange={handleChange}
-                                        ref={register({
-                                            required: true,
-                                        })}
-                                    />
-                                    <div
-                                        className="invalid-feedback"
-                                        style={{
-                                            display: "block",
-                                        }}
-                                    >
-                                        {errors.subject &&
-                                            "Subject is required."}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-12 col-md-12">
-                                <div className="form-group">
-                                    <label>Cover Letter</label>
-                                    <textarea
-                                        name="cover_letter"
-                                        cols="30"
-                                        rows="5"
-                                        className="form-control"
-                                        value={contact.cover_letter}
-                                        onChange={handleChange}
-                                        ref={register({ required: true })}
-                                    />
-                                    <div
-                                        className="invalid-feedback"
-                                        style={{ display: "block" }}
-                                    >
-                                        {errors.cover_letter &&
-                                            "Cover Letter is required."}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-12 col-md-12">
-                                <div className="form-group">
-                                    <label>Upload Resume</label>
-                                    <input
-                                        type="file"
-                                        name="upload_resume"
-                                        placeholder="Write your message..."
-                                        className="form-control"
-                                        // value={contact.upload_resume}
-                                        onChange={uploadToClient}
-                                        ref={register({ required: true })}
-                                        style={{ height: "34px" }}
-                                    />
-                                    <div
-                                        className="invalid-feedback"
-                                        style={{ display: "block" }}
-                                    >
-                                        {errors.upload_resume &&
-                                            "Upload Resume is required."}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-6 col-md-6">
-                                <div className="form-group quote">
-                                    <label className="agreement-box">
-                                        <input
-                                            type="checkbox"
-                                            name="agrement"
-                                            className=""
-                                            value={contact.agrement}
-                                            onChange={handleChange}
-                                            ref={register({
-                                                required: true,
-                                            })}
-                                        />
-                                        I have to read and agreed to teams &
-                                        condition.
-                                    </label>
-
-                                    <div
-                                        className="invalid-feedback"
-                                        style={{
-                                            display: "block",
-                                        }}
-                                    >
-                                        {errors.agrement &&
-                                            "Agrement is required."}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-12 col-sm-12">
-                                <button type="submit" className="default-btn">
-                                    Submit
-                                </button>
                             </div>
                         </div>
-                    </form>
-                </div>
+
+                        <div className="col-lg-6 col-md-6">
+                            <div className="form-group quote">
+                                <label>Last name</label>
+                                <input
+                                    type="text"
+                                    name="last_name"
+                                    className="form-control"
+                                    value={contact.last_name}
+                                    onChange={handleChange}
+                                    ref={register({
+                                        required: true,
+                                    })}
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    style={{
+                                        display: "block",
+                                    }}
+                                >
+                                    {errors.last_name &&
+                                        "Last name is required."}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 col-md-6">
+                            <div className="form-group quote">
+                                <label>Phone</label>
+                                <input
+                                    type="text"
+                                    name="number"
+                                    className="form-control"
+                                    value={contact.number}
+                                    onChange={handleChange}
+                                    ref={register({
+                                        required: true,
+                                        pattern: "[1-9]{1}[0-9]{9}",
+                                    })}
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    style={{
+                                        display: "block",
+                                    }}
+                                >
+                                    {errors.number && "Number is required."}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 col-md-6">
+                            <div className="form-group quote">
+                                <label>Email</label>
+                                <input
+                                    type="text"
+                                    name="email"
+                                    className="form-control"
+                                    value={contact.email}
+                                    onChange={handleChange}
+                                    ref={register({
+                                        required: true,
+                                        pattern: /^\S+@\S+$/i,
+                                    })}
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    style={{
+                                        display: "block",
+                                    }}
+                                >
+                                    {errors.email && "Email is required."}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 col-md-6">
+                            <div className="form-group quote">
+                                <label>Address</label>
+                                <input
+                                    type="text"
+                                    name="address"
+                                    className="form-control"
+                                    value={contact.address}
+                                    onChange={handleChange}
+                                    ref={register({
+                                        required: true,
+                                    })}
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    style={{
+                                        display: "block",
+                                    }}
+                                >
+                                    {errors.number && "Address is required."}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 col-md-6">
+                            <div className="form-group quote">
+                                <label>Subject</label>
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    className="form-control"
+                                    value={contact.subject}
+                                    onChange={handleChange}
+                                    ref={register({
+                                        required: true,
+                                    })}
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    style={{
+                                        display: "block",
+                                    }}
+                                >
+                                    {errors.subject && "Subject is required."}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-12 col-md-12">
+                            <div className="form-group">
+                                <label>Cover Letter</label>
+                                <textarea
+                                    name="cover_letter"
+                                    cols="30"
+                                    rows="5"
+                                    placeholder="Write your message..."
+                                    className="form-control"
+                                    value={contact.cover_letter}
+                                    onChange={handleChange}
+                                    ref={register({ required: true })}
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    style={{ display: "block" }}
+                                >
+                                    {errors.cover_letter &&
+                                        "Cover Letter is required."}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-12 col-md-12">
+                            <div className="form-group">
+                                <label>Upload Resume</label>
+                                <input
+                                    type="file"
+                                    name="upload_resume"
+                                    placeholder="Write your message..."
+                                    className="form-control"
+                                    // value={contact.upload_resume}
+                                    onChange={uploadToClient}
+                                    ref={register({ required: true })}
+                                    style={{ height: "34px" }}
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    style={{ display: "block" }}
+                                >
+                                    {errors.upload_resume &&
+                                        "Upload Resume is required."}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 col-md-6">
+                            <div className="form-group quote">
+                                <label className="agreement-box">
+                                    <input
+                                        type="checkbox"
+                                        name="agrement"
+                                        className=""
+                                        value={contact.agrement}
+                                        onChange={handleChange}
+                                        ref={register({
+                                            required: true,
+                                        })}
+                                    />
+                                    I have to read and agreed to teams &
+                                    condition.
+                                </label>
+
+                                <div
+                                    className="invalid-feedback"
+                                    style={{
+                                        display: "block",
+                                    }}
+                                >
+                                    {errors.agrement && "Agrement is required."}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-12 col-sm-12">
+                            <button type="submit" className="default-btn">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </>
     );

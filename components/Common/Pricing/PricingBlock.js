@@ -1,7 +1,22 @@
 import React, { useState } from "react";
+import axios from "axios";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+const MySwal = withReactContent(Swal);
+import { useForm } from "react-hook-form";
 
+const alertContent = () => {
+    MySwal.fire({
+        title: "Congratulations!",
+        text: "Your message was successfully send and will back to you soon",
+        icon: "success",
+        timer: 2000,
+        timerProgressBar: true,
+        showConfirmButton: false,
+    });
+};
 const PricingBlock = () => {
     const [changeBg, setChangeBg] = useState("");
     const [changeColor, setChangeColor] = useState("");
@@ -12,10 +27,14 @@ const PricingBlock = () => {
         mobGClick: false,
     });
 
+    const { register, errors } = useForm();
+
     const [getDesign, setDesign] = useState("");
     const [getPage, setPage] = useState("");
 
     const [addOns, setAddons] = useState([]);
+
+    const [email, setEmail] = useState("");
 
     const handleCheck = (val, e) => {
         console.log(val);
@@ -35,25 +54,25 @@ const PricingBlock = () => {
         } else {
             if (val === "Website") {
                 setCheckVal({ ...getCheckVal, webClick: false });
-                const hello = values.filter((data) => {
+                const allData = values.filter((data) => {
                     return data !== val;
                 });
-                console.log(hello, "filter");
-                setvalues([...hello]);
+                console.log(allData, "filter");
+                setvalues([...allData]);
             } else if (val === "Mobile Application") {
                 setCheckVal({ ...getCheckVal, mobClick: false });
-                const hello = values.filter((data) => {
+                const allData = values.filter((data) => {
                     return data !== val;
                 });
-                console.log(hello, "filter");
-                setvalues([...hello]);
+                console.log(allData, "filter");
+                setvalues([...allData]);
             } else {
                 setCheckVal({ ...getCheckVal, mobGClick: false });
-                const hello = values.filter((data) => {
+                const allData = values.filter((data) => {
                     return data !== val;
                 });
-                console.log(hello, "filter");
-                setvalues([...hello]);
+                console.log(allData, "filter");
+                setvalues([...allData]);
             }
         }
 
@@ -61,8 +80,18 @@ const PricingBlock = () => {
         setChangeColor("white");
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault;
+        try {
+            const url = `http://localhost:3000/api/pricecalculation`;
+            console.log("price pafge", email);
+            const payload = { values, getDesign, getPage, addOns, email };
+            await axios.post(url, payload);
+            console.log(url);
+            alertContent();
+        } catch (error) {
+            console.log(error);
+        }
         console.log("====---values", values);
         console.log("===design ", getDesign);
         console.log("===page ", getPage);
@@ -396,13 +425,42 @@ const PricingBlock = () => {
                             </label>
                         </p>
                     </div>
-                    <button
-                        type="submit"
-                        onClick={(e) => handleSubmit(e)}
-                        className="default-btn price-submit"
-                    >
-                        Submit
-                    </button>
+                    <div className="row" style={{ alignItems: "center" }}>
+                        <div className="col-lg-6 col-md-6">
+                            <div className="form-group">
+                                <label>Email</label>
+
+                                <input
+                                    type="text"
+                                    name="email"
+                                    className="form-control"
+                                    value={email}
+                                    onChange={(e) => {
+                                        setEmail(e.target.value);
+                                    }}
+                                    ref={register({
+                                        required: true,
+                                        pattern: /^\S+@\S+$/i,
+                                    })}
+                                />
+                                <div
+                                    className="invalid-feedback"
+                                    style={{ display: "block" }}
+                                >
+                                    {errors.email && "Email is required."}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-6">
+                            <button
+                                type="submit"
+                                onClick={(e) => handleSubmit(e)}
+                                className="default-btn"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

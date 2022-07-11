@@ -1,39 +1,73 @@
 import nodemailer from "nodemailer";
 import sgTransport from "nodemailer-sendgrid-transport";
 
-const transporter = {
-    auth: {
-        // Update your SendGrid API key here
-        api_key: "##",
-    },
-};
-
-const mailer = nodemailer.createTransport(sgTransport(transporter));
-
 export default async (req, res) => {
-    console.log(req.body);
-    const { name, email, number, subject, text } = req.body;
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+        host: "smtp.zoho.com",
+        port: 465,
+        secure: true, // true for 465, false for other ports
+        auth: {
+            user: "testdds@daydreamsoft.com", // generated ethereal user
+            pass: "testdds@123#", // generated ethereal password
+        },
+        tls: {
+            rejectUnauthorized: false,
+        },
+    });
 
-    const data = {
-        // Update your email address here
-        to: "exampleyour@gmail.com",
-        from: email,
-        subject: "Hi there",
-        text: text,
-        html: `
-            <b>From:</b> ${name} <br /> 
-            <b>Number:</b> ${number} <br /> 
-            <b>Subject:</b> ${subject} <br /> 
-            <b>Message:</b> ${text} 
-        `,
-    };
+    const {
+        name,
+        companyname,
+        website,
+        email,
+        number,
+        subject,
+        text,
+        country,
+        service,
+    } = req.body;
 
-    try {
-        const response = await mailer.sendMail(data);
-        console.log(response);
-        res.status(200).send("Email send successfully");
-    } catch (error) {
-        console.log(error);
-        res.status(500).send("Error proccessing charge");
-    }
+    transporter
+        .sendMail({
+            from: `${name}<testdds@daydreamsoft.com>`, // sender address
+            to: "kajalk.dds@gmail.com", // list of receivers
+            replyTo: email,
+            subject: "Contact form", // Subject line
+            text: "Hello world?", // plain text body
+            html: `<b>Name:</b> ${name} <br />
+                    <b>Number:</b> ${number} <br />
+                    <b>Subject:</b> ${subject} <br />
+                    <b>Email:</b> ${email} <br />
+                    <b>Companyname: </b> ${companyname} <br/>
+                    <b>Website: </b> ${website} <br/>
+                    <b>Text: </b> ${text} <br />
+                    <b> Country: </b> ${country} <br />
+                    <b> Service: </b> ${service} <br />`, // html body
+        })
+        .then(() => {
+            console.log("success");
+            res.status(200).send("Email send successfully");
+        })
+        .catch((err) => {
+            console.log("err ", err);
+            res.status(404).json({ message: err.message });
+        });
+
+    transporter
+        .sendMail({
+            from: "testdds@daydreamsoft.com", // sender address
+            to: email, // list of receivers
+            subject: "Greeting mail", // Subject line
+            text: "Hello world?", // plain text body
+            html: `<h3>Thank you for contact us.... </h3>`, // html body
+        })
+        .then(() => {
+            console.log("success");
+            res.status(200).send("Email send successfully");
+        })
+        .catch((err) => {
+            console.log("err ", err);
+            res.status(404).json({ message: err.message });
+        });
 };

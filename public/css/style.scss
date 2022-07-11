@@ -48,9 +48,6 @@
 @use "../../components/WebDevelopment/WebDevelopmentProcess/webDevelopmentProcess";
 @use "../../components/WebDevelopment/WebDevelopmentAreas/webDevelopmentAreas";
 
-// Web Development View
-@use "../../components/WebDevelopmentView/webdevelopmentview.scss";
-
 // Development Process
 @use "../../components/OurDevlopment/DevelopmentBlock.scss";
 // Laravel
@@ -71,6 +68,12 @@
 
 // Testimonial
 @use "../../components/Testimonial/TestimonialBlock.scss";
+
+// WebDevelopmentView
+@use "../../components/WebDevelopmentView/webdevelopmentview.scss";
+
+// Contact form
+// @use "../../components/Contact/contact";
 
 /*
 @File: Mibix Template Styles

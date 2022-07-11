@@ -1,6 +1,20 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+const MySwal = withReactContent(Swal);
 
+const alertContent = () => {
+    MySwal.fire({
+        title: "Congratulations!",
+        text: "Your message was successfully send and will back to you soon",
+        icon: "success",
+        timer: 2000,
+        timerProgressBar: true,
+        showConfirmButton: false,
+    });
+};
 const GetAQuote = () => {
     // Form initial state
     const INITIAL_STATE = {
@@ -22,7 +36,7 @@ const GetAQuote = () => {
     const onSubmit = async (e) => {
         // e.preventDefault();
         try {
-            const url = `${baseUrl}/api/contact`;
+            const url = `http://localhost:3000/api/quoteform`;
             const { name, email, number, subject, text } = contact;
             const payload = { name, email, number, subject, text };
             await axios.post(url, payload);
