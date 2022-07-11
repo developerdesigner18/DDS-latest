@@ -54,7 +54,6 @@ const careerform = () => {
         // e.preventDefault();
         try {
             const body = new FormData();
-
             const url = `http://localhost:3000/api/careerform`;
             const {
                 name,

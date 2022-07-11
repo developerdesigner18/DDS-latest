@@ -15,12 +15,14 @@ const Custom404 = () => {
                         <div className="search-404">
                             <input
                                 type="text"
-                                className="form-control"
+                                className="form-control input-404-holder"
                                 placeholder="Try searching for something else"
                                 name="coupon-code"
                                 id="coupon-code"
                             />
-                            <button type="submit">Search</button>
+                            <button type="submit" className="default-btn">
+                                Search
+                            </button>
                         </div>
 
                         <p>

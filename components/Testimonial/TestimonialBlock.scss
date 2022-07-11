@@ -5,28 +5,30 @@
     align-items: center;
 }
 
-.testimonial-name h6{
+.testimonial-name h6 {
     margin: 0px;
     color: var(--mainDarkColor);
 }
 
-.testimonial-name span{
+.testimonial-name span {
     color: var(--mainLightColor);
 }
 
-.container.testimonial-page {
-    margin: 30px auto;
+.testimonial-page {
+    padding: 30px 0px;
+    background: var(--whiteColor);
 }
-blockquote.wp-block-quote.testimonial{
+blockquote.wp-block-quote.testimonial {
     font-size: 16px;
     text-align: left;
     padding: 28px !important;
+    color: var(--mainLightColor);
 }
 .overview-box .overview-content .content.testimonial h2 {
     font-size: 30px;
     margin-left: 10%;
 }
-.content.testimonial:before { 
+.content.testimonial:before {
     content: url("/images/testimonial/quote.png");
     // background-image: url("/images/testimonial/quote.png");
     font-size: 38px;
@@ -34,10 +36,10 @@ blockquote.wp-block-quote.testimonial{
     left: 0;
     top: 2%;
 }
-.content.testimonial .sub-title{
+.content.testimonial .sub-title {
     margin-left: 10%;
 }
 
-.content.testimonial{
+.content.testimonial {
     position: relative;
 }

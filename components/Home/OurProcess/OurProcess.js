@@ -1,5 +1,10 @@
 import Link from "next/link";
+import { useState } from "react";
+import { useTheme } from "next-themes";
+
 const OurProcess = () => {
+    const { theme } = useTheme();
+    console.log(theme);
     return (
         <div className="how-its-work-area ptb-100">
             <div className="container">
@@ -61,7 +66,18 @@ const OurProcess = () => {
 
                     <div className="col-lg-6 col-md-12">
                         <div className="how-its-work-image">
-                            <img src="/images/our-process.png" alt="image" />
+                            {theme == "light" && (
+                                <img
+                                    src="/images/our-process.png"
+                                    alt="image"
+                                />
+                            )}
+                            {theme == "dark" && (
+                                <img
+                                    src="/images/our-process-dark.png"
+                                    alt="image"
+                                />
+                            )}
                         </div>
                     </div>
                     <Link href="/our-development-process">

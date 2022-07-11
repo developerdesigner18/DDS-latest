@@ -38,7 +38,7 @@ const users = [
 const UserPortfolio = () => {
     return (
         <>
-            <Tabs className="ptb-100">
+            <Tabs className="ptb-100 porfolio-holder">
                 <TabList className="container tab-list">
                     <Tab>All</Tab>
                     <Tab>Website</Tab>

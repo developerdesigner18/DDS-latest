@@ -1,4 +1,5 @@
 // Partials
+
 @use "../../components/_App/Navbar/navbar";
 @use "../../components/_App/Footer/footer";
 @use "../../components/_App/GoTop/goTop";
@@ -40,11 +41,15 @@
 @use "../../components/Common/Team/TeamBlock.scss";
 
 // Contact
+@use "../../components/Contact/contact.scss";
 // Web Development
 @use "../../components/WebDevelopment/WebDevelopmentServices/webDevelopmentServices";
 @use "../../components/WebDevelopment/TechnologyStack/technologyStack";
 @use "../../components/WebDevelopment/WebDevelopmentProcess/webDevelopmentProcess";
 @use "../../components/WebDevelopment/WebDevelopmentAreas/webDevelopmentAreas";
+
+// Web Development View
+@use "../../components/WebDevelopmentView/webdevelopmentview.scss";
 
 // Development Process
 @use "../../components/OurDevlopment/DevelopmentBlock.scss";
@@ -117,6 +122,7 @@ This files table contents are outlined below>>>>>
 ** - Contact Area CSS
 ** - Sidebar Modal CSS
 */
+@import "node_modules/react-modal-video/scss/modal-video.scss";
 
 /*================================================
 Default CSS
@@ -136,18 +142,55 @@ Default CSS
     --mainLightColor: #0069b4;
     --whiteColor: #ffffff;
     --grayTextColor: #d0d3d4;
-    --grayBgColor: #f0f4f8;
+    --grayBgColor: #f9f9f9;
     --mainBgColor: #ebf2f6;
     --bgColor: #d0eaf9;
+    --buttonDark: #003e6b;
+    --mainbgDarkColor: #003e6b;
+    --mainbgLightColor: #0069b4;
+    --whiteBoth: #ffffff;
+    --buttonbgColor: #185079;
+    --componentWhite: #ffffff;
+    --darkCardColor: #003e6b;
+    --formInputColor: #ebf2f6;
+    --priceProduct: #eff7fb;
+    --singlePriceInput: #cce4f1;
+    --pricessProcess: #398cc9;
+    --tagsbgColor: #d0eaf9;
+    --searchIconColor: #ffffff;
+    --contactIconbgColor: #f9f8f8;
+    --formShadow: #b8dff5;
+    --faqComponent: #ebf2f6;
+    --socialMediaIcon: #185079;
+    --portfoliobgColor: #ffffff;
+    --playButton: ##0069b4;
 }
 [data-theme="dark"] {
-    --mainDarkColor: #003e6b;
-    --mainLightColor: white;
-    --whiteColor: #0b1419;
-    --grayTextColor: #7a7a7a;
-    --grayBgColor: #f0f4f8;
-    --mainBgColor: #ebf2f6;
+    --mainDarkColor: #ffffff;
+    --mainLightColor: #bfc5c9;
+    --whiteColor: #091830;
+    --grayTextColor: #bfc5c9;
+    --grayBgColor: #142337;
+    --mainBgColor: #bfc5c9;
     --bgColor: #d0eaf9;
+    --buttonDark: #037fc0;
+    --mainbgDarkColor: #142337;
+    --mainbgLightColor: #003e6b;
+    --buttonbgColor: #037fc0;
+    --componentWhite: #222f43;
+    --darkCardColor: #028dd4;
+    --formInputColor: #14253d;
+    --priceProduct: #091830;
+    --singlePriceInput: #222f43;
+    --pricessProcess: #028dd4;
+    --tagsbgColor: #384960;
+    --searchIconColor: #019dea;
+    --contactIconbgColor: #222f43;
+    --formShadow: #037fc0;
+    --faqComponent: #222f43;
+    --socialMediaIcon: #222f43;
+    --portfoliobgColor: #14253d;
+    --playButton: #028dd4;
 }
 body {
     padding: 0;
@@ -235,7 +278,7 @@ p {
     padding-bottom: 70px;
 }
 .bg-f9f9f9 {
-    background-color: #f9f9f9;
+    background-color: var(--grayBgColor);
 }
 .container {
     max-width: 1230px;
@@ -282,7 +325,45 @@ p {
         margin-top: 20px;
     }
 }
+.bg-imgdev {
+    background-color: var(--whiteColor);
+}
 /*default-btn*/
+// .default-btn {
+//     text-align: center;
+//     display: inline-block;
+//     transition: var(--transition);
+//     border-radius: 5px;
+//     border: none;
+//     padding: 10px 30px;
+//     position: relative;
+//     z-index: 1;
+//     color: var(--whiteBoth);
+//     background-color: var(--buttonbgColor);
+//     font: {
+//         size: 17px;
+//         weight: 700;
+//     }
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         left: 0;
+//         right: 0;
+//         top: 0;
+//         bottom: 0;
+//         border-radius: 5px;
+//         background-color: var(--buttonbgColor);
+//         z-index: -1;
+//         transition: var(--transition);
+//     }
+//     &:hover {
+//         color: var(--whiteColor);
+
+//         &::before {
+//             transform: scaleX(0);
+//         }
+//     }
+// }
 .default-btn {
     text-align: center;
     display: inline-block;
@@ -292,8 +373,8 @@ p {
     padding: 10px 30px;
     position: relative;
     z-index: 1;
-    color: var(--whiteColor);
-    background-color: var(--mainLightColor);
+    color: var(--whiteBoth);
+    background-color: var(--buttonDark);
     font: {
         size: 17px;
         weight: 700;
@@ -306,19 +387,19 @@ p {
         top: 0;
         bottom: 0;
         border-radius: 5px;
-        background-color: var(--mainDarkColor);
+        background-color: var(--buttonDark);
         z-index: -1;
         transition: var(--transition);
     }
     &:hover {
         color: var(--whiteColor);
+        background-color: var(--mainLightColor);
 
         &::before {
             transform: scaleX(0);
         }
     }
 }
-
 /* form-control */
 .form-group {
     margin-bottom: 20px;
@@ -326,10 +407,10 @@ p {
 .form-control,
 .form-select {
     height: 50px;
-    color: var(--blackColor);
+    color: var(--mainDarkColor);
     box-shadow: unset !important;
-    border: 1px solid #f5f5f5;
-    background-color: #f5f5f5;
+    border: 1px solid var(--formInputColor);
+    background-color: var(--formInputColor);
     transition: var(--transition);
     border-radius: 3px;
     padding: 1px 0 0 15px;
@@ -342,7 +423,7 @@ p {
         transition: var(--transition);
     }
     &:focus {
-        border-color: var(--mainColor);
+        border-color: var(--mainbgDarkColor);
         background-color: transparent;
 
         &::placeholder {
@@ -572,7 +653,7 @@ Featured Services Area CSS
 .single-featured-services-box {
     margin-bottom: 30px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: var(--grayBgColor);
     padding: 50px 25px;
     border-radius: 5px;
     transition: var(--transition);
@@ -1222,6 +1303,12 @@ Solutions CSS
     flex-direction: row-reverse;
 }
 
+.accordian-button-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 /*================================================
 Portfolio Area CSS
 =================================================*/
@@ -1261,11 +1348,17 @@ Portfolio Area CSS
         position: relative;
 
         h3 {
-            color: var(--mainDarkColor);
+            color: #37688b;
             margin-bottom: 0;
             line-height: 1.3;
             font: {
                 size: 24px;
+            }
+            a {
+                color: #37688b;
+            }
+            a:hover {
+                color: #37688b !important;
             }
         }
         .link-btn {
@@ -1273,9 +1366,9 @@ Portfolio Area CSS
             height: 40px;
             line-height: 40px;
             text-align: center;
-            background-color: var(--mainDarkColor);
+            background-color: var(--buttonDark);
             transition: var(--transition);
-            color: var(--whiteColor);
+            color: var(--whiteBoth);
             border-radius: 3px;
             position: absolute;
             font-size: 25px;
@@ -1284,8 +1377,8 @@ Portfolio Area CSS
             display: inline-block;
 
             &:hover {
-                color: var(--whiteColor);
-                background-color: var(--mainLightColor);
+                color: var(--buttonDark);
+                background-color: var(--whiteBoth);
             }
         }
     }
@@ -1303,7 +1396,7 @@ Portfolio Area CSS
             right: 21%;
 
             [class*="owl-"] {
-                background-color: transparent;
+                background-color: transparent !important;
                 border: 1px solid var(--mainDarkColor);
                 margin: 0 7px;
                 transition: var(--transition);
@@ -1607,6 +1700,9 @@ Pricing Area CSS
 .pricing-area {
     position: relative;
     z-index: 1;
+}
+.contact-info-area {
+    background-color: var(--whiteColor);
 }
 .single-pricing-box {
     margin-bottom: 30px;
@@ -2393,7 +2489,7 @@ Blog Details Area CSS
 blockquote,
 .blockquote {
     overflow: hidden;
-    background-color: #fafafa;
+    // background-color: #fafafa;
     padding: 50px !important;
     position: relative;
     text-align: center;
@@ -2403,7 +2499,7 @@ blockquote,
         top: 20px;
     }
     p {
-        color: var(--blackColor);
+        color: var(--mainDarkColor);
         line-height: 1.6;
         margin-bottom: 0;
         font: {
@@ -2422,7 +2518,7 @@ blockquote,
         left: 50px;
         top: -50px;
         z-index: -1;
-        content: "\f118";
+        content: none;
         font: {
             family: Flaticon;
             size: 135px;
@@ -2435,12 +2531,16 @@ blockquote,
         top: 0;
         bottom: 0;
         width: 3px;
-        background-color: var(--mainColor);
+        background-color: var(--mainDarkColor) !important;
         margin: {
             top: 20px;
             bottom: 20px;
         }
     }
+}
+.testimonial blockquote::before,
+.blockquote::before {
+    content: none;
 }
 .dibiz-post-navigation {
     display: -webkit-box;
@@ -4224,7 +4324,7 @@ Checkout Area CSS
 Page Title Area CSS
 =================================================*/
 .page-title-area {
-    background-color: var(--mainDarkColor);
+    background-color: var(--mainbgDarkColor);
     position: relative;
     z-index: 1;
     padding: {
@@ -4243,7 +4343,7 @@ Page Title Area CSS
 
     h1 {
         margin-bottom: 0;
-        color: var(--whiteColor);
+        color: var(--whiteBoth);
         font-size: 45px;
     }
 }
@@ -4912,10 +5012,13 @@ Profile Authentication Area CSS
 404 Error Area CSS
 =================================================*/
 .error-area {
-    background-color: #ebf2f6;
+    background-color: var(--formInputColor);
     padding: 150px 0;
 }
-
+.input-404-holder {
+    background-color: var(--whiteBoth);
+    color: #003e6b;
+}
 .error-content {
     text-align: center;
     display: flex;
@@ -4945,39 +5048,23 @@ Profile Authentication Area CSS
             font-weight: bold;
         }
     }
-    .default-btn {
-        margin-top: 30px;
-    }
 }
-
+.search-404 .default-btn {
+    margin-top: 0px;
+    height: 50px;
+    border-radius: 0;
+    margin-left: -1px;
+}
 .search-404 {
-    position: relative;
-    max-width: 530px;
+    max-width: 540px;
     margin: 30px 0;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     input {
-        width: 500px;
-    }
-
-    button {
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 50px;
-        background: var(--mainDarkColor);
-        color: var(--whiteColor);
-        border: none;
-        padding: 0 25px;
-        line-height: 48px;
-        outline: 0;
-        transition: var(--transition);
-        font: {
-            size: 16px;
-            weight: 700;
-        }
-        &:hover {
-            background-color: var(--mainLightColor);
-        }
+        border-radius: 0;
+        width: 460px;
     }
 }
 
@@ -5108,6 +5195,9 @@ Coming Soon Area CSS
         size: cover;
         repeat: no-repeat;
     }
+}
+.overview-area {
+    background-color: var(--whiteColor);
 }
 .coming-soon-content {
     max-width: 700px;
@@ -5278,7 +5368,7 @@ Contact Area CSS
     .icon {
         width: 75px;
         height: 85px;
-        background-color: #f7f7f7;
+        background-color: var(--contactIconbgColor);
         border-radius: 3px;
         position: absolute;
         text-align: center;
@@ -5324,8 +5414,15 @@ Contact Area CSS
     }
     &:hover {
         .icon {
-            background-color: var(--mainColor);
+            background-color: var(--mainDarkColor);
             color: var(--whiteColor);
+            transition: 0.5s;
+        }
+        .icon .icon-holder-light {
+            filter: brightness(0) invert(1);
+        }
+        .icon .icon-holder-dark {
+            color: #003e6b;
         }
     }
 }
@@ -5336,8 +5433,9 @@ Contact Area CSS
 .contact-form {
     padding: 40px;
     margin-left: 15px;
-    box-shadow: 0 0 20px rgba(158, 158, 158, 0.16);
+    box-shadow: 0 0 20px var(--formShadow);
     background-color: var(--whiteColor);
+    border-radius: 15px;
 
     form {
         .form-group {

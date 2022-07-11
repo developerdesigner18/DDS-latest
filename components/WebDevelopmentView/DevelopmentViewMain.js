@@ -5,19 +5,19 @@ import Link from "next/link";
 const DevelopmentViewMain = () => {
     const BlogData = [
         {
-            blogimg: "/images/web-development-view/customphp.png",
+            blogimg: "/images/web-development-view/concept1.png",
             subtitile: "Custom PHP Development",
             title: "We specialize in development with following listed",
             date: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. ",
         },
         {
-            blogimg: "/images/web-development-view/cakephp.png",
+            blogimg: "/images/web-development-view/concept2.png",
             subtitile: "Cake PHP Development",
             title: "We specialize in development with following listed",
             date: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. ",
         },
         {
-            blogimg: "/images/web-development-view/codeigniter.png",
+            blogimg: "/images/web-development-view/concept3.png",
             subtitile: "Codeigniter Development",
             title: "We specialize in development with following listed",
             date: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 2",
@@ -44,7 +44,7 @@ const DevelopmentViewMain = () => {
     };
     return (
         <>
-            <div className="blog-area bg-f9f9f9 ptb-100">
+            <div className="blog-area  ptb-100">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 col-md-12">
@@ -72,7 +72,7 @@ const DevelopmentViewMain = () => {
                                                             </a>
                                                         </Link>
                                                     </div>
-                                                    <div className="content">
+                                                    <div className="content development-view-holder">
                                                         <p> {elm.subtitile} </p>
                                                         <h3>
                                                             <Link href="/singleblog">
@@ -82,7 +82,7 @@ const DevelopmentViewMain = () => {
                                                             </Link>
                                                         </h3>
                                                         <div className="d-flex align-items-center">
-                                                            <div className="info">
+                                                            <div className="info readmore-content-holder">
                                                                 <span>
                                                                     <ReadMore>
                                                                         {

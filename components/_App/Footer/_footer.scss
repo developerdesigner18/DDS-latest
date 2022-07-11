@@ -5,7 +5,7 @@ Footer Area CSS
     padding-top: 100px;
     position: relative;
     z-index: 1;
-    background-color: var(--mainDarkColor);
+    background-color: var(--mainbgDarkColor);
 }
 .single-footer-widget {
     margin-bottom: 30px;
@@ -33,8 +33,8 @@ Footer Area CSS
                 width: 32px;
                 height: 32px;
                 text-align: center;
-                color: var(--whiteColor);
-                background-color: #185079;
+                color: var(--whiteBoth);
+                background-color: var(--socialMediaIcon);
                 font-size: 18px;
                 position: relative;
                 border-radius: 2px;
@@ -56,7 +56,7 @@ Footer Area CSS
     h3 {
         margin-bottom: 25px;
         font-size: 25px;
-        color: var(--whiteColor);
+        color: var(--whiteBoth);
     }
     p {
         color: #ededed;
@@ -110,7 +110,7 @@ Footer Area CSS
             i {
                 position: absolute;
                 left: 0;
-                color: var(--whiteColor);
+                color: var(--whiteBoth);
                 top: 4px;
 
                 &.bxs-inbox {
@@ -128,7 +128,7 @@ Footer Area CSS
         bottom: 25px;
     }
     p {
-        color: #ededed;
+        color: var(--whiteBoth);
 
         i {
             position: relative;
@@ -143,7 +143,7 @@ Footer Area CSS
             }
         }
         strong {
-            color: var(--whiteColor);
+            color: var(--whiteBoth);
         }
     }
     ul {

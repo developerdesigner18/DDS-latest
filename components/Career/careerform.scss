@@ -1,16 +1,17 @@
-.career-form-main.container {
-    margin: 50px auto;
+.career-form-main {
+    padding: 50px;
 }
 
-.agreement-box
-{
+.agreement-box {
     display: flex;
     gap: 12px;
     align-items: center;
 }
-.career-title
-{
+.career-title {
     text-align: center;
     color: var(--mainDarkColor);
-    margin: 20px 0px;
+    padding: 20px 0px;
+}
+.career-form-main {
+    background-color: var(--whiteColor);
 }

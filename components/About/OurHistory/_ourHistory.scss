@@ -57,7 +57,7 @@ History Area CSS
             span {
                 display: block;
                 margin-bottom: 3px;
-                color: var(--mainLightColor);
+                color: var(--mainDarkColor);
                 font-weight: 700;
             }
             sup {
@@ -87,7 +87,7 @@ History Area CSS
             }
         }
         .timeline-content {
-            background-color: var(--whiteColor);
+            background-color: var(--componentWhite);
             padding: 30px;
 
             .content {

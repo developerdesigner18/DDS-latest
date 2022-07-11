@@ -2,7 +2,6 @@
     align-items: center;
 }
 
-
 /*================================================
 About Area CSS
 =================================================*/
@@ -29,6 +28,9 @@ About Area CSS
             }
         }
     }
+}
+ul.funfacts-list h3 {
+    color: var(--whiteBoth);
 }
 .about-image {
     height: 100%;

@@ -1,11 +1,59 @@
-import Link from "next/link";
-
+import { useTheme } from "next-themes";
+const featuresData = [
+    {
+        featureimg: "/images/services/user-experience.png",
+        title: "Custom Web Development",
+        description:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    },
+    {
+        featureimg: "/images/services/world-wide-web.png",
+        title: "Front-End Development",
+        description:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    },
+    {
+        featureimg: "/images/services/mobile-ap.png",
+        title: "Open source Development",
+        description:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    },
+    {
+        featureimg: "/images/services/game-development.png",
+        title: "Open source Development",
+        description:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    },
+    {
+        featureimg: "/images/services/networking.png",
+        title: "Open source Development",
+        description:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    },
+    {
+        featureimg: "/images/services/seo.png",
+        title: "Open source Development",
+        description:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    },
+    {
+        featureimg: "/images/services/quality-assurance.png",
+        title: "Open source Development",
+        description:
+            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    },
+];
 const WhatWeOffer = () => {
+    const { theme } = useTheme();
     return (
         <div className="offerContainer">
             <div className="container blockContainer">
-                <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-2">
+                <div
+                    className={`row ${
+                        theme == "dark" && "image-holder-darkmode"
+                    }`}
+                >
+                    <div className="col-lg-3 col-md-6 col-sm-6 service-holder">
                         <div>
                             <p>Services</p>
                             <h2>What we offer</h2>
@@ -18,32 +66,33 @@ const WhatWeOffer = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-4 col-sm-2">
+                    {featuresData.map((data) => {
+                        return (
+                            <div className="col-lg-3 col-md-6 col-sm-6 pb-5">
+                                <div className="service-block">
+                                    <div className="img-icons">
+                                        {theme == "dark" && (
+                                            <img
+                                                src={data.featureimg}
+                                                className="image-holder-darkmode"
+                                            />
+                                        )}
+                                        {theme == "light" && (
+                                            <img src={data.featureimg} />
+                                        )}
+                                    </div>
+                                    <p className="heading">{data.title}</p>
+                                    <p className="subheading">
+                                        {data.description}
+                                    </p>
+                                </div>
+                            </div>
+                        );
+                    })}
+                    {/* <div className="col-lg-3 col-md-4 col-sm-2">
                         <div className="service-block">
                             <div className="img-icons">
-                                <img src="/images/services/user-experience.png" />
-                            </div>
-                            <p className="heading">UI/UX Design</p>
-                            <p className="subheading">
-                                We have experienced designers of the creative
-                                industry, who create futuristic modern designs
-                                with a smooth workflow and responsive layouts.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 col-sm-2">
-                        <Link href="web-development">
-                            <div className="service-block">
-                                <div className="img-icons">
-                                    <img src="/images/services/world-wide-web.png" />
-                                </div>
-                                <p className="heading">Web Development</p>
-                                <p className="subheading">
-                                    From simple landing pages to complex
-                                    e-commerce websites, we ‘Add’ value to the
-                                    ‘Web’ world with our Experience and
-                                    Expertise in Web Development Services.
-                                </p>
+                                <img src="/images/services/world-wide-web.png" />
                             </div>
                         </Link>
                     </div>
@@ -117,7 +166,7 @@ const WhatWeOffer = () => {
                                 they are of the highest quality possible.
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

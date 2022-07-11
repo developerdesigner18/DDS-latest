@@ -27,17 +27,20 @@ ul.container.tab-list {
 .react-tabs__tab {
     color: var(--mainDarkColor);
     font-weight: 400;
+    background: transparent;
 }
 .react-tabs__tab--selected {
-    border-bottom: 2px solid #003e6b !important;
+    border-bottom: 2px solid var(--mainDarkColor) !important;
 }
 .react-tabs__tab,
 .react-tabs__tab-list {
     border: none;
 }
+.porfolio-holder {
+    background-color: var(--whiteColor);
+}
 .portfolio-area {
     overflow: hidden;
-    background-color: var(--whiteColor);
 
     .section-title {
         text-align: left;
@@ -176,7 +179,7 @@ ul.container.tab-list {
 .single-portfolio-box {
     margin-bottom: 30px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: var(--grayBgColor);
     transition: var(--transition);
     border-radius: 5px;
 
@@ -201,6 +204,9 @@ ul.container.tab-list {
                 size: 25px;
             }
         }
+        p {
+            color: var(--mainDarkColor);
+        }
         span {
             display: block;
             color: var(--mainDarkColor);
@@ -213,9 +219,9 @@ ul.container.tab-list {
             height: 40px;
             line-height: 40px;
             text-align: center;
-            background-color: var(--mainDarkColor);
+            background-color: var(--darkCardColor);
             transition: var(--transition);
-            color: var(--whiteColor);
+            color: var(--whiteBoth);
             border-radius: 3px;
             position: absolute;
             font-size: 25px;
@@ -225,7 +231,7 @@ ul.container.tab-list {
         }
     }
     &:hover {
-        background-color: var(--mainDarkColor);
+        background-color: var(--darkCardColor);
 
         .content {
             h3 {
@@ -456,7 +462,7 @@ Portfolio Details Area CSS
     }
 }
 .portfolio-details-info {
-    background-color: var(--whiteColor);
+    background-color: var(--portfoliobgColor);
     box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     border-bottom: 3px solid var(--mainDarkColor);
@@ -472,7 +478,7 @@ Portfolio Details Area CSS
             margin-bottom: 20px;
             border-bottom: 1px solid #eeeeee;
             position: relative;
-            color: var(--optionalColor);
+            color: var(--mainLightColor);
             font: {
                 weight: 600;
                 size: 16.5px;
@@ -482,7 +488,7 @@ Portfolio Details Area CSS
                 bottom: 20px;
             }
             span {
-                color: var(--blackColor);
+                color: var(--mainDarkColor);
                 display: block;
                 margin-bottom: 8px;
                 font: {
@@ -492,7 +498,7 @@ Portfolio Details Area CSS
             }
             a {
                 display: block;
-                color: var(--optionalColor);
+                color: var(--mainLightColor);
                 margin-bottom: 8px;
 
                 &:last-child {

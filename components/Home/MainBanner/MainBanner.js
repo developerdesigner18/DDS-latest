@@ -74,8 +74,8 @@ const MainBanner = () => {
             <ModalVideo
                 channel="youtube"
                 isOpen={!isOpen}
-                videoId="2uhOOu_P7So"
-                onClose={() => setIsOpen(!isOpen)}
+                videoId="Zv11L-ZfrSg"
+                // onClose={() => setIsOpen(!isOpen)}
             />
         </>
     );

@@ -1,21 +1,34 @@
 .single-blog-post .content .d-flex .info {
     margin-left: 0px !important;
 }
+.blog-area {
+    background: var(--whiteColor);
+}
 .article-tags a,
 span {
     color: var(--mainLightColor);
+}
+.blog-content-holder {
+    padding-top: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.blog-content-holder a {
+    color: var(--mainDarkColor);
 }
 .blog-details-desc .article-footer .article-tags span {
     color: var(--mainLightColor) !important;
 }
 .single-blog-post {
-    background-color: #ebf2f6 !important;
+    background-color: var(--formInputColor) !important;
 }
 
 .blog-right-sidebar .widget-area .widget {
-    background-color: #ebf2f6;
+    background-color: var(--formInputColor);
 }
-
+h3.widget-title {
+    color: var(--mainDarkColor);
+}
 .blog-right-sidebar .widget-area .widget_search form .search-field {
     background-color: #d0eaf9;
 }
@@ -24,7 +37,7 @@ span {
     background-color: #003e6b !important;
 }
 .widget-area .widget_categories ul li::before {
-    background: #003e6b !important;
+    background: var(--mainDarkColor) !important;
 }
 .widget-area .widget_search form button:hover,
 .widget-area .widget_search form button:focus {
@@ -42,7 +55,7 @@ span {
 
 .widget-area .widget_search form button:hover,
 .widget-area .widget_search form button:focus {
-    color: var(--whiteColor) !important;
+    color: var(--blackColor) !important;
 }
 .blog-details-desc .article-content h3 {
     color: var(--mainDarkColor) !important;
@@ -68,8 +81,9 @@ blockquote::after,
 .blog-details-desc .article-footer .article-share .social li a.twitter,
 .blog-details-desc .article-footer .article-share .social li a.linkedin,
 .blog-details-desc .article-footer .article-share .social li a.instagram {
-    background-color: var(--mainLightColor) !important;
-    border-color: var(--mainLightColor) !important;
+    background-color: var(--socialMediaIcon) !important;
+    border-color: var(--socialMediaIcon) !important;
+    color: white !important;
 }
 .widget-area .widget_categories ul li a:hover {
     color: var(--mainDarkColor) !important;
@@ -82,7 +96,9 @@ blockquote::after,
 .next-link-wrapper a:hover .next-link-info-wrapper {
     color: var(--mainDarkColor) !important;
 }
-
+.blog-details-area {
+    background-color: var(--whiteColor);
+}
 .widget-area {
     padding-left: 10px;
 
@@ -158,7 +174,7 @@ blockquote::after,
             }
             button {
                 border: none;
-                background-color: var(--whiteColor);
+                background-color: transparent;
                 color: var(--mainColor);
                 height: 40px;
                 width: 40px;
@@ -179,7 +195,7 @@ blockquote::after,
                 &:hover,
                 &:focus {
                     border-radius: 5px;
-                    background-color: var(--mainColor);
+                    background-color: transparent !important;
                     color: var(--whiteColor);
                 }
             }
@@ -198,7 +214,7 @@ blockquote::after,
             }
             .thumb {
                 float: left;
-                height: 80px;
+                // height: 80px;
                 overflow: hidden;
                 display: block;
                 position: relative;
@@ -255,7 +271,7 @@ blockquote::after,
 
                 span {
                     display: block;
-                    color: var(--optionalColor);
+                    color: var(--mainLightColor);
                     text-transform: uppercase;
                     margin: {
                         top: -2px;
@@ -274,6 +290,7 @@ blockquote::after,
                     }
                     a {
                         display: inline-block;
+                        color: var(--mainDarkColor);
                     }
                 }
             }
@@ -319,7 +336,7 @@ blockquote::after,
                     position: absolute;
                 }
                 a {
-                    color: var(--blackColor);
+                    color: var(--mainDarkColor);
                     display: inline-block;
 
                     &:hover {
@@ -343,8 +360,8 @@ blockquote::after,
     .tagcloud {
         a {
             display: inline-block;
-            background: #f5f5f5;
-            color: var(--blackColor);
+            background: var(--tagsbgColor);
+            color: var(--mainLightColor);
             padding: 7px 15px;
             border: none;
             border-radius: 3px;

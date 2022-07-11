@@ -2,7 +2,7 @@
 Our Services Area CSS
 =================================================*/
 .our-services-area {
-    background-color: var(--mainDarkColor);
+    background-color: var(--mainbgDarkColor);
 }
 .our-services-content {
     .sub-title {
@@ -17,7 +17,7 @@ Our Services Area CSS
     h2 {
         margin-bottom: 0;
         font-size: 42px;
-        color: var(--whiteColor);
+        color: var(--whiteBoth);
     }
     p {
         color: var(--grayTextColor);
@@ -56,9 +56,9 @@ Our Services Area CSS
                     outline: 0;
                 }
                 span {
-                    color: var(--whiteColor);
+                    color: var(--whiteBoth);
                     &::before {
-                        background-color: var(--whiteColor);
+                        background-color: var(--whiteBoth);
                         position: absolute;
                         height: 100%;
                         width: 40px;

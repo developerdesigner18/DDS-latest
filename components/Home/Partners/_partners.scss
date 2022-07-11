@@ -74,7 +74,8 @@ div#\#partners {
 //     color: white;
 //     font-size: 40px;
 //     position: absolute;
-//     transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s, background-color 1s;
+//     transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s,
+//         background-color 1s;
 // }
 
 $level2-height: 150px;
@@ -242,7 +243,7 @@ Partner Area CSS
             justify-content: space-between;
 
             [class*="owl-"] {
-                background-color: transparent;
+                background-color: transparent !important;
                 border: 1px solid var(--mainDarkColor);
                 margin: 0 7px;
                 transition: var(--transition);
