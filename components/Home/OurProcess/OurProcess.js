@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 
@@ -17,9 +18,10 @@ const OurProcess = () => {
                                 We believe in listening and providing the best
                                 creative solutions exceeding your requirements
                                 and focusing on yielding maximum efficiency,
-                                growth and traffic on all your digital platforms
-                                On-Time and In-Budget. In simple terms, “You
-                                share, we listen, implement and deliver”.
+                                growth, and traffic on all your digital
+                                platforms On-Time and In-Budget. In simple
+                                terms, “You share, we listen, implement and
+                                deliver”.
                             </p>
 
                             <div className="inner-box">
@@ -28,10 +30,10 @@ const OurProcess = () => {
                                     <h3>Planning</h3>
                                     <p>
                                         A road map and getting to know you are
-                                        the first steps in every endeavour. We
+                                        the first steps in every endeavor. We
                                         investigate every aspect of the project
-                                        and provide the strategies, budget and
-                                        wireframes understanding all your
+                                        and provide the strategies, budget, and
+                                        wireframes to understand all your
                                         requirements.
                                     </p>
                                 </div>
@@ -42,7 +44,7 @@ const OurProcess = () => {
                                     <p>
                                         Here is where the idea becomes a
                                         reality, we focus on all aspects of
-                                        designing, coding, testing and every
+                                        designing, coding, testing, and every
                                         little tweak before making it all live.
                                     </p>
                                 </div>
@@ -77,6 +79,9 @@ const OurProcess = () => {
                             )}
                         </div>
                     </div>
+                    <Link href="/our-development-process">
+                        <a className="default-btn view-process">View All</a>
+                    </Link>
                 </div>
             </div>
         </div>

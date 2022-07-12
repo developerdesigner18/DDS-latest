@@ -41,7 +41,6 @@ const Navbar = () => {
             localStorage.getItem("theme")
         );
     }, []);
-    console.log(location);
     // Search Modal
     const [isActiveSearchModal, setActiveSearchModal] = useState("false");
     const handleToggleSearchModal = () => {

@@ -87,13 +87,11 @@ const CareerAccordian = ({ data }) => {
 };
 
 export async function getStaticProps(context) {
-    console.log(accordionData.requirements);
     const title = accordionData.find(
         (data) =>
             createCareerTitle(data.title) ===
             context.params.title
     );
-    console.log(JSON.stringify(title.requirements));
     return {
         props: {
             data: title,

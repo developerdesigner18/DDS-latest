@@ -38,20 +38,19 @@ const ProjectInMind = () => {
         setAgree(!agree);
     };
 
-    // const onSubmit = async (e) => {
-    //     // e.preventDefault();
-    //     try {
-    //         const url = `${baseUrl}/api/contact`;
-    //         const { name, email, number, subject, text } = contact;
-    //         const payload = { name, email, number, subject, text };
-    //         await axios.post(url, payload);
-    //         console.log(url);
-    //         setContact(INITIAL_STATE);
-    //         alertContent();
-    //     } catch (error) {
-    //         console.log(error);
-    //     }
-    // };
+    const onSubmit = async (e) => {
+        // e.preventDefault();
+        try {
+            const url = `http://localhost:3000/api/projectform`;
+            const { name, email, number, subject, text } = contact;
+            const payload = { name, email, number, subject, text };
+            await axios.post(url, payload);
+            setContact(INITIAL_STATE);
+            alertContent();
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
     return (
         <div className="project-inMind pb-100">
@@ -65,7 +64,7 @@ const ProjectInMind = () => {
                         <div className="project-inMind-form">
                             <form
                                 id="contactForm"
-                                // onSubmit={handleSubmit(onSubmit)}
+                                onSubmit={handleSubmit(onSubmit)}
                             >
                                 <div className="row">
                                     <div className="col-lg-4 col-md-4">

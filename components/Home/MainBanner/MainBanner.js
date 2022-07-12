@@ -40,7 +40,7 @@ const MainBanner = () => {
 
                                 <div className="btn-box">
                                     <div className="d-flex align-items-center">
-                                        <Link href="/contact">
+                                        <Link href="/about">
                                             <a className="default-btn">
                                                 Get Started
                                             </a>

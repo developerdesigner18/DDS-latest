@@ -1,7 +1,7 @@
 const InfoCard = (props) => {
     return (
         <>
-            <div className="container servicecard info">
+            <div className={`container servicecard info ${props.newClass}`}>
                 <div className="container">
                     <h2>{props.heading}</h2>
                     <div className="row">

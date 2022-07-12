@@ -348,8 +348,9 @@ Partner Area CSS
     }
 
     .partners-slides .owl-item.active + .owl-item.active {
-        height: unset !important;
-        width: unset !important;
+        height: auto !important;
+        width: 212px !important;
+        margin-right: 30px !important;
     }
     .partners-slides .owl-item.active.center + .owl-item.active {
         height: unset !important;
@@ -393,9 +394,9 @@ Partner Area CSS
         right: -48px !important;
     }
     .partners-slides .owl-item.active {
-        height: unset !important;
-        width: unset !important;
-        margin-right: 70px !important;
+        height: auto !important;
+        width: 212px !important;
+        margin-right: 30px !important;
     }
     .partners-slides .owl-stage-outer {
         padding-top: 4%;
@@ -409,8 +410,8 @@ Partner Area CSS
 }
 @media (max-width: 767px) {
     .partners-slides .owl-item.active {
-        height: 210px !important;
-        width: 516px !important;
+        height: 290px !important;
+        width: 376px !important;
         //    margin-right: 10px !important;
     }
 
@@ -418,8 +419,8 @@ Partner Area CSS
         transform: unset;
         filter: unset;
         margin-top: 0 !important;
-        height: unset !important;
-        width: unset !important;
+        height: auto !important;
+        width: 211px !important;
         margin-left: unset !important;
     }
 

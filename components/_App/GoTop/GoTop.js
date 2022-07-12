@@ -17,7 +17,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
             if (window.scrollY > 170) {
                 setThePosition(true);
 
-                if (router.pathname === "/about") {
+                if (router.pathname !== "/") {
                     if (
                         // typeof window !== "undefined" &&
                         localStorage.getItem("theme") === "dark"
@@ -27,30 +27,11 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                             color: "#003e6b",
                         });
                     } else {
-                        setChangeColor({ background: "#003e6b" });
-                    }
-                }
-                if (router.pathname === "/") {
-                    if (
-                        document.getElementsByClassName("our-services-area")
-                            .length > 0 &&
-                        document
-                            .getElementsByClassName("go-top")[0]
-                            .getBoundingClientRect().top +
-                            10 >
-                            document
-                                .getElementsByClassName("our-services-area")[0]
-                                .getBoundingClientRect().top
-                    ) {
-                        setChangeColor({
-                            background: "white",
-                            color: "#003e6b",
-                        });
                         if (
                             document
                                 .getElementsByClassName("go-top")[0]
                                 .getBoundingClientRect().top +
-                                10 >
+                            10 >
                             document
                                 .getElementsByClassName("footer-area")[0]
                                 .getBoundingClientRect().top
@@ -80,12 +61,12 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                             document
                                 .getElementsByClassName("go-top")[0]
                                 .getBoundingClientRect().top +
-                                10 >
-                                document
-                                    .getElementsByClassName(
-                                        "our-services-area"
-                                    )[0]
-                                    .getBoundingClientRect().top
+                            10 >
+                            document
+                                .getElementsByClassName(
+                                    "our-services-area"
+                                )[0]
+                                .getBoundingClientRect().top
                         ) {
                             setChangeColor({
                                 background: "white",
@@ -95,7 +76,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                 document
                                     .getElementsByClassName("go-top")[0]
                                     .getBoundingClientRect().top +
-                                    10 >
+                                10 >
                                 document
                                     .getElementsByClassName(
                                         "how-its-work-area"
@@ -107,7 +88,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                     document
                                         .getElementsByClassName("go-top")[0]
                                         .getBoundingClientRect().top +
-                                        10 >
+                                    10 >
                                     document
                                         .getElementsByClassName(
                                             "industries-we-serve"
@@ -122,7 +103,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                         document
                                             .getElementsByClassName("go-top")[0]
                                             .getBoundingClientRect().top +
-                                            10 >
+                                        10 >
                                         document
                                             .getElementsByClassName(
                                                 "portfolio-area"
@@ -138,7 +119,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                                     "go-top"
                                                 )[0]
                                                 .getBoundingClientRect().top +
-                                                10 >
+                                            10 >
                                             document
                                                 .getElementsByClassName(
                                                     "testimonials-area"
@@ -156,7 +137,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                                     )[0]
                                                     .getBoundingClientRect()
                                                     .top +
-                                                    10 >
+                                                10 >
                                                 document
                                                     .getElementsByClassName(
                                                         "partner-area"
@@ -173,7 +154,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                                         )[0]
                                                         .getBoundingClientRect()
                                                         .top +
-                                                        10 >
+                                                    10 >
                                                     document
                                                         .getElementsByClassName(
                                                             "footer-area"
@@ -191,6 +172,123 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                                     });
                                                 }
                                             }
+                                        }
+                                    }
+                                }
+                            }
+                        } else {
+                            setChangeColor({ background: "#003e6b" });
+                        }
+                    }
+                }
+                if (
+                    router.pathname === "/solution-startup" ||
+                    router.pathname === "/solution-ecommerce" ||
+                    router.pathname === "/solution-non-profit" ||
+                    router.pathname === "/solution-real-estate" ||
+                    router.pathname === "/solution-business"
+                ) {
+                    if (
+                        // typeof window !== "undefined" &&
+                        localStorage.getItem("theme") === "dark"
+                    ) {
+                        setChangeColor({
+                            background: "white",
+                            color: "#003e6b",
+                        });
+                    } else {
+                        if (
+                            document.getElementsByClassName("main-service")
+                                .length > 0 &&
+                            document
+                                .getElementsByClassName("go-top")[0]
+                                .getBoundingClientRect().top +
+                            10 >
+                            document
+                                .getElementsByClassName("main-service")[0]
+                                .getBoundingClientRect().top
+                        ) {
+                            setChangeColor({ background: "#003e6b" });
+                            if (
+                                document
+                                    .getElementsByClassName("go-top")[0]
+                                    .getBoundingClientRect().top +
+                                10 >
+                                document
+                                    .getElementsByClassName("info")[0]
+                                    .getBoundingClientRect().top
+                            ) {
+                                setChangeColor({
+                                    background: "white",
+                                    color: "#003e6b",
+                                });
+                                if (
+                                    document
+                                        .getElementsByClassName("go-top")[0]
+                                        .getBoundingClientRect().top +
+                                    10 >
+                                    document
+                                        .getElementsByClassName(
+                                            "features-holder"
+                                        )[0]
+                                        .getBoundingClientRect().top
+                                ) {
+                                    setChangeColor({ background: "#003e6b" });
+                                    if (
+                                        document
+                                            .getElementsByClassName("go-top")[0]
+                                            .getBoundingClientRect().top +
+                                        10 >
+                                        document
+                                            .getElementsByClassName(
+                                                "newInfo"
+                                            )[0]
+                                            .getBoundingClientRect().top
+                                    ) {
+                                        setChangeColor({
+                                            background: "white",
+                                            color: "#003e6b",
+                                        });
+                                        if (
+                                            document
+                                                .getElementsByClassName(
+                                                    "go-top"
+                                                )[0]
+                                                .getBoundingClientRect().top +
+                                            10 >
+                                            document
+                                                .getElementsByClassName(
+                                                    "getAQuote-holder"
+                                                )[0]
+                                                .getBoundingClientRect().top
+                                        ) {
+                                            setChangeColor({
+                                                background: "#003e6b",
+                                            });
+                                            if (
+                                                document
+                                                    .getElementsByClassName(
+                                                        "go-top"
+                                                    )[0]
+                                                    .getBoundingClientRect()
+                                                    .top +
+                                                10 >
+                                                document
+                                                    .getElementsByClassName(
+                                                        "footer-area"
+                                                    )[0]
+                                                    .getBoundingClientRect().top
+                                            ) {
+                                                setChangeColor({
+                                                    background: "white",
+                                                    color: "#003e6b",
+                                                });
+                                            }
+                                        } else {
+                                            setChangeColor({
+                                                background: "white",
+                                                color: "#003e6b",
+                                            });
                                         }
                                     }
                                 }
