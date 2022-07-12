@@ -17,70 +17,33 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
             if (window.scrollY > 170) {
                 setThePosition(true);
 
-                // if (router.pathname !== "/") {
-                //     if (
-                //         // typeof window !== "undefined" &&
-                //         localStorage.getItem("theme") === "dark"
-                //     ) {
-                //         setChangeColor({
-                //             background: "white",
-                //             color: "#003e6b",
-                //         });
-                //     } else {
-                //         setChangeColor({ background: "#003e6b" });
-                //     }
-                // }
-                // if (router.pathname === "/") {
-                //     if (
-                //         document.getElementsByClassName("our-services-area")
-                //             .length > 0 &&
-                //         document
-                //             .getElementsByClassName("go-top")[0]
-                //             .getBoundingClientRect().top +
-                //             10 >
-                //             document
-                //                 .getElementsByClassName("our-services-area")[0]
-                //                 .getBoundingClientRect().top
-                //     ) {
-                //         setChangeColor({
-                //             background: "white",
-                //             color: "#003e6b",
-                //         });
-                //         if (
-                //             document
-                //                 .getElementsByClassName("go-top")[0]
-                //                 .getBoundingClientRect().top +
-                //                 10 >
-                //             document
-                //                 .getElementsByClassName("footer-area")[0]
-                //                 .getBoundingClientRect().top
-                //         ) {
-                //             setChangeColor({
-                //                 background: "white",
-                //                 color: "#003e6b",
-                //             });
-                //         } else {
-                //             console.log("3");
-                //             setChangeColor({ background: "#003e6b" });
-                //         }
-                //     }
-                // }
                 if (router.pathname !== "/") {
                     if (
-                        document
-                            .getElementsByClassName("go-top")[0]
-                            .getBoundingClientRect().top +
-                            10 >
-                        document
-                            .getElementsByClassName("footer-area")[0]
-                            .getBoundingClientRect().top
+                        // typeof window !== "undefined" &&
+                        localStorage.getItem("theme") === "dark"
                     ) {
+                        console.log("dark theme about");
                         setChangeColor({
                             background: "white",
                             color: "#003e6b",
                         });
                     } else {
-                        setChangeColor({ background: "#003e6b" });
+                        if (
+                            document
+                                .getElementsByClassName("go-top")[0]
+                                .getBoundingClientRect().top +
+                                10 >
+                            document
+                                .getElementsByClassName("footer-area")[0]
+                                .getBoundingClientRect().top
+                        ) {
+                            setChangeColor({
+                                background: "white",
+                                color: "#003e6b",
+                            });
+                        } else {
+                            setChangeColor({ background: "#003e6b" });
+                        }
                     }
                 }
                 if (router.pathname === "/") {
@@ -229,59 +192,51 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                     router.pathname === "/solution-business"
                 ) {
                     if (
-                        document.getElementsByClassName("main-service").length >
-                            0 &&
-                        document
-                            .getElementsByClassName("go-top")[0]
-                            .getBoundingClientRect().top +
-                            10 >
-                            document
-                                .getElementsByClassName("main-service")[0]
-                                .getBoundingClientRect().top
+                        // typeof window !== "undefined" &&
+                        localStorage.getItem("theme") === "dark"
                     ) {
-                        setChangeColor({ background: "#003e6b" });
+                        setChangeColor({
+                            background: "white",
+                            color: "#003e6b",
+                        });
+                    } else {
                         if (
+                            document.getElementsByClassName("main-service")
+                                .length > 0 &&
                             document
                                 .getElementsByClassName("go-top")[0]
                                 .getBoundingClientRect().top +
                                 10 >
-                            document
-                                .getElementsByClassName("info")[0]
-                                .getBoundingClientRect().top
+                                document
+                                    .getElementsByClassName("main-service")[0]
+                                    .getBoundingClientRect().top
                         ) {
-                            setChangeColor({
-                                background: "white",
-                                color: "#003e6b",
-                            });
+                            setChangeColor({ background: "#003e6b" });
                             if (
                                 document
                                     .getElementsByClassName("go-top")[0]
                                     .getBoundingClientRect().top +
                                     10 >
                                 document
-                                    .getElementsByClassName(
-                                        "features-holder"
-                                    )[0]
+                                    .getElementsByClassName("info")[0]
                                     .getBoundingClientRect().top
                             ) {
-                                setChangeColor({ background: "#003e6b" });
-                                // console.log("feature-card");
+                                setChangeColor({
+                                    background: "white",
+                                    color: "#003e6b",
+                                });
                                 if (
                                     document
                                         .getElementsByClassName("go-top")[0]
                                         .getBoundingClientRect().top +
                                         10 >
                                     document
-                                        .getElementsByClassName("info")[0]
+                                        .getElementsByClassName(
+                                            "features-holder"
+                                        )[0]
                                         .getBoundingClientRect().top
                                 ) {
-                                    console.log(
-                                        document.getElementsByClassName("info")
-                                    );
-                                    setChangeColor({
-                                        background: "white",
-                                        color: "#003e6b",
-                                    });
+                                    setChangeColor({ background: "#003e6b" });
                                     if (
                                         document
                                             .getElementsByClassName("go-top")[0]
@@ -289,12 +244,14 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                             10 >
                                         document
                                             .getElementsByClassName(
-                                                "getAQuote-holder"
+                                                "newInfo"
                                             )[0]
                                             .getBoundingClientRect().top
                                     ) {
+                                        console.log("newInfo");
                                         setChangeColor({
-                                            background: "#003e6b",
+                                            background: "white",
+                                            color: "#003e6b",
                                         });
                                         if (
                                             document
@@ -305,25 +262,45 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                                 10 >
                                             document
                                                 .getElementsByClassName(
-                                                    "footer-area"
+                                                    "getAQuote-holder"
                                                 )[0]
                                                 .getBoundingClientRect().top
                                         ) {
+                                            // console.log("quote");
+                                            setChangeColor({
+                                                background: "#003e6b",
+                                            });
+                                            if (
+                                                document
+                                                    .getElementsByClassName(
+                                                        "go-top"
+                                                    )[0]
+                                                    .getBoundingClientRect()
+                                                    .top +
+                                                    10 >
+                                                document
+                                                    .getElementsByClassName(
+                                                        "footer-area"
+                                                    )[0]
+                                                    .getBoundingClientRect().top
+                                            ) {
+                                                setChangeColor({
+                                                    background: "white",
+                                                    color: "#003e6b",
+                                                });
+                                            }
+                                        } else {
                                             setChangeColor({
                                                 background: "white",
                                                 color: "#003e6b",
                                             });
                                         }
-                                    } else {
-                                        setChangeColor({
-                                            background: "#003e6b",
-                                        });
                                     }
                                 }
                             }
+                        } else {
+                            setChangeColor({ background: "#003e6b" });
                         }
-                    } else {
-                        setChangeColor({ background: "#003e6b" });
                     }
                 }
             } else {

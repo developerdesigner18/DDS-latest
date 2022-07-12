@@ -32,6 +32,7 @@ const Solution = () => {
             <Features />
 
             <InfoCard
+                newClass="newInfo"
                 heading="Real Estate & Property"
                 images="/images/solutions/chart.png"
                 content={contentSec}
