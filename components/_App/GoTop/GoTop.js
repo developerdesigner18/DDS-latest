@@ -17,10 +17,63 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
             if (window.scrollY > 170) {
                 setThePosition(true);
 
+                // if (router.pathname !== "/") {
+                //     if (
+                //         // typeof window !== "undefined" &&
+                //         localStorage.getItem("theme") === "dark"
+                //     ) {
+                //         setChangeColor({
+                //             background: "white",
+                //             color: "#003e6b",
+                //         });
+                //     } else {
+                //         setChangeColor({ background: "#003e6b" });
+                //     }
+                // }
+                // if (router.pathname === "/") {
+                //     if (
+                //         document.getElementsByClassName("our-services-area")
+                //             .length > 0 &&
+                //         document
+                //             .getElementsByClassName("go-top")[0]
+                //             .getBoundingClientRect().top +
+                //             10 >
+                //             document
+                //                 .getElementsByClassName("our-services-area")[0]
+                //                 .getBoundingClientRect().top
+                //     ) {
+                //         setChangeColor({
+                //             background: "white",
+                //             color: "#003e6b",
+                //         });
+                //         if (
+                //             document
+                //                 .getElementsByClassName("go-top")[0]
+                //                 .getBoundingClientRect().top +
+                //                 10 >
+                //             document
+                //                 .getElementsByClassName("footer-area")[0]
+                //                 .getBoundingClientRect().top
+                //         ) {
+                //             setChangeColor({
+                //                 background: "white",
+                //                 color: "#003e6b",
+                //             });
+                //         } else {
+                //             console.log("3");
+                //             setChangeColor({ background: "#003e6b" });
+                //         }
+                //     }
+                // }
                 if (router.pathname !== "/") {
                     if (
-                        // typeof window !== "undefined" &&
-                        localStorage.getItem("theme") === "dark"
+                        document
+                            .getElementsByClassName("go-top")[0]
+                            .getBoundingClientRect().top +
+                            10 >
+                        document
+                            .getElementsByClassName("footer-area")[0]
+                            .getBoundingClientRect().top
                     ) {
                         setChangeColor({
                             background: "white",
@@ -28,41 +81,6 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                         });
                     } else {
                         setChangeColor({ background: "#003e6b" });
-                    }
-                }
-                if (router.pathname === "/") {
-                    if (
-                        document.getElementsByClassName("our-services-area")
-                            .length > 0 &&
-                        document
-                            .getElementsByClassName("go-top")[0]
-                            .getBoundingClientRect().top +
-                            10 >
-                            document
-                                .getElementsByClassName("our-services-area")[0]
-                                .getBoundingClientRect().top
-                    ) {
-                        setChangeColor({
-                            background: "white",
-                            color: "#003e6b",
-                        });
-                        if (
-                            document
-                                .getElementsByClassName("go-top")[0]
-                                .getBoundingClientRect().top +
-                                10 >
-                            document
-                                .getElementsByClassName("footer-area")[0]
-                                .getBoundingClientRect().top
-                        ) {
-                            setChangeColor({
-                                background: "white",
-                                color: "#003e6b",
-                            });
-                        } else {
-                            console.log("3");
-                            setChangeColor({ background: "#003e6b" });
-                        }
                     }
                 }
                 if (router.pathname === "/") {
@@ -211,14 +229,14 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                     router.pathname === "/solution-business"
                 ) {
                     if (
-                        document.getElementsByClassName("first-card").length >
+                        document.getElementsByClassName("main-service").length >
                             0 &&
                         document
                             .getElementsByClassName("go-top")[0]
                             .getBoundingClientRect().top +
                             10 >
                             document
-                                .getElementsByClassName("first-card")[0]
+                                .getElementsByClassName("main-service")[0]
                                 .getBoundingClientRect().top
                     ) {
                         setChangeColor({ background: "#003e6b" });
@@ -241,7 +259,9 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                     .getBoundingClientRect().top +
                                     10 >
                                 document
-                                    .getElementsByClassName("feature-card")[0]
+                                    .getElementsByClassName(
+                                        "features-holder"
+                                    )[0]
                                     .getBoundingClientRect().top
                             ) {
                                 setChangeColor({ background: "#003e6b" });
@@ -252,7 +272,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                         .getBoundingClientRect().top +
                                         10 >
                                     document
-                                        .getElementsByClassName("info")[1]
+                                        .getElementsByClassName("info")[0]
                                         .getBoundingClientRect().top
                                 ) {
                                     console.log(
@@ -269,7 +289,7 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                             10 >
                                         document
                                             .getElementsByClassName(
-                                                "quote-card"
+                                                "getAQuote-holder"
                                             )[0]
                                             .getBoundingClientRect().top
                                     ) {
