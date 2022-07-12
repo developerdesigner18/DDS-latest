@@ -37,10 +37,10 @@ How It's Work Area CSS
                 top: 5px;
                 line-height: 65px;
                 text-align: center;
-                color: var(--mainDarkColor);
+                color: var(--darkCardColor);
                 border-radius: 50%;
                 background-color: var(--whiteColor);
-                box-shadow: var(--mainDarkColor) 0 0 0 5px;
+                box-shadow: var(--darkCardColor) 0 0 0 5px;
                 font: {
                     size: 30px;
                     weight: 800;
@@ -60,7 +60,7 @@ How It's Work Area CSS
                 top: 3px;
                 width: 1px;
                 height: 100%;
-                background-color: var(--mainDarkColor);
+                background-color: var(--darkCardColor);
                 z-index: -1;
                 left: 40px;
             }
@@ -68,7 +68,7 @@ How It's Work Area CSS
                 content: "\ea17";
                 position: absolute;
                 left: 26px;
-                color: var(--mainDarkColor);
+                color: var(--darkCardColor);
                 bottom: 10px;
                 animation: fade-down 1.5s infinite linear;
                 font: {

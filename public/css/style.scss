@@ -117,6 +117,7 @@ This files table contents are outlined below>>>>>
 ** - Sidebar Modal CSS
 */
 @import "node_modules/react-modal-video/scss/modal-video.scss";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
 
 /*================================================
 Default CSS
@@ -157,7 +158,9 @@ Default CSS
     --faqComponent: #ebf2f6;
     --socialMediaIcon: #185079;
     --portfoliobgColor: #ffffff;
-    --playButton: ##0069b4;
+    --playButton: #0069b4;
+    --textColortag: #003e6b;
+    --lightColorIcon: #0069b4;
 }
 [data-theme="dark"] {
     --mainDarkColor: #ffffff;
@@ -185,6 +188,8 @@ Default CSS
     --socialMediaIcon: #222f43;
     --portfoliobgColor: #14253d;
     --playButton: #028dd4;
+    --lightColorIcon: #ffffff;
+    --textColortag: #cccccc;
 }
 body {
     padding: 0;
@@ -258,6 +263,9 @@ p {
 }
 .pb-100 {
     padding-bottom: 100px;
+}
+.transition {
+    transition: 0.5s;
 }
 .ptb-70 {
     padding: {
@@ -1303,6 +1311,9 @@ Solutions CSS
     justify-content: space-between;
     align-items: center;
 }
+button.accordian-btn.career.according-btn-text-holder i {
+    margin-right: 7px;
+}
 /*================================================
 Portfolio Area CSS
 =================================================*/
@@ -1651,7 +1662,24 @@ Portfolio Details Area CSS
 //         }
 //     }
 // }
-
+.according-btn-text-holder {
+    color: var(--textColortag) !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.darkmode-image-holder {
+    filter: brightness(0) invert(0.8);
+}
+.career-info {
+    margin-top: 50px;
+}
+.according-btn-text-holder img {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
 /*================================================
 SEO Analysis Area CSS
 =================================================*/
@@ -4340,6 +4368,9 @@ Page Title Area CSS
         color: var(--whiteBoth);
         font-size: 45px;
     }
+}
+.carrer-according-li-holder ul {
+    padding-left: 22px;
 }
 
 /*================================================

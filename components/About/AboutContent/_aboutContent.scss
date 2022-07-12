@@ -30,7 +30,7 @@ About Area CSS
     }
 }
 ul.funfacts-list h3 {
-    color: var(--whiteBoth);
+    color: var(--mainDarkColor);
 }
 .about-image {
     height: 100%;
@@ -106,7 +106,7 @@ ul.funfacts-list h3 {
                     position: absolute;
                     left: 0;
                     top: 2px;
-                    color: var(--mainLightColor);
+                    color: var(--lightColorIcon);
                     font-size: 40px;
                     line-height: 1;
                 }

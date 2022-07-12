@@ -30,7 +30,7 @@ button.accordian-btn {
     fill: white;
 }
 .accordion-main {
-    padding: 40px 0px;
+    padding: 150px 0px;
     background-color: var(--whiteColor);
 }
 
@@ -75,4 +75,5 @@ button.accordian-btn.career {
 .career-option select {
     background-color: var(--formInputColor);
     border: none;
+    padding: 10px;
 }

@@ -6,61 +6,50 @@ export const accordionData = [
         experience: "0-2 Years",
         jobBrief:
             "We are looking to hire a skilled WordPress Frontend Developer to implement attractive and functional websites for our clients. You will be responsible for both implementation of WordPress themes and plugins as well as site integration and security updates.",
-        responsibilities: (
-            <>
-                <li> Building new features and functionalities </li>
+        responsibilities: [
+            "Building new features and functionalities",
+            "Designing and developing website’s architecture",
+            "Building and implementing new themes and plugins",
+            "Analysing website performance and troubleshooting errors",
+            "Designing and managing the website front-end as well as back-end",
+        ],
+        // <>
+        //     " Building new features and functionalities </li>
 
-                <li>Designing and developing website’s architecture</li>
+        //     "Designing and developing website’s architecture</li>
 
-                <li>Building and implementing new themes and plugins</li>
+        //     "Building and implementing new themes and plugins</li>
 
-                <li>
-                    Analysing website performance and troubleshooting errors
-                </li>
+        //     <li>
+        //         Analysing website performance and troubleshooting errors
+        //     </li>
 
-                <li>
-                    {" "}
-                    Designing and managing the website front-end as well as
-                    back-end
-                </li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>
-                    Bachelor’s/Master’s degree in computer science, information
-                    technology, or engineering/ or anything specific that you
-                    prefer
-                </li>
+        //     <li>
+        //         {" "}
+        //         Designing and managing the website front-end as well as
+        //         back-end
+        //     </li>
+        // </>
+        requirements: [
+            "Bachelor’s/Master’s degree in computer science, information technology, or engineering/ or anything specific that you prefer",
+            "Knowledge of multiple front-end languages (JavaScript, HTML, CSS) and their libraries",
 
-                <li>
-                    Knowledge of multiple front-end languages (JavaScript, HTML,
-                    CSS) and their libraries
-                </li>
+            "Familiarity with versioning tools such as Git, SVN",
 
-                <li>Familiarity with versioning tools such as Git, SVN</li>
+            "Experience working with debugging tools",
 
-                <li>Experience working with debugging tools</li>
+            "Ability to handle and manage projects",
 
-                <li>Ability to handle and manage projects</li>
+            "Developing and converting designs into themes",
 
-                <li>Developing and converting designs into themes</li>
+            "Experience in building both front-end and back-end of the website",
 
-                <li>
-                    Experience in building both front-end and back-end of the
-                    website
-                </li>
+            "Knowledge of WordPress Plugins",
 
-                <li>Knowledge of WordPress Plugins</li>
+            "Excellent and written and verbal communication skills with proven fluency in English",
 
-                <li>
-                    Excellent and written and verbal communication skills with
-                    proven fluency in English
-                </li>
-
-                <li> Good understanding of Web architecture</li>
-            </>
-        ),
+            "Good understanding of Web architecture",
+        ],
     },
     {
         id: 2,
@@ -68,73 +57,29 @@ export const accordionData = [
         numPostion: Math.floor(Math.random() * 4 + 1),
         experience: "0-2 Years",
         jobBrief: "",
-        responsibilities: (
-            <>
-                <li>
-                    Assemble pixel-great, rich smooth UIs across both versatile
-                    stages.
-                </li>
-                <li>
-                    Influence local APIs for profound reconciliations with the
-                    two stages.
-                </li>
-                <li>
-                    Analyse and fix bugs and execution bottlenecks for execution
-                    that feels local.
-                </li>
-                <li>
-                    Connect with the open source local area to empower and
-                    assist with executing strategic programming fixes-React
-                    Native moves quickly and regularly breaks things.
-                </li>
-                <li>
-                    {" "}
-                    Keep up with code and compose computerised tests to
-                    guarantee the item is of the greatest quality.
-                </li>
-                <li>Change existing React web applications to React Native.</li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>
-                    Solid handle of the JavaScript and (TypeScript or
-                    ClojureScript) language and its subtleties, including ES6+
-                    grammar
-                </li>
+        responsibilities: [
+            "Assemble pixel-great, rich smooth UIs across both versatile stages.",
+            "Influence local APIs for profound reconciliations with the two stages.",
+            "Analyse and fix bugs and execution bottlenecks for execution that feels local. ",
+            "Connect with the open source local area to empower and assist with executing strategic programming fixes-React Native moves quickly and regularly breaks things.",
+            "Keep up with code and compose computerised tests to guarantee the item is of the greatest quality.",
+            "Change existing React web applications to React Native.",
+        ],
+        requirements: [
+            "Solid handle of the JavaScript and (TypeScript or ClojureScript) language and its subtleties, including ES6+ grammar",
 
-                <li>
-                    Information on (functional or object-oriented) programming
-                </li>
+            "Information on (functional or object-oriented) programming",
 
-                <li>
-                    Capacity to compose very much reported, clean Javascript
-                    code
-                </li>
+            "Capacity to compose very much reported, clean Javascript code",
 
-                <li>
-                    Unshakable at working with outsider conditions and
-                    investigating reliance clashes
-                </li>
+            "Unshakable at working with outsider conditions and investigating reliance clashes",
 
-                <li>
-                    {" "}
-                    Experience with local form devices, as XCode, Gradle
-                    (Android Studio, IntelliJ)
-                </li>
+            "Experience with local form devices, as XCode, Gradle (Android Studio, IntelliJ)",
 
-                <li>
-                    {" "}
-                    Comprehension of REST APIs, the report demand model, and
-                    disconnected stockpiling
-                </li>
+            "Comprehension of REST APIs, the report demand model, and disconnected stockpiling",
 
-                <li>
-                    Experience with computerised testing suites, as (Jest or
-                    Mocha)
-                </li>
-            </>
-        ),
+            "Experience with computerised testing suites, as (Jest or Mocha)",
+        ]
     },
 
     {
@@ -143,316 +88,167 @@ export const accordionData = [
         numPostion: Math.floor(Math.random() * 4 + 1),
 
         experience: "0-2 Years",
-        responsibilities: (
-            <>
-                <li>Liaise with individual backend and front end designers.</li>
-                <li>
-                    Plan and carry out web applications that utilise the Laravel
-                    structure.
-                </li>
-                <li>
-                    Carry out server side rationale to handle front data
-                    sources.
-                </li>
-                <li>
-                    Recognize and fix messes that are found inside code.
-                    Collaborate with MySQL data sets.
-                </li>
-                <li>
-                    Guarantee all information sources going to a data set have
-                    been defined.
-                </li>
-                <li>
-                    Guarantee all information sources going to a data set have
-                    been defined.
-                </li>
-                <li>
-                    Guarantee the proper security guidelines have been executed.
-                </li>
-                <li>
-                    Guarantee you've composed unit experiments to confirm code
-                    is proceeding true to form and to forestall conceivably
-                    security breaks.
-                </li>
-                <li>Make composed documentation for the various parts.</li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>The ability to problem-solve and critically think.</li>
+        responsibilities: [
+            "Liaise with individual backend and front end designers.",
+            "Plan and carry out web applications that utilise the Laravel structure.",
+            "Carry out server side rationale to handle front data sources.",
+            "Recognize and fix messes that are found inside code.",
+            "Collaborate with MySQL data sets.",
+            "Guarantee all information sources going to a data set have been defined.",
+            "Guarantee all information sources going to a data set have been defined.",
+            "Guarantee the proper security guidelines have been executed.",
+            "Guarantee you've composed unit experiments to confirm code is proceeding true to form and to forestall conceivably security breaks.",
+            "Make composed documentation for the various parts.",
+        ],
+        requirements: [
+            "The ability to problem-solve and critically think.",
 
-                <li>
-                    High level of knowledge of PHP and the Laravel framework.
-                </li>
+            "High level of knowledge of PHP and the Laravel framework.",
 
-                <li> Understanding of the MVC pattern.</li>
+            "Understanding of the MVC pattern.",
 
-                <li>Understanding of MySQL databases.</li>
+            "Understanding of MySQL databases.",
 
-                <li>Good interpersonal skills.</li>
-            </>
-        ),
+            "Good interpersonal skills.",
+        ],
     },
     {
         id: 4,
-        title: "REACT.JS DEVELOPERS",
+        title: "React.Js Developer",
         numPostion: Math.floor(Math.random() * 4 + 1),
         experience: "0-2 Years",
-        responsibilities: (
-            <>
-                <li>Developing new user-facing features using React.js</li>
-                <li>
-                    Building reusable components and front-end libraries for
-                    future use
-                </li>
-                <li>
-                    Translating designs and wireframes into high quality code
-                </li>
-                <li>
-                    Optimising components for maximum performance across a vast
-                    array of web-capable devices and browsers
-                </li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>
-                    Strong proficiency in JavaScript, including DOM manipulation
-                    and the JavaScript object model
-                </li>
+        responsibilities: [
+            "Developing new user-facing features using React.js",
+            "Building reusable components and front-end libraries for future use",
+            "Translating designs and wireframes into high quality code",
+            "Optimising components for maximum performance across a vast array of web-capable devices and browsers",
+        ],
+        requirements: [
+            "Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model",
 
-                <li>
-                    Thorough understanding of React.js and its core principles
-                </li>
+            "Thorough understanding of React.js and its core principles",
 
-                <li>
-                    {" "}
-                    Experience with popular React.js workflows (such as Flux or
-                    Redux)
-                </li>
+            "Experience with popular React.js workflows (such as Flux or Redux)",
 
-                <li>Familiarity with newer specifications of EcmaScript</li>
+            "Familiarity with newer specifications of EcmaScript",
 
-                <li>
-                    Experience with data structure libraries (e.g.,
-                    Immutable.js)
-                </li>
+            "Experience with data structure libraries (e.g., Immutable.js) ",
 
-                <li>Knowledge of isomorphic React is a plus</li>
+            "Knowledge of isomorphic React is a plus",
 
-                <li>Familiarity with RESTful APIs</li>
+            "Familiarity with RESTful APIs",
 
-                <li>
-                    Knowledge of modern authorization mechanisms, such as JSON
-                    Web Token
-                </li>
+            "Knowledge of modern authorization mechanisms, such as JSON Web Token ",
 
-                <li>
-                    Familiarity with modern front-end build pipelines and tools
-                </li>
+            "Familiarity with modern front-end build pipelines and tools",
 
-                <li>
-                    {" "}
-                    Experience with common front-end development tools such as
-                    Babel, Webpack, NPM, etc.
-                </li>
+            "Experience with common front-end development tools such as Babel, Webpack, NPM, etc.",
 
-                <li>
-                    {" "}
-                    Ability to understand business requirements and translate
-                    them into technical requirements
-                </li>
+            "Ability to understand business requirements and translate them into technical requirements",
 
-                <li> A knack for benchmarking and optimization</li>
+            "A knack for benchmarking and optimization",
 
-                <li>
-                    Familiarity with code versioning tools (such as Git, SVN,
-                    and Mercurial)
-                </li>
-            </>
-        ),
+            "Familiarity with code versioning tools (such as Git, SVN, and Mercurial)",
+        ]
     },
     {
         id: 5,
-        title: "UX / UI Designer",
+        title: "UX UI Designer",
         experience: "0-2 Years",
         numPostion: Math.floor(Math.random() * 4 + 1),
-        responsibilities: (
-            <>
-                <li>
-                    Gather and evaluate user requirements in collaboration with
-                    product managers and engineers
-                </li>
+        responsibilities: [
+            "Gather and evaluate user requirements in collaboration with product managers and engineers",
 
-                <li>
-                    Illustrate design ideas using storyboards, process flows and
-                    sitemaps
-                </li>
+            "Illustrate design ideas using storyboards, process flows and sitemaps",
 
-                <li>
-                    Design graphic user interface elements, like menus, tabs and
-                    widgets
-                </li>
+            "Design graphic user interface elements, like menus, tabs and widgets",
 
-                <li>Build page navigation buttons and search fields</li>
+            "Build page navigation buttons and search fields",
 
-                <li>
-                    Develop UI mockups and prototypes that clearly illustrate
-                    how sites function and look like
-                </li>
+            "Develop UI mockups and prototypes that clearly illustrate how sites function and look like",
 
-                <li>
-                    Create original graphic designs (e.g. images, sketches and
-                    tables)
-                </li>
+            "Create original graphic designs (e.g. images, sketches and tables)",
 
-                <li>
-                    Prepare and present rough drafts to internal teams and key
-                    stakeholders
-                </li>
-                <li>
-                    Identify and troubleshoot UX problems (e.g. responsiveness)
-                </li>
-                <li>Conduct layout adjustments based on user feedback</li>
-                <li>Adhere to style standards on fonts, colors and images</li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>
-                    Proven work experience as a UI/UX Designer or similar role
-                </li>
+            "Prepare and present rough drafts to internal teams and key stakeholders",
+            "Identify and troubleshoot UX problems (e.g. responsiveness)",
+            "Conduct layout adjustments based on user feedback",
+            "Adhere to style standards on fonts, colors and images",
+        ],
+        requirements: [
 
-                <li>Portfolio of design projects</li>
+            "Proven work experience as a UI/UX Designer or similar role",
 
-                <li> Experience developing responsive design websites</li>
+            "Portfolio of design projects",
 
-                <li>
-                    Knowledge of wireframe tools (e.g. Wireframe.cc and
-                    InVision)
-                </li>
+            "Experience developing responsive design websites",
 
-                <li>
-                    Up-to-date knowledge of design software like Adobe
-                    Illustrator and Photoshop
-                </li>
 
-                <li>
-                    Team spirit; strong communication skills to collaborate with
-                    various stakeholders
-                </li>
+            "Knowledge of wireframe tools (e.g. Wireframe.cc and InVision)",
 
-                <li>Good time-management skills</li>
 
-                <li>BSc in Design, Computer Science or relevant field</li>
-            </>
-        ),
+            "Up-to-date knowledge of design software like Adobe Illustrator and Photoshop",
+
+
+            "Team spirit; strong communication skills to collaborate with various stakeholders",
+
+            "Good time-management skills",
+
+            "BSc in Design, Computer Science or relevant field",
+        ],
     },
     {
         id: 6,
         title: "Flutter Developer",
         numPostion: Math.floor(Math.random() * 4 + 1),
         experience: "0-2 Years",
-        responsibilities: (
-            <>
-                <li>
-                    Plan and foster high-volume, low-inactivity applications for
-                    strategic frameworks, conveying high-accessibility and
-                    execution
-                </li>
+        responsibilities: [
+            "Plan and foster high-volume, low-inactivity applications for strategic frameworks,conveying high-accessibility and execution",
 
-                <li>
-                    Contribute in all periods of the advancement lifecycle:
-                    idea, plan, construct, convey, test, delivery to application
-                    stores and backing
-                </li>
+            "Contribute in all periods of the advancement lifecycle:idea, plan, construct, convey, test, delivery to application stores and backing ",
 
-                <li>
-                    Analyse execution issues, fix bugs (counting accidents and
-                    ANRs) to expand the usefulness of the application
-                </li>
+            "Analyse execution issues, fix bugs(counting accidents and ANRs) to expand the usefulness of the application",
 
-                <li>Compose all around planned, testable, effective code</li>
+            "Compose all around planned, testable, effective code",
 
-                <li>Guarantee plans are in consistence with particulars</li>
+            "Guarantee plans are in consistence with particulars",
 
-                <li>Get ready and produce arrivals of programming parts</li>
+            "Get ready and produce arrivals of programming parts",
 
-                <li>
-                    Support consistent improvement by exploring options and
-                    advances and introducing these for compositional audit
-                </li>
-                <li>
-                    Work together with colleagues (item supervisors, engineers,
-                    originators) to conceptualise new highlights and
-                    functionalities.
-                </li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>Capable in Java/Kotlin programming</li>
+            " Support consistent improvement by exploring options and advances and introducing these for compositional audit ",
+            "Work together with colleagues(item supervisors, engineers, originators) to conceptualise new highlights and functionalities. ",
+        ],
+        requirements: [
+            "Capable in Java/Kotlin programming",
 
-                <li>
-                    Information and involvement with Flutter Framework and DART
-                    programming
-                </li>
+            "Information and involvement with Flutter Framework and DART programming",
 
-                <li> Hands on experience in utilising RESTful APIs</li>
+            " Hands on experience in utilising RESTful APIs",
 
-                <li>
-                    Hands on experience in planning and creating miniature
-                    administrations engineering and compartments
-                </li>
+            "Hands on experience in planning and creating miniature administrations engineering and compartments",
 
-                <li>
-                    Object arranged investigation, UML and configuration
-                    utilising normal plan designs.
-                </li>
+            "Object arranged investigation, UML and configuration utilising normal plan designs.",
 
-                <li>
-                    Hands on experience being developed IDE Android Studio,
-                    Android SDK, Firebase Test Lab
-                </li>
+            "Hands on experience being developed IDE Android Studio, Android SDK, Firebase Test Lab",
 
-                <li>
-                    Experience with disconnected capacity, stringing, and
-                    execution tuning
-                </li>
+            "Experience with disconnected capacity, stringing, and execution tuning ",
 
-                <li>Experience with pop-up messages</li>
+            "Experience with pop-up messages",
 
-                <li>Knowledge of IOS combination with Flutter</li>
+            "Knowledge of IOS combination with Flutter",
 
-                <li> Experience utilising GitHub or comparable climate</li>
+            " Experience utilising GitHub or comparable climate",
 
-                <li> Complete comprehension of SDLC</li>
+            " Complete comprehension of SDLC",
 
-                <li> Experience with Agile turn of events</li>
+            " Experience with Agile turn of events",
 
-                <li>
-                    Experience with Material Design and Android UI plan
-                    standards, examples and best practises
-                </li>
-
-                <li>Great information on adding outsider libraries</li>
-
-                <li>
-                    Capacity to comprehend business prerequisites and make an
-                    interpretation of them into specialised necessities
-                </li>
-                <li>
-                    Working information on the overall versatile scene, models,
-                    drifts, and arising innovations
-                </li>
-                <li>
-                    A history of conveying fruitful complex purchaser item
-                    applications (finance applications, web based business
-                    applications)
-                </li>
-                <li>Critical Thinker </li>
-            </>
-        ),
+            "Experience with Material Design and Android UI plan standards, examples and best practises ",
+            "Great information on adding outsider libraries",
+            "Capacity to comprehend business prerequisites and make an interpretation of them into specialised necessities",
+            "Working information on the overall versatile scene, models,drifts, and arising innovations",
+            "A history of conveying fruitful complex purchaser item applications (finance applications, web based business applications)",
+            "Critical Thinker ",
+        ],
     },
     {
         id: 7,
@@ -461,13 +257,13 @@ export const accordionData = [
         experience: "0-2 Years",
         responsibilities: (
             <>
-                {/* <li>
+                {/* "
                         Solid handle of the JavaScript and (TypeScript or
                         ClojureScript) language and its subtleties, including
                         ES6+ grammar
                     </li>
 
-                    <li>
+                    "
                         Information on (functional or object-oriented)
                         programming
                     </li>
@@ -500,114 +296,58 @@ export const accordionData = [
                     </li> */}
             </>
         ),
-        requirements: (
-            <>
-                <li>Server deployment AWS, DigitalOcean, etc...</li>
+        requirements: [
+            "Server deployment AWS, DigitalOcean, etc...",
 
-                <li>Deep knowledge ORM concepts with little bit of MySQL</li>
+            "Deep knowledge ORM concepts with little bit of MySQL",
 
-                <li>
-                    {" "}
-                    Knowledge of Python libraries like Pillow, Auth, Core, and
-                    many others are required.
-                </li>
+            "Knowledge of Python libraries like Pillow, Auth, Core, and many others are required.",
 
-                <li>Skills in Odoo or Flask are plus.</li>
+            "Skills in Odoo or Flask are plus.",
 
-                <li>Selenium or Pytest are required for unit testing.</li>
+            "Selenium or Pytest are required for unit testing.",
 
-                <li>
-                    Basic understanding of front-end technologies and platforms,
-                    such as JavaScript, Jinja2, HTML5, and CSS3
-                </li>
+            "Basic understanding of front-end technologies and platforms,such as JavaScript, Jinja2, HTML5, and CSS3",
 
-                <li>
-                    Good understanding of server-side CSS preprocessors, such as
-                    LESS and SASS
-                </li>
+            "Good understanding of server-side CSS preprocessors, such as LESS and SASS",
 
-                <li>Understanding accessibility and security compliance</li>
+            "Understanding accessibility and security compliance",
 
-                <li>
-                    User authentication and authorization between multiple
-                    systems, servers, and environments
-                </li>
+            "User authentication and authorization between multiple systems, servers, and environments",
 
-                <li>
-                    {" "}
-                    Integration of multiple data sources and databases into one
-                    system
-                </li>
+            "Integration of multiple data sources and databases into one system",
 
-                <li>
-                    {" "}
-                    Management of hosting environment, including database
-                    administration and scaling an application to support load
-                    changes
-                </li>
+            "Management of hosting environment, including database administration and scaling an application to support load changes",
 
-                <li>Data migration, transformation, and scripting</li>
+            "Data migration, transformation, and scripting",
 
-                <li>Setup and administration of backups</li>
+            "Setup and administration of backups",
 
-                <li>Outputting data in different formats</li>
+            "Outputting data in different formats",
 
-                <li>
-                    Understanding differences between multiple delivery
-                    platforms such as mobile vs desktop, and optimizing output
-                    to match the specific platform
-                </li>
-                <li>
-                    Creating database schemas that represent and support
-                    business processes
-                </li>
-                <li>
-                    Proficient understanding of code versioning tools, such as
-                    Git
-                </li>
-                <li>
-                    Understanding of “session management” in a distributed
-                    server environment
-                </li>
-            </>
-        ),
+            "Understanding differences between multiple delivery platforms such as mobile vs desktop, and optimizing output to match the specific platform",
+            "Creating database schemas that represent and support business processes",
+            "Proficient understanding of code versioning tools, such as Git",
+            "Understanding of “session management” in a distributed server environment",
+        ],
     },
     {
         id: 8,
-        title: "SHOPIFY DEVELOPERS",
+        title: "Shopify Developer",
         experience: "0-2 Years",
         numPostion: Math.floor(Math.random() * 4 + 1),
-        requirements: (
-            <>
-                <li>
-                    For Shopify designer work you should have great coding
-                    principles.
-                </li>
-                <li>
-                    Sound information on IT ideas and the most recent patterns.
-                </li>
-                <li>
-                    Shopify Website Developers ought to have capacity to work
-                    autonomously and perform multiple tasks in a high speed
-                    climate.
-                </li>
-                <li>
-                    Solid verbal and composed correspondence and relational
-                    abilities.
-                </li>
-                <li>
-                    Shopify designers ought to be profoundly coordinated and
-                    thorough.
-                </li>
-                <li>
-                    Shopify master should be sure, self - inspired, who function
-                    admirably in group conditions.
-                </li>
-            </>
-        ),
+        requirements: [
+            "For Shopify designer work you should have great coding principles.",
+            "Sound information on IT ideas and the most recent patterns.",
+            "Shopify Website Developers ought to have capacity to work autonomously and perform multiple tasks in a high speed climate.",
+
+            "Solid verbal and composed correspondence and relational abilities.",
+            "Shopify designers ought to be profoundly coordinated and thorough.",
+            "Shopify master should be sure, self - inspired, who function admirably in group conditions.",
+        ],
         responsibilities: (
             <>
-                {/* <li>
+                {/* "
                     {" "}
                     Good understanding of front-end technologies, including
                     HTML5, CSS3, JavaScript, jQuery{" "}
@@ -682,326 +422,174 @@ export const accordionData = [
     },
     {
         id: 9,
-        title: "ANGULAR DEVELOPER",
+        title: "Angular Developer",
         numPostion: Math.floor(Math.random() * 4 + 1),
         experience: "0-2 Years",
-        responsibilities: (
-            <>
-                <li> Work with other colleagues.</li>
-                <li>Plan and carry out outwardly stylish UIs.</li>
-                <li>
-                    Recognize issues with front end code and amend them to
-                    eliminate bugs.
-                </li>
-                <li>
-                    Make unit tests to guarantee code is working true to form.
-                </li>
-                <li>
-                    Make elegantly composed documentation. -Guarantee front end
-                    code can inquiry APIs.
-                </li>
-                <li>
-                    Review code to recognize bottlenecks of execution and fixing
-                    them.
-                </li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>Work with other colleagues.</li>
+        responsibilities: [
+            " Work with other colleagues.",
+            "Plan and carry out outwardly stylish UIs.",
+            "Recognize issues with front end code and amend them to eliminate bugs.",
+            "Make unit tests to guarantee code is working true to form.",
+            "Make elegantly composed documentation. -Guarantee front end code can inquiry APIs.",
+            "Review code to recognize bottlenecks of execution and fixing them.",
+        ],
+        requirements: [
+            "Work with other colleagues.",
 
-                <li>Plan and carry out outwardly stylish UIs.</li>
+            "Plan and carry out outwardly stylish UIs.",
 
-                <li>
-                    Recognize issues with front end code and amend them to
-                    eliminate bugs.
-                </li>
+            "Recognize issues with front end code and amend them to eliminate bugs.",
 
-                <li>
-                    Make unit tests to guarantee code is working true to form.
-                </li>
+            "Make unit tests to guarantee code is working true to form.",
 
-                <li>Make elegantly composed documentation.</li>
+            "Make elegantly composed documentation.",
 
-                <li> Guarantee front end code can query APIs.</li>
+            "Guarantee front end code can query APIs.",
 
-                <li>
-                    Review code to recognize bottlenecks of execution and fix
-                    them.
-                </li>
-            </>
-        ),
+            "Review code to recognize bottlenecks of execution and fix them.",
+        ],
     },
     {
         id: 10,
-        title: "ANDROID DEVELOPER",
+        title: "Android Developer",
         numPostion: Math.floor(Math.random() * 4 + 1),
         experience: "0-2 Years",
-        responsibilities: (
-            <>
-                <li>
-                    {" "}
-                    Make an interpretation of plans and wireframes into
-                    excellent code
-                </li>
-                <li>
-                    Configuration, fabricate, and keep up with superior
-                    execution, reusable, and solid Java code
-                </li>
-                <li>
-                    Guarantee the most ideal exhibition, quality, and
-                    responsiveness of the application
-                </li>
-                <li>Distinguish and address bottlenecks and fix bugs</li>
-                <li>
-                    Assist with keeping up with code quality, association, and
-                    automatization
-                </li>
-                <li>
-                    Work together with cross-useful groups to characterise,
-                    plan, and boat new highlights
-                </li>
-                <li>Work with outside information sources and APIs</li>
-                <li>
-                    Unit-test code for power, including edge cases, convenience,
-                    and general dependability
-                </li>
-                <li>
-                    Work on bug fixing and further developing application
-                    execution
-                </li>
-                <li>
-                    Constantly find, assess, and execute new advancements to
-                    amplify improvement proficiency
-                </li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>
-                    Solid information on Android SDK, various adaptations of
-                    Android, and how to manage different screen sizes
-                </li>
+        responsibilities: [
 
-                <li>
-                    Experience with RESTful APIs to associate Android
-                    applications to back-end administrations
-                </li>
+            "Make an interpretation of plans and wireframes into excellent code",
+            "Configuration, fabricate, and keep up with superior execution, reusable, and solid Java code",
+            "Guarantee the most ideal exhibition, quality, and responsiveness of the application",
+            "Distinguish and address bottlenecks and fix bugs",
+            " Assist with keeping up with code quality, association, and automatization",
+            "Work together with cross-useful groups to characterise, plan, and boat new highlights",
+            "Work with outside information sources and APIs",
+            "Unit-test code for power, including edge cases, convenience, and general dependability",
+            "Work on bug fixing and further developing application execution",
+            "Constantly find, assess, and execute new advancements to amplify improvement proficiency ",
+        ],
+        requirements: [
+            "information on Android SDK, various adaptations of Android, and how to manage different screen sizes",
 
-                <li>
-                    {" "}
-                    Solid information on Android UI plan standards, examples,
-                    and best practises
-                </li>
+            "Experience with RESTful APIs to associate Android applications to back-end administrations",
 
-                <li>
-                    Experience with disconnected capacity, stringing, and
-                    execution tuning
-                </li>
+            "Solid information on Android UI plan standards, examples, and best practises",
 
-                <li>
-                    Capacity to plan applications around normal UIs, for
-                    example, "contact"
-                </li>
+            "Experience with disconnected capacity, stringing, and execution tuning",
 
-                <li>
-                    Experience with the utilisation of extra sensors, like
-                    gyrators and accelerometers
-                </li>
+            "Capacity to plan applications around normal UIs, for example, <q>contact</q> ",
 
-                <li>
-                    Information on the open-source Android environment and the
-                    libraries accessible for normal assignments
-                </li>
+            "Experience with the utilisation of extra sensors, like gyrators and accelerometers",
 
-                <li>
-                    Capacity to comprehend business necessities and make an
-                    interpretation of them into specialised prerequisites
-                </li>
+            "Information on the open-source Android environment and the libraries accessible for normal assignments",
 
-                <li>Knowledge of cloud message APIs and message pop-ups</li>
+            "Capacity to comprehend business necessities and make an interpretation of them into specialised prerequisites ",
 
-                <li> A talent for benchmarking and streamlining</li>
+            "Knowledge of cloud message APIs and message pop-ups",
 
-                <li>
-                    {" "}
-                    Comprehension of Google's Android plan standards and point
-                    of interaction rules
-                </li>
+            "A talent for benchmarking and streamlining",
 
-                <li>
-                    {" "}
-                    Capable comprehension of code forming instruments, like Git
-                </li>
+            "Comprehension of Google's Android plan standards and point of interaction rules",
 
-                <li>Experience with ceaseless reconciliation</li>
-            </>
-        ),
+            "Capable comprehension of code forming instruments, like Git ",
+
+            "Experience with ceaseless reconciliation",
+        ]
     },
     {
         id: 11,
-        title: "iOS Developer",
+        title: "IOS Developer",
         numPostion: Math.floor(Math.random() * 4 + 1),
         experience: "0-2 Years",
-        responsibilities: (
-            <>
-                <li> Plan and assemble applications for the iOS stage</li>
-                <li>
-                    Guarantee the exhibition, quality, and responsiveness of
-                    uses
-                </li>
-                <li>
-                    Work together with a group to characterise, plan, and boat
-                    new highlights
-                </li>
-                <li>Distinguish and address bottlenecks and fix bugs</li>
-                <li>
-                    Assist with keeping up with code quality, association, and
-                    automatization
-                </li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>Capable with Objective-C or Swift , and Cocoa Touch</li>
+        responsibilities: [
+            " Plan and assemble applications for the iOS stage",
+            "Guarantee the exhibition, quality, and responsiveness of uses",
+            " Work together with a group to characterise, plan, and boat new highlights ",
+            "Distinguish and address bottlenecks and fix bugs",
+            " Assist with keeping up with code quality, association, and automatization",
+        ],
+        requirements: [
+            "Capable with Objective-C or Swift , and Cocoa Touch",
 
-                <li>
-                    Experience with iOS structures like Core Data, Core
-                    Animation, and so forth
-                </li>
+            "Experience with iOS structures like Core Data, Core Animation, and so forth ",
 
-                <li>
-                    Experience with disconnected capacity, stringing, and
-                    execution tuning
-                </li>
+            "Experience with disconnected capacity, stringing, and execution tuning",
 
-                <li>
-                    Experience with RESTful APIs to interface iOS applications
-                    to back-end administrations
-                </li>
+            "Experience with RESTful APIs to interface iOS applications to back-end administrations",
 
-                <li>Information on other web innovations and UI/UX norms</li>
+            "Information on other web innovations and UI/UX norms",
 
-                <li>
-                    Comprehension of Apple's plan standards and point of
-                    interaction rules
-                </li>
+            "Comprehension of Apple's plan standards and point of interaction rules ",
 
-                <li>Information on low-level C-based libraries is liked</li>
+            "Information on low-level C-based libraries is liked",
 
-                <li>
-                    Experience with execution and memory tuning with apparatuses
-                </li>
+            "Experience with execution and memory tuning with apparatuses ",
 
-                <li>Knowledge of cloud message APIs and message pop-ups</li>
+            "Knowledge of cloud message APIs and message pop-ups",
 
-                <li> Talent for benchmarking and improvement</li>
+            "Talent for benchmarking and improvement",
 
-                <li>
-                    Capable comprehension of code forming apparatuses (such as
-                    Git, Mercurial or SVN)
-                </li>
+            "Capable comprehension of code forming apparatuses (such as Git, Mercurial or SVN)",
 
-                <li>Knowledge of ceaseless incorporation</li>
-            </>
-        ),
+            "Knowledge of ceaseless incorporation",
+
+        ]
     },
     {
         id: 12,
-        title: "NODE.JS DEVELOPER",
+        title: "Node.Js Developer",
         numPostion: Math.floor(Math.random() * 4 + 1),
         experience: "0-2 Years",
-        responsibilities: (
-            <>
-                <li>
-                    Work as part of a team developing applications and services
-                    using Agile development methods
-                </li>
-                <li>
-                    Contribute to team and organizational improvements in
-                    process and infrastructure
-                </li>
-                <li>
-                    Build customer-facing UI and back-end services for payment
-                    processing administration and management
-                </li>
-                <li>Code, teste and operate node.js based services</li>
-                <li>
-                    Effectively use tools and ingenuity to identify and fix
-                    defects before they become a problem.
-                </li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>In depth knowledge of Node.js</li>
+        responsibilities: [
+            "Work as part of a team developing applications and services using Agile development methods",
+            " Contribute to team and organizational improvements in  process and infrastructure",
+            " Build customer-facing UI and back-end services for payment processing administration and management ",
+            "Code, teste and operate node.js based services",
+            "Effectively use tools and ingenuity to identify and fix defects before they become a problem.",
+        ],
+        requirements: [
+            "In depth knowledge of Node.js",
 
-                <li>Hands on experience with HTML, CSS, and AJAX</li>
+            "Hands on experience with HTML, CSS, and AJAX",
 
-                <li>
-                    Development experience designing object oriented JavaScript
-                    and SVG
-                </li>
+            "Development experience designing object oriented JavaScript and SVG",
 
-                <li>
-                    Familiarity with the whole web stack, including protocols
-                    and web server optimization techniques
-                </li>
+            "Familiarity with the whole web stack, including protocols and web server optimization techniques",
 
-                <li>Strong analytical skills and problem solving aptitude</li>
+            "Strong analytical skills and problem solving aptitude",
 
-                <li>Attention to details</li>
+            "Attention to details",
 
-                <li>Familiarity with Docker and AWS infrastructure</li>
+            "Familiarity with Docker and AWS infrastructure",
 
-                <li>Understanding of data security principles</li>
+            "Understanding of data security principles",
 
-                <li>
-                    Proficiency in JavaScript, web stacks, libraries, and
-                    frameworks
-                </li>
-            </>
-        ),
+            "Proficiency in JavaScript, web stacks, libraries, and frameworks ",
+        ]
     },
     {
         id: 13,
         title: "BDE",
         numPostion: Math.floor(Math.random() * 4 + 1),
         experience: "0-2 Years",
-        responsibilities: (
-            <>
-                <li> Contacting potential clients to establish rapport.</li>
-                <li>Bidding with the online clients. </li>
-                <li>
-                    Developing goals for the development team and business
-                    growth and ensuring they are met.
-                </li>
-                <li>
-                    Convincing the client by writing attractive cover letters to
-                    the client.
-                </li>
-                <li>
-                    Make elegantly composed documentation. -Guarantee front end
-                    code can inquiry APIs.
-                </li>
-                <li>
-                    Review code to recognize bottlenecks of execution and fixing
-                    them.
-                </li>
-            </>
-        ),
-        requirements: (
-            <>
-                <li>Strong communication skills and IT fluency.</li>
+        responsibilities: [
+            "Contacting potential clients to establish rapport.",
+            "Bidding with the online clients.",
+            "Developing goals for the development team and business growth and ensuring they are met.",
+            "Convincing the client by writing attractive cover letters to the client.",
+            "Make elegantly composed documentation. -Guarantee front end code can inquiry APIs.",
+            "Review code to recognize bottlenecks of execution and fixing them."
 
-                <li>Excellent organisational skills.</li>
+        ],
+        requirements: [
+            "Strong communication skills and IT fluency.",
 
-                <li> Stakeholder management skills</li>
+            "Excellent organisational skills.",
 
-                <li>Proven ability to negotiate</li>
+            " Stakeholder management skills",
 
-                <li>Should have different websites knowledge</li>
-            </>
-        ),
+            "Proven ability to negotiate",
+
+            "Should have different websites knowledge",
+        ]
     },
 ];

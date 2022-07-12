@@ -8,7 +8,7 @@ import GrowWithUs from "../components/About/GrowWithUs/GrowWithUs";
 
 const About = () => {
     return (
-        <>
+        <div>
             <PageBanner pageTitle="About Us" />
 
             <AboutContent />
@@ -22,7 +22,7 @@ const About = () => {
             <OurVision />
 
             <GrowWithUs />
-        </>
+        </div>
     );
 };
 

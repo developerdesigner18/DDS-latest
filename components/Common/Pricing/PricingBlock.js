@@ -18,8 +18,6 @@ const PricingBlock = () => {
     const [addOns, setAddons] = useState([]);
 
     const handleCheck = (val, e) => {
-        console.log(val);
-        console.log(e.target.checked);
         if (val === "Website" && e.target.checked === true) {
             setCheckVal({ ...getCheckVal, webClick: true });
             setvalues([...values, val]);
@@ -38,21 +36,18 @@ const PricingBlock = () => {
                 const hello = values.filter((data) => {
                     return data !== val;
                 });
-                console.log(hello, "filter");
                 setvalues([...hello]);
             } else if (val === "Mobile Application") {
                 setCheckVal({ ...getCheckVal, mobClick: false });
                 const hello = values.filter((data) => {
                     return data !== val;
                 });
-                console.log(hello, "filter");
                 setvalues([...hello]);
             } else {
                 setCheckVal({ ...getCheckVal, mobGClick: false });
                 const hello = values.filter((data) => {
                     return data !== val;
                 });
-                console.log(hello, "filter");
                 setvalues([...hello]);
             }
         }
@@ -63,10 +58,6 @@ const PricingBlock = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault;
-        console.log("====---values", values);
-        console.log("===design ", getDesign);
-        console.log("===page ", getPage);
-        console.log("==addOns", ...addOns);
     };
 
     const heightMarks = {

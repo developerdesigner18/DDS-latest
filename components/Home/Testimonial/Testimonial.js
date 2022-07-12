@@ -239,9 +239,7 @@ const Testimonial = () => {
                                                         key={index}
                                                         className="single-testimonials-item"
                                                     >
-                                                        <ReadMore>
-                                                            {description}
-                                                        </ReadMore>
+                                                        <p>{description}</p>
 
                                                         <div className="client-info">
                                                             <div className="d-flex align-items-center">

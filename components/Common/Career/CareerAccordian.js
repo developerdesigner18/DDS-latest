@@ -8,29 +8,39 @@ const CareerAccordian = ({ setShowContent, contantData, setCareer }) => {
         setIsShow(!isshow);
     };
     const { theme, setTheme } = useTheme();
-    console.log();
     return (
         <>
             <div className="accordian-main">
                 <div className="p-3">
-                    <button
-                        onClick={() =>
-                            // setCareer(false)
-                            setShowContent(false)
-                        }
-                        className="accordian-btn career"
-                    >
-                        <i className="fa-solid fa-chevron-left"></i>
-                        Design
-                    </button>
+                    <Link href="/career">
+                        <button
+                            onClick={() =>
+                                // setCareer(false)
+                                {
+                                    setShowContent(false);
+                                    localStorage.setItem("toggle", false);
+                                }
+                            }
+                            className="accordian-btn career according-btn-text-holder"
+                        >
+                            <i className="fa-solid fa-chevron-left "></i>
+                            Design
+                        </button>
+                    </Link>
+
                     <div className="accordian-button-holder">
-                        <h1 className="p-2">{contantData?.title}</h1>
+                        <h1
+                            className="p-2"
+                            style={{ color: "var(--mainDarkColor)" }}
+                        >
+                            {contantData?.title}
+                        </h1>
                         <Link href="/careerform">
                             <a className="default-btn">Apply Now</a>
                         </Link>
                     </div>
                     <hr />
-                    <div className="p-2">
+                    <div className="p-2 carrer-according-li-holder">
                         <h6 className="pb-1">
                             Number of Positions : {contantData?.numPostion}{" "}
                         </h6>

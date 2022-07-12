@@ -4,7 +4,6 @@ export const Item = (props) => {
     const [state, setState] = useState({
         level: props.level,
     });
-    console.log(props.id);
     const className = "item level" + props.level;
     return <div className={className}>{props.id}</div>;
 };
@@ -23,7 +22,6 @@ const Logos = (props) => {
     const generateItems = () => {
         var item = [];
         var level;
-        console.log("active", active);
         // let active = state.active;
         for (var i = active - 2; i < active + 3; i++) {
             var index = i;
@@ -33,7 +31,6 @@ const Logos = (props) => {
                 index = i % items.length;
             }
             level = active - i;
-            console.log(items.length[index], "helllllllllllllll");
             item.push(<Item key={index} id={items[index]} level={level} />);
         }
         return item;
@@ -43,14 +40,12 @@ const Logos = (props) => {
         var newActive = active;
         newActive--;
         // let hello = items.length;
-        console.log(items, active, "left");
         setActive(newActive < 0 ? items.length - 1 : newActive);
         setDirection("left");
     };
 
     const moveRight = () => {
         var newActive = active;
-        console.log(items, active, "right");
         setActive(newActive + (1 % items.length));
         setDirection("right");
     };

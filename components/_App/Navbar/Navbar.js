@@ -9,7 +9,6 @@ const Navbar = () => {
     const location = router.pathname;
 
     const { theme, setTheme } = useTheme();
-    console.log(theme, "theme");
 
     const [menu, setMenu] = useState(true);
 
@@ -21,7 +20,6 @@ const Navbar = () => {
         typeof window !== "undefined" && localStorage.getItem("theme");
 
     if (darkMode) {
-        console.log("Name exists", location);
     } else {
         typeof window !== "undefined" && localStorage.setItem("theme", "light");
     }
@@ -43,13 +41,12 @@ const Navbar = () => {
             localStorage.getItem("theme")
         );
     }, []);
-
+    console.log(location);
     // Search Modal
     const [isActiveSearchModal, setActiveSearchModal] = useState("false");
     const handleToggleSearchModal = () => {
         setActiveSearchModal(!isActiveSearchModal);
     };
-    console.log(isActiveSearchModal, "searcyModdmlmc");
 
     const classOne = menu
         ? "collapse navbar-collapse"
@@ -62,13 +59,11 @@ const Navbar = () => {
         <>
             <div
                 id="navbar"
-                className={`navbar-area ${
-                    location === "/" ? "" : "navbar-color-white"
-                }`}
+                className={`navbar-area ${location === "/" ? "" : "navbar-color-white"
+                    }`}
                 style={{
-                    backgroundColor: `${
-                        location === "/404" ? "#003e6b" : "transparent"
-                    }`,
+                    backgroundColor: `${location === "/404" || location === "/career/[title]" ? "var(--mainbgDarkColor)" : "transparent"
+                        }`,
                 }}
             >
                 <div className="main-nav">
@@ -238,41 +233,34 @@ const Navbar = () => {
                                     >
                                         <a>
                                             {location === "/" &&
-                                                theme == "light" &&
-                                                (console.log(theme, "🔥🔥"),
-                                                (
+                                                theme == "light" && (
                                                     <img
                                                         src="/images/moon.svg"
                                                         alt="image"
                                                     />
-                                                ))}
+                                                )}
                                             {location !== "/" &&
-                                                theme == "light" &&
-                                                (console.log(theme, "🔥🔥"),
-                                                (
+                                                theme == "light" && (
                                                     <img
                                                         src="/images/night-mode-light.svg"
                                                         alt="image"
                                                     />
-                                                ))}
-                                            {theme == "dark" &&
-                                                (console.log(theme, "🔥🔥"),
-                                                (
-                                                    <img
-                                                        src="/images/sun.svg"
-                                                        alt="image"
-                                                    />
-                                                ))}
+                                                )}
+                                            {theme == "dark" && (
+                                                <img
+                                                    src="/images/sun.svg"
+                                                    alt="image"
+                                                />
+                                            )}
                                         </a>
                                     </div>
                                 </div>
 
                                 <div
-                                    className={`option-item ${
-                                        location === "/"
-                                            ? "home-search"
-                                            : "other-search"
-                                    }`}
+                                    className={`option-item ${location === "/"
+                                        ? "home-search"
+                                        : "other-search"
+                                        }`}
                                 >
                                     <div
                                         className="search-box"
@@ -287,12 +275,9 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Search Form */}
-            {console.log(isActiveSearchModal, "yessssss")}
             <div
-                className={`search-overlay ${
-                    isActiveSearchModal ? "" : "search-overlay-active"
-                }`}
+                className={`search-overlay ${isActiveSearchModal ? "" : "search-overlay-active"
+                    }`}
             >
                 <div className="d-table">
                     <div className="d-table-cell">

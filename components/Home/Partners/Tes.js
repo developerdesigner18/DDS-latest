@@ -15,7 +15,6 @@ class Carousel extends React.Component {
     generateItems() {
         var items = [];
         var level;
-        console.log(this.state.active);
         for (var i = this.state.active - 2; i < this.state.active + 3; i++) {
             var index = i;
             if (i < 0) {

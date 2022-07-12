@@ -3,7 +3,6 @@ import { useTheme } from "next-themes";
 
 const OurProcess = () => {
     const { theme } = useTheme();
-    console.log(theme);
     return (
         <div className="how-its-work-area ptb-100">
             <div className="container">

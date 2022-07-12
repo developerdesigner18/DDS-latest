@@ -47,7 +47,6 @@ const Features = () => {
                                 className="col-lg-3 col-md-6 col-sm-6"
                             >
                                 <div className="single-featured-services-box feature">
-                                    {console.log(theme, "featur")}
                                     <div className={`icon solution`}>
                                         {theme == "dark" && (
                                             <img

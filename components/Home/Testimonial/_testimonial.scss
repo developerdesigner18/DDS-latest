@@ -37,7 +37,7 @@ Testimonials Area CSS
     background-color: #fff;
 }
 .testimonials-content .carousel-indicators {
-    bottom: -60px !important;
+    bottom: -37px !important;
     justify-content: flex-start !important;
     margin-right: 0 !important;
     margin-bottom: 0 !important;
@@ -70,6 +70,7 @@ Testimonials Area CSS
 .testimonials-content {
     max-width: 758px;
     margin-left: 30px;
+    padding-bottom: 40px;
     padding: {
         // top: 100px;
         // bottom: 100px;
@@ -191,7 +192,7 @@ span.read-or-hide {
 }
 .testimonials-image {
     position: relative;
-    height: 530px;
+    height: 400px;
     background: {
         position: center center;
         size: cover;
@@ -245,6 +246,23 @@ span.read-or-hide {
     }
 }
 
+@media only screen and (min-width: 1400px) {
+    .testimonials-image {
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .testimonials-image {
+        height: 400px !important;
+    }
+    .testimonials-content h2 {
+        font-size: 30px !important;
+    }
+    .single-testimonials-item p {
+        font-size: 14px !important;
+    }
+}
 @media only screen and (max-width: 1024px) {
     .testimonials-slides.owl-theme .owl-nav.disabled + .owl-dots {
         width: 100%;

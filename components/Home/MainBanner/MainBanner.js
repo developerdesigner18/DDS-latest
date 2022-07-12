@@ -7,9 +7,9 @@ const ModalVideo = dynamic(() => import("react-modal-video"), {
 
 const MainBanner = () => {
     // Popup Video
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const openModal = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(true);
     };
 
     return (
@@ -47,10 +47,7 @@ const MainBanner = () => {
                                         </Link>
 
                                         <div
-                                            onClick={(e) => {
-                                                e.preventDefault();
-                                                openModal();
-                                            }}
+                                            onClick={openModal}
                                             className="video-btn popup-youtube"
                                         >
                                             <i className="flaticon-play-button"></i>{" "}
@@ -73,9 +70,9 @@ const MainBanner = () => {
             {/* If you want to change the video need to update videoID */}
             <ModalVideo
                 channel="youtube"
-                isOpen={!isOpen}
+                isOpen={isOpen}
                 videoId="Zv11L-ZfrSg"
-                // onClose={() => setIsOpen(!isOpen)}
+                onClose={() => setIsOpen(false)}
             />
         </>
     );

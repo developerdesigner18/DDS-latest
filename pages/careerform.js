@@ -39,7 +39,6 @@ const careerform = () => {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setContact((prevState) => ({ ...prevState, [name]: value }));
-        console.log(contact);
     };
 
     const uploadToClient = (event) => {
@@ -81,11 +80,9 @@ const careerform = () => {
                 // upload_resume,
             };
             await axios.post(url, payload);
-            console.log(url);
             setContact(INITIAL_STATE);
             alertContent();
         } catch (error) {
-            console.log(error);
             // alertContentError();
         }
     };

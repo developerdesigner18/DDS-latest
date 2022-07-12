@@ -60,7 +60,6 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                 color: "#003e6b",
                             });
                         } else {
-                            console.log("3");
                             setChangeColor({ background: "#003e6b" });
                         }
                     }
@@ -187,7 +186,6 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                                         color: "#003e6b",
                                                     });
                                                 } else {
-                                                    console.log("3");
                                                     setChangeColor({
                                                         background: "#003e6b",
                                                     });
@@ -198,7 +196,6 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
                                 }
                             }
                         } else {
-                            console.log("3");
                             setChangeColor({ background: "#003e6b" });
                         }
                     }

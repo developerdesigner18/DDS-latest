@@ -242,7 +242,6 @@ const Testimonials = () => {
 
             <div className="testimonial-page">
                 <div className="container">
-                    {console.log(list, "list")}
                     {list.map(
                         (
                             {

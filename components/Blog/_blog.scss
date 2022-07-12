@@ -33,9 +33,9 @@ h3.widget-title {
     background-color: #d0eaf9;
 }
 
-.blog-right-sidebar .widget-area .widget .widget-title::before {
-    background-color: #003e6b !important;
-}
+// .blog-right-sidebar .widget-area .widget .widget-title::before {
+//     background-color: #003e6b !important;
+// }
 .widget-area .widget_categories ul li::before {
     background: var(--mainDarkColor) !important;
 }
@@ -126,16 +126,16 @@ blockquote::after,
             font: {
                 size: 22px;
             }
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 50px;
-                height: 1px;
-                bottom: -1px;
-                background-color: var(--mainColor);
-            }
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     left: 0;
+            //     bottom: 0;
+            //     width: 50px;
+            //     height: 1px;
+            //     bottom: -1px;
+            //     background-color: var(--mainColor);
+            // }
         }
     }
     .widget_search {
