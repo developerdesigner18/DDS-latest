@@ -9,7 +9,7 @@ export default async (req, res) => {
         host: "smtp.zoho.com",
         port: 465,
         // service: "   mail",
-        secure: true, // true for 465, false for other ports
+        secure: true, // true for 465, false for other ports.
         auth: {
             user: "testdds@daydreamsoft.com", // generated ethereal user
             pass: "testdds@123#", // generated ethereal password
