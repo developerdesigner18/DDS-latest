@@ -5,7 +5,6 @@ import { accordionData } from "../../data/career";
 import { createCareerTitle } from "../../utils/utils";
 
 const CareerAccordian = ({ data }) => {
-
     return (
         <>
             <div className="accordion-main">
@@ -13,8 +12,7 @@ const CareerAccordian = ({ data }) => {
                     <div className="accordian-content">
                         <div className="p-3">
                             <Link href="/career">
-                                <button className="accordian-btn career according-btn-text-holder"
-                                >
+                                <button className="accordian-btn career according-btn-text-holder">
                                     <i className="fa-solid fa-chevron-left "></i>
                                     Design
                                 </button>
@@ -34,10 +32,10 @@ const CareerAccordian = ({ data }) => {
                             <hr />
                             <div className="p-2 carrer-according-li-holder">
                                 <h6 className="pb-1">
-                                    Number of Positions : {data.numPostion}{" "}
+                                    Number of Positions : {data?.numPostion}{" "}
                                 </h6>
                                 <h6 className="pb-1">
-                                    Required Experience : {data.experience}
+                                    Required Experience : {data?.experience}
                                 </h6>
                                 <h5 className="pt-3 pb-3">Job Brief</h5>
                                 <p>
@@ -52,13 +50,13 @@ const CareerAccordian = ({ data }) => {
                                     Job Responsibilities
                                 </h5>
                                 <ul>
-                                    {data.responsibilities.map((data) => {
+                                    {data?.responsibilities.map((data) => {
                                         return <li>{data}</li>;
                                     })}
                                 </ul>
                                 <h5 className="pt-2 pb-3">Requirements</h5>
                                 <ul>
-                                    {data.requirements.map((data) => {
+                                    {data?.requirements.map((data) => {
                                         return <li>{data}</li>;
                                     })}
                                 </ul>
@@ -88,9 +86,7 @@ const CareerAccordian = ({ data }) => {
 
 export async function getStaticProps(context) {
     const title = accordionData.find(
-        (data) =>
-            createCareerTitle(data.title) ===
-            context.params.title
+        (data) => createCareerTitle(data?.title) === context.params.title
     );
     return {
         props: {
@@ -102,7 +98,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
     const paths = accordionData.map((data) => ({
         params: {
-            title: createCareerTitle(data.title),
+            title: createCareerTitle(data?.title),
         },
     }));
 
