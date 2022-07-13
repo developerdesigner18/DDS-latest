@@ -13,23 +13,6 @@ export const accordionData = [
             "Analysing website performance and troubleshooting errors",
             "Designing and managing the website front-end as well as back-end",
         ],
-        // <>
-        //     " Building new features and functionalities </li>
-
-        //     "Designing and developing website’s architecture</li>
-
-        //     "Building and implementing new themes and plugins</li>
-
-        //     <li>
-        //         Analysing website performance and troubleshooting errors
-        //     </li>
-
-        //     <li>
-        //         {" "}
-        //         Designing and managing the website front-end as well as
-        //         back-end
-        //     </li>
-        // </>
         requirements: [
             "Bachelor’s/Master’s degree in computer science, information technology, or engineering/ or anything specific that you prefer",
             "Knowledge of multiple front-end languages (JavaScript, HTML, CSS) and their libraries",
@@ -79,7 +62,7 @@ export const accordionData = [
             "Comprehension of REST APIs, the report demand model, and disconnected stockpiling",
 
             "Experience with computerised testing suites, as (Jest or Mocha)",
-        ]
+        ],
     },
 
     {
@@ -149,7 +132,7 @@ export const accordionData = [
             "A knack for benchmarking and optimization",
 
             "Familiarity with code versioning tools (such as Git, SVN, and Mercurial)",
-        ]
+        ],
     },
     {
         id: 5,
@@ -175,19 +158,15 @@ export const accordionData = [
             "Adhere to style standards on fonts, colors and images",
         ],
         requirements: [
-
             "Proven work experience as a UI/UX Designer or similar role",
 
             "Portfolio of design projects",
 
             "Experience developing responsive design websites",
 
-
             "Knowledge of wireframe tools (e.g. Wireframe.cc and InVision)",
 
-
             "Up-to-date knowledge of design software like Adobe Illustrator and Photoshop",
-
 
             "Team spirit; strong communication skills to collaborate with various stakeholders",
 
@@ -255,47 +234,8 @@ export const accordionData = [
         title: "Python Developer",
         numPostion: Math.floor(Math.random() * 4 + 1),
         experience: "0-2 Years",
-        responsibilities: (
-            <>
-                {/* "
-                        Solid handle of the JavaScript and (TypeScript or
-                        ClojureScript) language and its subtleties, including
-                        ES6+ grammar
-                    </li>
+        responsibilities: [],
 
-                    "
-                        Information on (functional or object-oriented)
-                        programming
-                    </li>
-
-                    <li>
-                        Capacity to compose very much reported, clean Javascript
-                        code
-                    </li>
-
-                    <li>
-                        Unshakable at working with outsider conditions and
-                        investigating reliance clashes
-                    </li>
-
-                    <li>
-                        {" "}
-                        Experience with local form devices, as XCode, Gradle
-                        (Android Studio, IntelliJ)
-                    </li>
-
-                    <li>
-                        {" "}
-                        Comprehension of REST APIs, the report demand model, and
-                        disconnected stockpiling
-                    </li>
-
-                    <li>
-                        Experience with computerised testing suites, as (Jest or
-                        Mocha)
-                    </li> */}
-            </>
-        ),
         requirements: [
             "Server deployment AWS, DigitalOcean, etc...",
 
@@ -345,80 +285,7 @@ export const accordionData = [
             "Shopify designers ought to be profoundly coordinated and thorough.",
             "Shopify master should be sure, self - inspired, who function admirably in group conditions.",
         ],
-        responsibilities: (
-            <>
-                {/* "
-                    {" "}
-                    Good understanding of front-end technologies, including
-                    HTML5, CSS3, JavaScript, jQuery{" "}
-                </li>
-
-                <li>
-                    {" "}
-                    Experience building user interfaces for websites and/or web
-                    applications
-                </li>
-
-                <li> Experience developing responsive design websites</li>
-
-                <li>
-                    {" "}
-                    Comfortable working with debugging tools like Firebug,
-                    Chrome inspector, etc.
-                </li>
-
-                <li>
-                    {" "}
-                    Ability to understand CSS changes and their ramifications to
-                    ensure consistent style across platforms and browsers
-                </li>
-
-                <li>
-                    {" "}
-                    Ability to convert comprehensive layout and wireframes into
-                    working HTML pages
-                </li>
-
-                <li>
-                    {" "}
-                    Knowledge of how to interact with RESTful APIs and formats
-                    (JSON, XML). – must have
-                </li>
-
-                <li>
-                    {" "}
-                    A high level of experience with UI layouts, SASS, LESS,
-                    Bootstrap, and the CSS GRID system
-                </li>
-
-                <li>
-                    {" "}
-                    Proficient understanding of code versioning tools (such as
-                    Git, SVN, and Mercurial)
-                </li>
-
-                <li> Understanding of PHP back-end development</li>
-
-                <li> Understanding of WordPress Structure and Plugins</li>
-
-                <li> Exposure with Woo-Commerce Projects</li>
-
-                <li>
-                    {" "}
-                    Experience on WordPress multi network and Multi-lingual
-                    sites{" "}
-                </li>
-
-                <li> 3rd Party integration on WordPress sites</li>
-
-                <li>
-                    {" "}
-                    Candidate Should have Experience with Diverse Set of Themes.
-                    Like X-Theme, Astra, Avada, Bridge, Divi, Engage,
-                    GeneratePress
-                </li> */}
-            </>
-        ),
+        responsibilities: [],
     },
     {
         id: 9,
@@ -455,7 +322,6 @@ export const accordionData = [
         numPostion: Math.floor(Math.random() * 4 + 1),
         experience: "0-2 Years",
         responsibilities: [
-
             "Make an interpretation of plans and wireframes into excellent code",
             "Configuration, fabricate, and keep up with superior execution, reusable, and solid Java code",
             "Guarantee the most ideal exhibition, quality, and responsiveness of the application",
@@ -493,7 +359,7 @@ export const accordionData = [
             "Capable comprehension of code forming instruments, like Git ",
 
             "Experience with ceaseless reconciliation",
-        ]
+        ],
     },
     {
         id: 11,
@@ -531,8 +397,7 @@ export const accordionData = [
             "Capable comprehension of code forming apparatuses (such as Git, Mercurial or SVN)",
 
             "Knowledge of ceaseless incorporation",
-
-        ]
+        ],
     },
     {
         id: 12,
@@ -564,7 +429,7 @@ export const accordionData = [
             "Understanding of data security principles",
 
             "Proficiency in JavaScript, web stacks, libraries, and frameworks ",
-        ]
+        ],
     },
     {
         id: 13,
@@ -577,8 +442,7 @@ export const accordionData = [
             "Developing goals for the development team and business growth and ensuring they are met.",
             "Convincing the client by writing attractive cover letters to the client.",
             "Make elegantly composed documentation. -Guarantee front end code can inquiry APIs.",
-            "Review code to recognize bottlenecks of execution and fixing them."
-
+            "Review code to recognize bottlenecks of execution and fixing them.",
         ],
         requirements: [
             "Strong communication skills and IT fluency.",
@@ -590,6 +454,6 @@ export const accordionData = [
             "Proven ability to negotiate",
 
             "Should have different websites knowledge",
-        ]
+        ],
     },
 ];

@@ -49,9 +49,8 @@ const WhatWeOffer = () => {
         <div className="offerContainer">
             <div className="container blockContainer">
                 <div
-                    className={`row ${
-                        theme == "dark" && "image-holder-darkmode"
-                    }`}
+                    className={`row ${theme == "dark" && "image-holder-darkmode"
+                        }`}
                 >
                     <div className="col-lg-3 col-md-6 col-sm-6 service-holder">
                         <div>
@@ -70,17 +69,23 @@ const WhatWeOffer = () => {
                         return (
                             <div className="col-lg-3 col-md-6 col-sm-6 pb-5">
                                 <div className="service-block">
-                                    <div className="img-icons">
-                                        {theme == "dark" && (
+                                    {theme == "dark" && (
+                                        <div className="img-icons image-holder-darkmode">
                                             <img
                                                 src={data.featureimg}
-                                                className="image-holder-darkmode"
                                             />
-                                        )}
-                                        {theme == "light" && (
+                                        </div>
+                                    )}
+                                    {theme == "light" && (
+                                        <div className="img-icons">
+                                            <img
+                                                src={data.featureimg}
+                                            />
+                                        </div>
+                                    )}
+                                    {/* {theme == "light" && (
                                             <img src={data.featureimg} />
-                                        )}
-                                    </div>
+                                        )} */}
                                     <p className="heading">{data.title}</p>
                                     <p className="subheading">
                                         {data.description}
