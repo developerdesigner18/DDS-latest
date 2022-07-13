@@ -2,6 +2,7 @@ import PageBanner from "../components/Common/PageBanner/PageBanner";
 import Link from "next/link";
 import { useState } from "react";
 import { solutions } from "../components/Solutions/solutionData";
+import { createCareerTitle, createSolutionTitle } from "../utils/utils";
 
 const Solutions = () => {
     const [showMore, setShowMore] = useState(true);
@@ -35,7 +36,11 @@ const Solutions = () => {
                                             Solutions
                                         </span>
 
-                                        <Link href={redirection}>
+                                        <Link
+                                            href={`/solutions/${createSolutionTitle(
+                                                title
+                                            )}`}
+                                        >
                                             <h2 style={{ cursor: "pointer" }}>
                                                 {title}
                                             </h2>
@@ -48,7 +53,11 @@ const Solutions = () => {
                                     className="overview-image"
                                     style={{ cursor: "pointer" }}
                                 >
-                                    <Link href={redirection}>
+                                    <Link
+                                        href={`/solutions/${createSolutionTitle(
+                                            title
+                                        )}`}
+                                    >
                                         <div className="image">
                                             <img src={image} alt="image" />
                                         </div>

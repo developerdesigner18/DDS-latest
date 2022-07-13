@@ -2,92 +2,76 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
 import Link from "next/link";
+import { createSolutionTitle } from "../../../utils/utils";
 
 const industries = [
     {
         image: "/images/industries/e-commerce.webp",
         title: "E-Commerce",
-        redirection: "/solution-ecommerce",
     },
     {
         image: "/images/industries/b2b.webp",
         title: "Business to Business",
-        redirection: "/solution-business",
     },
     {
         image: "/images/industries/non-profit.webp",
         title: "Non-Profit",
-        redirection: "/solution-non-profit",
     },
     {
         image: "/images/industries/real-estate.webp",
         title: "Real Estate & Property",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/startup.webp",
         title: "Startup",
-        redirection: "/solution-startup",
     },
     {
         image: "/images/industries/social-networking.webp",
         title: "Social Networking",
-        redirection: "/solution-startup",
     },
     {
         image: "/images/industries/food-and-restaurant.jpg",
         title: "Food & Restaurant",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/banking-and-finance.webp",
         title: "Banking & Finance",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/education.webp",
         title: "Education",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/travel.webp",
         title: "Travel",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/media-and-entertainment.webp",
         title: "Media & Entertainment",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/healthcare-and-fitness.webp",
         title: "Healthcare & Fitness",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/transport-and-automotive.webp",
         title: "Transport & Automotive",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/gaming-and-leisure.webp",
         title: "Gaming & Leisure",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/directory-and-organization.webp",
         title: "Directory & Organisation",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/event-and-tickets.webp",
         title: "Event & Tickets",
-        redirection: "/solution-real-estate",
     },
     {
         image: "/images/industries/sports.webp",
         title: "Sports",
-        redirection: "/solution-real-estate",
     },
 ];
 
@@ -146,13 +130,21 @@ const IndustriesWeServe = () => {
                             ({ image, title, redirection }, index) => (
                                 <div key={index} className="single-industry">
                                     <div className="image">
-                                        <Link href={redirection}>
+                                        <Link
+                                            href={`/solutions/${createSolutionTitle(
+                                                title
+                                            )}`}
+                                        >
                                             <img src={image} alt="team-image" />
                                         </Link>
                                     </div>
 
                                     <div className="content">
-                                        <Link href={redirection}>
+                                        <Link
+                                            href={`/solutions/${createSolutionTitle(
+                                                title
+                                            )}`}
+                                        >
                                             <span style={{ cursor: "pointer" }}>
                                                 {title}
                                             </span>
