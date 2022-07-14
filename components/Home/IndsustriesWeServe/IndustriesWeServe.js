@@ -7,7 +7,7 @@ import { createSolutionTitle } from "../../../utils/utils";
 const industries = [
     {
         image: "/images/industries/e-commerce.webp",
-        title: "E-Commerce",
+        title: "Ecommerce",
     },
     {
         image: "/images/industries/b2b.webp",
