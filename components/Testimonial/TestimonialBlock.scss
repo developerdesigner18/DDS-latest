@@ -4,7 +4,9 @@
     flex-wrap: wrap;
     align-items: center;
 }
-
+.testimonial-page .testimonials-image {
+    height: auto !important;
+}
 .testimonial-name h6 {
     margin: 0px;
     color: var(--mainDarkColor);

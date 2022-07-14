@@ -40,7 +40,7 @@ const options = {
     dots: false,
     autoplayHoverPause: true,
     autoplay: false,
-    margin: 30,
+    margin: 60,
     center: true,
     focusOnSelect: true,
     variableWidth: true,
@@ -65,15 +65,15 @@ const options = {
         },
         768: {
             items: 3,
-            center: false,
-            focusOnSelect: false,
+            margin: 40,
         },
-        992: {
-            items: 3,
+        1024: {
+            items: 5,
+            margin: 20,
         },
         1200: {
             items: 5,
-        },
+        }
     },
 };
 var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

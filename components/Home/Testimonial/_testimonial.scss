@@ -273,7 +273,11 @@ span.read-or-hide {
         margin: auto;
     }
 }
-
+@media (max-width: 768px) {
+    .testimonials-image {
+        height: auto !important;
+    }
+}
 @media only screen and (max-width: 767px) {
     .testimonials-content .carousel-indicators {
         justify-content: center !important;

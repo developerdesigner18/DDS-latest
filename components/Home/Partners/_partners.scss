@@ -1,23 +1,20 @@
-.partners-slides .owl-item.active {
-    height: 160px !important;
-    width: 160px !important;
-    margin-right: 10px !important;
-}
-.partners-slides .owl-item.active + .owl-item.active {
-    height: 240px !important;
-    width: 240px !important;
-}
+// .partners-slides .owl-item.active {
+//     height: 160px !important;
+//     width: 160px !important;
+//     margin-right: 10px !important;
+// }
+// .partners-slides .owl-item.active + .owl-item.active {
+//     height: 240px !important;
+//     width: 240px !important;
+// }
 .partners-slides .owl-item.active.center {
-    transform: scale(1.6);
+    transform: scale(1.9);
     filter: brightness(0) saturate(100%) invert(14%) sepia(99%) saturate(1987%)
         hue-rotate(187deg) brightness(91%) contrast(101%);
-    margin-top: 25px !important;
-    height: 300px !important;
-    width: 300px !important;
-    margin-left: 40px !important;
 }
 .partners-slides .owl-stage-outer {
-    padding-top: 10%;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 div#\#partners {
     background-color: #e5e5e5;
@@ -26,15 +23,21 @@ div#\#partners {
 .main-owl {
     padding: 0 5em !important;
 }
-.partners-slides .owl-item.active.center + .owl-item.active {
-    height: 240px !important;
-    width: 240px !important;
-    margin-left: 56px !important;
+.slider_starter .owl-stage {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
-.partners-slides .owl-item.active.center + .owl-item.active + .owl-item.active {
-    height: 160px !important;
-    width: 160px !important;
-}
+// .partners-slides .owl-item.active.center + .owl-item.active {
+//     height: 240px !important;
+//     width: 240px !important;
+//     margin-left: 56px !important;
+// }
+// .partners-slides .owl-item.active.center + .owl-item.active + .owl-item.active {
+//     height: 160px !important;
+//     width: 160px !important;
+// }
 
 // =================== end slick css ============
 
@@ -237,10 +240,13 @@ Partner Area CSS
         margin-top: 0;
         .owl-nav {
             position: absolute;
-            top: 42%;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
             width: 100%;
-            display: flex;
+            display: inline-flex !important;
             justify-content: space-between;
+            height: 38px;
+            margin-top: 0 !important;
 
             [class*="owl-"] {
                 background-color: transparent !important;
@@ -278,7 +284,7 @@ Partner Area CSS
     border-radius: 5px;
 
     .image {
-        height: 150px;
+        // height: 150px;
         display: grid;
         place-items: center;
         margin: 0 30px;
@@ -288,95 +294,7 @@ Partner Area CSS
         }
     }
 }
-
-@media (min-width: 1517px) {
-    .partners-slides.owl-theme .owl-nav {
-        top: 38%;
-    }
-    .partners-slides .owl-item.active.center {
-        transform: scale(1.8);
-        margin-top: 58px !important;
-        margin-left: 80px !important;
-    }
-    .partners-slides .owl-item.active + .owl-item.active {
-        height: 300px !important;
-        width: 300px !important;
-    }
-    .partners-slides .owl-item.active.center + .owl-item.active {
-        height: 300px !important;
-        width: 300px !important;
-        margin-left: 84px !important;
-    }
-    .partners-slides
-        .owl-item.active.center
-        + .owl-item.active
-        + .owl-item.active {
-        height: 200px !important;
-        width: 200px !important;
-    }
-    .partners-slides .owl-item.active {
-        height: 200px !important;
-        width: 200px !important;
-        margin-right: 10px !important;
-    }
-    .partners-slides .partners-slides.owl-theme .owl-nav {
-        position: absolute;
-        top: 38%;
-    }
-}
-@media (max-width: 1280px) {
-    .partners-slides .owl-item.active.center + .owl-item.active {
-        margin-left: 38px !important;
-    }
-    // .partners-slides .owl-item.active {
-    //     margin-right: 0px !important;
-    // }
-}
-@media (max-width: 820px) {
-    .partners-slides .owl-stage-outer {
-        padding-top: 18% !important;
-    }
-}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .partners-slides .owl-item.active.center {
-        transform: unset;
-        filter: unset;
-        margin-top: 0 !important;
-        height: unset !important;
-        width: unset !important;
-        margin-left: unset !important;
-    }
-
-    .partners-slides .owl-item.active + .owl-item.active {
-        height: auto !important;
-        width: 212px !important;
-        margin-right: 30px !important;
-    }
-    .partners-slides .owl-item.active.center + .owl-item.active {
-        height: unset !important;
-        width: 260px !important;
-        margin-left: unset !important;
-    }
-    .partners-slides
-        .owl-item.active.center
-        + .owl-item.active
-        + .owl-item.active {
-        height: unset !important;
-        width: unset !important;
-    }
-    // .partners-slides .owl-item {
-    //     height: unset !important;
-    //     width: unset !important;
-
-    // }
-    .partners-slides .partners-slides.owl-theme .owl-nav {
-        position: absolute;
-        top: 38%;
-    }
-    .partners-slides.owl-theme .owl-nav {
-        display: unset;
-        top: 40% !important;
-    }
     .owl-prev {
         position: absolute !important;
         left: -48px !important;
@@ -393,65 +311,19 @@ Partner Area CSS
         position: absolute !important;
         right: -48px !important;
     }
-    .partners-slides .owl-item.active {
-        height: auto !important;
-        width: 212px !important;
-        margin-right: 30px !important;
-    }
-    .partners-slides .owl-stage-outer {
-        padding-top: 4%;
-    }
 }
-
 @media (max-width: 768px) {
-    .partners-slides .owl-item.active {
-        margin-right: 30px !important;
+    .partners-slides .owl-item.active.center {
+        transform: scale(1.6);
+        filter: brightness(0) saturate(100%) invert(14%) sepia(99%)
+            saturate(1987%) hue-rotate(187deg) brightness(91%) contrast(101%);
     }
 }
 @media (max-width: 767px) {
-    .partners-slides .owl-item.active {
-        height: 290px !important;
-        width: 376px !important;
-        //    margin-right: 10px !important;
-    }
-
     .partners-slides .owl-item.active.center {
-        transform: unset;
-        filter: unset;
-        margin-top: 0 !important;
-        height: auto !important;
-        width: 211px !important;
-        margin-left: unset !important;
-    }
-
-    .partners-slides .owl-item.active + .owl-item.active {
-        height: unset !important;
-        width: unset !important;
-    }
-    .partners-slides .owl-item.active.center + .owl-item.active {
-        height: unset !important;
-        width: unset !important;
-        margin-left: unset !important;
-    }
-    .partners-slides
-        .owl-item.active.center
-        + .owl-item.active
-        + .owl-item.active {
-        height: unset !important;
-        width: unset !important;
-    }
-    // .partners-slides .owl-item {
-    //     height: unset !important;
-    //     width: unset !important;
-
-    // }
-    .partners-slides .partners-slides.owl-theme .owl-nav {
-        position: absolute;
-        top: 38%;
-    }
-    .partners-slides.owl-theme .owl-nav {
-        display: unset;
-        top: 40% !important;
+        transform: scale(1);
+        filter: brightness(0) saturate(100%) invert(14%) sepia(99%)
+            saturate(1987%) hue-rotate(187deg) brightness(91%) contrast(101%);
     }
     .owl-prev {
         position: absolute !important;
@@ -468,20 +340,5 @@ Partner Area CSS
     .portfolio-slides .owl-next {
         position: absolute !important;
         right: -48px !important;
-    }
-    .partners-slides .owl-stage-outer {
-        padding-top: 5% !important;
-    }
-}
-@media (max-width: 520px) {
-    .partners-slides .owl-item.active {
-        height: 210px !important;
-        width: 356px !important;
-    }
-}
-
-@media (max-width: 425px) {
-    .partners-slides .owl-item.active.center {
-        // margin-left: unset !important;
     }
 }

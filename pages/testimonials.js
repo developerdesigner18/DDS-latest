@@ -300,13 +300,13 @@ const Testimonials = () => {
                         )
                     )}
                 </div>
-            </div>
-            <div className="text-center p-5">
-                {showMore && (
-                    <a className="default-btn" onClick={loadMore}>
-                        View All
-                    </a>
-                )}
+                <div className="text-center p-5">
+                    {showMore && (
+                        <a className="default-btn" onClick={loadMore}>
+                            View All
+                        </a>
+                    )}
+                </div>
             </div>
             <ModalVideo
                 channel="youtube"

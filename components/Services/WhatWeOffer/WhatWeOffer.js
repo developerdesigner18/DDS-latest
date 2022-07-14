@@ -1,8 +1,10 @@
 import { useTheme } from "next-themes";
+import Link from "next/link";
+import { createCareerTitle } from "../../../utils/utils";
 const featuresData = [
     {
         featureimg: "/images/services/user-experience.png",
-        title: "Custom Web Development",
+        title: "Web Development",
         description:
             "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
     },
@@ -69,27 +71,32 @@ const WhatWeOffer = () => {
                         return (
                             <div className="col-lg-3 col-md-6 col-sm-6 pb-5">
                                 <div className="service-block">
-                                    {theme == "dark" && (
-                                        <div className="img-icons image-holder-darkmode">
-                                            <img
-                                                src={data.featureimg}
-                                            />
+                                    <Link href={`/services/${createCareerTitle(data.title)}`}>
+                                        <div>
+
+                                            {theme == "dark" && (
+                                                <div className="img-icons image-holder-darkmode">
+                                                    <img
+                                                        src={data.featureimg}
+                                                    />
+                                                </div>
+                                            )}
+                                            {theme == "light" && (
+                                                <div className="img-icons">
+                                                    <img
+                                                        src={data.featureimg}
+                                                    />
+                                                </div>
+                                            )}
+                                            {/* {theme == "light" && (
+                                        <img src={data.featureimg} />
+                                    )} */}
+                                            <p className="heading">{data.title}</p>
+                                            <p className="subheading">
+                                                {data.description}
+                                            </p>
                                         </div>
-                                    )}
-                                    {theme == "light" && (
-                                        <div className="img-icons">
-                                            <img
-                                                src={data.featureimg}
-                                            />
-                                        </div>
-                                    )}
-                                    {/* {theme == "light" && (
-                                            <img src={data.featureimg} />
-                                        )} */}
-                                    <p className="heading">{data.title}</p>
-                                    <p className="subheading">
-                                        {data.description}
-                                    </p>
+                                    </Link>
                                 </div>
                             </div>
                         );

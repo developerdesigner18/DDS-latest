@@ -43,6 +43,7 @@ const Career = () => {
                         {accordionData.map((elm, index) => {
                             return (
                                 <>
+                                    {console.log(elm.title, "kabitra")}
                                     <div className="container p-0 mb-4">
 
                                         <Link href={`/career/${createCareerTitle(elm.title)}`}>

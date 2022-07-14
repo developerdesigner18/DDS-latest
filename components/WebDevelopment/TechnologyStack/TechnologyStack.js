@@ -1,4 +1,8 @@
-const TechnologyStack = () => {
+import Link from "next/link";
+import React from "react";
+import { createCareerTitle } from "../../../utils/utils";
+
+const TechnologyStack = ({ whatWeOffer }) => {
     const technologyData = [
         {
             techimg: "/images/web-development/1.png",
@@ -62,14 +66,18 @@ const TechnologyStack = () => {
                             return (
                                 <div className="col-lg-2 col-md-4 col-sm-6">
                                     <div className="single-gallery-item">
-                                        <img
-                                            src={data.techimg}
-                                            alt="image"
-                                            className="technology-image-holder"
-                                        />
-                                        <h6 className="text-center">
-                                            {data.title}
-                                        </h6>
+                                        <Link href={`/services/${createCareerTitle(whatWeOffer.title)}/${createCareerTitle(data.title)}`}>
+                                            <div>
+                                                <img
+                                                    src={data.techimg}
+                                                    alt="image"
+                                                    className="technology-image-holder"
+                                                />
+                                                <h6 className="text-center">
+                                                    {data.title}
+                                                </h6>
+                                            </div>
+                                        </Link>
                                     </div>
                                 </div>
                             );

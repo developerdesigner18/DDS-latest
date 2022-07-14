@@ -725,20 +725,23 @@ Featured Services Area CSS
     }
     &:hover {
         border-radius: 0;
-        background-color: var(--whiteColor);
+        background-color: var(--buttonbgColor);
         box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
         transform: translateY(-10px);
 
         .icon {
             background-color: var(--whiteColor);
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-
+            filter: brightness(0) invert(1);
             .circles-box {
                 .circle-two {
                     opacity: 1;
                     visibility: visible;
                 }
             }
+        }
+        h3 {
+            color: white;
         }
     }
 }
@@ -1916,7 +1919,7 @@ Gallery Area CSS
     z-index: 1;
     border-radius: 5px;
     overflow: hidden;
-    cursor: zoom-in;
+    cursor: pointer;
 
     .popup-btn {
         display: block;

@@ -188,14 +188,14 @@ const Navbar = () => {
 
                                     <li className="nav-item">
                                         <Link
-                                            href="/blog"
+                                            href="/career"
                                             activeClassName="active"
                                         >
                                             <a
                                                 onClick={toggleNavbar}
                                                 className="nav-link"
                                             >
-                                                Blog
+                                                Career
                                             </a>
                                         </Link>
                                     </li>
