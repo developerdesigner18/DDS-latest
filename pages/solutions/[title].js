@@ -17,17 +17,17 @@ const SolutionTypes = ({ data }) => {
             <PageBanner pageTitle="Solution" />
 
             <ServiceCard
-                mainimage={data.s1mainimage}
-                heading={data.title}
-                content={data.s1content}
+                mainimage={data?.s1mainimage}
+                heading={data?.title}
+                content={data?.s1content}
                 btntext="Request A Quote"
                 btnlink="#quote"
             />
 
             <InfoCard
-                heading={data.title}
-                images={data.i1images}
-                content={data.i1content.map((data) => {
+                heading={data?.title}
+                images={data?.i1images}
+                content={data?.i1content.map((data) => {
                     return <p>{data}</p>;
                 })}
             />
@@ -36,9 +36,9 @@ const SolutionTypes = ({ data }) => {
 
             <InfoCard
                 newClass="newInfo"
-                heading={data.title}
+                heading={data?.title}
                 images="/images/solutions/chart.png"
-                content={data.i2content.map((data) => {
+                content={data?.i2content.map((data) => {
                     return <p>{data}</p>;
                 })}
             />
@@ -50,7 +50,7 @@ const SolutionTypes = ({ data }) => {
 
 export async function getStaticProps(context) {
     const data = solutionTypes.find(
-        (data) => createSolutionTitle(data.title) === context.params.title
+        (data) => createSolutionTitle(data?.title) === context.params.title
     );
     return {
         props: {
@@ -62,7 +62,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
     const paths = solutionTypes.map((data) => ({
         params: {
-            title: createSolutionTitle(data.title),
+            title: createSolutionTitle(data?.title),
         },
     }));
 
