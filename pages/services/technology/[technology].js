@@ -43,8 +43,9 @@ const Laravel = ({ technology }) => {
     );
 };
 export async function getStaticProps(context) {
+    console.log(context);
     const technology = webDevelopmentData.find(
-        (data) => createTitleSlug(data?.title) === context.params.title
+        (data) => createTitleSlug(data?.title) === context.params.technology
     );
     return {
         props: {
