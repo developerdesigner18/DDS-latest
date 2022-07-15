@@ -1,6 +1,5 @@
-import axios from "axios";
-import React from "react";
 import { useState } from "react";
+import axios from "axios";
 import { useForm } from "react-hook-form";
 import PageBanner from "../components/Common/PageBanner/PageBanner";
 import Swal from "sweetalert2";
@@ -53,7 +52,7 @@ const careerform = () => {
         // e.preventDefault();
         try {
             const body = new FormData();
-            const url = `http://localhost:3000/api/careerform`;
+            const url = `http://localhost:3000/api/career-form`;
             const {
                 name,
                 email,

@@ -7,27 +7,27 @@ import OurExpertise from "../../../components/Laravel/OurExpertise/OurExpertise"
 import ReasonToChoose from "../../../components/Laravel/ReasonToChoose/ReasonToChoose";
 import InfoCardWeb from "../../../components/Common/InfoCardWeb/InfoCardWeb";
 import { webDevelopmentData } from "../../../data/webDevelopment";
-import { createCareerTitle } from "../../../utils/utils";
+import { createTitleSlug } from "../../../utils/utils";
 
-const Laravel = ({ data }) => {
+const Laravel = ({ technology }) => {
     return (
         <>
-            <PageBanner pageTitle={data.title} />
+            <PageBanner pageTitle={technology.title} />
 
             <ServiceCard
                 subheading="Web Development"
                 mainimage="/images/laravel/laravel.png"
-                heading={`${data.title} Framework For Web Development`}
-                content={data.mainParagraph}
+                heading={`${technology.title} Framework For Web Development`}
+                content={technology.mainParagraph}
                 btntext="Our Portfolio"
                 btnlink="/web-development"
                 btntext2="Get A Quote"
             />
 
             <InfoCardWeb
-                heading={`Why Developers Prefer ${data.title} For Web Development`}
+                heading={`Why Developers Prefer ${technology.title} For Web Development`}
                 images="/images/laravel/cardImage.png"
-                secondaryParagraph={data.secondaryParagraph}
+                secondaryParagraph={technology.secondaryParagraph}
             />
 
             <LaravelIndustries />
@@ -43,12 +43,12 @@ const Laravel = ({ data }) => {
     );
 };
 export async function getStaticProps(context) {
-    const title = webDevelopmentData.find(
-        (data) => createCareerTitle(data?.title) === context.params.title
+    const technology = webDevelopmentData.find(
+        (data) => createTitleSlug(data?.title) === context.params.title
     );
     return {
         props: {
-            data: title,
+            technology,
         },
     };
 }
@@ -56,7 +56,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
     const paths = webDevelopmentData.map((data) => ({
         params: {
-            title: createCareerTitle(data?.title),
+            technology: createTitleSlug(data?.title),
         },
     }));
 

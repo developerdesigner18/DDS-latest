@@ -1,5 +1,5 @@
 import PageBanner from "../components/Common/PageBanner/PageBanner";
-import LifeAtDds from "../components/Common/LifeDds/LifeAtDds";
+import LifeAtDds from "../components/Common/LifeAtDds/LifeAtDds";
 
 const LifeAtDDS = () => {
     return (

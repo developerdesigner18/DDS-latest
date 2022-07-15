@@ -1,8 +1,4 @@
-import React, { useState } from "react";
-import { useTheme } from "next-themes";
-import Link from "next/link";
-import { accordionData } from "../../data/career";
-import { createCareerTitle, createSolutionTitle } from "../../utils/utils";
+import { createTitleSlug } from "../../utils/utils";
 import PageBanner from "../../components/Common/PageBanner/PageBanner";
 import ServiceCard from "../../components/Common/ServiceCard/ServiceCard";
 import InfoCard from "../../components/Common/InfoCard/InfoCard";
@@ -50,7 +46,7 @@ const SolutionTypes = ({ data }) => {
 
 export async function getStaticProps(context) {
     const data = solutionTypes.find(
-        (data) => createSolutionTitle(data?.title) === context.params.title
+        (data) => createTitleSlug(data?.title) === context.params.title
     );
     return {
         props: {
@@ -62,7 +58,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
     const paths = solutionTypes.map((data) => ({
         params: {
-            title: createSolutionTitle(data?.title),
+            title: createTitleSlug(data?.title),
         },
     }));
 

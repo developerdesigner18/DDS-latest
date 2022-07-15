@@ -6,7 +6,7 @@ import TechnologyStack from "../../components/WebDevelopment/TechnologyStack/Tec
 import WebDevelopmentProcess from "../../components/WebDevelopment/WebDevelopmentProcess/WebDevelopmentProcess";
 import WebDevelopmentAreas from "../../components/WebDevelopment/WebDevelopmentAreas/WebDevelopmentAreas";
 import { whatWeOfferData } from "../../data/services";
-import { createCareerTitle } from "../../utils/utils";
+import { createTitleSlug } from "../../utils/utils";
 const WebDevelopment = ({ data }) => {
     const content = (
         <>
@@ -68,7 +68,7 @@ const WebDevelopment = ({ data }) => {
 };
 export async function getStaticProps(context) {
     const title = whatWeOfferData.find(
-        (data) => createCareerTitle(data?.title) === context.params.title
+        (data) => createTitleSlug(data?.title) === context.params.title
     );
     return {
         props: {
@@ -80,7 +80,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
     const paths = whatWeOfferData.map((data) => ({
         params: {
-            title: createCareerTitle(data?.title),
+            title: createTitleSlug(data?.title),
         },
     }));
 

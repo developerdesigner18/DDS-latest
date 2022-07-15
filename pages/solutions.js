@@ -1,8 +1,8 @@
-import PageBanner from "../components/Common/PageBanner/PageBanner";
-import Link from "next/link";
 import { useState } from "react";
-import { solutions } from "../components/Solutions/solutionData";
-import { createCareerTitle, createSolutionTitle } from "../utils/utils";
+import Link from "next/link";
+import PageBanner from "../components/Common/PageBanner/PageBanner";
+import { createTitleSlug } from "../utils/utils";
+import { solutions } from "../data/solutionData";
 
 const Solutions = () => {
     const [showMore, setShowMore] = useState(true);
@@ -37,7 +37,7 @@ const Solutions = () => {
                                         </span>
 
                                         <Link
-                                            href={`/solutions/${createSolutionTitle(
+                                            href={`/solutions/${createTitleSlug(
                                                 title
                                             )}`}
                                         >
@@ -54,7 +54,7 @@ const Solutions = () => {
                                     style={{ cursor: "pointer" }}
                                 >
                                     <Link
-                                        href={`/solutions/${createSolutionTitle(
+                                        href={`/solutions/${createTitleSlug(
                                             title
                                         )}`}
                                     >

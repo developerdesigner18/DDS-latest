@@ -1,22 +1,5 @@
 import Link from "next/link";
-
-const users = [
-    {
-        userImg: "/images/portfolio/design.png",
-        content:
-            "Contrary to popular belief, Lorem Ipsum is not simply random text.",
-    },
-    {
-        userImg: "/images/portfolio/interface.png",
-        content:
-            "Contrary to popular belief, Lorem Ipsum is not simply random text.",
-    },
-    {
-        userImg: "/images/portfolio/website.png",
-        content:
-            "Contrary to popular belief, Lorem Ipsum is not simply random text.",
-    },
-];
+import { moreProfileData } from "../../data/moreProfileData";
 
 const Moreprofile = () => {
     return (
@@ -27,7 +10,7 @@ const Moreprofile = () => {
                         More Projects You Might Like{" "}
                     </h3>
                     <div className="row">
-                        {users.map((elm) => {
+                        {moreProfileData.map((elm) => {
                             return (
                                 <>
                                     <div className="col-lg-4 col-md-6 col-sm-6">

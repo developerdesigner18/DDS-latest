@@ -1,4 +1,4 @@
-const BlogData = [
+export const blogs = [
     {
         blogimg: "/images/blog/blog.png",
         title: "Online blogs You should Read",
@@ -20,5 +20,3 @@ const BlogData = [
         date: "Feb 20, 2022",
     },
 ];
-
-export default BlogData;

@@ -1,7 +1,6 @@
-import React from "react";
-import BlogSidebarNew from "./BlogSidebarNew";
 import Link from "next/link";
-import BlogData from "./BlogData";
+import BlogSidebar from "./BlogSidebar";
+import { blogs } from "../../data/blogs";
 
 const BlogMain = () => {
     return (
@@ -12,7 +11,7 @@ const BlogMain = () => {
                         <div className="col-lg-8 col-md-12">
                             <div className="row">
                                 <div className="col-lg-12 col-md-6">
-                                    {BlogData.map((elm) => {
+                                    {blogs.map((elm) => {
                                         return (
                                             <>
                                                 <div className="single-blog-post p-30">
@@ -54,7 +53,7 @@ const BlogMain = () => {
 
                         <div className="col-lg-4 col-md-12">
                             <div className="blog-right-sidebar">
-                                <BlogSidebarNew />
+                                <BlogSidebar />
                             </div>
                         </div>
                     </div>

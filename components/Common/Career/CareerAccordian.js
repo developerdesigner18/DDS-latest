@@ -35,7 +35,7 @@ const CareerAccordian = ({ setShowContent, contantData, setCareer }) => {
                         >
                             {contantData?.title}
                         </h1>
-                        <Link href="/careerform">
+                        <Link href="/career-form">
                             <a className="default-btn">Apply Now</a>
                         </Link>
                     </div>

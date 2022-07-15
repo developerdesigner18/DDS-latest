@@ -2,29 +2,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
-
-const portfolios = [
-    {
-        image: "/images/portfolio/portfolio-img1.jpg",
-        info: "Customer Satisfaction for a Digital Marketing Agency",
-    },
-    {
-        image: "/images/portfolio/portfolio-img2.jpg",
-        info: "Customer Satisfaction for a Digital Marketing Agency",
-    },
-    {
-        image: "/images/portfolio/portfolio-img3.jpg",
-        info: "Customer Satisfaction for a Digital Marketing Agency",
-    },
-    {
-        image: "/images/portfolio/portfolio-img4.jpg",
-        info: "Customer Satisfaction for a Digital Marketing Agency",
-    },
-    {
-        image: "/images/portfolio/portfolio-img5.jpg",
-        info: "Customer Satisfaction for a Digital Marketing Agency",
-    },
-];
+import { portfolios } from "../../../data/portfolios";
 
 const options = {
     loop: true,

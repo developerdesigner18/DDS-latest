@@ -1,4 +1,3 @@
-import React from "react";
 import DevelopmentViewMain from "../components/WebDevelopmentView/DevelopmentViewMain";
 
 const WebDevelopmentView = () => {

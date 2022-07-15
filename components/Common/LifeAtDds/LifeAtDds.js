@@ -1,27 +1,4 @@
-import React from "react";
-
-const TeamData = [
-    {
-        pic: "/images/portfolio/portfolio-img1.jpg",
-        name: "Daydreamsoft LLP Foundation Day",
-    },
-    {
-        pic: "/images/portfolio/portfolio-img2.jpg",
-        name: "Celebrating 2nd Anniversary of the company with enthusiastic team",
-    },
-    {
-        pic: "/images/portfolio/portfolio-img3.jpg",
-        name: "Diwali Celebration",
-    },
-    {
-        pic: "/images/portfolio/portfolio-img4.jpg",
-        name: "Quarterly lunch meet with enthusiastic team",
-    },
-    {
-        pic: "/images/portfolio/portfolio-img5.jpg",
-        name: "DDS Family Picnic",
-    },
-];
+import { lifeAtDDSData } from "../../../data/lifeAtDDSData";
 
 const LifeAtDds = () => {
     return (
@@ -29,7 +6,7 @@ const LifeAtDds = () => {
             <div className="team-area-two pt-100 pb-70">
                 <div className="container">
                     <div className="row align-items-center">
-                        {TeamData.map((elm) => {
+                        {lifeAtDDSData.map((elm) => {
                             return (
                                 <>
                                     <div className="col-lg-4 col-md-6 col-sm-6">

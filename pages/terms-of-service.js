@@ -1,5 +1,5 @@
-import PageBanner from "../components/Common/PageBanner/PageBanner";
 import Link from "next/link";
+import PageBanner from "../components/Common/PageBanner/PageBanner";
 
 const TermsOfService = () => {
     return (

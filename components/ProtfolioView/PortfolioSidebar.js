@@ -1,5 +1,3 @@
-import React from "react";
-
 const PortfolioSidebar = () => {
     return (
         <div className="portfolio-sidebar-sticky">

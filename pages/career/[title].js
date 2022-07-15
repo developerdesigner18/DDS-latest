@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import { useTheme } from "next-themes";
 import Link from "next/link";
 import { accordionData } from "../../data/career";
-import { createCareerTitle } from "../../utils/utils";
+import { createTitleSlug } from "../../utils/utils";
 
 const CareerAccordian = ({ data }) => {
     return (
@@ -25,7 +23,7 @@ const CareerAccordian = ({ data }) => {
                                 >
                                     {data?.title}
                                 </h1>
-                                <Link href="/careerform">
+                                <Link href="/career-form">
                                     <a className="default-btn">Apply Now</a>
                                 </Link>
                             </div>
@@ -86,7 +84,7 @@ const CareerAccordian = ({ data }) => {
 
 export async function getStaticProps(context) {
     const title = accordionData.find(
-        (data) => createCareerTitle(data?.title) === context.params.title
+        (data) => createTitleSlug(data?.title) === context.params.title
     );
     return {
         props: {
@@ -98,7 +96,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
     const paths = accordionData.map((data) => ({
         params: {
-            title: createCareerTitle(data?.title),
+            title: createTitleSlug(data?.title),
         },
     }));
 

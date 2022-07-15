@@ -1,7 +1,4 @@
-import React from "react";
-import BlogSidebarNew from "../Blog/BlogSidebarNew";
-import BlogComments from "./BlogComments";
-import BlogSidebar from "./BlogSidebar";
+import BlogSidebar from "../Blog/BlogSidebar";
 
 const SingleBlogMain = () => {
     return (
@@ -243,14 +240,12 @@ const SingleBlogMain = () => {
                                         </div>
                                     </div>
                                 </div>
-
-                                {/* <BlogComments /> */}
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-12">
                             <div className="blog-right-sidebar">
-                                <BlogSidebarNew />
+                                <BlogSidebar />
                             </div>
                         </div>
                     </div>

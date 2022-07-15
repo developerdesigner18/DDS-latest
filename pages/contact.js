@@ -1,6 +1,6 @@
+import { useTheme } from "next-themes";
 import PageBanner from "../components/Common/PageBanner/PageBanner";
 import ContactForm from "../components/Contact/ContactForm";
-import { useTheme } from "next-themes";
 
 const Contact = () => {
     const { theme, setTheme } = useTheme();

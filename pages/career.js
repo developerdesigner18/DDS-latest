@@ -1,11 +1,8 @@
-import CareerAccordian from "../components/Common/Career/CareerAccordian";
-import PageBanner from "../components/Common/PageBanner/PageBanner";
-import { useTheme } from "next-themes";
-import { useState } from "react";
-import { accordionData } from "../data/career";
-import useLocalStorage from "../hooks/useLocalStorage";
 import Link from "next/link";
-import { createCareerTitle } from "../utils/utils";
+import { useTheme } from "next-themes";
+import PageBanner from "../components/Common/PageBanner/PageBanner";
+import { createTitleSlug } from "../utils/utils";
+import { accordionData } from "../data/career";
 
 const Career = () => {
     const { theme } = useTheme();
@@ -43,25 +40,24 @@ const Career = () => {
                         {accordionData.map((elm, index) => {
                             return (
                                 <>
-                                    {console.log(elm.title, "kabitra")}
                                     <div className="container p-0 mb-4">
-
-                                        <Link href={`/career/${createCareerTitle(elm.title)}`}>
-                                            <button
-
-                                                className="accordian-btn career"
-                                            >
+                                        <Link
+                                            href={`/career/${createTitleSlug(
+                                                elm.title
+                                            )}`}
+                                        >
+                                            <button className="accordian-btn career">
                                                 {elm.title}{" "}
                                                 <div
-                                                    className={`icons career ${theme == "dark" &&
+                                                    className={`icons career ${
+                                                        theme == "dark" &&
                                                         "career-dark-icon"
-                                                        }`}
+                                                    }`}
                                                 >
                                                     <i class="fa-solid fa-chevron-down"></i>
                                                 </div>
                                             </button>
                                         </Link>
-
                                     </div>
                                 </>
                             );
