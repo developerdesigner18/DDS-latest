@@ -9,6 +9,11 @@ class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap"
                         rel="stylesheet"
                     />
+
+                    <link
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+                        rel="stylesheet"
+                    />
                     <link
                         rel="icon"
                         type="image/png"
@@ -18,6 +23,7 @@ class MyDocument extends Document {
                         type="text/javascript"
                         src="/static/script.js"
                     ></script>
+
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 </Head>
                 <body>

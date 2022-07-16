@@ -73,7 +73,6 @@
 @use "../../components/WebDevelopmentView/webDevelopmentView.scss";
 
 @import "node_modules/react-modal-video/scss/modal-video.scss";
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
 
 /*================================================
 Default CSS
@@ -210,9 +209,12 @@ p {
 }
 .ptb-100 {
     padding: {
-        top: 100px;
-        bottom: 100px;
+        top: 60px;
+        bottom: 60px;
     }
+}
+.pt-60 {
+    padding-top: 60px;
 }
 .pt-100 {
     padding-top: 100px;

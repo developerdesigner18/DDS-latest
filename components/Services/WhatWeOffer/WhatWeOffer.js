@@ -9,9 +9,8 @@ const WhatWeOffer = () => {
         <div className="offerContainer">
             <div className="container blockContainer">
                 <div
-                    className={`row ${
-                        theme == "dark" && "image-holder-darkmode"
-                    }`}
+                    className={`row ${theme == "dark" && "image-holder-darkmode"
+                        }`}
                 >
                     <div className="col-lg-3 col-md-6 col-sm-6 service-holder">
                         <div>

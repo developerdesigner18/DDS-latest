@@ -68,7 +68,6 @@ const IndustriesWeServe = () => {
                                             <img src={image} alt="team-image" />
                                         </Link>
                                     </div>
-
                                     <div className="content">
                                         <Link
                                             href={`/solutions/${createTitleSlug(
@@ -80,6 +79,7 @@ const IndustriesWeServe = () => {
                                             </span>
                                         </Link>
                                     </div>
+
                                 </div>
                             )
                         )}

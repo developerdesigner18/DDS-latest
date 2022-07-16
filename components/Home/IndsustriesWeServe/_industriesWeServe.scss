@@ -53,7 +53,9 @@ Industries We Serve Area CSS
         }
     }
 }
-
+.single-industry.image img :hover {
+    opacity: 0.5;
+}
 .industries-slides {
     &.owl-theme {
         .owl-nav {

@@ -3,7 +3,7 @@ import Link from "next/link";
 const ServiceCard = (props) => {
     return (
         <>
-            <div className="main-service">
+            <div className="main-service ptb-100">
                 <div className="container servicecard">
                     <div className="row">
                         <div className="col-lg-6 col-md-12">

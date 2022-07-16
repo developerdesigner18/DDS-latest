@@ -41,12 +41,12 @@ const GetAQuote = () => {
             await axios.post(url, payload);
             setContact(INITIAL_STATE);
             alertContent();
-        } catch (error) {}
+        } catch (error) { }
     };
 
     return (
         <>
-            <div className="getAQuote-holder">
+            <div className="getAQuote-holder ptb-100">
                 <div className="container servicecard" id="quote">
                     <div className="row quote">
                         <div className="col-lg-5 col-md-12">
