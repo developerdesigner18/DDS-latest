@@ -1,6 +1,6 @@
 .webservice-heading {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     color: var(--mainDarkColor);
 }
 .serviceCardImg {
@@ -9,13 +9,15 @@
     border-radius: 50%;
 }
 .serviceCard {
-    margin-bottom: 30px;
-    padding: 12px 12px 25px;
+    padding: 0px 12px 0px;
 }
 .serviceCard .content {
-    padding-top: 25px;
+    padding-top: 50px;
     padding-left: 8px;
     padding-right: 8px;
+}
+.technology-stack-heading h2 {
+    margin: 0;
 }
 .serviceCardContent h5 {
     font-size: 13px;

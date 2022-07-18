@@ -6,7 +6,7 @@ const Faq = () => {
     return (
         <>
             <PageBanner pageTitle="Frequently Asked Questions" />
-            <div className="accordion-main">
+            <div className="accordion-main ptb-100">
                 {faqData.map((elm) => {
                     return (
                         <>

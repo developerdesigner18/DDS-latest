@@ -14,13 +14,11 @@ span.default-btn.portfolio {
     justify-content: center;
     width: 16%;
 }
-.all-tab {
-    margin: 26px 0px;
-}
+
 ul.container.tab-list {
     text-align: center;
     padding-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     list-style-type: none;
     display: block;
 }
@@ -128,7 +126,6 @@ ul.container.tab-list {
     }
 }
 .single-portfolio-item {
-    margin-bottom: 30px;
     text-align: center;
     border-radius: 5px;
 
@@ -177,7 +174,7 @@ ul.container.tab-list {
     }
 }
 .single-portfolio-box {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
     background-color: var(--grayBgColor);
     transition: var(--transition);

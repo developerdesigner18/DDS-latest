@@ -209,8 +209,8 @@ p {
 }
 .ptb-100 {
     padding: {
-        top: 60px;
-        bottom: 60px;
+        top: 50px;
+        bottom: 50px;
     }
 }
 .pt-60 {
@@ -237,6 +237,16 @@ p {
 .pb-70 {
     padding-bottom: 70px;
 }
+.ptb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pt-50 {
+    padding-top: 50px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
 .bg-f9f9f9 {
     background-color: var(--grayBgColor);
 }
@@ -253,7 +263,7 @@ p {
     margin: {
         left: auto;
         right: auto;
-        bottom: 60px;
+        bottom: 50px;
     }
     .sub-title {
         display: block;
@@ -286,6 +296,7 @@ p {
     }
 }
 .bg-imgdev {
+    padding-bottom: 50px;
     background-color: var(--whiteColor);
 }
 /*default-btn*/
@@ -611,7 +622,6 @@ Boxes Area CSS
 Featured Services Area CSS
 =================================================*/
 .single-featured-services-box {
-    margin-bottom: 30px;
     text-align: center;
     background-color: var(--grayBgColor);
     padding: 50px 25px;
@@ -1130,7 +1140,7 @@ Solutions CSS
     margin: {
         right: -15px;
         left: -15px;
-        bottom: 60px;
+        bottom: 50px;
     }
     &:last-child {
         margin-bottom: 0;
@@ -1294,7 +1304,6 @@ Portfolio Area CSS
     }
 }
 .single-portfolio-item {
-    margin-bottom: 30px;
     text-align: center;
     border-radius: 5px;
 
@@ -1785,7 +1794,7 @@ Project Start Area CSS
 Blog Area CSS
 =================================================*/
 .single-blog-post {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 12px 12px 25px;
     border-radius: 5px;
     background-color: var(--whiteColor);
@@ -1881,7 +1890,7 @@ Blog Details Area CSS
 =================================================*/
 .blog-details-desc {
     background-color: var(--whiteColor);
-    padding: 25px;
+    padding: 0 25px;
 
     .article-image {
         img {
@@ -5110,7 +5119,7 @@ FAQ Area CSS
 Contact Area CSS
 =================================================*/
 .contact-info-box {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     position: relative;
     padding-left: 100px;
     z-index: 1;

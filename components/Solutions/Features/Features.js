@@ -1,21 +1,21 @@
 import { useTheme } from "next-themes";
 import { features } from "../../../data/features";
 
-const Features = () => {
+const Features = ({ heading }) => {
     const { theme } = useTheme();
 
     return (
         <>
-            <div className="features-holder">
+            <div className="features-holder ptb-100">
                 <div className="container">
                     <h2 className="title">
-                        Features of Ecommerce, Retail & B2B Solutions
+                        Features of {heading}
                     </h2>
                     <div className="row solutions-row">
                         {features.map(({ image, heading }, index) => (
                             <div
                                 key={index}
-                                className="col-lg-3 col-md-6 col-sm-6"
+                                className="col-lg-3 col-md-6 col-sm-6 pt-50"
                             >
                                 <div className="single-featured-services-box feature">
                                     <div className={`icon solution`}>

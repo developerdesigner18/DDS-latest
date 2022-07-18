@@ -1,70 +1,70 @@
 export const industries = [
     {
-        image: "/images/industries/e-commerce.webp",
+        image: "/images/industries/Ecommerce.png",
         title: "Ecommerce",
     },
     {
-        image: "/images/industries/b2b.webp",
+        image: "/images/industries/B2B image.png",
         title: "Business to Business",
     },
     {
-        image: "/images/industries/non-profit.webp",
+        image: "/images/industries/Non-Profit.png",
         title: "Non-Profit",
     },
     {
-        image: "/images/industries/real-estate.webp",
+        image: "/images/industries/Real Estate & Property.png",
         title: "Real Estate & Property",
     },
     {
-        image: "/images/industries/startup.webp",
+        image: "/images/industries/Startup.png",
         title: "Startup",
     },
     {
-        image: "/images/industries/social-networking.webp",
+        image: "/images/industries/social networking.png",
         title: "Social Networking",
     },
     {
-        image: "/images/industries/food-and-restaurant.jpg",
+        image: "/images/industries/Food & restaurant.png",
         title: "Food & Restaurant",
     },
     {
-        image: "/images/industries/banking-and-finance.webp",
+        image: "/images/industries/Banking & Finance.png",
         title: "Banking & Finance",
     },
     {
-        image: "/images/industries/education.webp",
+        image: "/images/industries/Education.png",
         title: "Education",
     },
     {
-        image: "/images/industries/travel.webp",
+        image: "/images/industries/Travell.png",
         title: "Travel",
     },
     {
-        image: "/images/industries/media-and-entertainment.webp",
+        image: "/images/industries/Media & Entertainment.png",
         title: "Media & Entertainment",
     },
     {
-        image: "/images/industries/healthcare-and-fitness.webp",
+        image: "/images/industries/Healthcare & Fitness.png",
         title: "Healthcare & Fitness",
     },
     {
-        image: "/images/industries/transport-and-automotive.webp",
+        image: "/images/industries/Transport & Automotive.png",
         title: "Transport & Automotive",
     },
     {
-        image: "/images/industries/gaming-and-leisure.webp",
+        image: "/images/industries/Gaming & Leisure.png",
         title: "Gaming & Leisure",
     },
     {
-        image: "/images/industries/directory-and-organization.webp",
+        image: "/images/industries/Directory & Organisation.png",
         title: "Directory & Organisation",
     },
     {
-        image: "/images/industries/event-and-tickets.webp",
+        image: "/images/industries/Event & Tickets.png",
         title: "Event & Tickets",
     },
     {
-        image: "/images/industries/sports.webp",
+        image: "/images/industries/Sports.png",
         title: "Sports",
     },
 ];

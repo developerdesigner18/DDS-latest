@@ -20,6 +20,28 @@
 .row.quote {
     gap: 8%;
 }
+.subheading {
+    color: var(--mainLightColor);
+}
+
+.form-content-holder h2 {
+    color: var(--mainDarkColor);
+    margin: 10px 0;
+    font-size: 42px;
+    text-transform: capitalize;
+}
+.form-content-holder .content {
+    max-width: 600px;
+}
+.form-content-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 0 20px var(--formShadow);
+    padding: 30px;
+}
 
 .getAQuote-holder {
     background-color: var(--whiteColor);

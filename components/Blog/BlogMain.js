@@ -5,7 +5,7 @@ import { blogs } from "../../data/blogs";
 const BlogMain = () => {
     return (
         <>
-            <div className="blog-area ptb-100">
+            <div className="blog-area pt-50">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 col-md-12">

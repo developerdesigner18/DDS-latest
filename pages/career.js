@@ -11,7 +11,7 @@ const Career = () => {
         <>
             <PageBanner pageTitle="Career" />
 
-            <div className="accordion-main">
+            <div className="accordion-main ptb-100">
                 <>
                     <div className="career-position container mb-5">
                         <h3>Opening Positions</h3>
@@ -49,10 +49,9 @@ const Career = () => {
                                             <button className="accordian-btn career">
                                                 {elm.title}{" "}
                                                 <div
-                                                    className={`icons career ${
-                                                        theme == "dark" &&
+                                                    className={`icons career ${theme == "dark" &&
                                                         "career-dark-icon"
-                                                    }`}
+                                                        }`}
                                                 >
                                                     <i class="fa-solid fa-chevron-down"></i>
                                                 </div>

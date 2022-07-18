@@ -15,7 +15,7 @@ const alertContent = () => {
         showConfirmButton: false,
     });
 };
-const GetAQuote = () => {
+const GetAQuote = ({ heading, subHeading, description, buttonText }) => {
     // Form initial state
     const INITIAL_STATE = {
         name: "",
@@ -58,16 +58,15 @@ const GetAQuote = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-6 col-md-12">
-                            <div className="about-content service">
+                        <div className="col-lg-6 col-md-12 p-0">
+                            <div className="form-content-holder service">
                                 <div className="content">
                                     <span className="subheading">
-                                        Get A Free Quote
+                                        {subHeading}
                                     </span>
-                                    <h2>Get quote from us</h2>
+                                    <h2>{heading}</h2>
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the
-                                        printing and typesetting industry.
+                                        {description}
                                     </p>
                                     <div>
                                         <form
@@ -199,7 +198,7 @@ const GetAQuote = () => {
                                                         type="submit"
                                                         className="default-btn"
                                                     >
-                                                        Get A Quote
+                                                        {buttonText}
                                                     </button>
                                                 </div>
                                             </div>
@@ -215,4 +214,10 @@ const GetAQuote = () => {
     );
 };
 
+GetAQuote.defaultProps = {
+    heading: "Get Quote From Us",
+    subHeading: "Get A Free Quote",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    buttonText: "Get A Quote"
+}
 export default GetAQuote;

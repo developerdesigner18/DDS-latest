@@ -3,9 +3,9 @@ import { lifeAtDDSData } from "../../../data/lifeAtDDSData";
 const LifeAtDds = () => {
     return (
         <>
-            <div className="team-area-two pt-100 pb-70">
+            <div className="team-area-two pt-50">
                 <div className="container">
-                    <div className="row align-items-center">
+                    <div className="row">
                         {lifeAtDDSData.map((elm) => {
                             return (
                                 <>
@@ -26,7 +26,7 @@ const LifeAtDds = () => {
                                                     paddingTop: 15,
                                                 }}
                                             >
-                                                <h6>{elm.name}</h6>
+                                                <h6 style={{ margin: 0 }}>{elm.name}</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -34,17 +34,20 @@ const LifeAtDds = () => {
                             );
                         })}
                     </div>
-                    <a
-                        className="default-btn"
-                        style={{
-                            display: "flex",
-                            width: "16%",
-                            margin: "auto",
-                            justifyContent: "center",
-                        }}
-                    >
-                        View More
-                    </a>
+                    <div className="pb-50">
+
+                        <a
+                            className="default-btn"
+                            style={{
+                                display: "flex",
+                                width: "16%",
+                                margin: "auto",
+                                justifyContent: "center",
+                            }}
+                        >
+                            View More
+                        </a>
+                    </div>
                 </div>
             </div>
         </>

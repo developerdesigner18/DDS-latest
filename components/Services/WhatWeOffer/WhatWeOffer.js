@@ -6,7 +6,7 @@ import { featuresData } from "../../../data/featuresData";
 const WhatWeOffer = () => {
     const { theme } = useTheme();
     return (
-        <div className="offerContainer">
+        <div className="offerContainer pt-50">
             <div className="container blockContainer">
                 <div
                     className={`row ${theme == "dark" && "image-holder-darkmode"
@@ -27,7 +27,7 @@ const WhatWeOffer = () => {
                     </div>
                     {featuresData.map((data) => {
                         return (
-                            <div className="col-lg-3 col-md-6 col-sm-6 pb-5">
+                            <div className="col-lg-3 col-md-6 col-sm-6 pb-50">
                                 <div className="service-block">
                                     <Link
                                         href={`/services/${createTitleSlug(

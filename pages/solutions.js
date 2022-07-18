@@ -67,7 +67,7 @@ const Solutions = () => {
                         )
                     )}
                     <div
-                        className="text-center p-5"
+                        className="text-center"
                         style={{ cursor: "pointer" }}
                     >
                         {showMore && (

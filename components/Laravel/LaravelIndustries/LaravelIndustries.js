@@ -70,7 +70,7 @@ const LaravelIndustries = () => {
     return (
         <div>
             {" "}
-            <div className="team-area-two pb-100 pt-100">
+            <div className="team-area-two ptb-100">
                 <div className="container">
                     <div className="section-title-holder">
                         <h2 className="sub-title">Industries / solutions </h2>
@@ -95,10 +95,9 @@ const LaravelIndustries = () => {
                                         <div className="single-team-member">
                                             <>
                                                 <div
-                                                    className={`industry-image ${
-                                                        theme == "dark" &&
+                                                    className={`industry-image ${theme == "dark" &&
                                                         "industry-image-dark"
-                                                    }`}
+                                                        }`}
                                                 >
                                                     <img
                                                         src={data.industriesimg}

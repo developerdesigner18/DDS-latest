@@ -28,7 +28,8 @@ const SolutionTypes = ({ data }) => {
                 })}
             />
 
-            <Features />
+
+            <Features heading={data?.title} />
 
             <InfoCard
                 newClass="newInfo"

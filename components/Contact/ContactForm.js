@@ -68,12 +68,12 @@ const ContactForm = () => {
             await axios.post(url, payload);
             setContact(INITIAL_STATE);
             alertContent();
-        } catch (error) {}
+        } catch (error) { }
     };
 
     return (
-        <div className="contact-area pb-100">
-            <div className="container">
+        <div className="contact-area pb-50">
+            <div className="container ">
                 <div className="section-title">
                     <span className="sub-title">Get in Touch</span>
                     <h2>

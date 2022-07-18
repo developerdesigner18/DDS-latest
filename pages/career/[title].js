@@ -3,9 +3,10 @@ import { accordionData } from "../../data/career";
 import { createTitleSlug } from "../../utils/utils";
 
 const CareerAccordian = ({ data }) => {
+
     return (
         <>
-            <div className="accordion-main">
+            <div className="accordion-main pb-50">
                 <div className="container p-0">
                     <div className="accordian-content">
                         <div className="p-3">
@@ -24,7 +25,9 @@ const CareerAccordian = ({ data }) => {
                                     {data?.title}
                                 </h1>
                                 <Link href="/career-form">
-                                    <a className="default-btn">Apply Now</a>
+                                    <a className="default-btn" onClick={() => {
+                                        localStorage.setItem("career", data.title)
+                                    }}>Apply Now</a>
                                 </Link>
                             </div>
                             <hr />

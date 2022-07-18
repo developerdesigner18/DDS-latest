@@ -42,7 +42,7 @@ const Portfolio = () => {
     }, []);
 
     return (
-        <div className="portfolio-area pt-100 pb-70">
+        <div className="portfolio-area ptb-100 ">
             <div className="container">
                 <div className="section-title">
                     <span className="sub-title">Portfolio</span>

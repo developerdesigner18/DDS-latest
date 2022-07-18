@@ -1,7 +1,7 @@
 export const solutionTypes = [
     {
         id: 1,
-        s1mainimage: "/images/industries/b2b.webp",
+        s1mainimage: "/images/industries/Ecommerce.png",
         title: "Ecommerce",
         s1content:
             "Give businesses the tools they need to collaborate and prosper from any place and make them work as a team.",
@@ -15,7 +15,7 @@ export const solutionTypes = [
     },
     {
         id: 2,
-        s1mainimage: "/images/industries/b2b.webp",
+        s1mainimage: "/images/industries//B2B image.png",
         title: "Business to Business",
         s1content:
             "Give businesses the tools they need to collaborate and prosper from any place and make them work as a team.",
@@ -29,7 +29,7 @@ export const solutionTypes = [
     },
     {
         id: 3,
-        s1mainimage: "/images/industries/non-profit.webp",
+        s1mainimage: "/images/industries/Non-Profit.png",
         title: "Non-Profit",
         s1content:
             "Help people with needs by utilising the most up-to-date digital and virtual solutions to connect the community and provide support.",
@@ -43,7 +43,7 @@ export const solutionTypes = [
     },
     {
         id: 4,
-        s1mainimage: "/images/industries/startup.png",
+        s1mainimage: "/images/industries/Startup.png",
         title: "Startup",
         s1content:
             "We work with startups and forward-thinking businesses that want to establish and expand their online footprint.",
@@ -57,7 +57,7 @@ export const solutionTypes = [
     },
     {
         id: 5,
-        s1mainimage: "/images/industries/real-estate.webp",
+        s1mainimage: "/images/industries/Real Estate & Property.png",
         title: "Real Estate & Property",
         s1content:
             "Let buyers discover their desired property and make it simple for them to connect with dealers.",
@@ -71,7 +71,7 @@ export const solutionTypes = [
     },
     {
         id: 5,
-        s1mainimage: "/images/industries/social-networking.webp",
+        s1mainimage: "/images/industries/social networking.png",
         title: "Social Networking",
         s1content:
             "Connect your audience and keep them engaged with our optimised coding standards and algorithms and attain maximum reach through our marketing strategies.",
@@ -86,7 +86,7 @@ export const solutionTypes = [
     },
     {
         id: 6,
-        s1mainimage: "/images/industries/startup.png",
+        s1mainimage: "/images/industries/Startup.png",
         title: "Startup",
         s1content:
             "We work with startups and forward-thinking businesses that want to establish and expand their online footprint.",
@@ -100,7 +100,7 @@ export const solutionTypes = [
     },
     {
         id: 7,
-        s1mainimage: "/images/industries/food-and-restaurant.jpg",
+        s1mainimage: "/images/industries/Food & restaurant.png",
         title: "Food & Restaurant",
         s1content:
             "Millennials are now responsible for a significant percentage of the food and restaurant industry. Their relationship with food, packaging and delivery is one-of-a-kind, and we make it even better with our dynamic and futuristic touches.",
@@ -115,7 +115,7 @@ export const solutionTypes = [
     },
     {
         id: 8,
-        s1mainimage: "/images/industries/banking-and-finance.webp",
+        s1mainimage: "/images/industries/Banking & Finance.png",
         title: "Banking & Finance",
         s1content:
             "Streamline your operations with us, from developing a net banking app to eWallet and data management solutions, we always ensure that the financial institutions make the best use of technology in their day-to-day activities.",
@@ -129,7 +129,7 @@ export const solutionTypes = [
     },
     {
         id: 9,
-        s1mainimage: "/images/industries/education.webp",
+        s1mainimage: "/images/industries/Education.png",
         title: "Education",
         s1content:
             "Starting from interactive classrooms to finely-shaped, technology-enabled learning methods, we deliver the next generation of learning.",
@@ -144,7 +144,7 @@ export const solutionTypes = [
     },
     {
         id: 10,
-        s1mainimage: "/images/industries/travel.webp",
+        s1mainimage: "/images/industries/Travell.png",
         title: "Travel",
         s1content:
             "We provide robust web and mobile solutions to develop, manage and upgrade business processes in the industry, thereby contributing to your business gains.",
@@ -158,7 +158,7 @@ export const solutionTypes = [
     },
     {
         id: 11,
-        s1mainimage: "/images/industries/media-and-entertainment.webp",
+        s1mainimage: "/images/industries/Media & Entertainment.png",
         title: "Media & Entertainment",
         s1content:
             "Make your mark in the biggest industry through our creative solutions, mind-bending strategies, and modern designs. ",
@@ -172,7 +172,7 @@ export const solutionTypes = [
     },
     {
         id: 12,
-        s1mainimage: "/images/industries/healthcare-and-fitness.webp",
+        s1mainimage: "/images/industries/Healthcare & Fitness.png",
         title: "Healthcare & Fitness",
         s1content:
             "We give a personal touch to all the healthcare websites/mobile applications; be it for patients or management purposes, with our detailed and smooth architectures for the best user experience.",
@@ -186,7 +186,7 @@ export const solutionTypes = [
     },
     {
         id: 13,
-        s1mainimage: "/images/industries/transport-and-automotive.webp",
+        s1mainimage: "/images/industries/Transport & Automotive.png",
         title: "Transport & Automotive",
         s1content:
             "Create a bridge between your logistic providers and customers through our digital platforms and have a seamless workflow. ",
@@ -200,7 +200,7 @@ export const solutionTypes = [
     },
     {
         id: 14,
-        s1mainimage: "/images/industries/gaming-and-leisure.webp",
+        s1mainimage: "/images/industries/Gaming & Leisure.png",
         title: "Gaming & Leisure",
         s1content:
             "Provide your gamers with a thrilling and addictive experience, with our games developed with the latest cutting-edge technologies.",
@@ -214,7 +214,7 @@ export const solutionTypes = [
     },
     {
         id: 15,
-        s1mainimage: "/images/industries/directory-and-organization.webp",
+        s1mainimage: "/images/industries/Directory & Organisation.png",
         title: "Directory & Organisation",
         s1content:
             "Worried about your data security and privacy issues? Look no more, we’ll take care of all your security, privacy and optimization needs, and more.",
@@ -228,7 +228,7 @@ export const solutionTypes = [
     },
     {
         id: 16,
-        s1mainimage: "/images/industries/event-and-tickets.webp",
+        s1mainimage: "/images/industries/Event & Tickets.png",
         title: "Event & Tickets",
         s1content:
             "Tired of handling events and selling tickets? Sit back and manage everything through our digital platforms tailored according to your needs.",
@@ -242,7 +242,7 @@ export const solutionTypes = [
     },
     {
         id: 17,
-        s1mainimage: "/images/industries/sports.webp",
+        s1mainimage: "/images/industries/Sports.png",
         title: "Sports",
         s1content:
             "Delivering nothing but an experience that fuels the sportsman in you and attracts fans to your online platforms.",

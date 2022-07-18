@@ -2,7 +2,7 @@ import { laravelServicesData } from "../../../data/laravelServiceData";
 
 const LaravelServices = () => {
     return (
-        <div className="laravel-service-Container">
+        <div className="laravel-service-Container ptb-100">
             <div className="container blockContainer">
                 <div className="laravel-service-holder">
                     <h2>Our Services</h2>

@@ -31,7 +31,7 @@ const Testimonials = () => {
         <>
             <PageBanner pageTitle="Our Testimonials" />
 
-            <div className="testimonial-page">
+            <div className="testimonial-page ptb-100">
                 <div className="container">
                     {list.map(
                         (
@@ -88,13 +88,13 @@ const Testimonials = () => {
                         )
                     )}
                 </div>
-                <div className="text-center p-5">
-                    {showMore && (
+                {showMore && (
+                    <div className="text-center pt-50">
                         <a className="default-btn" onClick={loadMore}>
                             View All
                         </a>
-                    )}
-                </div>
+                    </div>
+                )}
             </div>
             <ModalVideo
                 channel="youtube"

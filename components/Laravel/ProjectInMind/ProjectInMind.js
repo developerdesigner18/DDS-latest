@@ -52,7 +52,7 @@ const ProjectInMind = () => {
     };
 
     return (
-        <div className="project-inMind pb-100">
+        <div className="project-inMind ptb-100">
             <div className="container">
                 <div className="project-section-title">
                     <h2>Have a Project in Mind?</h2>

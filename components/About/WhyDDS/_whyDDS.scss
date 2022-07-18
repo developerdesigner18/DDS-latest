@@ -6,9 +6,7 @@
 }
 
 .why-dds-card {
-    margin-bottom: 30px;
     text-align: center;
-    background-color: var(--darkCardColor);
     padding: 25px;
     border-radius: 10px;
     transition: var(--transition);
@@ -44,6 +42,12 @@
         background-color: var(--mainbgLightColor);
         box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
         transform: translateY(-10px);
+        h2 {
+            color: black;
+        }
+    }
+    .why-dds-card:hover .overlay {
+        opacity: 0.2;
     }
 
     .bg-img,
@@ -55,6 +59,30 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 62, 107, 0.5);
+        transition: 0.5s;
+        background-color: rgba(0, 62, 107);
     }
+    // h2 {
+    //     color: black;
+    // }
+}
+
+.why-dds-card {
+    background: url(http://localhost:3000/images/why-dds/why-dds.png);
+    background-size: cover;
+}
+
+.why-dds-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    opacity: 1;
+    background-color: var(--darkCardColor);
+}
+.why-dds-card:hover:before {
+    opacity: 0.5;
 }

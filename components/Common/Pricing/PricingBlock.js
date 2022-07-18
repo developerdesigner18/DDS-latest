@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import withReactContent from "sweetalert2-react-content";
+import GetAQuote from "../../Solutions/GetAQuote/GetAQuote";
 
 const MySwal = withReactContent(Swal);
 
@@ -106,7 +107,7 @@ const PricingBlock = () => {
 
     return (
         <>
-            <div className="ptb-100 product-price-holder ">
+            <div className="pt-50 product-price-holder ">
                 <div className="container main-pricing">
                     <div className="product-price-block">
                         <h3 className="price-title">Select Product</h3>
@@ -240,16 +241,16 @@ const PricingBlock = () => {
                                     onChange={(e) =>
                                         e.target.checked
                                             ? setAddons([
-                                                  ...addOns,
-                                                  "Logo Design",
-                                              ])
+                                                ...addOns,
+                                                "Logo Design",
+                                            ])
                                             : (addOns = addOns.filter(
-                                                  (data) => {
-                                                      return (
-                                                          data !== "Logo Design"
-                                                      );
-                                                  }
-                                              ))
+                                                (data) => {
+                                                    return (
+                                                        data !== "Logo Design"
+                                                    );
+                                                }
+                                            ))
                                     }
                                 />
                                 <span>
@@ -267,16 +268,16 @@ const PricingBlock = () => {
                                     onChange={(e) =>
                                         e.target.checked
                                             ? setAddons([
-                                                  ...addOns,
-                                                  "Ecommerce",
-                                              ])
+                                                ...addOns,
+                                                "Ecommerce",
+                                            ])
                                             : (addOns = addOns.filter(
-                                                  (data) => {
-                                                      return (
-                                                          data !== "Ecommerce"
-                                                      );
-                                                  }
-                                              ))
+                                                (data) => {
+                                                    return (
+                                                        data !== "Ecommerce"
+                                                    );
+                                                }
+                                            ))
                                     }
                                 />
                                 <span>
@@ -294,17 +295,17 @@ const PricingBlock = () => {
                                     onChange={(e) =>
                                         e.target.checked
                                             ? setAddons([
-                                                  ...addOns,
-                                                  "Image / Video Galleries",
-                                              ])
+                                                ...addOns,
+                                                "Image / Video Galleries",
+                                            ])
                                             : (addOns = addOns.filter(
-                                                  (data) => {
-                                                      return (
-                                                          data !==
-                                                          "Image / Video Galleries"
-                                                      );
-                                                  }
-                                              ))
+                                                (data) => {
+                                                    return (
+                                                        data !==
+                                                        "Image / Video Galleries"
+                                                    );
+                                                }
+                                            ))
                                     }
                                 />
                                 <span>
@@ -322,17 +323,17 @@ const PricingBlock = () => {
                                     onChange={(e) =>
                                         e.target.checked
                                             ? setAddons([
-                                                  ...addOns,
-                                                  "Forms / Lead Generation",
-                                              ])
+                                                ...addOns,
+                                                "Forms / Lead Generation",
+                                            ])
                                             : (addOns = addOns.filter(
-                                                  (data) => {
-                                                      return (
-                                                          data !==
-                                                          "Forms / Lead Generation"
-                                                      );
-                                                  }
-                                              ))
+                                                (data) => {
+                                                    return (
+                                                        data !==
+                                                        "Forms / Lead Generation"
+                                                    );
+                                                }
+                                            ))
                                     }
                                 />
                                 <span>
@@ -350,17 +351,17 @@ const PricingBlock = () => {
                                     onChange={(e) =>
                                         e.target.checked
                                             ? setAddons([
-                                                  ...addOns,
-                                                  "Login / Signup profile",
-                                              ])
+                                                ...addOns,
+                                                "Login / Signup profile",
+                                            ])
                                             : (addOns = addOns.filter(
-                                                  (data) => {
-                                                      return (
-                                                          data !==
-                                                          "Login / Signup profile"
-                                                      );
-                                                  }
-                                              ))
+                                                (data) => {
+                                                    return (
+                                                        data !==
+                                                        "Login / Signup profile"
+                                                    );
+                                                }
+                                            ))
                                     }
                                 />
                                 <span>
@@ -379,10 +380,10 @@ const PricingBlock = () => {
                                         e.target.checked
                                             ? setAddons([...addOns, "Blog"])
                                             : (addOns = addOns.filter(
-                                                  (data) => {
-                                                      return data !== "Blog";
-                                                  }
-                                              ))
+                                                (data) => {
+                                                    return data !== "Blog";
+                                                }
+                                            ))
                                     }
                                 />
                                 <span>
@@ -401,10 +402,10 @@ const PricingBlock = () => {
                                         e.target.checked
                                             ? setAddons([...addOns, "Search"])
                                             : (addOns = addOns.filter(
-                                                  (data) => {
-                                                      return data !== "Search";
-                                                  }
-                                              ))
+                                                (data) => {
+                                                    return data !== "Search";
+                                                }
+                                            ))
                                     }
                                 />
                                 <span>
@@ -415,7 +416,8 @@ const PricingBlock = () => {
                             </label>
                         </p>
                     </div>
-                    <div className="row" style={{ alignItems: "center" }}>
+                    <GetAQuote heading="dummyText" subHeading="dummy one" description="here is the description" buttonText="Submit" />
+                    {/* <div className="row" style={{ alignItems: "center" }}>
                         <div className="col-lg-6 col-md-6">
                             <div className="form-group">
                                 <label>Email</label>
@@ -450,7 +452,7 @@ const PricingBlock = () => {
                                 Submit
                             </button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

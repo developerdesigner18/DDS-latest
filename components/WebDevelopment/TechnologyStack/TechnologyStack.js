@@ -6,15 +6,15 @@ const TechnologyStack = ({ whatWeOffer }) => {
     return (
         <div>
             {" "}
-            <div className="technology-stack pt-50 pb-70">
+            <div className="technology-stack ptb-100 ">
                 <div className="container">
-                    <div className="technology-stack-heading text-center pb-50">
+                    <div className="technology-stack-heading text-center">
                         <h2>Technology Stack</h2>
                     </div>
                     <div className="row text-center">
                         {technologies.map((data) => {
                             return (
-                                <div className="col-lg-2 col-md-4 col-sm-6">
+                                <div className="col-lg-2 col-md-4 col-sm-6 pt-50">
                                     <div className="single-gallery-item">
                                         <Link
                                             href={`/services/technology/${createTitleSlug(

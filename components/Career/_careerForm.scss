@@ -10,8 +10,25 @@
 .career-title {
     text-align: center;
     color: var(--mainDarkColor);
-    padding: 20px 0px;
+    margin: 0;
 }
 .career-form-main {
     background-color: var(--whiteColor);
+}
+
+.careerform-icon-holder {
+    color: var(--mainDarkColor) !important;
+}
+.title-icon-holder {
+    padding: 0px 0px 44px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.title-icon-holder i {
+    padding-left: 30px;
+}
+.title-icon-holder h3.career-title {
+    width: 100%;
 }
